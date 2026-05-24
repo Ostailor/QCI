@@ -1,0 +1,10 @@
+| Scenario | Crit. served | ENS kWh | Crit. ENS kWh | Feas. |
+| --- | --- | --- | --- | --- |
+| combined_high_stress | 0.733 | 4.6e+04 | 1.68e+04 | 1.000 |
+| storm_forced_islanding | 0.890 | 2.54e+04 | 6248.7 | 1.000 |
+| restoration | 0.880 | 1.18e+04 | 5725.9 | 0.625 |
+| pcc_failure | 0.898 | 1.17e+04 | 5163.1 | 0.750 |
+| local_generator_failure | 0.905 | 1.06e+04 | 4790.2 | 0.750 |
+| normal | 0.935 | 8832.5 | 3141.7 | 0.625 |
+| demand_surge | 0.954 | 8548.6 | 2723.5 | 0.500 |
+| renewable_shortfall | 0.928 | 8417.5 | 3530.9 | 0.500 |

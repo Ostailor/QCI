@@ -1,0 +1,6 @@
+name,avg_base_load_kw,critical_fraction,pv_peak_kw,generator_p_max_kw,generator_cost_c,battery_capacity_kwh,pcc_import_limit_kw
+PGLIB5_MG1,114.333,0.38,22.721,210.0,0.1481,64.167,420.0
+PGLIB5_MG2,294.0,0.425,65.55,25.0,0.45,165.0,289.1
+PGLIB5_MG3,294.0,0.47,72.675,520.0,0.3,165.0,298.2
+PGLIB5_MG4,392.0,0.515,106.4,200.0,0.4,220.0,382.2
+PGLIB5_MG5,114.333,0.56,33.804,600.0,0.1,64.167,233.1

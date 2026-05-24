@@ -1,0 +1,101 @@
+{
+  "selected_patches": [
+    [
+      "MG1",
+      "MG2",
+      "MG3"
+    ],
+    [
+      "MG1",
+      "MG2",
+      "MG4"
+    ]
+  ],
+  "upgrades": [],
+  "total_upgrade_cost": 0,
+  "feasibility_summary": {
+    "MG1|MG2|MG3": {
+      "before": {
+        "patch": [
+          "MG1",
+          "MG2",
+          "MG3"
+        ],
+        "hours": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "feasible": true,
+        "feasible_hours": 6,
+        "total_hours": 6,
+        "coverage_fraction": 1.0,
+        "worst_margin_kw": 999.844179,
+        "total_supply_kw": 14194.48,
+        "total_critical_load_kw": 6051.897023
+      },
+      "after": {
+        "patch": [
+          "MG1",
+          "MG2",
+          "MG3"
+        ],
+        "feasible": true,
+        "feasible_hours": 6,
+        "total_hours": 6,
+        "coverage_fraction": 1.0,
+        "worst_margin_kw": 999.844179,
+        "total_supply_kw": 14194.48,
+        "total_critical_load_kw": 6051.897023
+      }
+    },
+    "MG1|MG2|MG4": {
+      "before": {
+        "patch": [
+          "MG1",
+          "MG2",
+          "MG4"
+        ],
+        "hours": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "feasible": true,
+        "feasible_hours": 6,
+        "total_hours": 6,
+        "coverage_fraction": 1.0,
+        "worst_margin_kw": 822.936049,
+        "total_supply_kw": 12702.081,
+        "total_critical_load_kw": 6006.93712
+      },
+      "after": {
+        "patch": [
+          "MG1",
+          "MG2",
+          "MG4"
+        ],
+        "feasible": true,
+        "feasible_hours": 6,
+        "total_hours": 6,
+        "coverage_fraction": 1.0,
+        "worst_margin_kw": 822.936049,
+        "total_supply_kw": 12702.081,
+        "total_critical_load_kw": 6006.93712
+      }
+    }
+  },
+  "metrics": {
+    "total_upgrade_cost": 0,
+    "customers_covered_fraction": 1.0,
+    "critical_load_coverage_fraction": 1.0,
+    "selected_patch_count": 2,
+    "average_patch_size": 3.0
+  }
+}

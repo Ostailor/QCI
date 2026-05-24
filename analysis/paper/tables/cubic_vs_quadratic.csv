@@ -1,0 +1,7 @@
+method_name,model_variant,true_cubic_cost,true_cubic_cost_difference_vs_cubic,dispatch_profile_l1_difference_vs_cubic,critical_load_served_fraction,energy_not_served_kwh
+CMPO-local polynomial search,cubic,7088.707197667648,0.0,0.0,1.0,0.0
+CMPO-local polynomial search,quadratic_approximation,7088.707197667648,0.0,0.0,1.0,0.0
+GreedyCriticalLoadFirst,cubic,7088.707197667648,0.0,0.0,1.0,0.0
+GreedyCriticalLoadFirst,quadratic_approximation,7088.707197667648,0.0,0.0,1.0,0.0
+SLSQPDispatchOptimizer,cubic,412.6822028701083,0.0,0.0,0.9999980598834683,0.0030225980333005
+SLSQPDispatchOptimizer,quadratic_approximation,404.9744923728354,-7.707710497272842,5.882408699702495,1.0,0.0

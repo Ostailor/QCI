@@ -1,0 +1,5 @@
+platform,fit for cubic continuous model,encoding overhead,Phase 2 role,Phase 3 role
+QCi Dirac-3,Strong: accepts bounded degree-3 polynomial structure directly after eqc-models adaptation.,Low to moderate: preserve quasi-continuous variables and cubic terms.,offline payload target only; no hardware execution yet.,priority platform for repeated stochastic solves on exported payloads.
+classical NLP/MILP,Strong for NLP heuristics; exact MILP would need linearization or approximation.,Low for SLSQP/differential evolution; higher for MILP linearization.,baseline evidence and feasibility repair comparison.,"fair rerun baseline with identical seeds, scenarios, patches, and metrics."
+D-Wave/QUBO,Weaker fit because cubic and continuous terms require reduction and discretization.,High: binary expansion plus quadratization introduces auxiliary variables.,not used.,secondary comparator only if a reduced QUBO formulation is created.
+IBM gate-based,"Research fit, but needs circuit ansatz, encoding, and measurement design.",High: discretization and circuit resources are not yet estimated.,not used.,not the initial request; possible future algorithmic comparison.

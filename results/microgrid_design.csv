@@ -1,0 +1,3 @@
+patch_id,microgrid_ids,patch_size,before_feasible,after_feasible,before_coverage_fraction,after_coverage_fraction,after_worst_margin_kw
+P1,MG1|MG2|MG3,3,True,True,1.0,1.0,999.844179
+P2,MG1|MG2|MG4,3,True,True,1.0,1.0,822.936049

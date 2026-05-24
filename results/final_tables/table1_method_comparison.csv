@@ -1,0 +1,5 @@
+Method,Exp. cost,Risk cost,Crit. served,ENS kWh,Feas.,Runtime s
+Diff. evolution,15400.0,17900.0,0.651,79700.0,1.0,0.256
+SLSQP,26900.0,32700.0,0.967,14100.0,0.438,1.183
+CMPO-local,41800.0,47900.0,0.977,16000.0,0.438,1.742
+Greedy,41800.0,47900.0,0.966,21400.0,1.0,0.0

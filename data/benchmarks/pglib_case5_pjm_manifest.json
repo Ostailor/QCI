@@ -1,0 +1,27 @@
+{
+  "name": "pglib-opf-case5-pjm",
+  "kind": "dataset",
+  "upstream": {
+    "url": "https://github.com/power-grid-lib/pglib-opf",
+    "case_file_url": "https://raw.githubusercontent.com/power-grid-lib/pglib-opf/v23.07/pglib_opf_case5_pjm.m",
+    "version": "v23.07",
+    "commit": "dc6be4b2f85ca0e776952ec22cbd4c22396ea5a3",
+    "license": "Creative Commons Attribution 4.0 International",
+    "checksum": "sha256:cadf7501a15c2d508820493cef6acc85757274197e74c40bcec4fc4ecf619e6f"
+  },
+  "local_adapter": {
+    "adapter_module": "src/cmpo/benchmarks.py",
+    "download_hook": "manual optional: fetch the case_file_url if exact upstream inspection is needed",
+    "local_path": "data/benchmarks/pglib_case5_pjm_adapted.yaml"
+  },
+  "adaptation": {
+    "purpose": "CMPO microgrid stress benchmark derived from a public OPF case.",
+    "not_claimed": "Not an AC OPF reproduction and not a live QCi hardware run.",
+    "changes": [
+      "Uses PGLib bus active loads as normalized microgrid load anchors.",
+      "Uses PGLib generator capacities and linear cost slopes as thermal generator anchors.",
+      "Adds PV, BESS, PCC, critical-load, and upgrade fields required by the CMPO workflow.",
+      "Uses PGLib branch endpoints and ratings as microgrid tie-line topology anchors."
+    ]
+  }
+}

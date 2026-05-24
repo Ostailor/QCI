@@ -1,0 +1,6 @@
+| Experiment | Payloads | Max vars | Med vars | Max terms | Degree | Use |
+| --- | --- | --- | --- | --- | --- | --- |
+| Main synthetic | 16 | 198 | 198 | 1260 | 3 | Full Phase 2 evidence sweep |
+| QCi small | 8 | 132 | 132 | 840 | 3 | Initial Dirac-3 smoke test |
+| Scaling study | 8 | 66 | 55 | 424 | 3 | Size trend reference |
+| PGLib adapter | 8 | 198 | 198 | 1236 | 3 | Public benchmark-derived stress case |

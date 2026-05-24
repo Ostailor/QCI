@@ -1,0 +1,9 @@
+name,probability,severity_label,critical_load_requirement
+normal,0.375,low,0.98
+renewable_shortfall,0.125,medium,0.96
+demand_surge,0.125,medium,0.96
+pcc_failure,0.0625,high,0.94
+local_generator_failure,0.0625,high,0.94
+storm_forced_islanding,0.0625,high,0.92
+restoration,0.125,medium,0.95
+combined_high_stress,0.0625,extreme,0.9

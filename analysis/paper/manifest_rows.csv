@@ -1,0 +1,3 @@
+run_name,manifest_path,dataset_source,seed,horizon,n_scenarios,quick,payload_count,summary_metrics_csv,scenario_results_csv,model_stats_csv,phase2_headlines_md
+synthetic_default,results/run_manifest.json,deterministic synthetic CMPO case,42,6,8,False,16,results/summary_metrics.csv,results/scenario_results.csv,results/model_stats.csv,results/phase2_headlines.md
+pglib_case5_pjm_adapted,results/benchmarks/pglib_case5_pjm/benchmark_manifest.json,PGLib-OPF case5-PJM adapted CMPO benchmark,42,6,4,True,8,results/benchmarks/pglib_case5_pjm/summary_metrics.csv,results/benchmarks/pglib_case5_pjm/scenario_results.csv,results/benchmarks/pglib_case5_pjm/model_stats.csv,results/benchmarks/pglib_case5_pjm/phase2_headlines.md

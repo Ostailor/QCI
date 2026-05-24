@@ -1,0 +1,6 @@
+| experiment | payload count | max variables | median variables | max terms | max degree | intended Phase 3 use |
+| --- | --- | --- | --- | --- | --- | --- |
+| main synthetic run | 16 | 198 | 198 | 1260 | 3 | full synthetic evidence sweep; larger honest Hamiltonian reference |
+| scaling study | 8 | 66 | 55 | 424 | 3 | size trend only; smaller than the main selected-patch run when patch sizes differ |
+| PGLib case5-PJM adapted benchmark | 8 | 198 | 198 | 1236 | 3 | public-benchmark-derived stress case; not an AC OPF reproduction |
+| qci_small conservative payload | 8 | 132 | 132 | 840 | 3 | initial QCi Dirac-3 smoke test before full main-run payloads |

@@ -1,0 +1,7 @@
+| Step | Scope | Inputs | Output |
+| --- | --- | --- | --- |
+| Adapter | Connect payload JSON to eqc-models / QCi adapter | results/qci_small/qci_payloads/*.json | Executable Dirac-3/EQC jobs |
+| Small sweep | Run qci_small payloads with repeated stochastic solves | 8 payloads x repeat budget | Initial hardware feasibility evidence |
+| Main sweep | Run full main synthetic payload set if small sweep is acceptable | 16 payloads x same repeat budget | Main QCi comparison set |
+| Baselines | Rerun greedy, SLSQP, differential evolution, and CMPO-local | Same seed, scenarios, patches, repair, metrics | Fair classical comparison |
+| Report | Compare cost, resilience, feasibility, runtime, and model size | QCi and classical result tables | Phase 3 evidence package |

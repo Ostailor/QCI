@@ -1,0 +1,101 @@
+{
+  "selected_patches": [
+    [
+      "PGLIB5_MG1",
+      "PGLIB5_MG2",
+      "PGLIB5_MG3"
+    ],
+    [
+      "PGLIB5_MG1",
+      "PGLIB5_MG4",
+      "PGLIB5_MG5"
+    ]
+  ],
+  "upgrades": [],
+  "total_upgrade_cost": 0,
+  "feasibility_summary": {
+    "PGLIB5_MG1|PGLIB5_MG2|PGLIB5_MG3": {
+      "before": {
+        "patch": [
+          "PGLIB5_MG1",
+          "PGLIB5_MG2",
+          "PGLIB5_MG3"
+        ],
+        "hours": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "feasible": true,
+        "feasible_hours": 6,
+        "total_hours": 6,
+        "coverage_fraction": 1.0,
+        "worst_margin_kw": 612.70654,
+        "total_supply_kw": 5763.401,
+        "total_critical_load_kw": 1839.46
+      },
+      "after": {
+        "patch": [
+          "PGLIB5_MG1",
+          "PGLIB5_MG2",
+          "PGLIB5_MG3"
+        ],
+        "feasible": true,
+        "feasible_hours": 6,
+        "total_hours": 6,
+        "coverage_fraction": 1.0,
+        "worst_margin_kw": 612.70654,
+        "total_supply_kw": 5763.401,
+        "total_critical_load_kw": 1839.46
+      }
+    },
+    "PGLIB5_MG1|PGLIB5_MG4|PGLIB5_MG5": {
+      "before": {
+        "patch": [
+          "PGLIB5_MG1",
+          "PGLIB5_MG4",
+          "PGLIB5_MG5"
+        ],
+        "hours": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "feasible": true,
+        "feasible_hours": 6,
+        "total_hours": 6,
+        "coverage_fraction": 1.0,
+        "worst_margin_kw": 854.21302,
+        "total_supply_kw": 7232.755,
+        "total_critical_load_kw": 1856.12
+      },
+      "after": {
+        "patch": [
+          "PGLIB5_MG1",
+          "PGLIB5_MG4",
+          "PGLIB5_MG5"
+        ],
+        "feasible": true,
+        "feasible_hours": 6,
+        "total_hours": 6,
+        "coverage_fraction": 1.0,
+        "worst_margin_kw": 854.21302,
+        "total_supply_kw": 7232.755,
+        "total_critical_load_kw": 1856.12
+      }
+    }
+  },
+  "metrics": {
+    "total_upgrade_cost": 0,
+    "customers_covered_fraction": 1.0,
+    "critical_load_coverage_fraction": 1.0,
+    "selected_patch_count": 2,
+    "average_patch_size": 3.0
+  }
+}
