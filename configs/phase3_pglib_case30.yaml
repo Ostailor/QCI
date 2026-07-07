@@ -1,0 +1,26 @@
+name: phase3_pglib_case30
+seed: 44
+output_dir: results/phase3/public_benchmarks/pglib_case30
+dataset:
+  name: pglib_case30_adapted
+  source: pglib_case30
+  horizon_hours: 6
+  n_scenarios: 6
+payloads:
+  max_patch_size: 3
+  max_patches: 3
+qci:
+  relaxation_schedule: 1
+  sum_constraint: null
+  job_tags:
+    - cmpo
+    - phase3
+    - dirac3
+baselines:
+  parallel_workers: 4
+  max_iterations: 6
+  random_restarts: 3
+  local_steps: 2
+  include_differential_evolution: true
+  de_maxiter: 1
+  de_popsize: 1

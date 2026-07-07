@@ -1,0 +1,26 @@
+name: phase3_stress
+seed: 45
+output_dir: results/phase3/phase3_stress
+dataset:
+  name: phase3_high_stress
+  source: stress
+  n_microgrids: 5
+  horizon_hours: 8
+  n_scenarios: 8
+payloads:
+  max_patch_size: 3
+  max_patches: 2
+qci:
+  relaxation_schedule: 1
+  sum_constraint: null
+  job_tags:
+    - cmpo
+    - phase3
+    - dirac3
+baselines:
+  max_iterations: 8
+  random_restarts: 4
+  local_steps: 2
+  include_differential_evolution: true
+  de_maxiter: 1
+  de_popsize: 1

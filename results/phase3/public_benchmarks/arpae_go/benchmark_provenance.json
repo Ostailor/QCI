@@ -1,0 +1,52 @@
+{
+  "benchmark": "arpae_go",
+  "status": "available",
+  "source_name": "ARPA-E Grid Optimization Challenge public data",
+  "upstream_url": "https://data.openei.org/submissions/6153",
+  "license": "See OEDI dataset terms",
+  "version": "OEDI public submission 6153/6197/5997 resource snapshot",
+  "sha256": "b438dab6d51492ff501cea1e9acb5ed3591873b188f8b844acaad0ef75749852",
+  "local_path": "data/public_benchmarks/arpae_go/extracted/Challenge_1_Original_Dataset_2_Scenarios/Original_Dataset_Offline_Edition_2/Network_01O-020/scenario_1/case.raw",
+  "file_count": 298,
+  "raw_file_count": 140,
+  "parsed_sample": "data/public_benchmarks/arpae_go/extracted/Challenge_1_Original_Dataset_2_Scenarios/Original_Dataset_Offline_Edition_2/Network_01O-020/scenario_1/case.raw",
+  "section_counts": {
+    "bus": 500,
+    "load": 200,
+    "fixed_shunt": 0,
+    "generator": 90,
+    "non_transformer_branch": 468,
+    "transformer": 524,
+    "area": 1,
+    "two_terminal_dc": 0,
+    "vsc_dc": 0,
+    "transformer_impedance": 0,
+    "multi_terminal_dc": 0,
+    "multi_section_line": 0,
+    "zone": 0,
+    "interarea": 0,
+    "owner": 0,
+    "facts": 0,
+    "switched_shunt": 17,
+    "gne": 0,
+    "induction": 0
+  },
+  "qci_execution_was_run": false,
+  "only_classical_baselines_were_run": false,
+  "transformation_notes": "ARPA-E GO-derived microgrid stress adapter feasibility path.",
+  "fields_inherited_from_benchmark": [
+    "buses",
+    "loads",
+    "generators",
+    "branches",
+    "contingencies"
+  ],
+  "fields_added_by_cmpo_adapter": [
+    "critical_load_fraction",
+    "BESS_capacity_and_power_limits",
+    "PV_DER_profile",
+    "PCC_tie_availability",
+    "islanding_mode_eligibility",
+    "restoration_scenario_tags"
+  ]
+}

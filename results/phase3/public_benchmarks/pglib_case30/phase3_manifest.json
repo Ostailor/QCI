@@ -1,0 +1,57 @@
+{
+  "phase": 3,
+  "config": "phase3_pglib_case30",
+  "config_path": "configs/phase3_pglib_case30.yaml",
+  "dataset": "pglib_case30_adapted",
+  "output_dir": "results/phase3/public_benchmarks/pglib_case30",
+  "payload_dir": "results/phase3/public_benchmarks/pglib_case30/qci_payloads",
+  "payload_count": 18,
+  "payloads": [
+    "results/phase3/public_benchmarks/pglib_case30/qci_payloads/normal_BUS1_MG-BUS2_MG-BUS30_MG.json",
+    "results/phase3/public_benchmarks/pglib_case30/qci_payloads/renewable_shortfall_BUS1_MG-BUS2_MG-BUS30_MG.json",
+    "results/phase3/public_benchmarks/pglib_case30/qci_payloads/demand_surge_BUS1_MG-BUS2_MG-BUS30_MG.json",
+    "results/phase3/public_benchmarks/pglib_case30/qci_payloads/pcc_failure_BUS1_MG-BUS2_MG-BUS30_MG.json",
+    "results/phase3/public_benchmarks/pglib_case30/qci_payloads/local_generator_failure_BUS1_MG-BUS2_MG-BUS30_MG.json",
+    "results/phase3/public_benchmarks/pglib_case30/qci_payloads/storm_forced_islanding_BUS1_MG-BUS2_MG-BUS30_MG.json",
+    "results/phase3/public_benchmarks/pglib_case30/qci_payloads/normal_BUS2_MG-BUS5_MG-BUS7_MG.json",
+    "results/phase3/public_benchmarks/pglib_case30/qci_payloads/renewable_shortfall_BUS2_MG-BUS5_MG-BUS7_MG.json",
+    "results/phase3/public_benchmarks/pglib_case30/qci_payloads/demand_surge_BUS2_MG-BUS5_MG-BUS7_MG.json",
+    "results/phase3/public_benchmarks/pglib_case30/qci_payloads/pcc_failure_BUS2_MG-BUS5_MG-BUS7_MG.json",
+    "results/phase3/public_benchmarks/pglib_case30/qci_payloads/local_generator_failure_BUS2_MG-BUS5_MG-BUS7_MG.json",
+    "results/phase3/public_benchmarks/pglib_case30/qci_payloads/storm_forced_islanding_BUS2_MG-BUS5_MG-BUS7_MG.json",
+    "results/phase3/public_benchmarks/pglib_case30/qci_payloads/normal_BUS12_MG.json",
+    "results/phase3/public_benchmarks/pglib_case30/qci_payloads/renewable_shortfall_BUS12_MG.json",
+    "results/phase3/public_benchmarks/pglib_case30/qci_payloads/demand_surge_BUS12_MG.json",
+    "results/phase3/public_benchmarks/pglib_case30/qci_payloads/pcc_failure_BUS12_MG.json",
+    "results/phase3/public_benchmarks/pglib_case30/qci_payloads/local_generator_failure_BUS12_MG.json",
+    "results/phase3/public_benchmarks/pglib_case30/qci_payloads/storm_forced_islanding_BUS12_MG.json"
+  ],
+  "selected_patches": [
+    [
+      "BUS1_MG",
+      "BUS2_MG",
+      "BUS30_MG"
+    ],
+    [
+      "BUS2_MG",
+      "BUS5_MG",
+      "BUS7_MG"
+    ],
+    [
+      "BUS12_MG"
+    ]
+  ],
+  "scenario_count": 6,
+  "design_outputs": {
+    "microgrid_design_csv": "results/phase3/public_benchmarks/pglib_case30/microgrid_design.csv",
+    "upgrade_plan_csv": "results/phase3/public_benchmarks/pglib_case30/upgrade_plan.csv",
+    "design_summary_json": "results/phase3/public_benchmarks/pglib_case30/design_summary.json"
+  },
+  "design_metrics": {
+    "total_upgrade_cost": 0,
+    "customers_covered_fraction": 1.0,
+    "critical_load_coverage_fraction": 1.0,
+    "selected_patch_count": 5,
+    "average_patch_size": 1.8
+  }
+}

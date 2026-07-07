@@ -1,0 +1,82 @@
+dataset,left_method,right_method,metric,paired_count,median_delta_left_minus_right,mean_delta_left_minus_right,left_better_fraction
+qci_small_synthetic,CMPO-local polynomial search,DifferentialEvolutionOptimizer,expected_cost_component,16,12409.823914255574,11198.402696135408,0.0
+qci_small_synthetic,CMPO-local polynomial search,GPU-parallel random restart baseline,expected_cost_component,16,0.0,0.0,0.0
+qci_small_synthetic,CMPO-local polynomial search,GreedyCriticalLoadFirst,expected_cost_component,16,0.0,0.0,0.0
+qci_small_synthetic,CMPO-local polynomial search,IPOPT/Pyomo nonlinear baseline,expected_cost_component,16,568.0413482098947,2007.0117761497845,0.0
+qci_small_synthetic,CMPO-local polynomial search,Piecewise-linear MILP baseline,expected_cost_component,16,14138.619131786778,12783.981855671367,0.0
+qci_small_synthetic,CMPO-local polynomial search,QUBO/quadratized local search baseline,expected_cost_component,16,-6.143358469455052,395.0125244506082,0.75
+qci_small_synthetic,CMPO-local polynomial search,SLSQPDispatchOptimizer,expected_cost_component,16,568.0413482098947,2007.0117761497845,0.0
+qci_small_synthetic,CMPO-local polynomial search,Stress-only reserve heuristic baseline,expected_cost_component,16,920.7555117681295,4120.678429628394,0.0
+qci_small_synthetic,CMPO-local polynomial search,qBraid GPU-parallel random restart baseline,expected_cost_component,16,0.0,0.0,0.0
+qci_small_synthetic,DifferentialEvolutionOptimizer,GPU-parallel random restart baseline,expected_cost_component,16,-12409.823914255574,-11198.402696135408,1.0
+qci_small_synthetic,DifferentialEvolutionOptimizer,GreedyCriticalLoadFirst,expected_cost_component,16,-12409.823914255574,-11198.402696135408,1.0
+qci_small_synthetic,DifferentialEvolutionOptimizer,IPOPT/Pyomo nonlinear baseline,expected_cost_component,16,-8616.345707080356,-9191.390919985624,1.0
+qci_small_synthetic,DifferentialEvolutionOptimizer,Piecewise-linear MILP baseline,expected_cost_component,16,3119.0369300821603,1585.5791595359583,0.375
+qci_small_synthetic,DifferentialEvolutionOptimizer,QUBO/quadratized local search baseline,expected_cost_component,16,-12417.855361823684,-10803.390171684801,1.0
+qci_small_synthetic,DifferentialEvolutionOptimizer,SLSQPDispatchOptimizer,expected_cost_component,16,-8616.345707080356,-9191.390919985624,1.0
+qci_small_synthetic,DifferentialEvolutionOptimizer,Stress-only reserve heuristic baseline,expected_cost_component,16,-7273.707793659962,-7077.724266507014,0.875
+qci_small_synthetic,DifferentialEvolutionOptimizer,qBraid GPU-parallel random restart baseline,expected_cost_component,16,-12409.823914255574,-11198.402696135408,1.0
+qci_small_synthetic,GPU-parallel random restart baseline,GreedyCriticalLoadFirst,expected_cost_component,16,0.0,0.0,0.0
+qci_small_synthetic,GPU-parallel random restart baseline,IPOPT/Pyomo nonlinear baseline,expected_cost_component,16,568.0413482098947,2007.0117761497845,0.0
+qci_small_synthetic,GPU-parallel random restart baseline,Piecewise-linear MILP baseline,expected_cost_component,16,14138.619131786778,12783.981855671367,0.0
+qci_small_synthetic,GPU-parallel random restart baseline,QUBO/quadratized local search baseline,expected_cost_component,16,-6.143358469455052,395.0125244506082,0.75
+qci_small_synthetic,GPU-parallel random restart baseline,SLSQPDispatchOptimizer,expected_cost_component,16,568.0413482098947,2007.0117761497845,0.0
+qci_small_synthetic,GPU-parallel random restart baseline,Stress-only reserve heuristic baseline,expected_cost_component,16,920.7555117681295,4120.678429628394,0.0
+qci_small_synthetic,GPU-parallel random restart baseline,qBraid GPU-parallel random restart baseline,expected_cost_component,16,0.0,0.0,0.0
+qci_small_synthetic,GreedyCriticalLoadFirst,IPOPT/Pyomo nonlinear baseline,expected_cost_component,16,568.0413482098947,2007.0117761497845,0.0
+qci_small_synthetic,GreedyCriticalLoadFirst,Piecewise-linear MILP baseline,expected_cost_component,16,14138.619131786778,12783.981855671367,0.0
+qci_small_synthetic,GreedyCriticalLoadFirst,QUBO/quadratized local search baseline,expected_cost_component,16,-6.143358469455052,395.0125244506082,0.75
+qci_small_synthetic,GreedyCriticalLoadFirst,SLSQPDispatchOptimizer,expected_cost_component,16,568.0413482098947,2007.0117761497845,0.0
+qci_small_synthetic,GreedyCriticalLoadFirst,Stress-only reserve heuristic baseline,expected_cost_component,16,920.7555117681295,4120.678429628394,0.0
+qci_small_synthetic,GreedyCriticalLoadFirst,qBraid GPU-parallel random restart baseline,expected_cost_component,16,0.0,0.0,0.0
+qci_small_synthetic,IPOPT/Pyomo nonlinear baseline,Piecewise-linear MILP baseline,expected_cost_component,16,13570.577783576882,10776.970079521583,0.125
+qci_small_synthetic,IPOPT/Pyomo nonlinear baseline,QUBO/quadratized local search baseline,expected_cost_component,16,-582.6772132953629,-1611.9992516991763,0.75
+qci_small_synthetic,IPOPT/Pyomo nonlinear baseline,SLSQPDispatchOptimizer,expected_cost_component,16,0.0,0.0,0.0
+qci_small_synthetic,IPOPT/Pyomo nonlinear baseline,Stress-only reserve heuristic baseline,expected_cost_component,16,327.37965682578215,2113.66665347861,0.5
+qci_small_synthetic,IPOPT/Pyomo nonlinear baseline,qBraid GPU-parallel random restart baseline,expected_cost_component,16,-568.0413482098947,-2007.0117761497845,1.0
+qci_small_synthetic,Piecewise-linear MILP baseline,QUBO/quadratized local search baseline,expected_cost_component,16,-14153.254996872245,-12388.96933122076,0.875
+qci_small_synthetic,Piecewise-linear MILP baseline,SLSQPDispatchOptimizer,expected_cost_component,16,-13570.577783576882,-10776.970079521583,0.875
+qci_small_synthetic,Piecewise-linear MILP baseline,Stress-only reserve heuristic baseline,expected_cost_component,16,-10703.401122881703,-8663.303426042974,0.75
+qci_small_synthetic,Piecewise-linear MILP baseline,qBraid GPU-parallel random restart baseline,expected_cost_component,16,-14138.619131786778,-12783.981855671367,0.875
+qci_small_synthetic,QUBO/quadratized local search baseline,SLSQPDispatchOptimizer,expected_cost_component,16,582.6772132953629,1611.9992516991763,0.25
+qci_small_synthetic,QUBO/quadratized local search baseline,Stress-only reserve heuristic baseline,expected_cost_component,16,404.16320363591876,3725.665905177786,0.0625
+qci_small_synthetic,QUBO/quadratized local search baseline,qBraid GPU-parallel random restart baseline,expected_cost_component,16,6.143358469455052,-395.0125244506082,0.25
+qci_small_synthetic,SLSQPDispatchOptimizer,Stress-only reserve heuristic baseline,expected_cost_component,16,327.37965682578215,2113.66665347861,0.5
+qci_small_synthetic,SLSQPDispatchOptimizer,qBraid GPU-parallel random restart baseline,expected_cost_component,16,-568.0413482098947,-2007.0117761497845,1.0
+qci_small_synthetic,Stress-only reserve heuristic baseline,qBraid GPU-parallel random restart baseline,expected_cost_component,16,-920.7555117681295,-4120.678429628394,1.0
+synthetic_smoke,CMPO-local polynomial search,DifferentialEvolutionOptimizer,expected_cost_component,4,4825.058912479657,4812.911561762116,0.0
+synthetic_smoke,CMPO-local polynomial search,GPU-parallel random restart baseline,expected_cost_component,4,-9.094947017729282e-13,-0.29481845331156364,0.5
+synthetic_smoke,CMPO-local polynomial search,GreedyCriticalLoadFirst,expected_cost_component,4,-9.094947017729282e-13,-0.29481845331156364,0.5
+synthetic_smoke,CMPO-local polynomial search,IPOPT/Pyomo nonlinear baseline,expected_cost_component,4,690.144528355364,690.4393468086746,0.0
+synthetic_smoke,CMPO-local polynomial search,Piecewise-linear MILP baseline,expected_cost_component,4,6856.70442166558,6856.409603212271,0.0
+synthetic_smoke,CMPO-local polynomial search,QUBO/quadratized local search baseline,expected_cost_component,4,-1.7828014066226388,-1.4879829533119846,1.0
+synthetic_smoke,CMPO-local polynomial search,SLSQPDispatchOptimizer,expected_cost_component,4,690.144528355364,690.4393468086746,0.0
+synthetic_smoke,CMPO-local polynomial search,Stress-only reserve heuristic baseline,expected_cost_component,4,51.79105168264232,51.496233229331665,0.0
+synthetic_smoke,DifferentialEvolutionOptimizer,GPU-parallel random restart baseline,expected_cost_component,4,-4825.058912479657,-4813.206380215429,1.0
+synthetic_smoke,DifferentialEvolutionOptimizer,GreedyCriticalLoadFirst,expected_cost_component,4,-4825.058912479657,-4813.206380215429,1.0
+synthetic_smoke,DifferentialEvolutionOptimizer,IPOPT/Pyomo nonlinear baseline,expected_cost_component,4,-4134.324747217671,-4122.472214953442,1.0
+synthetic_smoke,DifferentialEvolutionOptimizer,Piecewise-linear MILP baseline,expected_cost_component,4,2031.6455091859243,2043.4980414501529,0.0
+synthetic_smoke,DifferentialEvolutionOptimizer,QUBO/quadratized local search baseline,expected_cost_component,4,-4826.252076979657,-4814.399544715428,1.0
+synthetic_smoke,DifferentialEvolutionOptimizer,SLSQPDispatchOptimizer,expected_cost_component,4,-4134.324747217671,-4122.472214953442,1.0
+synthetic_smoke,DifferentialEvolutionOptimizer,Stress-only reserve heuristic baseline,expected_cost_component,4,-4773.267860797014,-4761.415328532785,1.0
+synthetic_smoke,GPU-parallel random restart baseline,GreedyCriticalLoadFirst,expected_cost_component,4,0.0,0.0,0.0
+synthetic_smoke,GPU-parallel random restart baseline,IPOPT/Pyomo nonlinear baseline,expected_cost_component,4,690.7341652619862,690.7341652619862,0.0
+synthetic_smoke,GPU-parallel random restart baseline,Piecewise-linear MILP baseline,expected_cost_component,4,6856.704421665581,6856.704421665581,0.0
+synthetic_smoke,GPU-parallel random restart baseline,QUBO/quadratized local search baseline,expected_cost_component,4,-1.193164500000421,-1.193164500000421,1.0
+synthetic_smoke,GPU-parallel random restart baseline,SLSQPDispatchOptimizer,expected_cost_component,4,690.7341652619862,690.7341652619862,0.0
+synthetic_smoke,GPU-parallel random restart baseline,Stress-only reserve heuristic baseline,expected_cost_component,4,51.79105168264323,51.79105168264323,0.0
+synthetic_smoke,GreedyCriticalLoadFirst,IPOPT/Pyomo nonlinear baseline,expected_cost_component,4,690.7341652619862,690.7341652619862,0.0
+synthetic_smoke,GreedyCriticalLoadFirst,Piecewise-linear MILP baseline,expected_cost_component,4,6856.704421665581,6856.704421665581,0.0
+synthetic_smoke,GreedyCriticalLoadFirst,QUBO/quadratized local search baseline,expected_cost_component,4,-1.193164500000421,-1.193164500000421,1.0
+synthetic_smoke,GreedyCriticalLoadFirst,SLSQPDispatchOptimizer,expected_cost_component,4,690.7341652619862,690.7341652619862,0.0
+synthetic_smoke,GreedyCriticalLoadFirst,Stress-only reserve heuristic baseline,expected_cost_component,4,51.79105168264323,51.79105168264323,0.0
+synthetic_smoke,IPOPT/Pyomo nonlinear baseline,Piecewise-linear MILP baseline,expected_cost_component,4,6165.970256403595,6165.970256403596,0.0
+synthetic_smoke,IPOPT/Pyomo nonlinear baseline,QUBO/quadratized local search baseline,expected_cost_component,4,-691.9273297619866,-691.9273297619866,1.0
+synthetic_smoke,IPOPT/Pyomo nonlinear baseline,SLSQPDispatchOptimizer,expected_cost_component,4,0.0,0.0,0.0
+synthetic_smoke,IPOPT/Pyomo nonlinear baseline,Stress-only reserve heuristic baseline,expected_cost_component,4,-638.9431135793429,-638.9431135793429,1.0
+synthetic_smoke,Piecewise-linear MILP baseline,QUBO/quadratized local search baseline,expected_cost_component,4,-6857.897586165582,-6857.897586165582,1.0
+synthetic_smoke,Piecewise-linear MILP baseline,SLSQPDispatchOptimizer,expected_cost_component,4,-6165.970256403595,-6165.970256403596,1.0
+synthetic_smoke,Piecewise-linear MILP baseline,Stress-only reserve heuristic baseline,expected_cost_component,4,-6804.913369982938,-6804.913369982938,1.0
+synthetic_smoke,QUBO/quadratized local search baseline,SLSQPDispatchOptimizer,expected_cost_component,4,691.9273297619866,691.9273297619866,0.0
+synthetic_smoke,QUBO/quadratized local search baseline,Stress-only reserve heuristic baseline,expected_cost_component,4,52.98421618264365,52.98421618264365,0.0
+synthetic_smoke,SLSQPDispatchOptimizer,Stress-only reserve heuristic baseline,expected_cost_component,4,-638.9431135793429,-638.9431135793429,1.0

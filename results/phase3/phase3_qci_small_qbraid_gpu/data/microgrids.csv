@@ -1,0 +1,4 @@
+name,avg_base_load_kw,critical_fraction,flexible_fraction,pv_peak_kw,generator_p_max_kw,battery_capacity_kwh,pcc_import_limit_kw
+MG1,870.428,0.4182,0.1998,423.973,536.598,784.328,699.107
+MG2,853.728,0.5509,0.1787,369.109,562.843,578.54,643.21
+MG3,806.929,0.5795,0.2142,349.047,451.677,749.221,690.092

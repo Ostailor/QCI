@@ -1,0 +1,115 @@
+{
+  "job_info": {
+    "job_id": "6a4c2f2308442f441bbb064e",
+    "job_submission": {
+      "job_name": "pglib_case14_ieee_demand_surge_BUS2_MG__from__demand_surge_BUS14_MG-BUS1_MG-BUS2_MG_r008",
+      "job_tags": [
+        "cmpo",
+        "phase3",
+        "dirac3",
+        "qci_fit"
+      ],
+      "problem_config": {
+        "normalized_qudit_hamiltonian_optimization": {
+          "polynomial_file_id": "6a4c2f23ff2f309fb9cfd83c"
+        }
+      },
+      "device_config": {
+        "dirac-3_normalized_qudit": {
+          "num_samples": 1,
+          "relaxation_schedule": 1,
+          "sum_constraint": 10000
+        }
+      }
+    },
+    "job_status": {
+      "submitted_at_rfc3339nano": "2026-07-06T22:41:39.99Z",
+      "queued_at_rfc3339nano": "2026-07-06T22:41:39.991Z",
+      "running_at_rfc3339nano": "2026-07-06T22:54:12.875Z",
+      "completed_at_rfc3339nano": "2026-07-06T22:54:14.717Z"
+    },
+    "job_result": {
+      "file_id": "6a4c3216ff2f309fb9cfdb0b",
+      "device_usage_s": 1
+    }
+  },
+  "status": "COMPLETED",
+  "results": {
+    "counts": [
+      1
+    ],
+    "energies": [
+      -50414648
+    ],
+    "solutions": [
+      [
+        120,
+        89.9999924,
+        140,
+        220,
+        190,
+        120,
+        190,
+        130,
+        130,
+        250,
+        179.9999847,
+        130,
+        140,
+        170.0000153,
+        200,
+        130,
+        190,
+        150,
+        140,
+        140,
+        120,
+        140,
+        120,
+        150,
+        200,
+        150,
+        150,
+        150,
+        130,
+        140,
+        240,
+        160,
+        130,
+        190,
+        130,
+        100,
+        170.0000153,
+        150,
+        179.9999847,
+        160,
+        190,
+        80,
+        160,
+        190,
+        150,
+        120,
+        230,
+        140,
+        80,
+        150,
+        179.9999847,
+        150,
+        179.9999847,
+        140,
+        160,
+        150,
+        130,
+        170.0000153,
+        150,
+        100,
+        140,
+        70,
+        210,
+        150,
+        80,
+        140
+      ]
+    ]
+  }
+}

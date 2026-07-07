@@ -1,0 +1,56 @@
+{
+  "selected_patches": [
+    [
+      "MG1",
+      "MG2",
+      "MG3"
+    ]
+  ],
+  "upgrades": [],
+  "total_upgrade_cost": 0,
+  "feasibility_summary": {
+    "MG1|MG2|MG3": {
+      "before": {
+        "patch": [
+          "MG1",
+          "MG2",
+          "MG3"
+        ],
+        "hours": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "feasible": true,
+        "feasible_hours": 4,
+        "total_hours": 4,
+        "coverage_fraction": 1.0,
+        "worst_margin_kw": 1240.284729,
+        "total_supply_kw": 11840.963,
+        "total_critical_load_kw": 5207.790244
+      },
+      "after": {
+        "patch": [
+          "MG1",
+          "MG2",
+          "MG3"
+        ],
+        "feasible": true,
+        "feasible_hours": 4,
+        "total_hours": 4,
+        "coverage_fraction": 1.0,
+        "worst_margin_kw": 1240.284729,
+        "total_supply_kw": 11840.963,
+        "total_critical_load_kw": 5207.790244
+      }
+    }
+  },
+  "metrics": {
+    "total_upgrade_cost": 0,
+    "customers_covered_fraction": 1.0,
+    "critical_load_coverage_fraction": 1.0,
+    "selected_patch_count": 1,
+    "average_patch_size": 3.0
+  }
+}

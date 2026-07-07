@@ -1,0 +1,40 @@
+{
+  "benchmark": "pglib_case5_pjm",
+  "source_name": "PGLib-OPF pglib_opf_case5_pjm",
+  "upstream_url": "https://github.com/power-grid-lib/pglib-opf",
+  "license": "Creative Commons Attribution 4.0 International",
+  "version_or_commit": "v23.07",
+  "sha256_checksum": "sha256:cadf7501a15c2d508820493cef6acc85757274197e74c40bcec4fc4ecf619e6f",
+  "local_path": "results/phase3/public_benchmarks/pglib_case5_pjm",
+  "qci_execution_was_run": true,
+  "qci_result_path": "results/phase3/public_benchmarks/pglib_case5_pjm/decoded/qci_repeat_metrics.csv",
+  "qci_execution_payload_type": "full",
+  "qci_not_executed_reason": "",
+  "max_payload_variables": 132,
+  "full_payload_count": 8,
+  "full_payload_max_variables": 132,
+  "full_payload_status": "qci_executable_full_payloads",
+  "qci_fit_payload_count": 0,
+  "qci_fit_max_variables": 0,
+  "qci_fit_max_degree": 0,
+  "qci_fit_status": "missing",
+  "qci_fit_manifest": "",
+  "qci_fit_failure_report": "",
+  "only_classical_baselines_were_run": false,
+  "transformation_notes": "Public-benchmark-derived microgrid resilience adapter; not an AC OPF reproduction.",
+  "fields_inherited_from_benchmark": [
+    "buses",
+    "loads",
+    "branches",
+    "generators",
+    "generator_costs"
+  ],
+  "fields_added_by_cmpo_adapter": [
+    "critical_load_fraction",
+    "BESS_capacity_and_power_limits",
+    "PV_DER_profile",
+    "PCC_tie_availability",
+    "islanding_mode_eligibility",
+    "restoration_scenario_tags"
+  ]
+}

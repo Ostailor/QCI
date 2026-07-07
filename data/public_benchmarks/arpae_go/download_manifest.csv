@@ -1,0 +1,2 @@
+resource_key,title,url,local_path,sha256,bytes,status,message
+challenge1_original_dataset_2,Challenge 1 Original Dataset 2 Scenarios.zip,https://data.openei.org/files/6153/Challenge_1_Original_Dataset_2_Scenarios.zip,data/public_benchmarks/arpae_go/archives/Challenge_1_Original_Dataset_2_Scenarios.zip,b438dab6d51492ff501cea1e9acb5ed3591873b188f8b844acaad0ef75749852,10444056,downloaded,

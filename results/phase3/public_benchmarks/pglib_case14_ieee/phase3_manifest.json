@@ -1,0 +1,48 @@
+{
+  "phase": 3,
+  "config": "phase3_pglib_case14",
+  "config_path": "configs/phase3_pglib_case14.yaml",
+  "dataset": "pglib_case14_adapted",
+  "output_dir": "results/phase3/public_benchmarks/pglib_case14",
+  "payload_dir": "results/phase3/public_benchmarks/pglib_case14/qci_payloads",
+  "payload_count": 12,
+  "payloads": [
+    "results/phase3/public_benchmarks/pglib_case14/qci_payloads/normal_BUS14_MG-BUS1_MG-BUS2_MG.json",
+    "results/phase3/public_benchmarks/pglib_case14/qci_payloads/renewable_shortfall_BUS14_MG-BUS1_MG-BUS2_MG.json",
+    "results/phase3/public_benchmarks/pglib_case14/qci_payloads/demand_surge_BUS14_MG-BUS1_MG-BUS2_MG.json",
+    "results/phase3/public_benchmarks/pglib_case14/qci_payloads/pcc_failure_BUS14_MG-BUS1_MG-BUS2_MG.json",
+    "results/phase3/public_benchmarks/pglib_case14/qci_payloads/local_generator_failure_BUS14_MG-BUS1_MG-BUS2_MG.json",
+    "results/phase3/public_benchmarks/pglib_case14/qci_payloads/storm_forced_islanding_BUS14_MG-BUS1_MG-BUS2_MG.json",
+    "results/phase3/public_benchmarks/pglib_case14/qci_payloads/normal_BUS3_MG-BUS4_MG-BUS9_MG.json",
+    "results/phase3/public_benchmarks/pglib_case14/qci_payloads/renewable_shortfall_BUS3_MG-BUS4_MG-BUS9_MG.json",
+    "results/phase3/public_benchmarks/pglib_case14/qci_payloads/demand_surge_BUS3_MG-BUS4_MG-BUS9_MG.json",
+    "results/phase3/public_benchmarks/pglib_case14/qci_payloads/pcc_failure_BUS3_MG-BUS4_MG-BUS9_MG.json",
+    "results/phase3/public_benchmarks/pglib_case14/qci_payloads/local_generator_failure_BUS3_MG-BUS4_MG-BUS9_MG.json",
+    "results/phase3/public_benchmarks/pglib_case14/qci_payloads/storm_forced_islanding_BUS3_MG-BUS4_MG-BUS9_MG.json"
+  ],
+  "selected_patches": [
+    [
+      "BUS14_MG",
+      "BUS1_MG",
+      "BUS2_MG"
+    ],
+    [
+      "BUS3_MG",
+      "BUS4_MG",
+      "BUS9_MG"
+    ]
+  ],
+  "scenario_count": 6,
+  "design_outputs": {
+    "microgrid_design_csv": "results/phase3/public_benchmarks/pglib_case14/microgrid_design.csv",
+    "upgrade_plan_csv": "results/phase3/public_benchmarks/pglib_case14/upgrade_plan.csv",
+    "design_summary_json": "results/phase3/public_benchmarks/pglib_case14/design_summary.json"
+  },
+  "design_metrics": {
+    "total_upgrade_cost": 0,
+    "customers_covered_fraction": 1.0,
+    "critical_load_coverage_fraction": 1.0,
+    "selected_patch_count": 2,
+    "average_patch_size": 3.0
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "selected_patches": [
+    [
+      "BUS12_MG",
+      "BUS16_MG",
+      "BUS17_MG"
+    ],
+    [
+      "BUS6_MG",
+      "BUS8_MG",
+      "BUS9_MG"
+    ]
+  ],
+  "upgrades": [],
+  "total_upgrade_cost": 0,
+  "feasibility_summary": {
+    "BUS12_MG|BUS16_MG|BUS17_MG": {
+      "before": {
+        "patch": [
+          "BUS12_MG",
+          "BUS16_MG",
+          "BUS17_MG"
+        ],
+        "hours": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "feasible": true,
+        "feasible_hours": 6,
+        "total_hours": 6,
+        "coverage_fraction": 1.0,
+        "worst_margin_kw": 473.0156,
+        "total_supply_kw": 4390.431,
+        "total_critical_load_kw": 1428.8694
+      },
+      "after": {
+        "patch": [
+          "BUS12_MG",
+          "BUS16_MG",
+          "BUS17_MG"
+        ],
+        "feasible": true,
+        "feasible_hours": 6,
+        "total_hours": 6,
+        "coverage_fraction": 1.0,
+        "worst_margin_kw": 473.0156,
+        "total_supply_kw": 4390.431,
+        "total_critical_load_kw": 1428.8694
+      }
+    },
+    "BUS6_MG|BUS8_MG|BUS9_MG": {
+      "before": {
+        "patch": [
+          "BUS6_MG",
+          "BUS8_MG",
+          "BUS9_MG"
+        ],
+        "hours": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "feasible": true,
+        "feasible_hours": 6,
+        "total_hours": 6,
+        "coverage_fraction": 1.0,
+        "worst_margin_kw": 1086.9104,
+        "total_supply_kw": 7597.633,
+        "total_critical_load_kw": 996.1896
+      },
+      "after": {
+        "patch": [
+          "BUS6_MG",
+          "BUS8_MG",
+          "BUS9_MG"
+        ],
+        "feasible": true,
+        "feasible_hours": 6,
+        "total_hours": 6,
+        "coverage_fraction": 1.0,
+        "worst_margin_kw": 1086.9104,
+        "total_supply_kw": 7597.633,
+        "total_critical_load_kw": 996.1896
+      }
+    },
+    "BUS16_MG|BUS1_MG|BUS47_MG": {
+      "before": {
+        "patch": [
+          "BUS16_MG",
+          "BUS1_MG",
+          "BUS47_MG"
+        ],
+        "hours": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "feasible": true,
+        "feasible_hours": 6,
+        "total_hours": 6,
+        "coverage_fraction": 1.0,
+        "worst_margin_kw": 324.55284,
+        "total_supply_kw": 2283.552,
+        "total_critical_load_kw": 303.66966
+      },
+      "after": {
+        "patch": [
+          "BUS16_MG",
+          "BUS1_MG",
+          "BUS47_MG"
+        ],
+        "feasible": true,
+        "feasible_hours": 6,
+        "total_hours": 6,
+        "coverage_fraction": 1.0,
+        "worst_margin_kw": 324.55284,
+        "total_supply_kw": 2283.552,
+        "total_critical_load_kw": 303.66966
+      }
+    },
+    "BUS18_MG": {
+      "before": {
+        "patch": [
+          "BUS18_MG"
+        ],
+        "hours": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "feasible": true,
+        "feasible_hours": 6,
+        "total_hours": 6,
+        "coverage_fraction": 1.0,
+        "worst_margin_kw": 39.2288,
+        "total_supply_kw": 313.282,
+        "total_critical_load_kw": 71.9712
+      },
+      "after": {
+        "patch": [
+          "BUS18_MG"
+        ],
+        "feasible": true,
+        "feasible_hours": 6,
+        "total_hours": 6,
+        "coverage_fraction": 1.0,
+        "worst_margin_kw": 39.2288,
+        "total_supply_kw": 313.282,
+        "total_critical_load_kw": 71.9712
+      }
+    },
+    "BUS3_MG": {
+      "before": {
+        "patch": [
+          "BUS3_MG"
+        ],
+        "hours": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "feasible": true,
+        "feasible_hours": 6,
+        "total_hours": 6,
+        "coverage_fraction": 1.0,
+        "worst_margin_kw": 70.0268,
+        "total_supply_kw": 533.181,
+        "total_critical_load_kw": 100.0482
+      },
+      "after": {
+        "patch": [
+          "BUS3_MG"
+        ],
+        "feasible": true,
+        "feasible_hours": 6,
+        "total_hours": 6,
+        "coverage_fraction": 1.0,
+        "worst_margin_kw": 70.0268,
+        "total_supply_kw": 533.181,
+        "total_critical_load_kw": 100.0482
+      }
+    }
+  },
+  "metrics": {
+    "total_upgrade_cost": 0,
+    "customers_covered_fraction": 1.0,
+    "critical_load_coverage_fraction": 1.0,
+    "selected_patch_count": 5,
+    "average_patch_size": 2.2
+  }
+}

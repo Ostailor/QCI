@@ -1,0 +1,22 @@
+public_baselines_remaining_start=2026-07-07 04:21:35 EDT
+{
+  "pglib_case14_ieee": {
+    "repeat_metrics": "results/phase3/public_benchmarks/pglib_case14/baselines/repeat_metrics.csv",
+    "payload_summary": "results/phase3/public_benchmarks/pglib_case14/baselines/payload_summary.csv",
+    "result_path": "results/phase3/public_benchmarks/pglib_case14/baselines/baseline_results.csv",
+    "summary_path": "results/phase3/public_benchmarks/pglib_case14/baselines/baseline_summary.csv",
+    "skip_report": "results/phase3/public_benchmarks/pglib_case14/baselines/baseline_skip_report.csv",
+    "rows": 5400,
+    "skipped": 0
+  },
+  "pglib_case30_ieee": {
+    "repeat_metrics": "results/phase3/public_benchmarks/pglib_case30/baselines/repeat_metrics.csv",
+    "payload_summary": "results/phase3/public_benchmarks/pglib_case30/baselines/payload_summary.csv",
+    "result_path": "results/phase3/public_benchmarks/pglib_case30/baselines/baseline_results.csv",
+    "summary_path": "results/phase3/public_benchmarks/pglib_case30/baselines/baseline_summary.csv",
+    "skip_report": "results/phase3/public_benchmarks/pglib_case30/baselines/baseline_skip_report.csv",
+    "rows": 8100,
+    "skipped": 0
+  }
+}
+public_baselines_remaining_exit_code=0 at 2026-07-07 05:38:57 EDT

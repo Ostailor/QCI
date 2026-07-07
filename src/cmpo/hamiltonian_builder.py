@@ -59,7 +59,13 @@ def _add_squared_affine(
             model.add_quadratic(2.0 * coefficient * left_scale * right_scale, left_var, right_var)
 
 
-def _add_variables_for_microgrid_hour(model: PolynomialModel, microgrid: Microgrid, hour: int) -> dict[str, str]:
+def _add_variables_for_microgrid_hour(
+    model: PolynomialModel,
+    microgrid: Microgrid,
+    scenario: Scenario,
+    microgrid_index: int,
+    hour: int,
+) -> dict[str, str]:
     names = {
         "p_gen": _var("P_gen", microgrid.name, hour),
         "charge": _var("charge", microgrid.name, hour),
@@ -73,16 +79,18 @@ def _add_variables_for_microgrid_hour(model: PolynomialModel, microgrid: Microgr
         "z_island": _var("z_island", microgrid.name, hour),
         "z_restore": _var("z_restore", microgrid.name, hour),
     }
-    base_load = microgrid.load_profile.base_kw[hour]
+    base_load = microgrid.load_profile.base_kw[hour] * scenario.load_multiplier_by_hour[hour]
     critical_load = base_load * microgrid.load_profile.critical_fraction
     noncritical_load = max(0.0, base_load - critical_load)
+    tie_available = scenario.tie_availability[microgrid_index][hour] and not scenario.forced_islanding[microgrid_index][hour]
+    generator_available = scenario.generator_availability[microgrid_index][hour]
 
-    model.add_variable(names["p_gen"], microgrid.generator.p_min_kw, microgrid.generator.p_max_kw)
+    model.add_variable(names["p_gen"], 0.0, microgrid.generator.p_max_kw if generator_available else 0.0)
     model.add_variable(names["charge"], 0.0, microgrid.battery.max_charge_kw)
     model.add_variable(names["discharge"], 0.0, microgrid.battery.max_discharge_kw)
     model.add_variable(names["soc"], 0.0, microgrid.battery.capacity_kwh)
-    model.add_variable(names["import_pcc"], 0.0, microgrid.pcc.import_limit_kw)
-    model.add_variable(names["export_pcc"], 0.0, microgrid.pcc.export_limit_kw)
+    model.add_variable(names["import_pcc"], 0.0, microgrid.pcc.import_limit_kw if tie_available else 0.0)
+    model.add_variable(names["export_pcc"], 0.0, microgrid.pcc.export_limit_kw if tie_available else 0.0)
     model.add_variable(names["shed_noncritical"], 0.0, noncritical_load)
     model.add_variable(names["shed_critical"], 0.0, critical_load)
     model.add_variable(names["z_grid"], 0.0, 1.0)
@@ -185,7 +193,7 @@ def build_scenario_hamiltonian(
         if microgrid.name not in patch:
             continue
         for hour in range(grid_case.horizon_hours):
-            names = _add_variables_for_microgrid_hour(model, microgrid, hour)
+            names = _add_variables_for_microgrid_hour(model, microgrid, scenario, microgrid_index, hour)
             _add_objective_terms(model, microgrid, scenario, microgrid_index, hour, names, weights)
 
     model.validate_degree(3)

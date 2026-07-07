@@ -1,0 +1,115 @@
+{
+  "job_info": {
+    "job_id": "6a4c2f1f08442f441bbb0604",
+    "job_submission": {
+      "job_name": "pglib_case14_ieee_demand_surge_BUS9_MG__from__demand_surge_BUS3_MG-BUS4_MG-BUS9_MG_r001",
+      "job_tags": [
+        "cmpo",
+        "phase3",
+        "dirac3",
+        "qci_fit"
+      ],
+      "problem_config": {
+        "normalized_qudit_hamiltonian_optimization": {
+          "polynomial_file_id": "6a4c2f1fff2f309fb9cfd7a3"
+        }
+      },
+      "device_config": {
+        "dirac-3_normalized_qudit": {
+          "num_samples": 1,
+          "relaxation_schedule": 1,
+          "sum_constraint": 10000
+        }
+      }
+    },
+    "job_status": {
+      "submitted_at_rfc3339nano": "2026-07-06T22:41:35.683Z",
+      "queued_at_rfc3339nano": "2026-07-06T22:41:35.684Z",
+      "running_at_rfc3339nano": "2026-07-06T22:44:47.876Z",
+      "completed_at_rfc3339nano": "2026-07-06T22:44:49.714Z"
+    },
+    "job_result": {
+      "file_id": "6a4c2fe1ff2f309fb9cfda77",
+      "device_usage_s": 1
+    }
+  },
+  "status": "COMPLETED",
+  "results": {
+    "counts": [
+      1
+    ],
+    "energies": [
+      -40241756
+    ],
+    "solutions": [
+      [
+        150,
+        140,
+        100,
+        140,
+        170.0000153,
+        160,
+        89.9999924,
+        190,
+        160,
+        179.9999847,
+        120,
+        220,
+        160,
+        200,
+        220,
+        170.0000153,
+        150,
+        179.9999847,
+        210,
+        120,
+        80,
+        150,
+        140,
+        140,
+        89.9999924,
+        160,
+        140,
+        130,
+        179.9999847,
+        89.9999924,
+        89.9999924,
+        160,
+        120,
+        160,
+        130,
+        89.9999924,
+        210,
+        140,
+        130,
+        200,
+        190,
+        120,
+        130,
+        190,
+        170.0000153,
+        140,
+        200,
+        89.9999924,
+        140,
+        100,
+        150,
+        150,
+        130,
+        179.9999847,
+        210,
+        130,
+        190,
+        190,
+        130,
+        100,
+        120,
+        130,
+        220,
+        170.0000153,
+        130,
+        240
+      ]
+    ]
+  }
+}

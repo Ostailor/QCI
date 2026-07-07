@@ -1,0 +1,22 @@
+{
+  "benchmark": "pglib_case14_ieee",
+  "qci_fit_payload_dir": "results/phase3/public_benchmarks/pglib_case14_ieee/qci_fit_payloads",
+  "qci_fit_payload_manifest": "results/phase3/public_benchmarks/pglib_case14_ieee/qci_fit_payload_manifest.csv",
+  "qci_fit_failure_report": "results/phase3/public_benchmarks/pglib_case14_ieee/qci_fit_failure_report.csv",
+  "source_full_payload_dir": "results/phase3/public_benchmarks/pglib_case14_ieee/qci_payloads",
+  "source_payload_count": 12,
+  "qci_fit_payload_count": 60,
+  "failure_count": 0,
+  "max_variables": 132,
+  "max_degree": 3,
+  "settings": {
+    "benchmark": "pglib_case14_ieee",
+    "max_variables": 132,
+    "max_degree": 3,
+    "seed": null,
+    "scenario_filter": "all",
+    "max_scenarios": null,
+    "rolling_horizon": null
+  },
+  "status": "available"
+}

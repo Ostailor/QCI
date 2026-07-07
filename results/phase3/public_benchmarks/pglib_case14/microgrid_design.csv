@@ -1,0 +1,3 @@
+patch_id,microgrid_ids,patch_size,before_feasible,after_feasible,before_coverage_fraction,after_coverage_fraction,after_worst_margin_kw
+P1,BUS14_MG|BUS1_MG|BUS2_MG,3,True,True,1.0,1.0,481.04224
+P2,BUS3_MG|BUS4_MG|BUS9_MG,3,True,True,1.0,1.0,53.79656

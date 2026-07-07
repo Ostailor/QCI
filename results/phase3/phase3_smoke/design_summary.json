@@ -1,0 +1,114 @@
+{
+  "selected_patches": [
+    [
+      "MG1"
+    ]
+  ],
+  "upgrades": [],
+  "total_upgrade_cost": 0,
+  "feasibility_summary": {
+    "MG1": {
+      "before": {
+        "patch": [
+          "MG1"
+        ],
+        "hours": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "feasible": true,
+        "feasible_hours": 4,
+        "total_hours": 4,
+        "coverage_fraction": 1.0,
+        "worst_margin_kw": 544.879246,
+        "total_supply_kw": 4300.5,
+        "total_critical_load_kw": 1456.05154
+      },
+      "after": {
+        "patch": [
+          "MG1"
+        ],
+        "feasible": true,
+        "feasible_hours": 4,
+        "total_hours": 4,
+        "coverage_fraction": 1.0,
+        "worst_margin_kw": 544.879246,
+        "total_supply_kw": 4300.5,
+        "total_critical_load_kw": 1456.05154
+      }
+    },
+    "MG2": {
+      "before": {
+        "patch": [
+          "MG2"
+        ],
+        "hours": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "feasible": true,
+        "feasible_hours": 4,
+        "total_hours": 4,
+        "coverage_fraction": 1.0,
+        "worst_margin_kw": 419.338508,
+        "total_supply_kw": 4090.671,
+        "total_critical_load_kw": 1881.276123
+      },
+      "after": {
+        "patch": [
+          "MG2"
+        ],
+        "feasible": true,
+        "feasible_hours": 4,
+        "total_hours": 4,
+        "coverage_fraction": 1.0,
+        "worst_margin_kw": 419.338508,
+        "total_supply_kw": 4090.671,
+        "total_critical_load_kw": 1881.276123
+      }
+    },
+    "MG3": {
+      "before": {
+        "patch": [
+          "MG3"
+        ],
+        "hours": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "feasible": true,
+        "feasible_hours": 4,
+        "total_hours": 4,
+        "coverage_fraction": 1.0,
+        "worst_margin_kw": 276.066975,
+        "total_supply_kw": 3449.792,
+        "total_critical_load_kw": 1870.462581
+      },
+      "after": {
+        "patch": [
+          "MG3"
+        ],
+        "feasible": true,
+        "feasible_hours": 4,
+        "total_hours": 4,
+        "coverage_fraction": 1.0,
+        "worst_margin_kw": 276.066975,
+        "total_supply_kw": 3449.792,
+        "total_critical_load_kw": 1870.462581
+      }
+    }
+  },
+  "metrics": {
+    "total_upgrade_cost": 0,
+    "customers_covered_fraction": 1.0,
+    "critical_load_coverage_fraction": 1.0,
+    "selected_patch_count": 3,
+    "average_patch_size": 1.0
+  }
+}

@@ -1,0 +1,7 @@
+dataset,qci_method,qci_risk_adjusted_cost,best_baseline_method,best_baseline_risk_adjusted_cost,qci_minus_best_baseline,qci_on_pareto_frontier
+pglib_case14_adapted,CMPO + QCi Dirac-3,30167.727492583504,Piecewise-linear MILP baseline,15539.826603967178,14627.900888616326,False
+pglib_case30_adapted,CMPO + QCi Dirac-3,28423.20858598117,Piecewise-linear MILP baseline,13101.35406285934,15321.85452312183,False
+pglib_case57_adapted,,,Piecewise-linear MILP baseline,3344.140884213072,,False
+pglib_case5_pjm_adapted,CMPO + QCi Dirac-3,69918.35992020355,Piecewise-linear MILP baseline,77693.47742376219,-7775.117503558635,False
+qci_small_synthetic,,,Piecewise-linear MILP baseline,16458.092935817454,,False
+synthetic_smoke,,,Piecewise-linear MILP baseline,508.4456074066085,,False

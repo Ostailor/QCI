@@ -1,0 +1,39 @@
+{
+  "phase": 3,
+  "config": "phase3_qci_small_qbraid_gpu",
+  "config_path": "results/phase3/qbraid_gpu_only_config.yaml",
+  "dataset": "qci_small_synthetic",
+  "output_dir": "results/phase3/phase3_qci_small_qbraid_gpu",
+  "payload_dir": "results/phase3/phase3_qci_small_qbraid_gpu/qci_payloads",
+  "payload_count": 8,
+  "payloads": [
+    "results/phase3/phase3_qci_small_qbraid_gpu/qci_payloads/normal_MG1-MG2-MG3.json",
+    "results/phase3/phase3_qci_small_qbraid_gpu/qci_payloads/renewable_shortfall_MG1-MG2-MG3.json",
+    "results/phase3/phase3_qci_small_qbraid_gpu/qci_payloads/demand_surge_MG1-MG2-MG3.json",
+    "results/phase3/phase3_qci_small_qbraid_gpu/qci_payloads/pcc_failure_MG1-MG2-MG3.json",
+    "results/phase3/phase3_qci_small_qbraid_gpu/qci_payloads/local_generator_failure_MG1-MG2-MG3.json",
+    "results/phase3/phase3_qci_small_qbraid_gpu/qci_payloads/storm_forced_islanding_MG1-MG2-MG3.json",
+    "results/phase3/phase3_qci_small_qbraid_gpu/qci_payloads/restoration_MG1-MG2-MG3.json",
+    "results/phase3/phase3_qci_small_qbraid_gpu/qci_payloads/combined_high_stress_MG1-MG2-MG3.json"
+  ],
+  "selected_patches": [
+    [
+      "MG1",
+      "MG2",
+      "MG3"
+    ]
+  ],
+  "scenario_count": 8,
+  "design_outputs": {
+    "microgrid_design_csv": "results/phase3/phase3_qci_small_qbraid_gpu/microgrid_design.csv",
+    "upgrade_plan_csv": "results/phase3/phase3_qci_small_qbraid_gpu/upgrade_plan.csv",
+    "design_summary_json": "results/phase3/phase3_qci_small_qbraid_gpu/design_summary.json"
+  },
+  "design_metrics": {
+    "total_upgrade_cost": 0,
+    "customers_covered_fraction": 1.0,
+    "critical_load_coverage_fraction": 1.0,
+    "selected_patch_count": 1,
+    "average_patch_size": 3.0
+  }
+}

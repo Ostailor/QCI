@@ -1,0 +1,29 @@
+{
+  "benchmark": "pglib_case5",
+  "status": "available",
+  "source_name": "PGLib case5-PJM",
+  "upstream_url": "https://raw.githubusercontent.com/power-grid-lib/pglib-opf/v23.07/pglib_opf_case5_pjm.m",
+  "license": "Creative Commons Attribution 4.0 International",
+  "version": "v23.07",
+  "sha256": "cadf7501a15c2d508820493cef6acc85757274197e74c40bcec4fc4ecf619e6f",
+  "local_path": "data/public_benchmarks/pglib/pglib_opf_case5_pjm.m",
+  "bus_count": 5,
+  "generator_count": 5,
+  "branch_count": 6,
+  "transformation_notes": "PGLib-derived microgrid resilience adapter; deterministic CMPO overlay added.",
+  "fields_inherited_from_benchmark": [
+    "buses",
+    "loads",
+    "branches",
+    "generators",
+    "generator_costs"
+  ],
+  "fields_added_by_cmpo_adapter": [
+    "critical_load_fraction",
+    "BESS_capacity_and_power_limits",
+    "PV_DER_profile",
+    "PCC_tie_availability",
+    "islanding_mode_eligibility",
+    "restoration_scenario_tags"
+  ]
+}

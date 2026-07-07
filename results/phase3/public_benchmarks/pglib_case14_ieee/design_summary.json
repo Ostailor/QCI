@@ -1,0 +1,101 @@
+{
+  "selected_patches": [
+    [
+      "BUS14_MG",
+      "BUS1_MG",
+      "BUS2_MG"
+    ],
+    [
+      "BUS3_MG",
+      "BUS4_MG",
+      "BUS9_MG"
+    ]
+  ],
+  "upgrades": [],
+  "total_upgrade_cost": 0,
+  "feasibility_summary": {
+    "BUS14_MG|BUS1_MG|BUS2_MG": {
+      "before": {
+        "patch": [
+          "BUS14_MG",
+          "BUS1_MG",
+          "BUS2_MG"
+        ],
+        "hours": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "feasible": true,
+        "feasible_hours": 6,
+        "total_hours": 6,
+        "coverage_fraction": 1.0,
+        "worst_margin_kw": 481.04224,
+        "total_supply_kw": 3015.84,
+        "total_critical_load_kw": 119.99066
+      },
+      "after": {
+        "patch": [
+          "BUS14_MG",
+          "BUS1_MG",
+          "BUS2_MG"
+        ],
+        "feasible": true,
+        "feasible_hours": 6,
+        "total_hours": 6,
+        "coverage_fraction": 1.0,
+        "worst_margin_kw": 481.04224,
+        "total_supply_kw": 3015.84,
+        "total_critical_load_kw": 119.99066
+      }
+    },
+    "BUS3_MG|BUS4_MG|BUS9_MG": {
+      "before": {
+        "patch": [
+          "BUS3_MG",
+          "BUS4_MG",
+          "BUS9_MG"
+        ],
+        "hours": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "feasible": true,
+        "feasible_hours": 6,
+        "total_hours": 6,
+        "coverage_fraction": 1.0,
+        "worst_margin_kw": 53.79656,
+        "total_supply_kw": 841.657,
+        "total_critical_load_kw": 475.76844
+      },
+      "after": {
+        "patch": [
+          "BUS3_MG",
+          "BUS4_MG",
+          "BUS9_MG"
+        ],
+        "feasible": true,
+        "feasible_hours": 6,
+        "total_hours": 6,
+        "coverage_fraction": 1.0,
+        "worst_margin_kw": 53.79656,
+        "total_supply_kw": 841.657,
+        "total_critical_load_kw": 475.76844
+      }
+    }
+  },
+  "metrics": {
+    "total_upgrade_cost": 0,
+    "customers_covered_fraction": 1.0,
+    "critical_load_coverage_fraction": 1.0,
+    "selected_patch_count": 2,
+    "average_patch_size": 3.0
+  }
+}

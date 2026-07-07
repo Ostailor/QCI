@@ -1,0 +1,31 @@
+{
+  "phase": 3,
+  "config": "phase3_smoke",
+  "config_path": "configs/phase3_smoke.yaml",
+  "dataset": "synthetic_smoke",
+  "output_dir": "results/phase3/phase3_smoke",
+  "payload_dir": "results/phase3/phase3_smoke/qci_payloads",
+  "payload_count": 2,
+  "payloads": [
+    "results/phase3/phase3_smoke/qci_payloads/normal_MG1.json",
+    "results/phase3/phase3_smoke/qci_payloads/renewable_shortfall_MG1.json"
+  ],
+  "selected_patches": [
+    [
+      "MG1"
+    ]
+  ],
+  "scenario_count": 2,
+  "design_outputs": {
+    "microgrid_design_csv": "results/phase3/phase3_smoke/microgrid_design.csv",
+    "upgrade_plan_csv": "results/phase3/phase3_smoke/upgrade_plan.csv",
+    "design_summary_json": "results/phase3/phase3_smoke/design_summary.json"
+  },
+  "design_metrics": {
+    "total_upgrade_cost": 0,
+    "customers_covered_fraction": 1.0,
+    "critical_load_coverage_fraction": 1.0,
+    "selected_patch_count": 3,
+    "average_patch_size": 1.0
+  }
+}

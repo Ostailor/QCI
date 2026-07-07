@@ -1,0 +1,115 @@
+{
+  "job_info": {
+    "job_id": "6a4c2f2308442f441bbb0642",
+    "job_submission": {
+      "job_name": "pglib_case14_ieee_demand_surge_BUS2_MG__from__demand_surge_BUS14_MG-BUS1_MG-BUS2_MG_r007",
+      "job_tags": [
+        "cmpo",
+        "phase3",
+        "dirac3",
+        "qci_fit"
+      ],
+      "problem_config": {
+        "normalized_qudit_hamiltonian_optimization": {
+          "polynomial_file_id": "6a4c2f23ff2f309fb9cfd825"
+        }
+      },
+      "device_config": {
+        "dirac-3_normalized_qudit": {
+          "num_samples": 1,
+          "relaxation_schedule": 1,
+          "sum_constraint": 10000
+        }
+      }
+    },
+    "job_status": {
+      "submitted_at_rfc3339nano": "2026-07-06T22:41:39.413Z",
+      "queued_at_rfc3339nano": "2026-07-06T22:41:39.414Z",
+      "running_at_rfc3339nano": "2026-07-06T22:52:47.448Z",
+      "completed_at_rfc3339nano": "2026-07-06T22:52:49.283Z"
+    },
+    "job_result": {
+      "file_id": "6a4c31c1ff2f309fb9cfdaf3",
+      "device_usage_s": 1
+    }
+  },
+  "status": "COMPLETED",
+  "results": {
+    "counts": [
+      1
+    ],
+    "energies": [
+      -45043236
+    ],
+    "solutions": [
+      [
+        130,
+        160,
+        250,
+        120,
+        130,
+        150,
+        140,
+        150,
+        130,
+        220,
+        200,
+        150,
+        120,
+        170.0000153,
+        160,
+        210,
+        150,
+        130,
+        160,
+        210,
+        60,
+        150,
+        130,
+        130,
+        100,
+        150,
+        150,
+        160,
+        220,
+        200,
+        100,
+        160,
+        130,
+        190,
+        140,
+        140,
+        190,
+        120,
+        130,
+        150,
+        100,
+        140,
+        130,
+        160,
+        60,
+        150,
+        160,
+        130,
+        130,
+        230,
+        150,
+        170.0000153,
+        230,
+        100,
+        140,
+        160,
+        160,
+        130,
+        160,
+        300,
+        80,
+        110,
+        160,
+        179.9999847,
+        140,
+        100
+      ]
+    ]
+  }
+}

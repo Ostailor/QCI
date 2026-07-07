@@ -1,0 +1,9 @@
+{
+  "config": "pglib_case5_pjm",
+  "payload_dir": "results/phase3/public_benchmarks/pglib_case5_pjm/qci_payloads",
+  "output_dir": "results/phase3/public_benchmarks/pglib_case5_pjm/qci",
+  "repeats": 50,
+  "overwrite": false,
+  "payload_count": 8,
+  "status_csv": "results/phase3/public_benchmarks/pglib_case5_pjm/qci/job_status.csv"
+}

@@ -1,0 +1,29 @@
+{
+  "benchmark": "pglib_case30",
+  "status": "available",
+  "source_name": "PGLib case30 IEEE",
+  "upstream_url": "https://raw.githubusercontent.com/power-grid-lib/pglib-opf/v23.07/pglib_opf_case30_ieee.m",
+  "license": "Creative Commons Attribution 4.0 International",
+  "version": "v23.07",
+  "sha256": "cae3290639d989731d32428aacf30c0b918bc91db73bc54791f3aa62d3f76c70",
+  "local_path": "data/public_benchmarks/pglib/pglib_opf_case30_ieee.m",
+  "bus_count": 30,
+  "generator_count": 6,
+  "branch_count": 41,
+  "transformation_notes": "PGLib-derived microgrid resilience adapter; deterministic CMPO overlay added.",
+  "fields_inherited_from_benchmark": [
+    "buses",
+    "loads",
+    "branches",
+    "generators",
+    "generator_costs"
+  ],
+  "fields_added_by_cmpo_adapter": [
+    "critical_load_fraction",
+    "BESS_capacity_and_power_limits",
+    "PV_DER_profile",
+    "PCC_tie_availability",
+    "islanding_mode_eligibility",
+    "restoration_scenario_tags"
+  ]
+}

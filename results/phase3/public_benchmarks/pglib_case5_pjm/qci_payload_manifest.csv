@@ -1,0 +1,9 @@
+coefficient_scaling_factor,degree,max_abs_coefficient,patch,payload_name,payload_path,scenario,term_count,variable_count
+1.945432667943802e-06,3,514024.4720250001,BUS1_MG-BUS2_MG,demand_surge_BUS1_MG-BUS2_MG.json,results/phase3/public_benchmarks/pglib_case5_pjm/qci_payloads/demand_surge_BUS1_MG-BUS2_MG.json,demand_surge,816,132
+1.0891044625571353e-06,3,918185.5684000002,BUS3_MG-BUS4_MG,demand_surge_BUS3_MG-BUS4_MG.json,results/phase3/public_benchmarks/pglib_case5_pjm/qci_payloads/demand_surge_BUS3_MG-BUS4_MG.json,demand_surge,816,132
+3.3636333631225113e-06,3,297297.5625,BUS1_MG-BUS2_MG,normal_BUS1_MG-BUS2_MG.json,results/phase3/public_benchmarks/pglib_case5_pjm/qci_payloads/normal_BUS1_MG-BUS2_MG.json,normal,816,132
+1.8611957438175731e-06,3,537289.0,BUS3_MG-BUS4_MG,normal_BUS3_MG-BUS4_MG.json,results/phase3/public_benchmarks/pglib_case5_pjm/qci_payloads/normal_BUS3_MG-BUS4_MG.json,normal,816,132
+3.0023424369516286e-06,3,333073.2656250001,BUS1_MG-BUS2_MG,pcc_failure_BUS1_MG-BUS2_MG.json,results/phase3/public_benchmarks/pglib_case5_pjm/qci_payloads/pcc_failure_BUS1_MG-BUS2_MG.json,pcc_failure,828,132
+1.6124968505920888e-06,3,620156.25,BUS3_MG-BUS4_MG,pcc_failure_BUS3_MG-BUS4_MG.json,results/phase3/public_benchmarks/pglib_case5_pjm/qci_payloads/pcc_failure_BUS3_MG-BUS4_MG.json,pcc_failure,816,132
+2.670934423230543e-06,3,374400.80568900006,BUS1_MG-BUS2_MG,renewable_shortfall_BUS1_MG-BUS2_MG.json,results/phase3/public_benchmarks/pglib_case5_pjm/qci_payloads/renewable_shortfall_BUS1_MG-BUS2_MG.json,renewable_shortfall,816,132
+1.4677430232140218e-06,3,681318.1763999999,BUS3_MG-BUS4_MG,renewable_shortfall_BUS3_MG-BUS4_MG.json,results/phase3/public_benchmarks/pglib_case5_pjm/qci_payloads/renewable_shortfall_BUS3_MG-BUS4_MG.json,renewable_shortfall,816,132

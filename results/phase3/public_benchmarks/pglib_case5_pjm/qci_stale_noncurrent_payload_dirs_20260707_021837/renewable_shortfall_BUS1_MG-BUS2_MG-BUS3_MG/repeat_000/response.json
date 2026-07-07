@@ -1,0 +1,4 @@
+{
+  "status": "FAILED",
+  "failure_reason": "400 Client Error: Bad Request for url: https://api.qci-prod.com/optimization/v1/jobs with response body: {\"message\":\"Number of variables '198' in problem is greater than the device limit '135' for polynomial with degree '3'\"}"
+}

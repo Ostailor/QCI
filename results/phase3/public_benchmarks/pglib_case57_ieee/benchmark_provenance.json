@@ -1,0 +1,40 @@
+{
+  "benchmark": "pglib_case57_ieee",
+  "source_name": "PGLib-OPF pglib_opf_case57_ieee",
+  "upstream_url": "https://github.com/power-grid-lib/pglib-opf",
+  "license": "Creative Commons Attribution 4.0 International",
+  "version_or_commit": "v23.07",
+  "sha256_checksum": "sha256:aa3b48f7cbaade2afd69cb3790ef72be981db8494dcef9277bee460f754bdb22",
+  "local_path": "results/phase3/public_benchmarks/pglib_case57_ieee",
+  "qci_execution_was_run": false,
+  "qci_result_path": "",
+  "qci_execution_payload_type": "",
+  "qci_not_executed_reason": "QCi Dirac-3 rejected/limits degree-3 public payloads above 135 variables; largest full payload has 198 variables. Use qci_fit_payloads for hardware execution.",
+  "max_payload_variables": 198,
+  "full_payload_count": 8,
+  "full_payload_max_variables": 198,
+  "full_payload_status": "classical_reference_and_qci_fit_source",
+  "qci_fit_payload_count": 40,
+  "qci_fit_max_variables": 132,
+  "qci_fit_max_degree": 3,
+  "qci_fit_status": "available",
+  "qci_fit_manifest": "results/phase3/public_benchmarks/pglib_case57_ieee/qci_fit_payload_manifest.csv",
+  "qci_fit_failure_report": "results/phase3/public_benchmarks/pglib_case57_ieee/qci_fit_failure_report.csv",
+  "only_classical_baselines_were_run": true,
+  "transformation_notes": "Public-benchmark-derived microgrid resilience adapter; QCi may be infeasible if payloads exceed limits.",
+  "fields_inherited_from_benchmark": [
+    "buses",
+    "loads",
+    "branches",
+    "generators",
+    "generator_costs"
+  ],
+  "fields_added_by_cmpo_adapter": [
+    "critical_load_fraction",
+    "BESS_capacity_and_power_limits",
+    "PV_DER_profile",
+    "PCC_tie_availability",
+    "islanding_mode_eligibility",
+    "restoration_scenario_tags"
+  ]
+}

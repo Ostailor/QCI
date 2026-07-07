@@ -1,0 +1,115 @@
+{
+  "job_info": {
+    "job_id": "6a4c2f2208442f441bbb0639",
+    "job_submission": {
+      "job_name": "pglib_case14_ieee_demand_surge_BUS14_MG__from__demand_surge_BUS14_MG-BUS1_MG-BUS2_MG_r006",
+      "job_tags": [
+        "cmpo",
+        "phase3",
+        "dirac3",
+        "qci_fit"
+      ],
+      "problem_config": {
+        "normalized_qudit_hamiltonian_optimization": {
+          "polynomial_file_id": "6a4c2f22ff2f309fb9cfd811"
+        }
+      },
+      "device_config": {
+        "dirac-3_normalized_qudit": {
+          "num_samples": 1,
+          "relaxation_schedule": 1,
+          "sum_constraint": 10000
+        }
+      }
+    },
+    "job_status": {
+      "submitted_at_rfc3339nano": "2026-07-06T22:41:38.98Z",
+      "queued_at_rfc3339nano": "2026-07-06T22:41:38.981Z",
+      "running_at_rfc3339nano": "2026-07-06T22:51:33.614Z",
+      "completed_at_rfc3339nano": "2026-07-06T22:51:35.447Z"
+    },
+    "job_result": {
+      "file_id": "6a4c3177ff2f309fb9cfdae1",
+      "device_usage_s": 2
+    }
+  },
+  "status": "COMPLETED",
+  "results": {
+    "counts": [
+      1
+    ],
+    "energies": [
+      -44660540
+    ],
+    "solutions": [
+      [
+        179.9999847,
+        179.9999847,
+        179.9999847,
+        220,
+        170.0000153,
+        130,
+        150,
+        120,
+        140,
+        200,
+        160,
+        130,
+        190,
+        170.0000153,
+        150,
+        179.9999847,
+        120,
+        140,
+        179.9999847,
+        140,
+        140,
+        150,
+        130,
+        70,
+        120,
+        120,
+        140,
+        250,
+        110,
+        100,
+        130,
+        110,
+        220,
+        160,
+        130,
+        100,
+        170.0000153,
+        110,
+        140,
+        150,
+        150,
+        130,
+        150,
+        150,
+        170.0000153,
+        110,
+        140,
+        120,
+        200,
+        200,
+        160,
+        170.0000153,
+        170.0000153,
+        160,
+        190,
+        160,
+        130,
+        140,
+        140,
+        140,
+        140,
+        120,
+        190,
+        130,
+        200,
+        160
+      ]
+    ]
+  }
+}

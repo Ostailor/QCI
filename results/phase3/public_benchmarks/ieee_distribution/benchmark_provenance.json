@@ -1,0 +1,11 @@
+{
+  "benchmark": "ieee_distribution",
+  "status": "benchmark_missing",
+  "source_name": "IEEE 13/34/123-bus distribution feeder public data",
+  "upstream_url": "https://github.com/tshort/OpenDSS",
+  "missing_file": "IEEE13/IEEE34/IEEE123 OpenDSS Master.dss or equivalent feeder data",
+  "command": "Place feeder files under data/public_benchmarks/ieee_distribution/ and rerun python scripts/phase3_validate_benchmark_ladder.py",
+  "reason": "No OpenDSS/PowerModelsDistribution-compatible feeder files found.",
+  "bridge_script": "data/public_benchmarks/ieee_distribution/powermodels_distribution_bridge.jl",
+  "transformation_notes": "Benchmark missing report is explicit; this path is not silently skipped."
+}

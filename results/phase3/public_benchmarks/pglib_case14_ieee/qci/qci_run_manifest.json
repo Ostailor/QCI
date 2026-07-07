@@ -1,0 +1,9 @@
+{
+  "config": "pglib_case14_ieee",
+  "payload_dir": "results/phase3/public_benchmarks/pglib_case14_ieee/qci_fit_payloads",
+  "output_dir": "results/phase3/public_benchmarks/pglib_case14_ieee/qci",
+  "repeats": 30,
+  "overwrite": false,
+  "payload_count": 60,
+  "status_csv": "results/phase3/public_benchmarks/pglib_case14_ieee/qci/job_status.csv"
+}

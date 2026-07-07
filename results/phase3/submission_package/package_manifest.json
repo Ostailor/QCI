@@ -1,0 +1,16 @@
+{
+  "copied": [
+    "results/phase3/submission_package/tables/method_comparison.csv",
+    "results/phase3/submission_package/tables/method_comparison.md",
+    "results/phase3/submission_package/tables/pairwise_cost_deltas.csv",
+    "results/phase3/submission_package/tables/pairwise_cost_deltas.md",
+    "results/phase3/submission_package/tables/qci_repeat_distribution.csv",
+    "results/phase3/submission_package/tables/qci_repeat_distribution.md",
+    "results/phase3/submission_package/figures/phase3_critical_load_served.png",
+    "results/phase3/submission_package/figures/phase3_risk_adjusted_cost.png",
+    "results/phase3/submission_package/figures/phase3_runtime.png",
+    "results/phase3/submission_package/phase3_qci_small/phase3_manifest.json",
+    "results/phase3/submission_package/phase3_qci_small_qbraid_gpu/phase3_manifest.json",
+    "results/phase3/submission_package/phase3_smoke/phase3_manifest.json"
+  ]
+}
