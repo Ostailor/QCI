@@ -4,10 +4,10 @@ This is a derived offline analysis over existing decoded QCi repeats. No new QCi
 
 ## Overall Answers
 
-- Does choosing by challenge_score improve critical ENS versus raw QCi energy? YES: improved on 56/134 payloads, with aggregate critical ENS delta -14505.2 kWh.
-- Does choosing by challenge_score reduce max customers unserved? YES: reduced on 58/134 payloads, with aggregate max-unserved delta -14.4789.
+- Does choosing by challenge_score improve critical ENS versus raw QCi energy? YES: improved on 56/135 payloads, with aggregate critical ENS delta -14505.2 kWh.
+- Does choosing by challenge_score reduce max customers unserved? YES: reduced on 58/135 payloads, with aggregate max-unserved delta -14.4789.
 - Does QCi look better under the challenge-aligned selector? YES relative to raw-energy selection, but risk-adjusted cost changes by 3889.96; compare against baselines separately.
-- Which payloads still fail even under the best selector? 112/134 payloads have at least one positive critical ENS, critical infrastructure outage, positive max-unserved, infeasibility, or not-fully-served critical load condition.
+- Which payloads still fail even under the best selector? 113/135 payloads have at least one positive critical ENS, critical infrastructure outage, positive max-unserved, infeasibility, or not-fully-served critical load condition.
 
 ## Dataset Summary
 
@@ -16,6 +16,7 @@ This is a derived offline analysis over existing decoded QCi repeats. No new QCi
 | pglib_case14_ieee | pglib_case14_adapted | 60 | 24 | 25 | -4495.96 | -6.49994 | 206.235 | 52 |
 | pglib_case30_ieee | pglib_case30_adapted | 66 | 24 | 25 | -3851.47 | -6.35865 | -115.223 | 54 |
 | pglib_case5_pjm | pglib_case5_pjm_adapted | 8 | 8 | 8 | -6157.81 | -1.62035 | 3798.95 | 6 |
+| qci_env_smoke | qci_small_synthetic | 1 | 0 | 0 | 0 | 0 | 0 | 1 |
 
 ## Payloads Still Failing Under Best Challenge Selector
 

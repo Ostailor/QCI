@@ -1,0 +1,8079 @@
+{
+  "schema": "cmpo.qci_payload.v2.resilience_weighted",
+  "target": "qci_dirac_3",
+  "objective_sense": "minimize",
+  "max_degree": 3,
+  "variables": [
+    {
+      "name": "P_gen[BUS5_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 0.0,
+      "bounds": [
+        0.0,
+        0.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "charge[BUS5_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 25.0,
+      "bounds": [
+        0.0,
+        25.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "discharge[BUS5_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 25.0,
+      "bounds": [
+        0.0,
+        25.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "soc[BUS5_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 60.0,
+      "bounds": [
+        0.0,
+        60.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "import_pcc[BUS5_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 94.85,
+      "bounds": [
+        0.0,
+        94.85
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "export_pcc[BUS5_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 42.682,
+      "bounds": [
+        0.0,
+        42.682
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "shed_noncritical[BUS5_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 47.416512000000004,
+      "bounds": [
+        0.0,
+        47.416512000000004
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "shed_critical[BUS5_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 38.795328000000005,
+      "bounds": [
+        0.0,
+        38.795328000000005
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_grid[BUS5_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_island[BUS5_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_restore[BUS5_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "P_gen[BUS5_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 0.0,
+      "bounds": [
+        0.0,
+        0.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "charge[BUS5_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 25.0,
+      "bounds": [
+        0.0,
+        25.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "discharge[BUS5_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 25.0,
+      "bounds": [
+        0.0,
+        25.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "soc[BUS5_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 60.0,
+      "bounds": [
+        0.0,
+        60.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "import_pcc[BUS5_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 94.85,
+      "bounds": [
+        0.0,
+        94.85
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "export_pcc[BUS5_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 42.682,
+      "bounds": [
+        0.0,
+        42.682
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "shed_noncritical[BUS5_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 51.727104000000004,
+      "bounds": [
+        0.0,
+        51.727104000000004
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "shed_critical[BUS5_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 42.322176000000006,
+      "bounds": [
+        0.0,
+        42.322176000000006
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_grid[BUS5_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_island[BUS5_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_restore[BUS5_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "P_gen[BUS5_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 0.0,
+      "bounds": [
+        0.0,
+        0.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "charge[BUS5_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 25.0,
+      "bounds": [
+        0.0,
+        25.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "discharge[BUS5_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 25.0,
+      "bounds": [
+        0.0,
+        25.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "soc[BUS5_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 60.0,
+      "bounds": [
+        0.0,
+        60.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "import_pcc[BUS5_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 94.85,
+      "bounds": [
+        0.0,
+        94.85
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "export_pcc[BUS5_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 42.682,
+      "bounds": [
+        0.0,
+        42.682
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "shed_noncritical[BUS5_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 56.037696000000004,
+      "bounds": [
+        0.0,
+        56.037696000000004
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "shed_critical[BUS5_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 45.84902400000001,
+      "bounds": [
+        0.0,
+        45.84902400000001
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_grid[BUS5_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_island[BUS5_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_restore[BUS5_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "P_gen[BUS5_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 0.0,
+      "bounds": [
+        0.0,
+        0.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "charge[BUS5_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 25.0,
+      "bounds": [
+        0.0,
+        25.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "discharge[BUS5_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 25.0,
+      "bounds": [
+        0.0,
+        25.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "soc[BUS5_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 60.0,
+      "bounds": [
+        0.0,
+        60.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "import_pcc[BUS5_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 94.85,
+      "bounds": [
+        0.0,
+        94.85
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "export_pcc[BUS5_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 42.682,
+      "bounds": [
+        0.0,
+        42.682
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "shed_noncritical[BUS5_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 58.192992000000004,
+      "bounds": [
+        0.0,
+        58.192992000000004
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "shed_critical[BUS5_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 47.612448,
+      "bounds": [
+        0.0,
+        47.612448
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_grid[BUS5_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_island[BUS5_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_restore[BUS5_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "P_gen[BUS5_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 0.0,
+      "bounds": [
+        0.0,
+        0.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "charge[BUS5_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 25.0,
+      "bounds": [
+        0.0,
+        25.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "discharge[BUS5_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 25.0,
+      "bounds": [
+        0.0,
+        25.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "soc[BUS5_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 60.0,
+      "bounds": [
+        0.0,
+        60.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "import_pcc[BUS5_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 94.85,
+      "bounds": [
+        0.0,
+        94.85
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "export_pcc[BUS5_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 42.682,
+      "bounds": [
+        0.0,
+        42.682
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "shed_noncritical[BUS5_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 53.882400000000004,
+      "bounds": [
+        0.0,
+        53.882400000000004
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "shed_critical[BUS5_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 44.0856,
+      "bounds": [
+        0.0,
+        44.0856
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_grid[BUS5_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_island[BUS5_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_restore[BUS5_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "P_gen[BUS5_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 0.0,
+      "bounds": [
+        0.0,
+        0.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "charge[BUS5_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 25.0,
+      "bounds": [
+        0.0,
+        25.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "discharge[BUS5_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 25.0,
+      "bounds": [
+        0.0,
+        25.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "soc[BUS5_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 60.0,
+      "bounds": [
+        0.0,
+        60.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "import_pcc[BUS5_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 94.85,
+      "bounds": [
+        0.0,
+        94.85
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "export_pcc[BUS5_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 42.682,
+      "bounds": [
+        0.0,
+        42.682
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "shed_noncritical[BUS5_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 49.571808,
+      "bounds": [
+        0.0,
+        49.571808
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "shed_critical[BUS5_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 40.558752000000005,
+      "bounds": [
+        0.0,
+        40.558752000000005
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_grid[BUS5_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_island[BUS5_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_restore[BUS5_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "P_gen[BUS7_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 25.0,
+      "bounds": [
+        0.0,
+        25.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "charge[BUS7_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 25.0,
+      "bounds": [
+        0.0,
+        25.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "discharge[BUS7_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 25.0,
+      "bounds": [
+        0.0,
+        25.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "soc[BUS7_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 60.0,
+      "bounds": [
+        0.0,
+        60.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "import_pcc[BUS7_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 93.45,
+      "bounds": [
+        0.0,
+        93.45
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "export_pcc[BUS7_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 42.052,
+      "bounds": [
+        0.0,
+        42.052
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "shed_noncritical[BUS7_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 10.7462784,
+      "bounds": [
+        0.0,
+        10.7462784
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "shed_critical[BUS7_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 10.1202816,
+      "bounds": [
+        0.0,
+        10.1202816
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_grid[BUS7_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_island[BUS7_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_restore[BUS7_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "P_gen[BUS7_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 25.0,
+      "bounds": [
+        0.0,
+        25.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "charge[BUS7_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 25.0,
+      "bounds": [
+        0.0,
+        25.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "discharge[BUS7_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 25.0,
+      "bounds": [
+        0.0,
+        25.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "soc[BUS7_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 60.0,
+      "bounds": [
+        0.0,
+        60.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "import_pcc[BUS7_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 93.45,
+      "bounds": [
+        0.0,
+        93.45
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "export_pcc[BUS7_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 42.052,
+      "bounds": [
+        0.0,
+        42.052
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "shed_noncritical[BUS7_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 11.723212800000002,
+      "bounds": [
+        0.0,
+        11.723212800000002
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "shed_critical[BUS7_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 11.0403072,
+      "bounds": [
+        0.0,
+        11.0403072
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_grid[BUS7_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_island[BUS7_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_restore[BUS7_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "P_gen[BUS7_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 25.0,
+      "bounds": [
+        0.0,
+        25.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "charge[BUS7_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 25.0,
+      "bounds": [
+        0.0,
+        25.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "discharge[BUS7_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 25.0,
+      "bounds": [
+        0.0,
+        25.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "soc[BUS7_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 60.0,
+      "bounds": [
+        0.0,
+        60.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "import_pcc[BUS7_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 93.45,
+      "bounds": [
+        0.0,
+        93.45
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "export_pcc[BUS7_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 42.052,
+      "bounds": [
+        0.0,
+        42.052
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "shed_noncritical[BUS7_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 12.7001472,
+      "bounds": [
+        0.0,
+        12.7001472
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "shed_critical[BUS7_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 11.9603328,
+      "bounds": [
+        0.0,
+        11.9603328
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_grid[BUS7_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_island[BUS7_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_restore[BUS7_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "P_gen[BUS7_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 25.0,
+      "bounds": [
+        0.0,
+        25.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "charge[BUS7_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 25.0,
+      "bounds": [
+        0.0,
+        25.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "discharge[BUS7_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 25.0,
+      "bounds": [
+        0.0,
+        25.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "soc[BUS7_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 60.0,
+      "bounds": [
+        0.0,
+        60.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "import_pcc[BUS7_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 93.45,
+      "bounds": [
+        0.0,
+        93.45
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "export_pcc[BUS7_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 42.052,
+      "bounds": [
+        0.0,
+        42.052
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "shed_noncritical[BUS7_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 13.1886144,
+      "bounds": [
+        0.0,
+        13.1886144
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "shed_critical[BUS7_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 12.4203456,
+      "bounds": [
+        0.0,
+        12.4203456
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_grid[BUS7_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_island[BUS7_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_restore[BUS7_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "P_gen[BUS7_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 25.0,
+      "bounds": [
+        0.0,
+        25.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "charge[BUS7_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 25.0,
+      "bounds": [
+        0.0,
+        25.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "discharge[BUS7_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 25.0,
+      "bounds": [
+        0.0,
+        25.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "soc[BUS7_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 60.0,
+      "bounds": [
+        0.0,
+        60.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "import_pcc[BUS7_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 93.45,
+      "bounds": [
+        0.0,
+        93.45
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "export_pcc[BUS7_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 42.052,
+      "bounds": [
+        0.0,
+        42.052
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "shed_noncritical[BUS7_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 12.211680000000001,
+      "bounds": [
+        0.0,
+        12.211680000000001
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "shed_critical[BUS7_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 11.500320000000002,
+      "bounds": [
+        0.0,
+        11.500320000000002
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_grid[BUS7_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_island[BUS7_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_restore[BUS7_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "P_gen[BUS7_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 25.0,
+      "bounds": [
+        0.0,
+        25.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "charge[BUS7_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 25.0,
+      "bounds": [
+        0.0,
+        25.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "discharge[BUS7_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 25.0,
+      "bounds": [
+        0.0,
+        25.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "soc[BUS7_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 60.0,
+      "bounds": [
+        0.0,
+        60.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "import_pcc[BUS7_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 93.45,
+      "bounds": [
+        0.0,
+        93.45
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "export_pcc[BUS7_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 42.052,
+      "bounds": [
+        0.0,
+        42.052
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "shed_noncritical[BUS7_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 11.2347456,
+      "bounds": [
+        0.0,
+        11.2347456
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "shed_critical[BUS7_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 10.5802944,
+      "bounds": [
+        0.0,
+        10.5802944
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_grid[BUS7_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_island[BUS7_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    },
+    {
+      "name": "z_restore[BUS7_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous"
+    }
+  ],
+  "polynomial_terms": [
+    {
+      "coefficient": 1.9e-06,
+      "powers": {
+        "P_gen[BUS5_MG,0]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": 0.001,
+      "powers": {
+        "P_gen[BUS5_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 0.45,
+      "powers": {
+        "P_gen[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25000.0,
+      "powers": {
+        "shed_critical[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 700.0,
+      "powers": {
+        "shed_noncritical[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.015,
+      "powers": {
+        "charge[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.015,
+      "powers": {
+        "discharge[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.18,
+      "powers": {
+        "import_pcc[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": -0.06,
+      "powers": {
+        "export_pcc[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 29729.925424742407,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -689.6947200000001,
+      "powers": {
+        "P_gen[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "P_gen[BUS5_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -689.6947200000001,
+      "powers": {
+        "discharge[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "discharge[BUS5_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -689.6947200000001,
+      "powers": {
+        "import_pcc[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "import_pcc[BUS5_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -689.6947200000001,
+      "powers": {
+        "shed_noncritical[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "shed_noncritical[BUS5_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -689.6947200000001,
+      "powers": {
+        "shed_critical[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "shed_critical[BUS5_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 689.6947200000001,
+      "powers": {
+        "charge[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "charge[BUS5_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 689.6947200000001,
+      "powers": {
+        "export_pcc[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "export_pcc[BUS5_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS5_MG,0]": 1,
+        "discharge[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS5_MG,0]": 1,
+        "import_pcc[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS5_MG,0]": 1,
+        "shed_noncritical[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS5_MG,0]": 1,
+        "shed_critical[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "P_gen[BUS5_MG,0]": 1,
+        "charge[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "P_gen[BUS5_MG,0]": 1,
+        "export_pcc[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS5_MG,0]": 1,
+        "import_pcc[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS5_MG,0]": 1,
+        "shed_noncritical[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS5_MG,0]": 1,
+        "shed_critical[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "discharge[BUS5_MG,0]": 1,
+        "charge[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "discharge[BUS5_MG,0]": 1,
+        "export_pcc[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "import_pcc[BUS5_MG,0]": 1,
+        "shed_noncritical[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "import_pcc[BUS5_MG,0]": 1,
+        "shed_critical[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "import_pcc[BUS5_MG,0]": 1,
+        "charge[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "import_pcc[BUS5_MG,0]": 1,
+        "export_pcc[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "shed_noncritical[BUS5_MG,0]": 1,
+        "shed_critical[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_noncritical[BUS5_MG,0]": 1,
+        "charge[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_noncritical[BUS5_MG,0]": 1,
+        "export_pcc[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_critical[BUS5_MG,0]": 1,
+        "charge[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_critical[BUS5_MG,0]": 1,
+        "export_pcc[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "charge[BUS5_MG,0]": 1,
+        "export_pcc[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1633.5,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -99.0,
+      "powers": {
+        "soc[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 1.5,
+      "powers": {
+        "soc[BUS5_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 94.43998094027762,
+      "powers": {
+        "charge[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 1.3650000000000002,
+      "powers": {
+        "charge[BUS5_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -103.7801988354699,
+      "powers": {
+        "discharge[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 1.648351648351648,
+      "powers": {
+        "discharge[BUS5_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -2.861817604250837,
+      "powers": {
+        "soc[BUS5_MG,0]": 1,
+        "charge[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 3.1448545101657546,
+      "powers": {
+        "soc[BUS5_MG,0]": 1,
+        "discharge[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.0,
+      "powers": {
+        "charge[BUS5_MG,0]": 1,
+        "discharge[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_grid[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_grid[BUS5_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_island[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_island[BUS5_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_restore[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_restore[BUS5_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_grid[BUS5_MG,0]": 1,
+        "z_island[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_grid[BUS5_MG,0]": 1,
+        "z_restore[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_island[BUS5_MG,0]": 1,
+        "z_restore[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_grid[BUS5_MG,0]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_island[BUS5_MG,0]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_restore[BUS5_MG,0]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": 1.9e-06,
+      "powers": {
+        "P_gen[BUS5_MG,1]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": 0.001,
+      "powers": {
+        "P_gen[BUS5_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 0.45,
+      "powers": {
+        "P_gen[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25000.0,
+      "powers": {
+        "shed_critical[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 700.0,
+      "powers": {
+        "shed_noncritical[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.015,
+      "powers": {
+        "charge[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.015,
+      "powers": {
+        "discharge[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.18,
+      "powers": {
+        "import_pcc[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": -0.06,
+      "powers": {
+        "export_pcc[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 32645.537034177607,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -722.7230400000001,
+      "powers": {
+        "P_gen[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "P_gen[BUS5_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -722.7230400000001,
+      "powers": {
+        "discharge[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "discharge[BUS5_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -722.7230400000001,
+      "powers": {
+        "import_pcc[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "import_pcc[BUS5_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -722.7230400000001,
+      "powers": {
+        "shed_noncritical[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "shed_noncritical[BUS5_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -722.7230400000001,
+      "powers": {
+        "shed_critical[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "shed_critical[BUS5_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 722.7230400000001,
+      "powers": {
+        "charge[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "charge[BUS5_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 722.7230400000001,
+      "powers": {
+        "export_pcc[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "export_pcc[BUS5_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS5_MG,1]": 1,
+        "discharge[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS5_MG,1]": 1,
+        "import_pcc[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS5_MG,1]": 1,
+        "shed_noncritical[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS5_MG,1]": 1,
+        "shed_critical[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "P_gen[BUS5_MG,1]": 1,
+        "charge[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "P_gen[BUS5_MG,1]": 1,
+        "export_pcc[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS5_MG,1]": 1,
+        "import_pcc[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS5_MG,1]": 1,
+        "shed_noncritical[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS5_MG,1]": 1,
+        "shed_critical[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "discharge[BUS5_MG,1]": 1,
+        "charge[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "discharge[BUS5_MG,1]": 1,
+        "export_pcc[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "import_pcc[BUS5_MG,1]": 1,
+        "shed_noncritical[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "import_pcc[BUS5_MG,1]": 1,
+        "shed_critical[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "import_pcc[BUS5_MG,1]": 1,
+        "charge[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "import_pcc[BUS5_MG,1]": 1,
+        "export_pcc[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "shed_noncritical[BUS5_MG,1]": 1,
+        "shed_critical[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_noncritical[BUS5_MG,1]": 1,
+        "charge[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_noncritical[BUS5_MG,1]": 1,
+        "export_pcc[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_critical[BUS5_MG,1]": 1,
+        "charge[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_critical[BUS5_MG,1]": 1,
+        "export_pcc[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "charge[BUS5_MG,1]": 1,
+        "export_pcc[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.5,
+      "powers": {
+        "soc[BUS5_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.3650000000000002,
+      "powers": {
+        "charge[BUS5_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.648351648351648,
+      "powers": {
+        "discharge[BUS5_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.5,
+      "powers": {
+        "soc[BUS5_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -2.861817604250837,
+      "powers": {
+        "soc[BUS5_MG,1]": 1,
+        "charge[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 3.1448545101657546,
+      "powers": {
+        "soc[BUS5_MG,1]": 1,
+        "discharge[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.0,
+      "powers": {
+        "soc[BUS5_MG,1]": 1,
+        "soc[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.0,
+      "powers": {
+        "charge[BUS5_MG,1]": 1,
+        "discharge[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 2.861817604250837,
+      "powers": {
+        "charge[BUS5_MG,1]": 1,
+        "soc[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.1448545101657546,
+      "powers": {
+        "discharge[BUS5_MG,1]": 1,
+        "soc[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_grid[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_grid[BUS5_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_island[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_island[BUS5_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_restore[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_restore[BUS5_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_grid[BUS5_MG,1]": 1,
+        "z_island[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_grid[BUS5_MG,1]": 1,
+        "z_restore[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_island[BUS5_MG,1]": 1,
+        "z_restore[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_grid[BUS5_MG,1]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_island[BUS5_MG,1]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_restore[BUS5_MG,1]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": 1.9e-06,
+      "powers": {
+        "P_gen[BUS5_MG,2]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": 0.001,
+      "powers": {
+        "P_gen[BUS5_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 0.45,
+      "powers": {
+        "P_gen[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25000.0,
+      "powers": {
+        "shed_critical[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 700.0,
+      "powers": {
+        "shed_noncritical[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.015,
+      "powers": {
+        "charge[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.015,
+      "powers": {
+        "discharge[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.18,
+      "powers": {
+        "import_pcc[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": -0.06,
+      "powers": {
+        "export_pcc[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 33273.130837377605,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -729.63696,
+      "powers": {
+        "P_gen[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "P_gen[BUS5_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -729.63696,
+      "powers": {
+        "discharge[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "discharge[BUS5_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -729.63696,
+      "powers": {
+        "import_pcc[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "import_pcc[BUS5_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -729.63696,
+      "powers": {
+        "shed_noncritical[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "shed_noncritical[BUS5_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -729.63696,
+      "powers": {
+        "shed_critical[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "shed_critical[BUS5_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 729.63696,
+      "powers": {
+        "charge[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "charge[BUS5_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 729.63696,
+      "powers": {
+        "export_pcc[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "export_pcc[BUS5_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS5_MG,2]": 1,
+        "discharge[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS5_MG,2]": 1,
+        "import_pcc[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS5_MG,2]": 1,
+        "shed_noncritical[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS5_MG,2]": 1,
+        "shed_critical[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "P_gen[BUS5_MG,2]": 1,
+        "charge[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "P_gen[BUS5_MG,2]": 1,
+        "export_pcc[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS5_MG,2]": 1,
+        "import_pcc[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS5_MG,2]": 1,
+        "shed_noncritical[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS5_MG,2]": 1,
+        "shed_critical[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "discharge[BUS5_MG,2]": 1,
+        "charge[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "discharge[BUS5_MG,2]": 1,
+        "export_pcc[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "import_pcc[BUS5_MG,2]": 1,
+        "shed_noncritical[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "import_pcc[BUS5_MG,2]": 1,
+        "shed_critical[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "import_pcc[BUS5_MG,2]": 1,
+        "charge[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "import_pcc[BUS5_MG,2]": 1,
+        "export_pcc[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "shed_noncritical[BUS5_MG,2]": 1,
+        "shed_critical[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_noncritical[BUS5_MG,2]": 1,
+        "charge[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_noncritical[BUS5_MG,2]": 1,
+        "export_pcc[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_critical[BUS5_MG,2]": 1,
+        "charge[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_critical[BUS5_MG,2]": 1,
+        "export_pcc[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "charge[BUS5_MG,2]": 1,
+        "export_pcc[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.5,
+      "powers": {
+        "soc[BUS5_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.3650000000000002,
+      "powers": {
+        "charge[BUS5_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.648351648351648,
+      "powers": {
+        "discharge[BUS5_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.5,
+      "powers": {
+        "soc[BUS5_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -2.861817604250837,
+      "powers": {
+        "soc[BUS5_MG,2]": 1,
+        "charge[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 3.1448545101657546,
+      "powers": {
+        "soc[BUS5_MG,2]": 1,
+        "discharge[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.0,
+      "powers": {
+        "soc[BUS5_MG,2]": 1,
+        "soc[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.0,
+      "powers": {
+        "charge[BUS5_MG,2]": 1,
+        "discharge[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 2.861817604250837,
+      "powers": {
+        "charge[BUS5_MG,2]": 1,
+        "soc[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.1448545101657546,
+      "powers": {
+        "discharge[BUS5_MG,2]": 1,
+        "soc[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_grid[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_grid[BUS5_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_island[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_island[BUS5_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_restore[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_restore[BUS5_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_grid[BUS5_MG,2]": 1,
+        "z_island[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_grid[BUS5_MG,2]": 1,
+        "z_restore[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_island[BUS5_MG,2]": 1,
+        "z_restore[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_grid[BUS5_MG,2]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_island[BUS5_MG,2]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_restore[BUS5_MG,2]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": 1.9e-06,
+      "powers": {
+        "P_gen[BUS5_MG,3]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": 0.001,
+      "powers": {
+        "P_gen[BUS5_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 0.45,
+      "powers": {
+        "P_gen[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25000.0,
+      "powers": {
+        "shed_critical[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 700.0,
+      "powers": {
+        "shed_noncritical[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.015,
+      "powers": {
+        "charge[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.015,
+      "powers": {
+        "discharge[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.18,
+      "powers": {
+        "import_pcc[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": -0.06,
+      "powers": {
+        "export_pcc[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 33643.29258836641,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -733.6843200000001,
+      "powers": {
+        "P_gen[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "P_gen[BUS5_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -733.6843200000001,
+      "powers": {
+        "discharge[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "discharge[BUS5_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -733.6843200000001,
+      "powers": {
+        "import_pcc[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "import_pcc[BUS5_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -733.6843200000001,
+      "powers": {
+        "shed_noncritical[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "shed_noncritical[BUS5_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -733.6843200000001,
+      "powers": {
+        "shed_critical[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "shed_critical[BUS5_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 733.6843200000001,
+      "powers": {
+        "charge[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "charge[BUS5_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 733.6843200000001,
+      "powers": {
+        "export_pcc[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "export_pcc[BUS5_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS5_MG,3]": 1,
+        "discharge[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS5_MG,3]": 1,
+        "import_pcc[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS5_MG,3]": 1,
+        "shed_noncritical[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS5_MG,3]": 1,
+        "shed_critical[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "P_gen[BUS5_MG,3]": 1,
+        "charge[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "P_gen[BUS5_MG,3]": 1,
+        "export_pcc[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS5_MG,3]": 1,
+        "import_pcc[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS5_MG,3]": 1,
+        "shed_noncritical[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS5_MG,3]": 1,
+        "shed_critical[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "discharge[BUS5_MG,3]": 1,
+        "charge[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "discharge[BUS5_MG,3]": 1,
+        "export_pcc[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "import_pcc[BUS5_MG,3]": 1,
+        "shed_noncritical[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "import_pcc[BUS5_MG,3]": 1,
+        "shed_critical[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "import_pcc[BUS5_MG,3]": 1,
+        "charge[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "import_pcc[BUS5_MG,3]": 1,
+        "export_pcc[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "shed_noncritical[BUS5_MG,3]": 1,
+        "shed_critical[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_noncritical[BUS5_MG,3]": 1,
+        "charge[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_noncritical[BUS5_MG,3]": 1,
+        "export_pcc[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_critical[BUS5_MG,3]": 1,
+        "charge[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_critical[BUS5_MG,3]": 1,
+        "export_pcc[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "charge[BUS5_MG,3]": 1,
+        "export_pcc[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.5,
+      "powers": {
+        "soc[BUS5_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.3650000000000002,
+      "powers": {
+        "charge[BUS5_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.648351648351648,
+      "powers": {
+        "discharge[BUS5_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.5,
+      "powers": {
+        "soc[BUS5_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -2.861817604250837,
+      "powers": {
+        "soc[BUS5_MG,3]": 1,
+        "charge[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 3.1448545101657546,
+      "powers": {
+        "soc[BUS5_MG,3]": 1,
+        "discharge[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.0,
+      "powers": {
+        "soc[BUS5_MG,3]": 1,
+        "soc[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.0,
+      "powers": {
+        "charge[BUS5_MG,3]": 1,
+        "discharge[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 2.861817604250837,
+      "powers": {
+        "charge[BUS5_MG,3]": 1,
+        "soc[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.1448545101657546,
+      "powers": {
+        "discharge[BUS5_MG,3]": 1,
+        "soc[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_grid[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_grid[BUS5_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_island[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_island[BUS5_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_restore[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_restore[BUS5_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_grid[BUS5_MG,3]": 1,
+        "z_island[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_grid[BUS5_MG,3]": 1,
+        "z_restore[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_island[BUS5_MG,3]": 1,
+        "z_restore[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_grid[BUS5_MG,3]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_island[BUS5_MG,3]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_restore[BUS5_MG,3]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": 1.9e-06,
+      "powers": {
+        "P_gen[BUS5_MG,4]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": 0.001,
+      "powers": {
+        "P_gen[BUS5_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 0.45,
+      "powers": {
+        "P_gen[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25000.0,
+      "powers": {
+        "shed_critical[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 700.0,
+      "powers": {
+        "shed_noncritical[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.015,
+      "powers": {
+        "charge[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.015,
+      "powers": {
+        "discharge[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.18,
+      "powers": {
+        "import_pcc[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": -0.06,
+      "powers": {
+        "export_pcc[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 32261.69191716,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -718.4616,
+      "powers": {
+        "P_gen[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "P_gen[BUS5_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -718.4616,
+      "powers": {
+        "discharge[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "discharge[BUS5_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -718.4616,
+      "powers": {
+        "import_pcc[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "import_pcc[BUS5_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -718.4616,
+      "powers": {
+        "shed_noncritical[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "shed_noncritical[BUS5_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -718.4616,
+      "powers": {
+        "shed_critical[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "shed_critical[BUS5_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 718.4616,
+      "powers": {
+        "charge[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "charge[BUS5_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 718.4616,
+      "powers": {
+        "export_pcc[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "export_pcc[BUS5_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS5_MG,4]": 1,
+        "discharge[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS5_MG,4]": 1,
+        "import_pcc[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS5_MG,4]": 1,
+        "shed_noncritical[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS5_MG,4]": 1,
+        "shed_critical[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "P_gen[BUS5_MG,4]": 1,
+        "charge[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "P_gen[BUS5_MG,4]": 1,
+        "export_pcc[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS5_MG,4]": 1,
+        "import_pcc[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS5_MG,4]": 1,
+        "shed_noncritical[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS5_MG,4]": 1,
+        "shed_critical[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "discharge[BUS5_MG,4]": 1,
+        "charge[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "discharge[BUS5_MG,4]": 1,
+        "export_pcc[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "import_pcc[BUS5_MG,4]": 1,
+        "shed_noncritical[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "import_pcc[BUS5_MG,4]": 1,
+        "shed_critical[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "import_pcc[BUS5_MG,4]": 1,
+        "charge[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "import_pcc[BUS5_MG,4]": 1,
+        "export_pcc[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "shed_noncritical[BUS5_MG,4]": 1,
+        "shed_critical[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_noncritical[BUS5_MG,4]": 1,
+        "charge[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_noncritical[BUS5_MG,4]": 1,
+        "export_pcc[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_critical[BUS5_MG,4]": 1,
+        "charge[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_critical[BUS5_MG,4]": 1,
+        "export_pcc[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "charge[BUS5_MG,4]": 1,
+        "export_pcc[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.5,
+      "powers": {
+        "soc[BUS5_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.3650000000000002,
+      "powers": {
+        "charge[BUS5_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.648351648351648,
+      "powers": {
+        "discharge[BUS5_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.5,
+      "powers": {
+        "soc[BUS5_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -2.861817604250837,
+      "powers": {
+        "soc[BUS5_MG,4]": 1,
+        "charge[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 3.1448545101657546,
+      "powers": {
+        "soc[BUS5_MG,4]": 1,
+        "discharge[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.0,
+      "powers": {
+        "soc[BUS5_MG,4]": 1,
+        "soc[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.0,
+      "powers": {
+        "charge[BUS5_MG,4]": 1,
+        "discharge[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 2.861817604250837,
+      "powers": {
+        "charge[BUS5_MG,4]": 1,
+        "soc[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.1448545101657546,
+      "powers": {
+        "discharge[BUS5_MG,4]": 1,
+        "soc[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_grid[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_grid[BUS5_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_island[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_island[BUS5_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_restore[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_restore[BUS5_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_grid[BUS5_MG,4]": 1,
+        "z_island[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_grid[BUS5_MG,4]": 1,
+        "z_restore[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_island[BUS5_MG,4]": 1,
+        "z_restore[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_grid[BUS5_MG,4]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_island[BUS5_MG,4]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_restore[BUS5_MG,4]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": 1.9e-06,
+      "powers": {
+        "P_gen[BUS5_MG,5]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": 0.001,
+      "powers": {
+        "P_gen[BUS5_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 0.45,
+      "powers": {
+        "P_gen[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25000.0,
+      "powers": {
+        "shed_critical[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 700.0,
+      "powers": {
+        "shed_noncritical[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.015,
+      "powers": {
+        "charge[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.015,
+      "powers": {
+        "discharge[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.18,
+      "powers": {
+        "import_pcc[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": -0.06,
+      "powers": {
+        "export_pcc[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 31432.779482126403,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -709.17168,
+      "powers": {
+        "P_gen[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "P_gen[BUS5_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -709.17168,
+      "powers": {
+        "discharge[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "discharge[BUS5_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -709.17168,
+      "powers": {
+        "import_pcc[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "import_pcc[BUS5_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -709.17168,
+      "powers": {
+        "shed_noncritical[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "shed_noncritical[BUS5_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -709.17168,
+      "powers": {
+        "shed_critical[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "shed_critical[BUS5_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 709.17168,
+      "powers": {
+        "charge[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "charge[BUS5_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 709.17168,
+      "powers": {
+        "export_pcc[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "export_pcc[BUS5_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS5_MG,5]": 1,
+        "discharge[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS5_MG,5]": 1,
+        "import_pcc[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS5_MG,5]": 1,
+        "shed_noncritical[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS5_MG,5]": 1,
+        "shed_critical[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "P_gen[BUS5_MG,5]": 1,
+        "charge[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "P_gen[BUS5_MG,5]": 1,
+        "export_pcc[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS5_MG,5]": 1,
+        "import_pcc[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS5_MG,5]": 1,
+        "shed_noncritical[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS5_MG,5]": 1,
+        "shed_critical[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "discharge[BUS5_MG,5]": 1,
+        "charge[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "discharge[BUS5_MG,5]": 1,
+        "export_pcc[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "import_pcc[BUS5_MG,5]": 1,
+        "shed_noncritical[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "import_pcc[BUS5_MG,5]": 1,
+        "shed_critical[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "import_pcc[BUS5_MG,5]": 1,
+        "charge[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "import_pcc[BUS5_MG,5]": 1,
+        "export_pcc[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "shed_noncritical[BUS5_MG,5]": 1,
+        "shed_critical[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_noncritical[BUS5_MG,5]": 1,
+        "charge[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_noncritical[BUS5_MG,5]": 1,
+        "export_pcc[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_critical[BUS5_MG,5]": 1,
+        "charge[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_critical[BUS5_MG,5]": 1,
+        "export_pcc[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "charge[BUS5_MG,5]": 1,
+        "export_pcc[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.5,
+      "powers": {
+        "soc[BUS5_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.3650000000000002,
+      "powers": {
+        "charge[BUS5_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.648351648351648,
+      "powers": {
+        "discharge[BUS5_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.5,
+      "powers": {
+        "soc[BUS5_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -2.861817604250837,
+      "powers": {
+        "soc[BUS5_MG,5]": 1,
+        "charge[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 3.1448545101657546,
+      "powers": {
+        "soc[BUS5_MG,5]": 1,
+        "discharge[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.0,
+      "powers": {
+        "soc[BUS5_MG,5]": 1,
+        "soc[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.0,
+      "powers": {
+        "charge[BUS5_MG,5]": 1,
+        "discharge[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 2.861817604250837,
+      "powers": {
+        "charge[BUS5_MG,5]": 1,
+        "soc[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.1448545101657546,
+      "powers": {
+        "discharge[BUS5_MG,5]": 1,
+        "soc[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_grid[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_grid[BUS5_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_island[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_island[BUS5_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_restore[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_restore[BUS5_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_grid[BUS5_MG,5]": 1,
+        "z_island[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_grid[BUS5_MG,5]": 1,
+        "z_restore[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_island[BUS5_MG,5]": 1,
+        "z_restore[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_grid[BUS5_MG,5]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_island[BUS5_MG,5]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_restore[BUS5_MG,5]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": 1.5e-06,
+      "powers": {
+        "P_gen[BUS7_MG,0]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": 0.001,
+      "powers": {
+        "P_gen[BUS7_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 0.45,
+      "powers": {
+        "P_gen[BUS7_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25000.0,
+      "powers": {
+        "shed_critical[BUS7_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 700.0,
+      "powers": {
+        "shed_noncritical[BUS7_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.015,
+      "powers": {
+        "charge[BUS7_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.015,
+      "powers": {
+        "discharge[BUS7_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.18,
+      "powers": {
+        "import_pcc[BUS7_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": -0.06,
+      "powers": {
+        "export_pcc[BUS7_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 1741.6533049344,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -166.93248,
+      "powers": {
+        "P_gen[BUS7_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "P_gen[BUS7_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -166.93248,
+      "powers": {
+        "discharge[BUS7_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "discharge[BUS7_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -166.93248,
+      "powers": {
+        "import_pcc[BUS7_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "import_pcc[BUS7_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -166.93248,
+      "powers": {
+        "shed_noncritical[BUS7_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "shed_noncritical[BUS7_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -166.93248,
+      "powers": {
+        "shed_critical[BUS7_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "shed_critical[BUS7_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 166.93248,
+      "powers": {
+        "charge[BUS7_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "charge[BUS7_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 166.93248,
+      "powers": {
+        "export_pcc[BUS7_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "export_pcc[BUS7_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS7_MG,0]": 1,
+        "discharge[BUS7_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS7_MG,0]": 1,
+        "import_pcc[BUS7_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS7_MG,0]": 1,
+        "shed_noncritical[BUS7_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS7_MG,0]": 1,
+        "shed_critical[BUS7_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "P_gen[BUS7_MG,0]": 1,
+        "charge[BUS7_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "P_gen[BUS7_MG,0]": 1,
+        "export_pcc[BUS7_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS7_MG,0]": 1,
+        "import_pcc[BUS7_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS7_MG,0]": 1,
+        "shed_noncritical[BUS7_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS7_MG,0]": 1,
+        "shed_critical[BUS7_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "discharge[BUS7_MG,0]": 1,
+        "charge[BUS7_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "discharge[BUS7_MG,0]": 1,
+        "export_pcc[BUS7_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "import_pcc[BUS7_MG,0]": 1,
+        "shed_noncritical[BUS7_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "import_pcc[BUS7_MG,0]": 1,
+        "shed_critical[BUS7_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "import_pcc[BUS7_MG,0]": 1,
+        "charge[BUS7_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "import_pcc[BUS7_MG,0]": 1,
+        "export_pcc[BUS7_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "shed_noncritical[BUS7_MG,0]": 1,
+        "shed_critical[BUS7_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_noncritical[BUS7_MG,0]": 1,
+        "charge[BUS7_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_noncritical[BUS7_MG,0]": 1,
+        "export_pcc[BUS7_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_critical[BUS7_MG,0]": 1,
+        "charge[BUS7_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_critical[BUS7_MG,0]": 1,
+        "export_pcc[BUS7_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "charge[BUS7_MG,0]": 1,
+        "export_pcc[BUS7_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1633.5,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -99.0,
+      "powers": {
+        "soc[BUS7_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 1.5,
+      "powers": {
+        "soc[BUS7_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 94.43998094027762,
+      "powers": {
+        "charge[BUS7_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 1.3650000000000002,
+      "powers": {
+        "charge[BUS7_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -103.7801988354699,
+      "powers": {
+        "discharge[BUS7_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 1.648351648351648,
+      "powers": {
+        "discharge[BUS7_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -2.861817604250837,
+      "powers": {
+        "soc[BUS7_MG,0]": 1,
+        "charge[BUS7_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 3.1448545101657546,
+      "powers": {
+        "soc[BUS7_MG,0]": 1,
+        "discharge[BUS7_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.0,
+      "powers": {
+        "charge[BUS7_MG,0]": 1,
+        "discharge[BUS7_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_grid[BUS7_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_grid[BUS7_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_island[BUS7_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_island[BUS7_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_restore[BUS7_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_restore[BUS7_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_grid[BUS7_MG,0]": 1,
+        "z_island[BUS7_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_grid[BUS7_MG,0]": 1,
+        "z_restore[BUS7_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_island[BUS7_MG,0]": 1,
+        "z_restore[BUS7_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_grid[BUS7_MG,0]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_island[BUS7_MG,0]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_restore[BUS7_MG,0]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": 1.5e-06,
+      "powers": {
+        "P_gen[BUS7_MG,1]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": 0.001,
+      "powers": {
+        "P_gen[BUS7_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 0.45,
+      "powers": {
+        "P_gen[BUS7_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25000.0,
+      "powers": {
+        "shed_critical[BUS7_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 700.0,
+      "powers": {
+        "shed_noncritical[BUS7_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.015,
+      "powers": {
+        "charge[BUS7_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.015,
+      "powers": {
+        "discharge[BUS7_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.18,
+      "powers": {
+        "import_pcc[BUS7_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": -0.06,
+      "powers": {
+        "export_pcc[BUS7_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 1872.2790536256007,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -173.07936000000004,
+      "powers": {
+        "P_gen[BUS7_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "P_gen[BUS7_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -173.07936000000004,
+      "powers": {
+        "discharge[BUS7_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "discharge[BUS7_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -173.07936000000004,
+      "powers": {
+        "import_pcc[BUS7_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "import_pcc[BUS7_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -173.07936000000004,
+      "powers": {
+        "shed_noncritical[BUS7_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "shed_noncritical[BUS7_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -173.07936000000004,
+      "powers": {
+        "shed_critical[BUS7_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "shed_critical[BUS7_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 173.07936000000004,
+      "powers": {
+        "charge[BUS7_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "charge[BUS7_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 173.07936000000004,
+      "powers": {
+        "export_pcc[BUS7_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "export_pcc[BUS7_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS7_MG,1]": 1,
+        "discharge[BUS7_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS7_MG,1]": 1,
+        "import_pcc[BUS7_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS7_MG,1]": 1,
+        "shed_noncritical[BUS7_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS7_MG,1]": 1,
+        "shed_critical[BUS7_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "P_gen[BUS7_MG,1]": 1,
+        "charge[BUS7_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "P_gen[BUS7_MG,1]": 1,
+        "export_pcc[BUS7_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS7_MG,1]": 1,
+        "import_pcc[BUS7_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS7_MG,1]": 1,
+        "shed_noncritical[BUS7_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS7_MG,1]": 1,
+        "shed_critical[BUS7_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "discharge[BUS7_MG,1]": 1,
+        "charge[BUS7_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "discharge[BUS7_MG,1]": 1,
+        "export_pcc[BUS7_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "import_pcc[BUS7_MG,1]": 1,
+        "shed_noncritical[BUS7_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "import_pcc[BUS7_MG,1]": 1,
+        "shed_critical[BUS7_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "import_pcc[BUS7_MG,1]": 1,
+        "charge[BUS7_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "import_pcc[BUS7_MG,1]": 1,
+        "export_pcc[BUS7_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "shed_noncritical[BUS7_MG,1]": 1,
+        "shed_critical[BUS7_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_noncritical[BUS7_MG,1]": 1,
+        "charge[BUS7_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_noncritical[BUS7_MG,1]": 1,
+        "export_pcc[BUS7_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_critical[BUS7_MG,1]": 1,
+        "charge[BUS7_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_critical[BUS7_MG,1]": 1,
+        "export_pcc[BUS7_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "charge[BUS7_MG,1]": 1,
+        "export_pcc[BUS7_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.5,
+      "powers": {
+        "soc[BUS7_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.3650000000000002,
+      "powers": {
+        "charge[BUS7_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.648351648351648,
+      "powers": {
+        "discharge[BUS7_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.5,
+      "powers": {
+        "soc[BUS7_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -2.861817604250837,
+      "powers": {
+        "soc[BUS7_MG,1]": 1,
+        "charge[BUS7_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 3.1448545101657546,
+      "powers": {
+        "soc[BUS7_MG,1]": 1,
+        "discharge[BUS7_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.0,
+      "powers": {
+        "soc[BUS7_MG,1]": 1,
+        "soc[BUS7_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.0,
+      "powers": {
+        "charge[BUS7_MG,1]": 1,
+        "discharge[BUS7_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 2.861817604250837,
+      "powers": {
+        "charge[BUS7_MG,1]": 1,
+        "soc[BUS7_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.1448545101657546,
+      "powers": {
+        "discharge[BUS7_MG,1]": 1,
+        "soc[BUS7_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_grid[BUS7_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_grid[BUS7_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_island[BUS7_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_island[BUS7_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_restore[BUS7_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_restore[BUS7_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_grid[BUS7_MG,1]": 1,
+        "z_island[BUS7_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_grid[BUS7_MG,1]": 1,
+        "z_restore[BUS7_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_island[BUS7_MG,1]": 1,
+        "z_restore[BUS7_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_grid[BUS7_MG,1]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_island[BUS7_MG,1]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_restore[BUS7_MG,1]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": 1.5e-06,
+      "powers": {
+        "P_gen[BUS7_MG,2]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": 0.001,
+      "powers": {
+        "P_gen[BUS7_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 0.45,
+      "powers": {
+        "P_gen[BUS7_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25000.0,
+      "powers": {
+        "shed_critical[BUS7_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 700.0,
+      "powers": {
+        "shed_noncritical[BUS7_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.015,
+      "powers": {
+        "charge[BUS7_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.015,
+      "powers": {
+        "discharge[BUS7_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.18,
+      "powers": {
+        "import_pcc[BUS7_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": -0.06,
+      "powers": {
+        "export_pcc[BUS7_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 1833.4975908095996,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -171.27743999999998,
+      "powers": {
+        "P_gen[BUS7_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "P_gen[BUS7_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -171.27743999999998,
+      "powers": {
+        "discharge[BUS7_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "discharge[BUS7_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -171.27743999999998,
+      "powers": {
+        "import_pcc[BUS7_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "import_pcc[BUS7_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -171.27743999999998,
+      "powers": {
+        "shed_noncritical[BUS7_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "shed_noncritical[BUS7_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -171.27743999999998,
+      "powers": {
+        "shed_critical[BUS7_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "shed_critical[BUS7_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 171.27743999999998,
+      "powers": {
+        "charge[BUS7_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "charge[BUS7_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 171.27743999999998,
+      "powers": {
+        "export_pcc[BUS7_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "export_pcc[BUS7_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS7_MG,2]": 1,
+        "discharge[BUS7_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS7_MG,2]": 1,
+        "import_pcc[BUS7_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS7_MG,2]": 1,
+        "shed_noncritical[BUS7_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS7_MG,2]": 1,
+        "shed_critical[BUS7_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "P_gen[BUS7_MG,2]": 1,
+        "charge[BUS7_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "P_gen[BUS7_MG,2]": 1,
+        "export_pcc[BUS7_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS7_MG,2]": 1,
+        "import_pcc[BUS7_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS7_MG,2]": 1,
+        "shed_noncritical[BUS7_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS7_MG,2]": 1,
+        "shed_critical[BUS7_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "discharge[BUS7_MG,2]": 1,
+        "charge[BUS7_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "discharge[BUS7_MG,2]": 1,
+        "export_pcc[BUS7_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "import_pcc[BUS7_MG,2]": 1,
+        "shed_noncritical[BUS7_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "import_pcc[BUS7_MG,2]": 1,
+        "shed_critical[BUS7_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "import_pcc[BUS7_MG,2]": 1,
+        "charge[BUS7_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "import_pcc[BUS7_MG,2]": 1,
+        "export_pcc[BUS7_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "shed_noncritical[BUS7_MG,2]": 1,
+        "shed_critical[BUS7_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_noncritical[BUS7_MG,2]": 1,
+        "charge[BUS7_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_noncritical[BUS7_MG,2]": 1,
+        "export_pcc[BUS7_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_critical[BUS7_MG,2]": 1,
+        "charge[BUS7_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_critical[BUS7_MG,2]": 1,
+        "export_pcc[BUS7_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "charge[BUS7_MG,2]": 1,
+        "export_pcc[BUS7_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.5,
+      "powers": {
+        "soc[BUS7_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.3650000000000002,
+      "powers": {
+        "charge[BUS7_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.648351648351648,
+      "powers": {
+        "discharge[BUS7_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.5,
+      "powers": {
+        "soc[BUS7_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -2.861817604250837,
+      "powers": {
+        "soc[BUS7_MG,2]": 1,
+        "charge[BUS7_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 3.1448545101657546,
+      "powers": {
+        "soc[BUS7_MG,2]": 1,
+        "discharge[BUS7_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.0,
+      "powers": {
+        "soc[BUS7_MG,2]": 1,
+        "soc[BUS7_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.0,
+      "powers": {
+        "charge[BUS7_MG,2]": 1,
+        "discharge[BUS7_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 2.861817604250837,
+      "powers": {
+        "charge[BUS7_MG,2]": 1,
+        "soc[BUS7_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.1448545101657546,
+      "powers": {
+        "discharge[BUS7_MG,2]": 1,
+        "soc[BUS7_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_grid[BUS7_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_grid[BUS7_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_island[BUS7_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_island[BUS7_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_restore[BUS7_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_restore[BUS7_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_grid[BUS7_MG,2]": 1,
+        "z_island[BUS7_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_grid[BUS7_MG,2]": 1,
+        "z_restore[BUS7_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_island[BUS7_MG,2]": 1,
+        "z_restore[BUS7_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_grid[BUS7_MG,2]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_island[BUS7_MG,2]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_restore[BUS7_MG,2]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": 1.5e-06,
+      "powers": {
+        "P_gen[BUS7_MG,3]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": 0.001,
+      "powers": {
+        "P_gen[BUS7_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 0.45,
+      "powers": {
+        "P_gen[BUS7_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25000.0,
+      "powers": {
+        "shed_critical[BUS7_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 700.0,
+      "powers": {
+        "shed_noncritical[BUS7_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.015,
+      "powers": {
+        "charge[BUS7_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.015,
+      "powers": {
+        "discharge[BUS7_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.18,
+      "powers": {
+        "import_pcc[BUS7_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": -0.06,
+      "powers": {
+        "export_pcc[BUS7_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 1818.2480584464001,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -170.56368,
+      "powers": {
+        "P_gen[BUS7_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "P_gen[BUS7_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -170.56368,
+      "powers": {
+        "discharge[BUS7_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "discharge[BUS7_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -170.56368,
+      "powers": {
+        "import_pcc[BUS7_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "import_pcc[BUS7_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -170.56368,
+      "powers": {
+        "shed_noncritical[BUS7_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "shed_noncritical[BUS7_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -170.56368,
+      "powers": {
+        "shed_critical[BUS7_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "shed_critical[BUS7_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 170.56368,
+      "powers": {
+        "charge[BUS7_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "charge[BUS7_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 170.56368,
+      "powers": {
+        "export_pcc[BUS7_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "export_pcc[BUS7_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS7_MG,3]": 1,
+        "discharge[BUS7_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS7_MG,3]": 1,
+        "import_pcc[BUS7_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS7_MG,3]": 1,
+        "shed_noncritical[BUS7_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS7_MG,3]": 1,
+        "shed_critical[BUS7_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "P_gen[BUS7_MG,3]": 1,
+        "charge[BUS7_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "P_gen[BUS7_MG,3]": 1,
+        "export_pcc[BUS7_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS7_MG,3]": 1,
+        "import_pcc[BUS7_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS7_MG,3]": 1,
+        "shed_noncritical[BUS7_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS7_MG,3]": 1,
+        "shed_critical[BUS7_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "discharge[BUS7_MG,3]": 1,
+        "charge[BUS7_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "discharge[BUS7_MG,3]": 1,
+        "export_pcc[BUS7_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "import_pcc[BUS7_MG,3]": 1,
+        "shed_noncritical[BUS7_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "import_pcc[BUS7_MG,3]": 1,
+        "shed_critical[BUS7_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "import_pcc[BUS7_MG,3]": 1,
+        "charge[BUS7_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "import_pcc[BUS7_MG,3]": 1,
+        "export_pcc[BUS7_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "shed_noncritical[BUS7_MG,3]": 1,
+        "shed_critical[BUS7_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_noncritical[BUS7_MG,3]": 1,
+        "charge[BUS7_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_noncritical[BUS7_MG,3]": 1,
+        "export_pcc[BUS7_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_critical[BUS7_MG,3]": 1,
+        "charge[BUS7_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_critical[BUS7_MG,3]": 1,
+        "export_pcc[BUS7_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "charge[BUS7_MG,3]": 1,
+        "export_pcc[BUS7_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.5,
+      "powers": {
+        "soc[BUS7_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.3650000000000002,
+      "powers": {
+        "charge[BUS7_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.648351648351648,
+      "powers": {
+        "discharge[BUS7_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.5,
+      "powers": {
+        "soc[BUS7_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -2.861817604250837,
+      "powers": {
+        "soc[BUS7_MG,3]": 1,
+        "charge[BUS7_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 3.1448545101657546,
+      "powers": {
+        "soc[BUS7_MG,3]": 1,
+        "discharge[BUS7_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.0,
+      "powers": {
+        "soc[BUS7_MG,3]": 1,
+        "soc[BUS7_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.0,
+      "powers": {
+        "charge[BUS7_MG,3]": 1,
+        "discharge[BUS7_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 2.861817604250837,
+      "powers": {
+        "charge[BUS7_MG,3]": 1,
+        "soc[BUS7_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.1448545101657546,
+      "powers": {
+        "discharge[BUS7_MG,3]": 1,
+        "soc[BUS7_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_grid[BUS7_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_grid[BUS7_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_island[BUS7_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_island[BUS7_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_restore[BUS7_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_restore[BUS7_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_grid[BUS7_MG,3]": 1,
+        "z_island[BUS7_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_grid[BUS7_MG,3]": 1,
+        "z_restore[BUS7_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_island[BUS7_MG,3]": 1,
+        "z_restore[BUS7_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_grid[BUS7_MG,3]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_island[BUS7_MG,3]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_restore[BUS7_MG,3]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": 1.5e-06,
+      "powers": {
+        "P_gen[BUS7_MG,4]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": 0.001,
+      "powers": {
+        "P_gen[BUS7_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 0.45,
+      "powers": {
+        "P_gen[BUS7_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25000.0,
+      "powers": {
+        "shed_critical[BUS7_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 700.0,
+      "powers": {
+        "shed_noncritical[BUS7_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.015,
+      "powers": {
+        "charge[BUS7_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.015,
+      "powers": {
+        "discharge[BUS7_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.18,
+      "powers": {
+        "import_pcc[BUS7_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": -0.06,
+      "powers": {
+        "export_pcc[BUS7_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 1802.6647808400005,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -169.83120000000002,
+      "powers": {
+        "P_gen[BUS7_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "P_gen[BUS7_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -169.83120000000002,
+      "powers": {
+        "discharge[BUS7_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "discharge[BUS7_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -169.83120000000002,
+      "powers": {
+        "import_pcc[BUS7_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "import_pcc[BUS7_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -169.83120000000002,
+      "powers": {
+        "shed_noncritical[BUS7_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "shed_noncritical[BUS7_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -169.83120000000002,
+      "powers": {
+        "shed_critical[BUS7_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "shed_critical[BUS7_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 169.83120000000002,
+      "powers": {
+        "charge[BUS7_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "charge[BUS7_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 169.83120000000002,
+      "powers": {
+        "export_pcc[BUS7_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "export_pcc[BUS7_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS7_MG,4]": 1,
+        "discharge[BUS7_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS7_MG,4]": 1,
+        "import_pcc[BUS7_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS7_MG,4]": 1,
+        "shed_noncritical[BUS7_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS7_MG,4]": 1,
+        "shed_critical[BUS7_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "P_gen[BUS7_MG,4]": 1,
+        "charge[BUS7_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "P_gen[BUS7_MG,4]": 1,
+        "export_pcc[BUS7_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS7_MG,4]": 1,
+        "import_pcc[BUS7_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS7_MG,4]": 1,
+        "shed_noncritical[BUS7_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS7_MG,4]": 1,
+        "shed_critical[BUS7_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "discharge[BUS7_MG,4]": 1,
+        "charge[BUS7_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "discharge[BUS7_MG,4]": 1,
+        "export_pcc[BUS7_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "import_pcc[BUS7_MG,4]": 1,
+        "shed_noncritical[BUS7_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "import_pcc[BUS7_MG,4]": 1,
+        "shed_critical[BUS7_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "import_pcc[BUS7_MG,4]": 1,
+        "charge[BUS7_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "import_pcc[BUS7_MG,4]": 1,
+        "export_pcc[BUS7_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "shed_noncritical[BUS7_MG,4]": 1,
+        "shed_critical[BUS7_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_noncritical[BUS7_MG,4]": 1,
+        "charge[BUS7_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_noncritical[BUS7_MG,4]": 1,
+        "export_pcc[BUS7_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_critical[BUS7_MG,4]": 1,
+        "charge[BUS7_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_critical[BUS7_MG,4]": 1,
+        "export_pcc[BUS7_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "charge[BUS7_MG,4]": 1,
+        "export_pcc[BUS7_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.5,
+      "powers": {
+        "soc[BUS7_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.3650000000000002,
+      "powers": {
+        "charge[BUS7_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.648351648351648,
+      "powers": {
+        "discharge[BUS7_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.5,
+      "powers": {
+        "soc[BUS7_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -2.861817604250837,
+      "powers": {
+        "soc[BUS7_MG,4]": 1,
+        "charge[BUS7_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 3.1448545101657546,
+      "powers": {
+        "soc[BUS7_MG,4]": 1,
+        "discharge[BUS7_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.0,
+      "powers": {
+        "soc[BUS7_MG,4]": 1,
+        "soc[BUS7_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.0,
+      "powers": {
+        "charge[BUS7_MG,4]": 1,
+        "discharge[BUS7_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 2.861817604250837,
+      "powers": {
+        "charge[BUS7_MG,4]": 1,
+        "soc[BUS7_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.1448545101657546,
+      "powers": {
+        "discharge[BUS7_MG,4]": 1,
+        "soc[BUS7_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_grid[BUS7_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_grid[BUS7_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_island[BUS7_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_island[BUS7_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_restore[BUS7_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_restore[BUS7_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_grid[BUS7_MG,4]": 1,
+        "z_island[BUS7_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_grid[BUS7_MG,4]": 1,
+        "z_restore[BUS7_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_island[BUS7_MG,4]": 1,
+        "z_restore[BUS7_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_grid[BUS7_MG,4]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_island[BUS7_MG,4]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_restore[BUS7_MG,4]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": 1.5e-06,
+      "powers": {
+        "P_gen[BUS7_MG,5]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": 0.001,
+      "powers": {
+        "P_gen[BUS7_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 0.45,
+      "powers": {
+        "P_gen[BUS7_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25000.0,
+      "powers": {
+        "shed_critical[BUS7_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 700.0,
+      "powers": {
+        "shed_noncritical[BUS7_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.015,
+      "powers": {
+        "charge[BUS7_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.015,
+      "powers": {
+        "discharge[BUS7_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 0.18,
+      "powers": {
+        "import_pcc[BUS7_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": -0.06,
+      "powers": {
+        "export_pcc[BUS7_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 1825.5520931904002,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -170.90592,
+      "powers": {
+        "P_gen[BUS7_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "P_gen[BUS7_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -170.90592,
+      "powers": {
+        "discharge[BUS7_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "discharge[BUS7_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -170.90592,
+      "powers": {
+        "import_pcc[BUS7_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "import_pcc[BUS7_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -170.90592,
+      "powers": {
+        "shed_noncritical[BUS7_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "shed_noncritical[BUS7_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -170.90592,
+      "powers": {
+        "shed_critical[BUS7_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "shed_critical[BUS7_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 170.90592,
+      "powers": {
+        "charge[BUS7_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "charge[BUS7_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 170.90592,
+      "powers": {
+        "export_pcc[BUS7_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4.0,
+      "powers": {
+        "export_pcc[BUS7_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS7_MG,5]": 1,
+        "discharge[BUS7_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS7_MG,5]": 1,
+        "import_pcc[BUS7_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS7_MG,5]": 1,
+        "shed_noncritical[BUS7_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "P_gen[BUS7_MG,5]": 1,
+        "shed_critical[BUS7_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "P_gen[BUS7_MG,5]": 1,
+        "charge[BUS7_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "P_gen[BUS7_MG,5]": 1,
+        "export_pcc[BUS7_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS7_MG,5]": 1,
+        "import_pcc[BUS7_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS7_MG,5]": 1,
+        "shed_noncritical[BUS7_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "discharge[BUS7_MG,5]": 1,
+        "shed_critical[BUS7_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "discharge[BUS7_MG,5]": 1,
+        "charge[BUS7_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "discharge[BUS7_MG,5]": 1,
+        "export_pcc[BUS7_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "import_pcc[BUS7_MG,5]": 1,
+        "shed_noncritical[BUS7_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "import_pcc[BUS7_MG,5]": 1,
+        "shed_critical[BUS7_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "import_pcc[BUS7_MG,5]": 1,
+        "charge[BUS7_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "import_pcc[BUS7_MG,5]": 1,
+        "export_pcc[BUS7_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "shed_noncritical[BUS7_MG,5]": 1,
+        "shed_critical[BUS7_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_noncritical[BUS7_MG,5]": 1,
+        "charge[BUS7_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_noncritical[BUS7_MG,5]": 1,
+        "export_pcc[BUS7_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_critical[BUS7_MG,5]": 1,
+        "charge[BUS7_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -8.0,
+      "powers": {
+        "shed_critical[BUS7_MG,5]": 1,
+        "export_pcc[BUS7_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 8.0,
+      "powers": {
+        "charge[BUS7_MG,5]": 1,
+        "export_pcc[BUS7_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.5,
+      "powers": {
+        "soc[BUS7_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.3650000000000002,
+      "powers": {
+        "charge[BUS7_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.648351648351648,
+      "powers": {
+        "discharge[BUS7_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 1.5,
+      "powers": {
+        "soc[BUS7_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -2.861817604250837,
+      "powers": {
+        "soc[BUS7_MG,5]": 1,
+        "charge[BUS7_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 3.1448545101657546,
+      "powers": {
+        "soc[BUS7_MG,5]": 1,
+        "discharge[BUS7_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.0,
+      "powers": {
+        "soc[BUS7_MG,5]": 1,
+        "soc[BUS7_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.0,
+      "powers": {
+        "charge[BUS7_MG,5]": 1,
+        "discharge[BUS7_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 2.861817604250837,
+      "powers": {
+        "charge[BUS7_MG,5]": 1,
+        "soc[BUS7_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -3.1448545101657546,
+      "powers": {
+        "discharge[BUS7_MG,5]": 1,
+        "soc[BUS7_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_grid[BUS7_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_grid[BUS7_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_island[BUS7_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_island[BUS7_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -50.0,
+      "powers": {
+        "z_restore[BUS7_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "z_restore[BUS7_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_grid[BUS7_MG,5]": 1,
+        "z_island[BUS7_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_grid[BUS7_MG,5]": 1,
+        "z_restore[BUS7_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "z_island[BUS7_MG,5]": 1,
+        "z_restore[BUS7_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_grid[BUS7_MG,5]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_island[BUS7_MG,5]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": -1.2,
+      "powers": {
+        "z_restore[BUS7_MG,5]": 3
+      },
+      "degree": 3
+    },
+    {
+      "coefficient": 1210.1910828025475,
+      "powers": {
+        "shed_critical[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 1210.1910828025475,
+      "powers": {
+        "shed_noncritical[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 1109.3418259023351,
+      "powers": {
+        "shed_critical[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 1109.3418259023351,
+      "powers": {
+        "shed_noncritical[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 1024.007839294463,
+      "powers": {
+        "shed_critical[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 1024.0078392944633,
+      "powers": {
+        "shed_noncritical[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 986.0816230242982,
+      "powers": {
+        "shed_critical[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 986.0816230242982,
+      "powers": {
+        "shed_noncritical[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 1064.9681528662418,
+      "powers": {
+        "shed_critical[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 1064.9681528662418,
+      "powers": {
+        "shed_noncritical[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 1157.574079202437,
+      "powers": {
+        "shed_critical[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 1157.574079202437,
+      "powers": {
+        "shed_noncritical[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 5000.0,
+      "powers": {
+        "shed_critical[BUS7_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4999.999999999999,
+      "powers": {
+        "shed_noncritical[BUS7_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4583.333333333332,
+      "powers": {
+        "shed_critical[BUS7_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4583.333333333332,
+      "powers": {
+        "shed_noncritical[BUS7_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4230.7692307692305,
+      "powers": {
+        "shed_critical[BUS7_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4230.7692307692305,
+      "powers": {
+        "shed_noncritical[BUS7_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4074.0740740740735,
+      "powers": {
+        "shed_critical[BUS7_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4074.0740740740735,
+      "powers": {
+        "shed_noncritical[BUS7_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4399.999999999999,
+      "powers": {
+        "shed_critical[BUS7_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4399.999999999998,
+      "powers": {
+        "shed_noncritical[BUS7_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4782.608695652173,
+      "powers": {
+        "shed_critical[BUS7_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4782.608695652173,
+      "powers": {
+        "shed_noncritical[BUS7_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 589.1725636948566,
+      "powers": {
+        "shed_critical[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 8000.0,
+      "powers": {
+        "z_island[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4571.428571428572,
+      "powers": {
+        "z_restore[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 540.0748500536185,
+      "powers": {
+        "shed_critical[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 8000.0,
+      "powers": {
+        "z_island[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4571.428571428572,
+      "powers": {
+        "z_restore[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 498.5306308187249,
+      "powers": {
+        "shed_critical[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 8000.0,
+      "powers": {
+        "z_island[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4571.428571428572,
+      "powers": {
+        "z_restore[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 480.0665333809944,
+      "powers": {
+        "shed_critical[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 8000.0,
+      "powers": {
+        "z_island[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4571.428571428572,
+      "powers": {
+        "z_restore[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 518.4718560514739,
+      "powers": {
+        "shed_critical[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 8000.0,
+      "powers": {
+        "z_island[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4571.428571428572,
+      "powers": {
+        "z_restore[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 563.5563652733412,
+      "powers": {
+        "shed_critical[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 8000.0,
+      "powers": {
+        "z_island[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4571.428571428572,
+      "powers": {
+        "z_restore[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 2258.5481077070876,
+      "powers": {
+        "shed_critical[BUS7_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 8000.0,
+      "powers": {
+        "z_island[BUS7_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4571.428571428572,
+      "powers": {
+        "z_restore[BUS7_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 2070.335765398164,
+      "powers": {
+        "shed_critical[BUS7_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 8000.0,
+      "powers": {
+        "z_island[BUS7_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4571.428571428572,
+      "powers": {
+        "z_restore[BUS7_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 1911.0791680598436,
+      "powers": {
+        "shed_critical[BUS7_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 8000.0,
+      "powers": {
+        "z_island[BUS7_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4571.428571428572,
+      "powers": {
+        "z_restore[BUS7_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 1840.2984581317012,
+      "powers": {
+        "shed_critical[BUS7_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 8000.0,
+      "powers": {
+        "z_island[BUS7_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4571.428571428572,
+      "powers": {
+        "z_restore[BUS7_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 1987.522334782237,
+      "powers": {
+        "shed_critical[BUS7_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 8000.0,
+      "powers": {
+        "z_island[BUS7_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4571.428571428572,
+      "powers": {
+        "z_restore[BUS7_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 2160.3503638937364,
+      "powers": {
+        "shed_critical[BUS7_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 8000.0,
+      "powers": {
+        "z_island[BUS7_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 4571.428571428572,
+      "powers": {
+        "z_restore[BUS7_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 3500.0,
+      "powers": {
+        "z_island[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 3428.164916264718,
+      "powers": {
+        "z_island[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 3216.6658952689763,
+      "powers": {
+        "z_island[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 3125.9475384174393,
+      "powers": {
+        "z_island[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 3271.8579690648207,
+      "powers": {
+        "z_island[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 3481.8505511571852,
+      "powers": {
+        "z_island[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 97.28277191346253,
+      "powers": {
+        "z_island[BUS7_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 97.28277191346253,
+      "powers": {
+        "z_island[BUS7_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 97.28277191346253,
+      "powers": {
+        "z_island[BUS7_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 97.28277191346253,
+      "powers": {
+        "z_island[BUS7_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 97.28277191346253,
+      "powers": {
+        "z_island[BUS7_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 97.28277191346253,
+      "powers": {
+        "z_island[BUS7_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 2000.0,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -60.60606060606061,
+      "powers": {
+        "soc[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 2000.0,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -60.60606060606061,
+      "powers": {
+        "soc[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 2000.0,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -60.60606060606061,
+      "powers": {
+        "soc[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 2000.0,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -60.60606060606061,
+      "powers": {
+        "soc[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 2000.0,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -60.60606060606061,
+      "powers": {
+        "soc[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 2000.0,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -60.60606060606061,
+      "powers": {
+        "soc[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 2000.0,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -60.60606060606061,
+      "powers": {
+        "soc[BUS7_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 2000.0,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -60.60606060606061,
+      "powers": {
+        "soc[BUS7_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 2000.0,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -60.60606060606061,
+      "powers": {
+        "soc[BUS7_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 2000.0,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -60.60606060606061,
+      "powers": {
+        "soc[BUS7_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 2000.0,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -60.60606060606061,
+      "powers": {
+        "soc[BUS7_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 2000.0,
+      "powers": {},
+      "degree": 0
+    },
+    {
+      "coefficient": -60.60606060606061,
+      "powers": {
+        "soc[BUS7_MG,5]": 1
+      },
+      "degree": 1
+    }
+  ],
+  "scenario_metadata": {
+    "scenario": "local_generator_failure",
+    "horizon": 6,
+    "penalty_weights": {
+      "critical_shed": 25000.0,
+      "noncritical_shed": 700.0,
+      "battery_degradation": 0.015,
+      "import_cost": 0.18,
+      "export_credit": 0.06,
+      "rho_balance": 4.0,
+      "rho_soc": 1.5,
+      "rho_mode": 25.0,
+      "kappa_mode": 1.2,
+      "pcc_failure": 2500.0,
+      "generator_unavailable": 2500.0
+    }
+  },
+  "patch_metadata": {
+    "patch": "BUS5_MG-BUS7_MG",
+    "patch_ids": [
+      "BUS5_MG",
+      "BUS7_MG"
+    ]
+  },
+  "scaling_information": {
+    "coefficient_scaling_factor": 2.9723606789479113e-05,
+    "max_abs_coefficient": 33643.29258836641,
+    "note": "Scaling is metadata only in Phase 2; Phase 3 adapters may rescale coefficients for QCi APIs."
+  },
+  "model_statistics": {
+    "variable_count": 132,
+    "term_count": 912,
+    "degree": 3,
+    "continuous_variable_count": 132,
+    "integer_variable_count": 0,
+    "max_abs_coefficient": 33643.29258836641,
+    "coefficient_scaling_factor": 2.9723606789479113e-05
+  },
+  "phase2_notice": "Pre-QCi artifact generated without live QCi credentials; no hardware quantum advantage is claimed.",
+  "cmpo_v2": {
+    "source_benchmark": "pglib_case30_ieee",
+    "source_payload_path": "results/phase3/public_benchmarks/pglib_case30_ieee/qci_fit_payloads/local_generator_failure_BUS5_MG-BUS7_MG__from__local_generator_failure_BUS2_MG-BUS5_MG-BUS7_MG.json",
+    "source_payload_id": "local_generator_failure_BUS5_MG-BUS7_MG__from__local_generator_failure_BUS2_MG-BUS5_MG-BUS7_MG",
+    "formulation": "resilience_weighted_direct_qci",
+    "new_penalty_components": [
+      "battery_reserve_holdback_high_stress",
+      "critical_infra_outage_hours_proxy",
+      "islanded_reserve_margin",
+      "max_customers_unserved_surrogate"
+    ],
+    "critical_shed_to_noncritical_shed_ratio": 35.714285714285715,
+    "component_normalization": [
+      {
+        "component": "max_customers_unserved_surrogate",
+        "raw_term_count": 24,
+        "raw_max_abs_coefficient": 0.09584713532081954,
+        "target_weight": 5000.0,
+        "applied_scale": 52166.399999999994,
+        "normalized_max_abs_coefficient": 5000.0
+      },
+      {
+        "component": "critical_infra_outage_hours_proxy",
+        "raw_term_count": 36,
+        "raw_max_abs_coefficient": 0.7,
+        "target_weight": 8000.0,
+        "applied_scale": 11428.57142857143,
+        "normalized_max_abs_coefficient": 8000.0
+      },
+      {
+        "component": "islanded_reserve_margin",
+        "raw_term_count": 12,
+        "raw_max_abs_coefficient": 1.4391037307668042,
+        "target_weight": 3500.0,
+        "applied_scale": 2432.0692978365632,
+        "normalized_max_abs_coefficient": 3500.0
+      },
+      {
+        "component": "battery_reserve_holdback_high_stress",
+        "raw_term_count": 24,
+        "raw_max_abs_coefficient": 1.0,
+        "target_weight": 2000.0,
+        "applied_scale": 2000.0,
+        "normalized_max_abs_coefficient": 2000.0
+      }
+    ],
+    "qci_executable_reason": "variable_count=132 <= 132; degree=3 <= 3"
+  }
+}

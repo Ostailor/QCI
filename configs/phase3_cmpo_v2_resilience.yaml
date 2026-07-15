@@ -1,0 +1,38 @@
+name: phase3_cmpo_v2_resilience
+seed: 20260707
+output_dir: results/phase3/cmpo_v2
+
+benchmarks:
+  - pglib_case5_pjm
+  - pglib_case14_ieee
+  - pglib_case30_ieee
+
+qci_fit:
+  max_variables: 132
+  max_degree: 3
+
+weights:
+  critical_shed: 25000.0
+  noncritical_shed: 700.0
+  battery_degradation: 0.015
+  import_cost: 0.18
+  export_credit: 0.06
+  rho_balance: 4.0
+  rho_soc: 1.5
+  rho_mode: 25.0
+  kappa_mode: 1.2
+  pcc_failure: 2500.0
+  generator_unavailable: 2500.0
+
+resilience_components:
+  max_customers_unserved_surrogate: 5000.0
+  critical_infra_outage_hours_proxy: 8000.0
+  islanded_reserve_margin: 3500.0
+  battery_reserve_holdback_high_stress: 2000.0
+
+high_stress_scenarios:
+  - pcc_failure
+  - storm_forced_islanding
+  - local_generator_failure
+  - demand_surge
+  - combined_high_stress

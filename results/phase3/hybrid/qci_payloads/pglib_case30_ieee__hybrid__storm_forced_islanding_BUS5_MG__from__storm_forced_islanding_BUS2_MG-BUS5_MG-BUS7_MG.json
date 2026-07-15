@@ -1,0 +1,2202 @@
+{
+  "schema": "cmpo.hybrid_qci_mode_payload.v1",
+  "target": "qci_dirac_3",
+  "objective_sense": "minimize",
+  "max_degree": 2,
+  "variables": [
+    {
+      "name": "scenario_response[cost_control]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "scenario_response[shed_avoidance]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "scenario_response[reserve_rebuild]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "mode_connected[BUS5_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "mode_islanded[BUS5_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "mode_restoration[BUS5_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "critical_priority_standard[BUS5_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "critical_priority_critical_first[BUS5_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "battery_reserve_normal_reserve[BUS5_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "battery_reserve_holdback_reserve[BUS5_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "der_commitment_economic_der[BUS5_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "der_commitment_resilience_der[BUS5_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "tie_pcc_available_decision[BUS5_MG,0]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "mode_connected[BUS5_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "mode_islanded[BUS5_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "mode_restoration[BUS5_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "critical_priority_standard[BUS5_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "critical_priority_critical_first[BUS5_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "battery_reserve_normal_reserve[BUS5_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "battery_reserve_holdback_reserve[BUS5_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "der_commitment_economic_der[BUS5_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "der_commitment_resilience_der[BUS5_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "tie_pcc_available_decision[BUS5_MG,1]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "mode_connected[BUS5_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "mode_islanded[BUS5_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "mode_restoration[BUS5_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "critical_priority_standard[BUS5_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "critical_priority_critical_first[BUS5_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "battery_reserve_normal_reserve[BUS5_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "battery_reserve_holdback_reserve[BUS5_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "der_commitment_economic_der[BUS5_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "der_commitment_resilience_der[BUS5_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "tie_pcc_available_decision[BUS5_MG,2]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "mode_connected[BUS5_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "mode_islanded[BUS5_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "mode_restoration[BUS5_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "critical_priority_standard[BUS5_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "critical_priority_critical_first[BUS5_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "battery_reserve_normal_reserve[BUS5_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "battery_reserve_holdback_reserve[BUS5_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "der_commitment_economic_der[BUS5_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "der_commitment_resilience_der[BUS5_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "tie_pcc_available_decision[BUS5_MG,3]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "mode_connected[BUS5_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "mode_islanded[BUS5_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "mode_restoration[BUS5_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "critical_priority_standard[BUS5_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "critical_priority_critical_first[BUS5_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "battery_reserve_normal_reserve[BUS5_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "battery_reserve_holdback_reserve[BUS5_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "der_commitment_economic_der[BUS5_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "der_commitment_resilience_der[BUS5_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "tie_pcc_available_decision[BUS5_MG,4]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "mode_connected[BUS5_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "mode_islanded[BUS5_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "mode_restoration[BUS5_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "critical_priority_standard[BUS5_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "critical_priority_critical_first[BUS5_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "battery_reserve_normal_reserve[BUS5_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "battery_reserve_holdback_reserve[BUS5_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "der_commitment_economic_der[BUS5_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "der_commitment_resilience_der[BUS5_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    },
+    {
+      "name": "tie_pcc_available_decision[BUS5_MG,5]",
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer"
+    }
+  ],
+  "polynomial_terms": [
+    {
+      "coefficient": -18.0,
+      "powers": {
+        "scenario_response[cost_control]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 18.0,
+      "powers": {
+        "scenario_response[cost_control]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -18.0,
+      "powers": {
+        "scenario_response[shed_avoidance]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 18.0,
+      "powers": {
+        "scenario_response[shed_avoidance]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -18.0,
+      "powers": {
+        "scenario_response[reserve_rebuild]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 18.0,
+      "powers": {
+        "scenario_response[reserve_rebuild]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 36.0,
+      "powers": {
+        "scenario_response[cost_control]": 1,
+        "scenario_response[shed_avoidance]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 36.0,
+      "powers": {
+        "scenario_response[cost_control]": 1,
+        "scenario_response[reserve_rebuild]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 36.0,
+      "powers": {
+        "scenario_response[shed_avoidance]": 1,
+        "scenario_response[reserve_rebuild]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -31.200000000000003,
+      "powers": {
+        "scenario_response[shed_avoidance]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": -23.400000000000002,
+      "powers": {
+        "scenario_response[reserve_rebuild]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": -25.0,
+      "powers": {
+        "mode_connected[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "mode_connected[BUS5_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -25.0,
+      "powers": {
+        "mode_islanded[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "mode_islanded[BUS5_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -25.0,
+      "powers": {
+        "mode_restoration[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "mode_restoration[BUS5_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "mode_connected[BUS5_MG,0]": 1,
+        "mode_islanded[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "mode_connected[BUS5_MG,0]": 1,
+        "mode_restoration[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "mode_islanded[BUS5_MG,0]": 1,
+        "mode_restoration[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -15.0,
+      "powers": {
+        "critical_priority_standard[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 15.0,
+      "powers": {
+        "critical_priority_standard[BUS5_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -15.0,
+      "powers": {
+        "critical_priority_critical_first[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 15.0,
+      "powers": {
+        "critical_priority_critical_first[BUS5_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 30.0,
+      "powers": {
+        "critical_priority_standard[BUS5_MG,0]": 1,
+        "critical_priority_critical_first[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -15.0,
+      "powers": {
+        "battery_reserve_normal_reserve[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 15.0,
+      "powers": {
+        "battery_reserve_normal_reserve[BUS5_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -15.0,
+      "powers": {
+        "battery_reserve_holdback_reserve[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 15.0,
+      "powers": {
+        "battery_reserve_holdback_reserve[BUS5_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 30.0,
+      "powers": {
+        "battery_reserve_normal_reserve[BUS5_MG,0]": 1,
+        "battery_reserve_holdback_reserve[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -10.0,
+      "powers": {
+        "der_commitment_economic_der[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 10.0,
+      "powers": {
+        "der_commitment_economic_der[BUS5_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -10.0,
+      "powers": {
+        "der_commitment_resilience_der[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 10.0,
+      "powers": {
+        "der_commitment_resilience_der[BUS5_MG,0]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 20.0,
+      "powers": {
+        "der_commitment_economic_der[BUS5_MG,0]": 1,
+        "der_commitment_resilience_der[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -57.2,
+      "powers": {
+        "mode_islanded[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 78.0,
+      "powers": {
+        "tie_pcc_available_decision[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": -1.144462176,
+      "powers": {
+        "critical_priority_critical_first[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 20.8,
+      "powers": {
+        "mode_islanded[BUS5_MG,0]": 1,
+        "battery_reserve_normal_reserve[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -18.2,
+      "powers": {
+        "mode_islanded[BUS5_MG,0]": 1,
+        "battery_reserve_holdback_reserve[BUS5_MG,0]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -13.0,
+      "powers": {
+        "der_commitment_resilience_der[BUS5_MG,0]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": -25.0,
+      "powers": {
+        "mode_connected[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "mode_connected[BUS5_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -25.0,
+      "powers": {
+        "mode_islanded[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "mode_islanded[BUS5_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -25.0,
+      "powers": {
+        "mode_restoration[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "mode_restoration[BUS5_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "mode_connected[BUS5_MG,1]": 1,
+        "mode_islanded[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "mode_connected[BUS5_MG,1]": 1,
+        "mode_restoration[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "mode_islanded[BUS5_MG,1]": 1,
+        "mode_restoration[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -15.0,
+      "powers": {
+        "critical_priority_standard[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 15.0,
+      "powers": {
+        "critical_priority_standard[BUS5_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -15.0,
+      "powers": {
+        "critical_priority_critical_first[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 15.0,
+      "powers": {
+        "critical_priority_critical_first[BUS5_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 30.0,
+      "powers": {
+        "critical_priority_standard[BUS5_MG,1]": 1,
+        "critical_priority_critical_first[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -15.0,
+      "powers": {
+        "battery_reserve_normal_reserve[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 15.0,
+      "powers": {
+        "battery_reserve_normal_reserve[BUS5_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -15.0,
+      "powers": {
+        "battery_reserve_holdback_reserve[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 15.0,
+      "powers": {
+        "battery_reserve_holdback_reserve[BUS5_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 30.0,
+      "powers": {
+        "battery_reserve_normal_reserve[BUS5_MG,1]": 1,
+        "battery_reserve_holdback_reserve[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -10.0,
+      "powers": {
+        "der_commitment_economic_der[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 10.0,
+      "powers": {
+        "der_commitment_economic_der[BUS5_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -10.0,
+      "powers": {
+        "der_commitment_resilience_der[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 10.0,
+      "powers": {
+        "der_commitment_resilience_der[BUS5_MG,1]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 20.0,
+      "powers": {
+        "der_commitment_economic_der[BUS5_MG,1]": 1,
+        "der_commitment_resilience_der[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -57.2,
+      "powers": {
+        "mode_islanded[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 78.0,
+      "powers": {
+        "tie_pcc_available_decision[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": -1.2485041920000002,
+      "powers": {
+        "critical_priority_critical_first[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 20.8,
+      "powers": {
+        "mode_islanded[BUS5_MG,1]": 1,
+        "battery_reserve_normal_reserve[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -18.2,
+      "powers": {
+        "mode_islanded[BUS5_MG,1]": 1,
+        "battery_reserve_holdback_reserve[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -13.0,
+      "powers": {
+        "der_commitment_resilience_der[BUS5_MG,1]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": -2.0,
+      "powers": {
+        "mode_connected[BUS5_MG,0]": 1,
+        "mode_connected[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -2.0,
+      "powers": {
+        "mode_islanded[BUS5_MG,0]": 1,
+        "mode_islanded[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -2.0,
+      "powers": {
+        "mode_restoration[BUS5_MG,0]": 1,
+        "mode_restoration[BUS5_MG,1]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -25.0,
+      "powers": {
+        "mode_connected[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "mode_connected[BUS5_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -25.0,
+      "powers": {
+        "mode_islanded[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "mode_islanded[BUS5_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -25.0,
+      "powers": {
+        "mode_restoration[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "mode_restoration[BUS5_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "mode_connected[BUS5_MG,2]": 1,
+        "mode_islanded[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "mode_connected[BUS5_MG,2]": 1,
+        "mode_restoration[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "mode_islanded[BUS5_MG,2]": 1,
+        "mode_restoration[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -15.0,
+      "powers": {
+        "critical_priority_standard[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 15.0,
+      "powers": {
+        "critical_priority_standard[BUS5_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -15.0,
+      "powers": {
+        "critical_priority_critical_first[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 15.0,
+      "powers": {
+        "critical_priority_critical_first[BUS5_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 30.0,
+      "powers": {
+        "critical_priority_standard[BUS5_MG,2]": 1,
+        "critical_priority_critical_first[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -15.0,
+      "powers": {
+        "battery_reserve_normal_reserve[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 15.0,
+      "powers": {
+        "battery_reserve_normal_reserve[BUS5_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -15.0,
+      "powers": {
+        "battery_reserve_holdback_reserve[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 15.0,
+      "powers": {
+        "battery_reserve_holdback_reserve[BUS5_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 30.0,
+      "powers": {
+        "battery_reserve_normal_reserve[BUS5_MG,2]": 1,
+        "battery_reserve_holdback_reserve[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -10.0,
+      "powers": {
+        "der_commitment_economic_der[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 10.0,
+      "powers": {
+        "der_commitment_economic_der[BUS5_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -10.0,
+      "powers": {
+        "der_commitment_resilience_der[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 10.0,
+      "powers": {
+        "der_commitment_resilience_der[BUS5_MG,2]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 20.0,
+      "powers": {
+        "der_commitment_economic_der[BUS5_MG,2]": 1,
+        "der_commitment_resilience_der[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -57.2,
+      "powers": {
+        "mode_islanded[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 78.0,
+      "powers": {
+        "tie_pcc_available_decision[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": -1.352546208,
+      "powers": {
+        "critical_priority_critical_first[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 20.8,
+      "powers": {
+        "mode_islanded[BUS5_MG,2]": 1,
+        "battery_reserve_normal_reserve[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -18.2,
+      "powers": {
+        "mode_islanded[BUS5_MG,2]": 1,
+        "battery_reserve_holdback_reserve[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -13.0,
+      "powers": {
+        "der_commitment_resilience_der[BUS5_MG,2]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": -2.0,
+      "powers": {
+        "mode_connected[BUS5_MG,1]": 1,
+        "mode_connected[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -2.0,
+      "powers": {
+        "mode_islanded[BUS5_MG,1]": 1,
+        "mode_islanded[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -2.0,
+      "powers": {
+        "mode_restoration[BUS5_MG,1]": 1,
+        "mode_restoration[BUS5_MG,2]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -25.0,
+      "powers": {
+        "mode_connected[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "mode_connected[BUS5_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -25.0,
+      "powers": {
+        "mode_islanded[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "mode_islanded[BUS5_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -25.0,
+      "powers": {
+        "mode_restoration[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "mode_restoration[BUS5_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "mode_connected[BUS5_MG,3]": 1,
+        "mode_islanded[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "mode_connected[BUS5_MG,3]": 1,
+        "mode_restoration[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "mode_islanded[BUS5_MG,3]": 1,
+        "mode_restoration[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -15.0,
+      "powers": {
+        "critical_priority_standard[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 15.0,
+      "powers": {
+        "critical_priority_standard[BUS5_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -15.0,
+      "powers": {
+        "critical_priority_critical_first[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 15.0,
+      "powers": {
+        "critical_priority_critical_first[BUS5_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 30.0,
+      "powers": {
+        "critical_priority_standard[BUS5_MG,3]": 1,
+        "critical_priority_critical_first[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -15.0,
+      "powers": {
+        "battery_reserve_normal_reserve[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 15.0,
+      "powers": {
+        "battery_reserve_normal_reserve[BUS5_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -15.0,
+      "powers": {
+        "battery_reserve_holdback_reserve[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 15.0,
+      "powers": {
+        "battery_reserve_holdback_reserve[BUS5_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 30.0,
+      "powers": {
+        "battery_reserve_normal_reserve[BUS5_MG,3]": 1,
+        "battery_reserve_holdback_reserve[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -10.0,
+      "powers": {
+        "der_commitment_economic_der[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 10.0,
+      "powers": {
+        "der_commitment_economic_der[BUS5_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -10.0,
+      "powers": {
+        "der_commitment_resilience_der[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 10.0,
+      "powers": {
+        "der_commitment_resilience_der[BUS5_MG,3]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 20.0,
+      "powers": {
+        "der_commitment_economic_der[BUS5_MG,3]": 1,
+        "der_commitment_resilience_der[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -57.2,
+      "powers": {
+        "mode_islanded[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 78.0,
+      "powers": {
+        "tie_pcc_available_decision[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": -1.404567216,
+      "powers": {
+        "critical_priority_critical_first[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 20.8,
+      "powers": {
+        "mode_islanded[BUS5_MG,3]": 1,
+        "battery_reserve_normal_reserve[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -18.2,
+      "powers": {
+        "mode_islanded[BUS5_MG,3]": 1,
+        "battery_reserve_holdback_reserve[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -13.0,
+      "powers": {
+        "der_commitment_resilience_der[BUS5_MG,3]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": -2.0,
+      "powers": {
+        "mode_connected[BUS5_MG,2]": 1,
+        "mode_connected[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -2.0,
+      "powers": {
+        "mode_islanded[BUS5_MG,2]": 1,
+        "mode_islanded[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -2.0,
+      "powers": {
+        "mode_restoration[BUS5_MG,2]": 1,
+        "mode_restoration[BUS5_MG,3]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -25.0,
+      "powers": {
+        "mode_connected[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "mode_connected[BUS5_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -25.0,
+      "powers": {
+        "mode_islanded[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "mode_islanded[BUS5_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -25.0,
+      "powers": {
+        "mode_restoration[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "mode_restoration[BUS5_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "mode_connected[BUS5_MG,4]": 1,
+        "mode_islanded[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "mode_connected[BUS5_MG,4]": 1,
+        "mode_restoration[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "mode_islanded[BUS5_MG,4]": 1,
+        "mode_restoration[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -15.0,
+      "powers": {
+        "critical_priority_standard[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 15.0,
+      "powers": {
+        "critical_priority_standard[BUS5_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -15.0,
+      "powers": {
+        "critical_priority_critical_first[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 15.0,
+      "powers": {
+        "critical_priority_critical_first[BUS5_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 30.0,
+      "powers": {
+        "critical_priority_standard[BUS5_MG,4]": 1,
+        "critical_priority_critical_first[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -15.0,
+      "powers": {
+        "battery_reserve_normal_reserve[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 15.0,
+      "powers": {
+        "battery_reserve_normal_reserve[BUS5_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -15.0,
+      "powers": {
+        "battery_reserve_holdback_reserve[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 15.0,
+      "powers": {
+        "battery_reserve_holdback_reserve[BUS5_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 30.0,
+      "powers": {
+        "battery_reserve_normal_reserve[BUS5_MG,4]": 1,
+        "battery_reserve_holdback_reserve[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -10.0,
+      "powers": {
+        "der_commitment_economic_der[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 10.0,
+      "powers": {
+        "der_commitment_economic_der[BUS5_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -10.0,
+      "powers": {
+        "der_commitment_resilience_der[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 10.0,
+      "powers": {
+        "der_commitment_resilience_der[BUS5_MG,4]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 20.0,
+      "powers": {
+        "der_commitment_economic_der[BUS5_MG,4]": 1,
+        "der_commitment_resilience_der[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -57.2,
+      "powers": {
+        "mode_islanded[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 78.0,
+      "powers": {
+        "tie_pcc_available_decision[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": -1.3005251999999998,
+      "powers": {
+        "critical_priority_critical_first[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 20.8,
+      "powers": {
+        "mode_islanded[BUS5_MG,4]": 1,
+        "battery_reserve_normal_reserve[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -18.2,
+      "powers": {
+        "mode_islanded[BUS5_MG,4]": 1,
+        "battery_reserve_holdback_reserve[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -13.0,
+      "powers": {
+        "der_commitment_resilience_der[BUS5_MG,4]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": -2.0,
+      "powers": {
+        "mode_connected[BUS5_MG,3]": 1,
+        "mode_connected[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -2.0,
+      "powers": {
+        "mode_islanded[BUS5_MG,3]": 1,
+        "mode_islanded[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -2.0,
+      "powers": {
+        "mode_restoration[BUS5_MG,3]": 1,
+        "mode_restoration[BUS5_MG,4]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -25.0,
+      "powers": {
+        "mode_connected[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "mode_connected[BUS5_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -25.0,
+      "powers": {
+        "mode_islanded[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "mode_islanded[BUS5_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -25.0,
+      "powers": {
+        "mode_restoration[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 25.0,
+      "powers": {
+        "mode_restoration[BUS5_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "mode_connected[BUS5_MG,5]": 1,
+        "mode_islanded[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "mode_connected[BUS5_MG,5]": 1,
+        "mode_restoration[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 50.0,
+      "powers": {
+        "mode_islanded[BUS5_MG,5]": 1,
+        "mode_restoration[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -15.0,
+      "powers": {
+        "critical_priority_standard[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 15.0,
+      "powers": {
+        "critical_priority_standard[BUS5_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -15.0,
+      "powers": {
+        "critical_priority_critical_first[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 15.0,
+      "powers": {
+        "critical_priority_critical_first[BUS5_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 30.0,
+      "powers": {
+        "critical_priority_standard[BUS5_MG,5]": 1,
+        "critical_priority_critical_first[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -15.0,
+      "powers": {
+        "battery_reserve_normal_reserve[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 15.0,
+      "powers": {
+        "battery_reserve_normal_reserve[BUS5_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -15.0,
+      "powers": {
+        "battery_reserve_holdback_reserve[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 15.0,
+      "powers": {
+        "battery_reserve_holdback_reserve[BUS5_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 30.0,
+      "powers": {
+        "battery_reserve_normal_reserve[BUS5_MG,5]": 1,
+        "battery_reserve_holdback_reserve[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -10.0,
+      "powers": {
+        "der_commitment_economic_der[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 10.0,
+      "powers": {
+        "der_commitment_economic_der[BUS5_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -10.0,
+      "powers": {
+        "der_commitment_resilience_der[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 10.0,
+      "powers": {
+        "der_commitment_resilience_der[BUS5_MG,5]": 2
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": 20.0,
+      "powers": {
+        "der_commitment_economic_der[BUS5_MG,5]": 1,
+        "der_commitment_resilience_der[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -57.2,
+      "powers": {
+        "mode_islanded[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 78.0,
+      "powers": {
+        "tie_pcc_available_decision[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": -1.196483184,
+      "powers": {
+        "critical_priority_critical_first[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": 20.8,
+      "powers": {
+        "mode_islanded[BUS5_MG,5]": 1,
+        "battery_reserve_normal_reserve[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -18.2,
+      "powers": {
+        "mode_islanded[BUS5_MG,5]": 1,
+        "battery_reserve_holdback_reserve[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -13.0,
+      "powers": {
+        "der_commitment_resilience_der[BUS5_MG,5]": 1
+      },
+      "degree": 1
+    },
+    {
+      "coefficient": -2.0,
+      "powers": {
+        "mode_connected[BUS5_MG,4]": 1,
+        "mode_connected[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -2.0,
+      "powers": {
+        "mode_islanded[BUS5_MG,4]": 1,
+        "mode_islanded[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    },
+    {
+      "coefficient": -2.0,
+      "powers": {
+        "mode_restoration[BUS5_MG,4]": 1,
+        "mode_restoration[BUS5_MG,5]": 1
+      },
+      "degree": 2
+    }
+  ],
+  "scenario_metadata": {
+    "scenario": "storm_forced_islanding",
+    "horizon": 6,
+    "penalty_weights": {
+      "mode_switching": 2.0,
+      "critical_outage": "severity_and_critical_load_weighted",
+      "reserve_inadequacy": "islanded reserve bucket interaction",
+      "pcc_tie_contingency": "scenario availability weighted",
+      "scenario_risk": 2.6
+    }
+  },
+  "patch_metadata": {
+    "patch": "BUS5_MG",
+    "patch_ids": [
+      "BUS5_MG"
+    ]
+  },
+  "scaling_information": {
+    "coefficient_scaling_factor": 0.01282051282051282,
+    "max_abs_coefficient": 78.0,
+    "note": "Scaling is metadata only in Phase 2; Phase 3 adapters may rescale coefficients for QCi APIs."
+  },
+  "model_statistics": {
+    "variable_count": 63,
+    "term_count": 206,
+    "degree": 2,
+    "continuous_variable_count": 0,
+    "integer_variable_count": 63,
+    "max_abs_coefficient": 78.0,
+    "coefficient_scaling_factor": 0.01282051282051282
+  },
+  "phase2_notice": "Pre-QCi artifact generated without live QCi credentials; no hardware quantum advantage is claimed.",
+  "hybrid_model": {
+    "source_payload_path": "results/phase3/public_benchmarks/pglib_case30_ieee/qci_fit_payloads/storm_forced_islanding_BUS5_MG__from__storm_forced_islanding_BUS2_MG-BUS5_MG-BUS7_MG.json",
+    "source_payload_id": "storm_forced_islanding_BUS5_MG__from__storm_forced_islanding_BUS2_MG-BUS5_MG-BUS7_MG",
+    "qci_decision_variables": [
+      "microgrid operating mode",
+      "critical load priority bucket",
+      "battery reserve allocation bucket",
+      "DER commitment bucket",
+      "tie/PCC availability decision",
+      "scenario response mode"
+    ],
+    "classical_projection_variables": [
+      "thermal generation",
+      "battery charge/discharge",
+      "state of charge",
+      "load shed",
+      "tie/PCC flow"
+    ],
+    "projection_status": "not_run_build_only",
+    "benchmark": "pglib_case30_ieee",
+    "payload_name": "pglib_case30_ieee__hybrid__storm_forced_islanding_BUS5_MG__from__storm_forced_islanding_BUS2_MG-BUS5_MG-BUS7_MG.json"
+  }
+}

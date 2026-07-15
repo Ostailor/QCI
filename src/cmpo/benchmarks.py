@@ -423,6 +423,7 @@ def write_benchmark_case_files(
                 "battery_capacity_kwh",
                 "pcc_import_limit_kw",
             ],
+            lineterminator="\n",
         )
         writer.writeheader()
         for microgrid in case.microgrids:
@@ -440,7 +441,11 @@ def write_benchmark_case_files(
             )
 
     with tie_path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=["name", "source_microgrid", "target_microgrid", "capacity_kw"])
+        writer = csv.DictWriter(
+            handle,
+            fieldnames=["name", "source_microgrid", "target_microgrid", "capacity_kw"],
+            lineterminator="\n",
+        )
         writer.writeheader()
         for tie_line in case.tie_lines:
             writer.writerow(asdict(tie_line))

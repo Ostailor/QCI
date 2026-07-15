@@ -1,0 +1,15 @@
+{
+  "case_name": "pglib_case5",
+  "selected_buses": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "bus_count": 5,
+  "branch_count": 6,
+  "generator_count": 5,
+  "gencost_count": 5,
+  "transformation_notes": "PGLib-derived microgrid stress adapter; not an AC OPF reproduction."
+}
