@@ -1,0 +1,10 @@
+{
+  "config": "cmpo_v2_smoke",
+  "payload_dir": null,
+  "payload_list": "results/phase3/cmpo_v2/smoke_payloads.txt",
+  "output_dir": "results/phase3/cmpo_v2_smoke/qci",
+  "repeats": 10,
+  "overwrite": false,
+  "payload_count": 6,
+  "status_csv": "results/phase3/cmpo_v2_smoke/qci/job_status.csv"
+}

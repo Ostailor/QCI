@@ -1,0 +1,692 @@
+seed: 42
+horizon_hours: 6
+microgrids:
+- name: BUS1_MG
+  load_profile:
+    base_kw:
+    - 102.667
+    - 112.0
+    - 121.333
+    - 126.0
+    - 116.667
+    - 107.333
+    critical_fraction: 0.38
+    flexible_fraction: 0.135
+  pv_availability_kw:
+  - 0.0
+  - 5.104
+  - 14.7
+  - 19.396
+  - 11.229
+  - 2.042
+  generator:
+    name: BUS1_thermal
+    p_min_kw: 0.0
+    p_max_kw: 210.0
+    cost_a: 1.58e-06
+    cost_b: 0.001
+    cost_c: 0.1481
+  battery:
+    name: BUS1_bess
+    capacity_kwh: 64.167
+    max_charge_kw: 25.0
+    max_discharge_kw: 25.0
+    initial_soc_kwh: 35.292
+    round_trip_efficiency: 0.91
+  pcc:
+    name: BUS1_pcc
+    import_limit_kw: 420.0
+    export_limit_kw: 189.0
+  upgrade_options:
+    added_pv_kw: 25.667
+    added_pv_cost: 25153.33
+    added_bess_kwh: 37.333
+    added_bess_cost: 16053.33
+    added_generator_kw: 18.667
+    added_generator_cost: 13440.0
+- name: BUS2_MG
+  load_profile:
+    base_kw:
+    - 264.0
+    - 288.0
+    - 312.0
+    - 324.0
+    - 300.0
+    - 276.0
+    critical_fraction: 0.415
+    flexible_fraction: 0.15
+  pv_availability_kw:
+  - 0.0
+  - 15.375
+  - 44.28
+  - 58.425
+  - 33.825
+  - 6.15
+  generator:
+    name: BUS2_thermal
+    p_min_kw: 0.0
+    p_max_kw: 25.0
+    cost_a: 1.5e-06
+    cost_b: 0.001
+    cost_c: 0.45
+  battery:
+    name: BUS2_bess
+    capacity_kwh: 165.0
+    max_charge_kw: 54.0
+    max_discharge_kw: 54.0
+    initial_soc_kwh: 90.75
+    round_trip_efficiency: 0.91
+  pcc:
+    name: BUS2_pcc
+    import_limit_kw: 289.1
+    export_limit_kw: 130.095
+  upgrade_options:
+    added_pv_kw: 66.0
+    added_pv_cost: 64680.0
+    added_bess_kwh: 96.0
+    added_bess_cost: 41280.0
+    added_generator_kw: 48.0
+    added_generator_cost: 34560.0
+- name: BUS3_MG
+  load_profile:
+    base_kw:
+    - 264.0
+    - 288.0
+    - 312.0
+    - 324.0
+    - 300.0
+    - 276.0
+    critical_fraction: 0.45
+    flexible_fraction: 0.165
+  pv_availability_kw:
+  - 0.0
+  - 17.625
+  - 50.76
+  - 66.975
+  - 38.775
+  - 7.05
+  generator:
+    name: BUS3_thermal
+    p_min_kw: 0.0
+    p_max_kw: 520.0
+    cost_a: 1.74e-06
+    cost_b: 0.001
+    cost_c: 0.3
+  battery:
+    name: BUS3_bess
+    capacity_kwh: 165.0
+    max_charge_kw: 54.0
+    max_discharge_kw: 54.0
+    initial_soc_kwh: 90.75
+    round_trip_efficiency: 0.91
+  pcc:
+    name: BUS3_pcc
+    import_limit_kw: 298.2
+    export_limit_kw: 134.19
+  upgrade_options:
+    added_pv_kw: 66.0
+    added_pv_cost: 64680.0
+    added_bess_kwh: 96.0
+    added_bess_cost: 41280.0
+    added_generator_kw: 48.0
+    added_generator_cost: 34560.0
+- name: BUS4_MG
+  load_profile:
+    base_kw:
+    - 352.0
+    - 384.0
+    - 416.0
+    - 432.0
+    - 400.0
+    - 368.0
+    critical_fraction: 0.485
+    flexible_fraction: 0.12
+  pv_availability_kw:
+  - 0.0
+  - 17.5
+  - 50.4
+  - 66.5
+  - 38.5
+  - 7.0
+  generator:
+    name: BUS4_thermal
+    p_min_kw: 0.0
+    p_max_kw: 200.0
+    cost_a: 1.82e-06
+    cost_b: 0.001
+    cost_c: 0.4
+  battery:
+    name: BUS4_bess
+    capacity_kwh: 220.0
+    max_charge_kw: 72.0
+    max_discharge_kw: 72.0
+    initial_soc_kwh: 121.0
+    round_trip_efficiency: 0.91
+  pcc:
+    name: BUS4_pcc
+    import_limit_kw: 382.2
+    export_limit_kw: 171.99
+  upgrade_options:
+    added_pv_kw: 88.0
+    added_pv_cost: 86240.0
+    added_bess_kwh: 128.0
+    added_bess_cost: 55040.0
+    added_generator_kw: 64.0
+    added_generator_cost: 46080.0
+- name: BUS5_MG
+  load_profile:
+    base_kw:
+    - 102.667
+    - 112.0
+    - 121.333
+    - 126.0
+    - 116.667
+    - 107.333
+    critical_fraction: 0.52
+    flexible_fraction: 0.135
+  pv_availability_kw:
+  - 0.0
+  - 5.979
+  - 17.22
+  - 22.721
+  - 13.154
+  - 2.392
+  generator:
+    name: BUS5_thermal
+    p_min_kw: 0.0
+    p_max_kw: 600.0
+    cost_a: 1.9e-06
+    cost_b: 0.001
+    cost_c: 0.1
+  battery:
+    name: BUS5_bess
+    capacity_kwh: 64.167
+    max_charge_kw: 25.0
+    max_discharge_kw: 25.0
+    initial_soc_kwh: 35.292
+    round_trip_efficiency: 0.91
+  pcc:
+    name: BUS5_pcc
+    import_limit_kw: 233.1
+    export_limit_kw: 104.895
+  upgrade_options:
+    added_pv_kw: 25.667
+    added_pv_cost: 25153.33
+    added_bess_kwh: 37.333
+    added_bess_cost: 16053.33
+    added_generator_kw: 18.667
+    added_generator_cost: 13440.0
+tie_lines:
+- name: PGLIB_CASE5_TIE_1_2
+  source_microgrid: BUS1_MG
+  target_microgrid: BUS2_MG
+  capacity_kw: 400.0
+- name: PGLIB_CASE5_TIE_1_4
+  source_microgrid: BUS1_MG
+  target_microgrid: BUS4_MG
+  capacity_kw: 426.0
+- name: PGLIB_CASE5_TIE_1_5
+  source_microgrid: BUS1_MG
+  target_microgrid: BUS5_MG
+  capacity_kw: 426.0
+- name: PGLIB_CASE5_TIE_2_3
+  source_microgrid: BUS2_MG
+  target_microgrid: BUS3_MG
+  capacity_kw: 426.0
+- name: PGLIB_CASE5_TIE_3_4
+  source_microgrid: BUS3_MG
+  target_microgrid: BUS4_MG
+  capacity_kw: 426.0
+- name: PGLIB_CASE5_TIE_4_5
+  source_microgrid: BUS4_MG
+  target_microgrid: BUS5_MG
+  capacity_kw: 240.0
+scenarios:
+- name: normal
+  probability: 0.375
+  load_multiplier_by_hour:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  pv_multiplier_by_hour:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  tie_availability:
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  generator_availability:
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  forced_islanding:
+  - - false
+    - false
+    - false
+    - false
+    - false
+    - false
+  - - false
+    - false
+    - false
+    - false
+    - false
+    - false
+  - - false
+    - false
+    - false
+    - false
+    - false
+    - false
+  - - false
+    - false
+    - false
+    - false
+    - false
+    - false
+  - - false
+    - false
+    - false
+    - false
+    - false
+    - false
+  severity_label: low
+  critical_load_requirement: 0.98
+- name: renewable_shortfall
+  probability: 0.125
+  load_multiplier_by_hour:
+  - 1.02
+  - 1.02
+  - 1.02
+  - 1.02
+  - 1.02
+  - 1.02
+  pv_multiplier_by_hour:
+  - 0.42
+  - 0.42
+  - 0.42
+  - 0.42
+  - 0.42
+  - 0.42
+  tie_availability:
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  generator_availability:
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  forced_islanding:
+  - - false
+    - false
+    - false
+    - false
+    - false
+    - false
+  - - false
+    - false
+    - false
+    - false
+    - false
+    - false
+  - - false
+    - false
+    - false
+    - false
+    - false
+    - false
+  - - false
+    - false
+    - false
+    - false
+    - false
+    - false
+  - - false
+    - false
+    - false
+    - false
+    - false
+    - false
+  severity_label: medium
+  critical_load_requirement: 0.96
+- name: demand_surge
+  probability: 0.125
+  load_multiplier_by_hour:
+  - 1.12
+  - 1.16
+  - 1.2
+  - 1.24
+  - 1.28
+  - 1.32
+  pv_multiplier_by_hour:
+  - 0.95
+  - 0.95
+  - 0.95
+  - 0.95
+  - 0.95
+  - 0.95
+  tie_availability:
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  generator_availability:
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  forced_islanding:
+  - - false
+    - false
+    - false
+    - false
+    - false
+    - false
+  - - false
+    - false
+    - false
+    - false
+    - false
+    - false
+  - - false
+    - false
+    - false
+    - false
+    - false
+    - false
+  - - false
+    - false
+    - false
+    - false
+    - false
+    - false
+  - - false
+    - false
+    - false
+    - false
+    - false
+    - false
+  severity_label: medium
+  critical_load_requirement: 0.96
+- name: pcc_failure
+  probability: 0.0625
+  load_multiplier_by_hour:
+  - 1.05
+  - 1.05
+  - 1.05
+  - 1.05
+  - 1.05
+  - 1.05
+  pv_multiplier_by_hour:
+  - 0.9
+  - 0.9
+  - 0.9
+  - 0.9
+  - 0.9
+  - 0.9
+  tie_availability:
+  - - false
+    - false
+    - false
+    - false
+    - false
+    - false
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  generator_availability:
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  - - true
+    - true
+    - true
+    - true
+    - true
+    - true
+  forced_islanding:
+  - - false
+    - false
+    - false
+    - false
+    - false
+    - false
+  - - false
+    - false
+    - false
+    - false
+    - false
+    - false
+  - - false
+    - false
+    - false
+    - false
+    - false
+    - false
+  - - false
+    - false
+    - false
+    - false
+    - false
+    - false
+  - - false
+    - false
+    - false
+    - false
+    - false
+    - false
+  severity_label: high
+  critical_load_requirement: 0.94
+documentation: PGLib case5-PJM PGLib-derived microgrid stress adapter. Public PGLib
+  bus, load, generator, gencost, and branch anchors are normalized into CMPO research
+  units; PV/BESS/PCC/critical-load fields are deterministic synthetic additions. This
+  is not an AC OPF reproduction.

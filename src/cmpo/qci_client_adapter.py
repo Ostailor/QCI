@@ -492,7 +492,7 @@ def write_job_status_csv(records: list[dict[str, Any]], path: Path | str) -> Pat
         "response_json",
     ]
     with output_path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         for record in records:
             writer.writerow({field: record.get(field, "") for field in fieldnames})

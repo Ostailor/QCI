@@ -104,16 +104,14 @@ def canonicalize_challenge_metrics(summary: pd.DataFrame) -> pd.DataFrame:
     ensure_column("total_energy_not_served", ["energy_not_served_kwh", "total_energy_not_served_kwh"], 0.0)
     ensure_column("critical_load_served_fraction", ["critical_served_fraction"], 0.0)
 
+    runtime = pd.Series(np.nan, index=frame.index, dtype="float64")
     if "time_to_good_solution" in frame.columns:
-        runtime = pd.to_numeric(frame["time_to_good_solution"], errors="coerce")
-        runtime = runtime.mask(runtime < 0)
-    elif "median_runtime_seconds" in frame.columns:
-        runtime = pd.to_numeric(frame["median_runtime_seconds"], errors="coerce")
-    elif "runtime_seconds" in frame.columns:
-        runtime = pd.to_numeric(frame["runtime_seconds"], errors="coerce")
-    elif "wall_clock_runtime_seconds" in frame.columns:
-        runtime = pd.to_numeric(frame["wall_clock_runtime_seconds"], errors="coerce")
-    else:
+        time_to_good = pd.to_numeric(frame["time_to_good_solution"], errors="coerce").mask(lambda values: values < 0)
+        runtime = runtime.fillna(time_to_good)
+    for candidate in ("median_runtime_seconds", "runtime_seconds", "wall_clock_runtime_seconds"):
+        if candidate in frame.columns:
+            runtime = runtime.fillna(pd.to_numeric(frame[candidate], errors="coerce"))
+    if runtime.isna().all():
         runtime = pd.Series(0.0, index=frame.index)
     frame["runtime"] = runtime
 

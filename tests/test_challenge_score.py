@@ -1,6 +1,8 @@
+import math
+
 import pandas as pd
 
-from cmpo.challenge_score import score_challenge_summary
+from cmpo.challenge_score import canonicalize_challenge_metrics, score_challenge_summary
 
 
 def _rows() -> pd.DataFrame:
@@ -87,3 +89,17 @@ def test_lexicographic_score_uses_declared_priority_order() -> None:
 
     assert case_a.iloc[0]["method_name"] == "Strong resilience baseline"
     assert list(case_a["challenge_rank"]) == [1, 2]
+
+
+def test_runtime_fallback_is_applied_per_row_for_mixed_result_schemas() -> None:
+    rows = pd.DataFrame(
+        [
+            {"dataset": "case", "method_name": "direct", "time_to_good_solution": 15.0, "runtime_seconds": 15.0},
+            {"dataset": "case", "method_name": "hybrid", "time_to_good_solution": math.nan, "runtime_seconds": 1.25},
+        ]
+    )
+
+    canonical = canonicalize_challenge_metrics(rows).set_index("method_name")
+
+    assert canonical.loc["direct", "runtime"] == 15.0
+    assert canonical.loc["hybrid", "runtime"] == 1.25

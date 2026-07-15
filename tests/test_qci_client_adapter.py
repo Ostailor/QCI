@@ -135,6 +135,7 @@ def test_run_payload_repeats_writes_request_response_and_status(tmp_path: Path, 
 
     assert len(records) == 2
     assert status_path.exists()
+    assert b"\r\n" not in status_path.read_bytes()
     assert records[0]["job_id"] == "job-1"
     assert records[0]["status"] == "COMPLETED"
     assert json.loads(records[0]["raw_energies"]) == [-1.0]
