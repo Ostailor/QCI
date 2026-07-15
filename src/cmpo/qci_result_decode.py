@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import copy
 import json
 import math
 import re
@@ -10,10 +11,16 @@ from typing import Any
 
 import pandas as pd
 
-from cmpo.baseline_orchestrator import build_grid_case_from_config, load_phase3_manifest, phase3_output_dir
+from cmpo.baseline_orchestrator import (
+    build_grid_case_from_config,
+    load_phase3_config,
+    load_phase3_manifest,
+    phase3_output_dir,
+)
 from cmpo.baselines import _make_result
 from cmpo.hamiltonian_builder import build_scenario_hamiltonian
 from cmpo.phase3_metrics import add_phase3_columns
+from cmpo.qci_fit_decomposition import BENCHMARK_CONFIGS
 from cmpo.repair import compute_balance_residuals, repair_solution
 
 MODE_NAMES = ("grid", "island", "restore")
@@ -130,7 +137,13 @@ def _request_for_response(response_path: Path) -> Path | None:
 
 def _discover_response_files(experiment_dir: Path) -> list[Path]:
     candidates: list[Path] = []
-    for raw_dir in [experiment_dir / "qci" / "raw", experiment_dir / "qci_raw", experiment_dir / "qci"]:
+    search_dirs = [
+        experiment_dir,
+        experiment_dir / "qci" / "raw",
+        experiment_dir / "qci_raw",
+        experiment_dir / "qci",
+    ]
+    for raw_dir in search_dirs:
         if raw_dir.exists():
             candidates.extend(sorted(raw_dir.glob("*.json")))
             candidates.extend(sorted(raw_dir.glob("**/response.json")))
@@ -369,6 +382,59 @@ def _solution_dict(order: list[str], vector: list[float]) -> dict[str, float]:
     return {name: float(vector[index]) for index, name in enumerate(order) if index < len(vector)}
 
 
+def _evaluate_payload(payload: dict[str, Any], solution: dict[str, float]) -> float:
+    total = 0.0
+    for term in payload.get("polynomial_terms", []):
+        value = float(term.get("coefficient", 0.0))
+        for name, exponent in term.get("powers", {}).items():
+            value *= float(solution.get(str(name), 0.0)) ** int(exponent)
+        total += value
+    return float(total)
+
+
+def _payload_benchmark(payload: dict[str, Any], fallback: str) -> str:
+    benchmark = payload.get("cmpo_v2", {}).get("source_benchmark") or payload.get("hybrid_model", {}).get("benchmark")
+    if benchmark:
+        return str(benchmark)
+    source = str(payload.get("hybrid_model", {}).get("source_payload_path", ""))
+    for candidate in BENCHMARK_CONFIGS:
+        if candidate in source:
+            return candidate
+    return fallback
+
+
+def _payload_grid_context(
+    payload: dict[str, Any],
+    fallback_config: dict[str, Any] | None,
+    cache: dict[tuple[str, int], tuple[Any, str, float]],
+    data_dir: Path,
+) -> tuple[Any, str, float]:
+    fallback_name = str((fallback_config or {}).get("name", "phase3_qci"))
+    benchmark = _payload_benchmark(payload, fallback_name)
+    horizon = int(payload.get("scenario_metadata", {}).get("horizon", 6))
+    key = (benchmark, horizon)
+    if key in cache:
+        return cache[key]
+    if benchmark in BENCHMARK_CONFIGS:
+        context_config = load_phase3_config(BENCHMARK_CONFIGS[benchmark])
+        dataset = benchmark
+    elif fallback_config:
+        context_config = copy.deepcopy(fallback_config)
+        dataset = str(context_config.get("dataset", {}).get("name") or fallback_name)
+    else:
+        raise ValueError(f"No Phase 3 config can be inferred for payload benchmark {benchmark!r}")
+    context_config.setdefault("dataset", {})["horizon_hours"] = horizon
+    grid_case = build_grid_case_from_config(context_config, data_dir / benchmark / f"horizon_{horizon}")
+    total_upgrade_cost = 0.0
+    try:
+        manifest = load_phase3_manifest(context_config)
+        total_upgrade_cost = float(manifest.get("design_metrics", {}).get("total_upgrade_cost", 0.0))
+    except Exception:
+        pass
+    cache[key] = (grid_case, dataset, total_upgrade_cost)
+    return cache[key]
+
+
 def _load_payload(payload_path: Path | None) -> dict[str, Any] | None:
     if payload_path is None or not payload_path.exists():
         return None
@@ -486,6 +552,95 @@ def _decode_success_rows(
     return rows, failures
 
 
+def _decode_hybrid_rows(
+    *,
+    response_path: Path,
+    request_path: Path | None,
+    response: dict[str, Any],
+    request: dict[str, Any],
+    payload_path: Path,
+    payload: dict[str, Any],
+    dataset: str,
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    """Preserve completed hybrid QCi mode vectors for classical projection."""
+
+    order = _variable_order(request, payload)
+    if not order:
+        raise ValueError(f"no variable order available for {response_path}")
+    energies = _energies(response)
+    solutions = _solutions(response)
+    if not solutions:
+        return [], [
+            {
+                "response_json": str(response_path),
+                "request_json": "" if request_path is None else str(request_path),
+                "payload": str(payload_path),
+                "job_id": _job_id(response),
+                "status": _status(response),
+                "repeat": _parse_repeat(response_path),
+                "failure_reason": "QCi response completed without solutions.",
+            }
+        ]
+    scenario, _patch_ids, patch_label = _scenario_patch_from_payload(payload, request)
+    runtime = _runtime_from_response(response)
+    rows: list[dict[str, Any]] = []
+    for sample_index, vector in enumerate(solutions):
+        raw_solution = _solution_dict(order, vector)
+        rows.append(
+            {
+                "method_name": "CMPO Hybrid QCi Mode Selection",
+                "dataset": dataset,
+                "backend": "qci_dirac3_hybrid_mode_selection",
+                "scenario": scenario,
+                "patch": patch_label,
+                "job_id": _job_id(response),
+                "status": _status(response),
+                "repeat": _parse_repeat(response_path),
+                "sample_index": sample_index,
+                "payload": str(payload_path),
+                "payload_name": payload_path.name,
+                "payload_schema": str(payload.get("schema", "")),
+                "response_json": str(response_path),
+                "request_json": "" if request_path is None else str(request_path),
+                "qci_energy": energies[sample_index] if sample_index < len(energies) else math.nan,
+                "decoded_objective": _evaluate_payload(payload, raw_solution),
+                "runtime": runtime,
+                "runtime_seconds": runtime,
+                "wall_clock_runtime_seconds": runtime,
+                "projection_required": True,
+                "decoded_variables": _safe_json(raw_solution),
+                "raw_solution": _safe_json(raw_solution),
+            }
+        )
+    return rows, []
+
+
+def _summarize_hybrid_payloads(repeat_metrics: pd.DataFrame) -> pd.DataFrame:
+    rows: list[dict[str, Any]] = []
+    for keys, group in repeat_metrics.groupby(["dataset", "payload_name", "scenario", "patch"], sort=True, dropna=False):
+        dataset, payload_name, scenario, patch = keys
+        energies = pd.to_numeric(group["qci_energy"], errors="coerce")
+        runtimes = pd.to_numeric(group["runtime_seconds"], errors="coerce")
+        rows.append(
+            {
+                "dataset": dataset,
+                "payload_name": payload_name,
+                "scenario": scenario,
+                "patch": patch,
+                "sample_count": int(len(group)),
+                "repeat_count": int(group["repeat"].nunique()),
+                "job_count": int(group["job_id"].nunique()),
+                "qci_energy_best": float(energies.min()),
+                "qci_energy_median": float(energies.median()),
+                "decoded_objective_best": float(pd.to_numeric(group["decoded_objective"], errors="coerce").min()),
+                "runtime_seconds_total": float(runtimes.sum()),
+                "runtime_seconds_median": float(runtimes.median()),
+                "projection_status": "pending_classical_projection",
+            }
+        )
+    return pd.DataFrame(rows)
+
+
 def _summarize_payloads(repeat_metrics: pd.DataFrame) -> pd.DataFrame:
     """Summarize QCi repeat distributions by payload without reweighting repeats."""
 
@@ -554,31 +709,33 @@ def _failure_row(response_path: Path, request_path: Path | None, response: dict[
 def decode_qci_experiment(
     *,
     experiment_dir: Path | str,
-    config: dict[str, Any],
+    config: dict[str, Any] | None,
+    input_dir: Path | str | None = None,
+    output_dir: Path | str | None = None,
     payload_manifest: Path | str | None = None,
     dry_run: bool = False,
 ) -> dict[str, str | int | bool]:
     """Decode all QCi response JSON files for one Phase 3 experiment."""
 
     exp_dir = Path(experiment_dir)
-    decoded_dir = exp_dir / "decoded"
-    response_files = _discover_response_files(exp_dir)
+    source_dir = Path(input_dir) if input_dir is not None else exp_dir
+    decoded_dir = Path(output_dir) if output_dir is not None else exp_dir / "decoded"
+    response_files = _discover_response_files(source_dir)
     plan = {
         "experiment_dir": str(exp_dir),
+        "input_dir": str(source_dir),
         "response_files": len(response_files),
         "output_dir": str(decoded_dir),
         "dry_run": dry_run,
     }
     if dry_run:
         return plan
-    grid_case = build_grid_case_from_config(config, exp_dir / "data")
-    dataset = str(config.get("dataset", {}).get("name") or config.get("name", exp_dir.name))
-    total_upgrade_cost = 0.0
-    try:
-        manifest = load_phase3_manifest(config)
-        total_upgrade_cost = float(manifest.get("design_metrics", {}).get("total_upgrade_cost", 0.0))
-    except Exception:
-        manifest = {}
+    manifest: dict[str, Any] = {}
+    if config:
+        try:
+            manifest = load_phase3_manifest(config)
+        except Exception:
+            pass
     manifest_paths = _payload_manifest_paths(exp_dir, None if payload_manifest is None else Path(payload_manifest))
     for payload in manifest.get("payloads", []):
         path = Path(payload)
@@ -586,6 +743,7 @@ def decode_qci_experiment(
 
     decoded_rows: list[dict[str, Any]] = []
     failure_rows: list[dict[str, Any]] = []
+    grid_cache: dict[tuple[str, int], tuple[Any, str, float]] = {}
     for response_path in response_files:
         request_path = _request_for_response(response_path)
         request = _read_json(request_path) if request_path is not None else {}
@@ -600,17 +758,34 @@ def decode_qci_experiment(
             failure_rows.append(_failure_row(response_path, request_path, response | {"failure_reason": "payload JSON not found"}, payload_path))
             continue
         try:
-            rows, failures = _decode_success_rows(
-                response_path=response_path,
-                request_path=request_path,
-                response=response,
-                request=request,
-                payload_path=payload_path,
-                payload=payload,
-                grid_case=grid_case,
-                dataset=dataset,
-                total_upgrade_cost=total_upgrade_cost,
+            _grid_case, dataset, total_upgrade_cost = _payload_grid_context(
+                payload,
+                config,
+                grid_cache,
+                decoded_dir / "data",
             )
+            if str(payload.get("schema", "")).startswith("cmpo.hybrid_qci_mode_payload"):
+                rows, failures = _decode_hybrid_rows(
+                    response_path=response_path,
+                    request_path=request_path,
+                    response=response,
+                    request=request,
+                    payload_path=payload_path,
+                    payload=payload,
+                    dataset=dataset,
+                )
+            else:
+                rows, failures = _decode_success_rows(
+                    response_path=response_path,
+                    request_path=request_path,
+                    response=response,
+                    request=request,
+                    payload_path=payload_path,
+                    payload=payload,
+                    grid_case=_grid_case,
+                    dataset=dataset,
+                    total_upgrade_cost=total_upgrade_cost,
+                )
             decoded_rows.extend(rows)
             failure_rows.extend(failures)
         except Exception as exc:  # noqa: BLE001 - keep failed decodes in the report.
@@ -622,6 +797,14 @@ def decode_qci_experiment(
         repeat_metrics = pd.DataFrame(columns=REPEAT_METRIC_COLUMNS)
         payload_summary = pd.DataFrame(columns=PAYLOAD_SUMMARY_COLUMNS)
         best_solutions = pd.DataFrame(columns=BEST_SOLUTION_COLUMNS)
+    elif repeat_metrics.get("projection_required", pd.Series(False, index=repeat_metrics.index)).fillna(False).astype(bool).all():
+        payload_summary = _summarize_hybrid_payloads(repeat_metrics)
+        best_solutions = (
+            repeat_metrics.sort_values(["payload_name", "qci_energy"], ascending=[True, True])
+            .groupby("payload_name", as_index=False)
+            .head(1)
+            .reset_index(drop=True)
+        )
     else:
         payload_summary = _summarize_payloads(repeat_metrics)
         best_index = (

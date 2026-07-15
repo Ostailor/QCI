@@ -34,6 +34,11 @@ def build_parser() -> argparse.ArgumentParser:
         help="Directory of CMPO payload JSON files. Defaults to the prepared config payload directory.",
     )
     parser.add_argument(
+        "--payload-list",
+        default=None,
+        help="Text file containing one payload JSON path per line. Blank lines and lines beginning with # are ignored.",
+    )
+    parser.add_argument(
         "--output-dir",
         default=None,
         help="Directory for raw QCi request/response artifacts. Defaults under results/phase3/<config>/qci.",
@@ -51,11 +56,47 @@ def _payload_dir(config: dict, payload_dir_arg: str | None) -> Path:
     return Path(manifest["payload_dir"])
 
 
+def resolve_payload_paths(*, payload_dir: Path | None, payload_list: Path | None) -> list[Path]:
+    """Resolve an exact, deterministic payload set from a directory or list file."""
+
+    if payload_dir is not None and payload_list is not None:
+        raise ValueError("Use only one of --payload-dir or --payload-list.")
+    if payload_list is not None:
+        if not payload_list.is_file():
+            raise FileNotFoundError(f"Payload list not found: {payload_list}")
+        payloads: list[Path] = []
+        seen: set[Path] = set()
+        for line_number, line in enumerate(payload_list.read_text(encoding="utf-8").splitlines(), start=1):
+            raw = line.strip()
+            if not raw or raw.startswith("#"):
+                continue
+            path = Path(raw)
+            if not path.is_absolute() and not path.exists():
+                path = payload_list.parent / path
+            if path.suffix.lower() != ".json":
+                raise ValueError(f"Payload list line {line_number} is not JSON: {raw}")
+            if not path.is_file():
+                raise FileNotFoundError(f"Payload list line {line_number} not found: {path}")
+            canonical = path.resolve()
+            if canonical in seen:
+                raise ValueError(f"Duplicate payload in {payload_list}: {path}")
+            seen.add(canonical)
+            payloads.append(path)
+        if not payloads:
+            raise ValueError(f"Payload list contains no JSON payloads: {payload_list}")
+        return payloads
+    if payload_dir is None:
+        return []
+    if not payload_dir.is_dir():
+        raise FileNotFoundError(f"Payload directory not found: {payload_dir}")
+    return sorted(payload_dir.glob("*.json"))
+
+
 def main() -> None:
     args = build_parser().parse_args()
     if args.config:
         config = load_phase3_config(args.config)
-    elif args.payload_dir and args.output_dir:
+    elif (args.payload_dir or args.payload_list) and args.output_dir:
         config = {
             "name": Path(args.output_dir).parent.name,
             "qci": {
@@ -65,25 +106,38 @@ def main() -> None:
             },
         }
     else:
-        raise SystemExit("--config is required unless both --payload-dir and --output-dir are supplied.")
+        raise SystemExit("--config is required unless --output-dir and either --payload-dir or --payload-list are supplied.")
+    if args.payload_dir and args.payload_list:
+        raise SystemExit("Use only one of --payload-dir or --payload-list.")
     config["overwrite"] = bool(args.overwrite)
-    payload_dir = Path(args.payload_dir) if args.payload_dir else phase3_output_dir(config) / "qci_payloads"
+    payload_dir = Path(args.payload_dir) if args.payload_dir else (None if args.payload_list else phase3_output_dir(config) / "qci_payloads")
+    payload_list = Path(args.payload_list) if args.payload_list else None
     output_dir = Path(args.output_dir) if args.output_dir else phase3_output_dir(config) / "qci"
     plan = {
         "config": config["name"],
-        "payload_dir": str(payload_dir),
+        "payload_dir": None if payload_dir is None else str(payload_dir),
+        "payload_list": None if payload_list is None else str(payload_list),
         "output_dir": str(output_dir),
         "repeats": args.repeats,
         "overwrite": args.overwrite,
     }
-    if args.dry_run:
-        print(json.dumps(plan | {"dry_run": True}, indent=2))
-        return
-    if not args.payload_dir and not payload_dir.exists():
+    if not args.payload_dir and payload_list is None and payload_dir is not None and not payload_dir.exists() and not args.dry_run:
         payload_dir = _payload_dir(config, None)
-    payloads = sorted(payload_dir.glob("*.json"))
+        plan["payload_dir"] = str(payload_dir)
+    try:
+        payloads = resolve_payload_paths(payload_dir=payload_dir, payload_list=payload_list)
+    except (FileNotFoundError, ValueError) as exc:
+        raise SystemExit(str(exc)) from exc
+    if args.dry_run:
+        print(
+            json.dumps(
+                plan | {"payload_count": len(payloads), "payloads": [str(path) for path in payloads], "dry_run": True},
+                indent=2,
+            )
+        )
+        return
     if not payloads:
-        raise SystemExit(f"No payload JSON files found in {payload_dir}")
+        raise SystemExit(f"No payload JSON files found in {payload_dir or payload_list}")
 
     records = []
     payload_workers = max(1, int(os.environ.get("QCI_PAYLOAD_WORKERS", "1")))

@@ -56,6 +56,16 @@ def build_parser() -> argparse.ArgumentParser:
         help="Phase 3 experiment directory containing qci/raw JSON or qci/<payload>/repeat_*/response.json. Defaults to the config output_dir.",
     )
     parser.add_argument(
+        "--input-dir",
+        default=None,
+        help="Explicit QCi input directory containing response JSON files, including qci/<payload>/repeat_*/response.json layouts.",
+    )
+    parser.add_argument(
+        "--output-dir",
+        default=None,
+        help="Explicit decoded output directory. Defaults to <experiment-dir>/decoded.",
+    )
+    parser.add_argument(
         "--payload-manifest",
         default=None,
         help="Optional payload_manifest.json mapping response payload names to original CMPO payload JSON files.",
@@ -77,20 +87,30 @@ def main() -> None:
             outputs[benchmark] = decode_qci_experiment(
                 experiment_dir=experiment_dir,
                 config=config,
+                input_dir=None if args.input_dir is None else Path(args.input_dir),
+                output_dir=None if args.output_dir is None else Path(args.output_dir),
                 payload_manifest=None if args.payload_manifest is None else Path(args.payload_manifest),
                 dry_run=args.dry_run,
             )
         print(json.dumps(outputs, indent=2))
         return
-    if not args.config:
-        raise SystemExit("--config is required unless --all-public-benchmarks is supplied.")
-    config = load_phase3_config(args.config)
-    experiment_dir = Path(args.experiment_dir) if args.experiment_dir else phase3_output_dir(config)
+    if not args.config and not args.input_dir:
+        raise SystemExit("--config is required unless --all-public-benchmarks or --input-dir is supplied.")
+    config = load_phase3_config(args.config) if args.config else None
+    if args.experiment_dir:
+        experiment_dir = Path(args.experiment_dir)
+    elif args.input_dir:
+        input_path = Path(args.input_dir)
+        experiment_dir = input_path.parent if input_path.name in {"qci", "raw"} else input_path
+    else:
+        experiment_dir = phase3_output_dir(config or {})
     print(
         json.dumps(
             decode_qci_experiment(
                 experiment_dir=experiment_dir,
                 config=config,
+                input_dir=None if args.input_dir is None else Path(args.input_dir),
+                output_dir=None if args.output_dir is None else Path(args.output_dir),
                 payload_manifest=None if args.payload_manifest is None else Path(args.payload_manifest),
                 dry_run=args.dry_run,
             ),

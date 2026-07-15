@@ -1,0 +1,11 @@
+# pglib_case5_pjm: highest-critical-load PCC failure and demand surge payloads
+results/phase3/cmpo_v2/qci_payloads/pglib_case5_pjm__pcc_failure_BUS3_MG-BUS4_MG.json
+results/phase3/cmpo_v2/qci_payloads/pglib_case5_pjm__demand_surge_BUS3_MG-BUS4_MG.json
+
+# pglib_case14_ieee: highest-critical-load storm islanding and PCC failure payloads
+results/phase3/cmpo_v2/qci_payloads/pglib_case14_ieee__storm_forced_islanding_BUS3_MG-BUS4_MG__from__storm_forced_islanding_BUS3_MG-BUS4_MG-BUS9_MG.json
+results/phase3/cmpo_v2/qci_payloads/pglib_case14_ieee__pcc_failure_BUS3_MG-BUS4_MG__from__pcc_failure_BUS3_MG-BUS4_MG-BUS9_MG.json
+
+# pglib_case30_ieee: highest-critical-load storm islanding and demand surge payloads
+results/phase3/cmpo_v2/qci_payloads/pglib_case30_ieee__storm_forced_islanding_BUS5_MG-BUS7_MG__from__storm_forced_islanding_BUS2_MG-BUS5_MG-BUS7_MG.json
+results/phase3/cmpo_v2/qci_payloads/pglib_case30_ieee__demand_surge_BUS5_MG-BUS7_MG__from__demand_surge_BUS2_MG-BUS5_MG-BUS7_MG.json
