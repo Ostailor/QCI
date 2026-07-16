@@ -1,12 +1,12 @@
 method_name,wins,ties,losses
-CMPO + QCi Dirac-3,0,1,2
-CMPO-local polynomial search,0,0,6
-DifferentialEvolutionOptimizer,0,0,6
-GPU-parallel random restart baseline,0,0,6
-GreedyCriticalLoadFirst,0,0,6
-IPOPT/Pyomo nonlinear baseline,0,0,6
-Piecewise-linear MILP baseline,0,5,1
-QUBO/quadratized local search baseline,0,0,6
-SLSQPDispatchOptimizer,0,0,6
-Stress-only reserve heuristic baseline,0,0,6
-qBraid GPU-parallel random restart baseline,0,0,1
+CMPO + QCi Dirac-3,0,0,3
+CMPO-V2 + QCi Dirac-3,0,0,3
+CMPO-local polynomial search,0,0,3
+DifferentialEvolutionOptimizer,0,0,3
+GPU-parallel random restart baseline,0,0,3
+GreedyCriticalLoadFirst,0,0,3
+IPOPT/Pyomo nonlinear baseline,0,0,3
+Piecewise-linear MILP baseline,0,3,0
+QUBO/quadratized local search baseline,0,0,3
+SLSQPDispatchOptimizer,0,0,3
+Stress-only reserve heuristic baseline,0,0,3

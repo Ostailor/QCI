@@ -1,4 +1,6 @@
 dataset,payload_count,native_cubic_variable_count_median,native_cubic_term_count_median,native_max_degree,qubo_auxiliary_variable_count_median,qubo_variable_blowup_median,qubo_approximation_error_median
+cmpo_v2,134.0,66.0,468.0,3.0,,,
+hybrid,134.0,63.0,206.0,2.0,,,
 pglib_case14,12.0,198.0,1224.0,3.0,,,
 pglib_case14_adapted,,,,,72.0,2.363636363636364,7629.091914328808
 pglib_case14_ieee,12.0,198.0,1224.0,3.0,,,
@@ -7,12 +9,9 @@ pglib_case30_adapted,,,,,72.0,2.363636363636364,2726.2940067979357
 pglib_case30_ieee,18.0,198.0,1224.0,3.0,,,
 pglib_case5,8.0,132.0,816.0,3.0,,,
 pglib_case57,8.0,198.0,1224.0,3.0,,,
-pglib_case57_adapted,,,,,72.0,2.363636363636364,322722.3676751431
 pglib_case57_ieee,8.0,198.0,1224.0,3.0,,,
 pglib_case5_pjm,8.0,132.0,816.0,3.0,,,
 pglib_case5_pjm_adapted,,,,,48.0,2.363636363636364,51231.20386472099
 phase3_qci_small,8.0,132.0,821.5,3.0,,,
 phase3_qci_small_qbraid_gpu,8.0,132.0,821.5,3.0,,,
 phase3_smoke,2.0,44.0,272.0,3.0,,,
-qci_small_synthetic,,,,,48.0,2.363636363636364,181879.05579574566
-synthetic_smoke,,,,,16.0,2.363636363636364,35892.17252478781

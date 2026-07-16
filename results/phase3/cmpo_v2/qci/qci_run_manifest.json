@@ -1,0 +1,10 @@
+{
+  "config": "cmpo_v2",
+  "payload_dir": "results/phase3/cmpo_v2/qci_payloads",
+  "payload_list": null,
+  "output_dir": "results/phase3/cmpo_v2/qci",
+  "repeats": 30,
+  "overwrite": false,
+  "payload_count": 134,
+  "status_csv": "results/phase3/cmpo_v2/qci/job_status.csv"
+}

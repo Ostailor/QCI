@@ -1,0 +1,4 @@
+name,source_microgrid,target_microgrid,capacity_kw
+PGLIB_CASE30_TIE_1_2,BUS1_MG,BUS2_MG,138.0
+PGLIB_CASE30_TIE_2_5,BUS2_MG,BUS5_MG,144.0
+PGLIB_CASE30_TIE_5_7,BUS5_MG,BUS7_MG,127.0

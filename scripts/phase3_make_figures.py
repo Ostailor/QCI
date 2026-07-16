@@ -26,6 +26,9 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Generate the judge-facing public benchmark figure set. The flag is accepted for command reproducibility.",
     )
+    parser.add_argument("--include-direct-qci", action="store_true", help="Include direct-QCi rows already present in final tables.")
+    parser.add_argument("--include-cmpo-v2", action="store_true", help="Include CMPO-V2 rows already present in final tables.")
+    parser.add_argument("--include-hybrid", action="store_true", help="Include full hybrid rows when present in final tables.")
     parser.add_argument("--dry-run", action="store_true", help="Print planned figure outputs without writing files.")
     return parser
 
@@ -93,6 +96,123 @@ def _qci_distribution(frame: pd.DataFrame, path: Path) -> None:
     plt.close(fig)
 
 
+def _short_method_name(method: object) -> str:
+    aliases = {
+        "CMPO + QCi Dirac-3": "Direct CMPO QCi",
+        "CMPO-V2 + QCi Dirac-3": "CMPO-V2 QCi",
+        "CMPO Hybrid QCi + Classical Projection": "Hybrid QCi + projection",
+        "Piecewise-linear MILP baseline": "MILP",
+        "GPU-parallel random restart baseline": "GPU restarts",
+        "QUBO/quadratized local search baseline": "QUBO local search",
+        "IPOPT/Pyomo nonlinear baseline": "IPOPT/Pyomo",
+        "Stress-only reserve heuristic baseline": "Reserve heuristic",
+    }
+    value = str(method)
+    return aliases.get(value, value)
+
+
+def _scatter_v2(challenge: pd.DataFrame, pareto: pd.DataFrame, path: Path) -> None:
+    required = {"dataset", "method_name", "risk_adjusted_cost", "critical_energy_not_served_kwh"}
+    if challenge.empty or not required.issubset(challenge.columns):
+        _save_empty(path, "Final Cost-Resilience Pareto")
+        return
+    frame = challenge[challenge.get("score_mode", pd.Series("weighted", index=challenge.index)) == "weighted"].copy()
+    if frame.empty:
+        _save_empty(path, "Final Cost-Resilience Pareto")
+        return
+    datasets = sorted(frame["dataset"].astype(str).unique())
+    methods = sorted(frame["method_name"].astype(str).unique())
+    colors = {method: plt.get_cmap("tab20")(index % 20) for index, method in enumerate(methods)}
+    pareto_keys = (
+        set(zip(pareto["dataset"].astype(str), pareto["method_name"].astype(str), strict=False))
+        if not pareto.empty and {"dataset", "method_name"}.issubset(pareto.columns)
+        else set()
+    )
+    fig, axes = plt.subplots(1, len(datasets), figsize=(5.2 * len(datasets), 5.3), squeeze=False)
+    for axis, dataset in zip(axes[0], datasets, strict=False):
+        group = frame[frame["dataset"].astype(str) == dataset]
+        for _, row in group.iterrows():
+            method = str(row["method_name"])
+            is_qci = bool(pd.Series([method]).str.contains("qci|dirac", case=False, regex=True).iloc[0])
+            on_frontier = (dataset, method) in pareto_keys
+            axis.scatter(
+                float(row["risk_adjusted_cost"]),
+                float(row["critical_energy_not_served_kwh"]),
+                color=colors[method],
+                marker="*" if is_qci else "o",
+                s=150 if is_qci else 58,
+                edgecolor="black" if on_frontier else "none",
+                linewidth=1.2,
+                label=_short_method_name(method),
+                zorder=3 if is_qci else 2,
+            )
+            if is_qci:
+                axis.annotate(
+                    _short_method_name(method),
+                    (float(row["risk_adjusted_cost"]), float(row["critical_energy_not_served_kwh"])),
+                    xytext=(4, 5),
+                    textcoords="offset points",
+                    fontsize=7,
+                )
+        axis.set_title(dataset.replace("_adapted", "").replace("pglib_", "PGLib "))
+        axis.set_xlabel("Risk-adjusted cost")
+        axis.set_ylabel("Critical ENS (kWh)")
+        axis.grid(alpha=0.2)
+    handles, labels = axes[0][0].get_legend_handles_labels()
+    unique = dict(zip(labels, handles, strict=False))
+    fig.legend(unique.values(), unique.keys(), loc="lower center", ncol=4, fontsize=7, frameon=False)
+    fig.suptitle("Final Cost-Resilience Pareto (lower-left is better)")
+    fig.tight_layout(rect=(0, 0.14, 1, 0.94))
+    fig.savefig(path, dpi=180)
+    plt.close(fig)
+
+
+def _critical_ens_v2(stress: pd.DataFrame, challenge: pd.DataFrame, path: Path) -> None:
+    required = {"dataset", "scenario", "method_name", "critical_energy_not_served_kwh"}
+    if stress.empty or challenge.empty or not required.issubset(stress.columns):
+        _save_empty(path, "Final Critical ENS By Scenario")
+        return
+    scored = challenge[challenge.get("score_mode", pd.Series("weighted", index=challenge.index)) == "weighted"].copy()
+    datasets = sorted(set(stress["dataset"].astype(str)) & set(scored["dataset"].astype(str)))
+    if not datasets:
+        _save_empty(path, "Final Critical ENS By Scenario")
+        return
+    fig, axes = plt.subplots(len(datasets), 1, figsize=(13, 4.2 * len(datasets)), squeeze=False)
+    for axis, dataset in zip(axes[:, 0], datasets, strict=False):
+        dataset_scores = scored[scored["dataset"].astype(str) == dataset]
+        qci_methods = sorted(
+            dataset_scores.loc[
+                dataset_scores["method_name"].astype(str).str.contains("qci|dirac", case=False, regex=True),
+                "method_name",
+            ].astype(str)
+        )
+        classical = dataset_scores[
+            ~dataset_scores["method_name"].astype(str).str.contains("qci|dirac", case=False, regex=True)
+        ].sort_values("challenge_score")
+        selected = qci_methods + ([] if classical.empty else [str(classical.iloc[0]["method_name"])])
+        selected = list(dict.fromkeys(selected))
+        group = stress[
+            (stress["dataset"].astype(str) == dataset) & stress["method_name"].astype(str).isin(selected)
+        ].copy()
+        scenarios = sorted(group["scenario"].astype(str).unique())
+        width = 0.8 / max(1, len(selected))
+        x_positions = list(range(len(scenarios)))
+        for offset, method in enumerate(selected):
+            method_rows = group[group["method_name"].astype(str) == method].set_index("scenario")
+            values = [float(method_rows.loc[item, "critical_energy_not_served_kwh"]) if item in method_rows.index else 0.0 for item in scenarios]
+            positions = [value - 0.4 + width / 2 + offset * width for value in x_positions]
+            axis.bar(positions, values, width=width, label=_short_method_name(method))
+        axis.set_xticks(x_positions, scenarios, rotation=25, ha="right")
+        axis.set_ylabel("Median critical ENS (kWh)")
+        axis.set_title(dataset.replace("_adapted", "").replace("pglib_", "PGLib "))
+        axis.grid(axis="y", alpha=0.2)
+        axis.legend(fontsize=8, frameon=False)
+    fig.suptitle("Critical Energy Not Served By Scenario")
+    fig.tight_layout(rect=(0, 0, 1, 0.97))
+    fig.savefig(path, dpi=180)
+    plt.close(fig)
+
+
 def main() -> None:
     args = build_parser().parse_args()
     root = Path(args.phase3_root)
@@ -105,6 +225,8 @@ def main() -> None:
         "time_to_good_solution": figure_dir / "time_to_good_solution.png",
         "native_cubic_vs_qubo_size": figure_dir / "native_cubic_vs_qubo_size.png",
         "qci_repeat_distribution": figure_dir / "qci_repeat_distribution.png",
+        "final_cost_resilience_pareto_v2": figure_dir / "final_cost_resilience_pareto_v2.png",
+        "final_critical_ens_by_scenario_v2": figure_dir / "final_critical_ens_by_scenario_v2.png",
     }
     if args.dry_run:
         print(json.dumps({"input_dir": str(table_dir), "outputs": {k: str(v) for k, v in outputs.items()}}, indent=2))
@@ -114,6 +236,8 @@ def main() -> None:
     stress = _read(table_dir / "table3_scenario_stress.csv")
     cubic = _read(table_dir / "table4_native_cubic_vs_qubo.csv")
     qci = _read(table_dir / "qci_repeat_distribution.csv")
+    challenge = _read(table_dir / "final_challenge_score_table.csv")
+    final_pareto = _read(table_dir / "final_pareto_frontier_v2.csv")
     _scatter(pareto, outputs["cost_vs_resilience_pareto"])
     stress_labels = stress.copy()
     if not stress_labels.empty:
@@ -160,6 +284,8 @@ def main() -> None:
         "Variables plus auxiliary variables",
     )
     _qci_distribution(qci, outputs["qci_repeat_distribution"])
+    _scatter_v2(challenge, final_pareto, outputs["final_cost_resilience_pareto_v2"])
+    _critical_ens_v2(stress, challenge, outputs["final_critical_ens_by_scenario_v2"])
     print(json.dumps({key: str(value) for key, value in outputs.items()}, indent=2))
 
 

@@ -3,9 +3,6 @@ benchmark,full_payload_count,qci_fit_payload_count,full_max_variables,qci_fit_ma
 pglib_case14_ieee,12.0,60.0,198.0,132.0,3.0,3.0,True,0.3333333333333333,,,,
 ,,,,,,,,,pglib_case30_adapted,72.0,2.363636363636364,2726.2940067979357
 pglib_case30_ieee,18.0,66.0,198.0,132.0,3.0,3.0,True,0.3333333333333333,,,,
-,,,,,,,,,pglib_case57_adapted,72.0,2.363636363636364,322722.3676751431
 pglib_case57_ieee,8.0,40.0,198.0,132.0,3.0,3.0,True,0.3333333333333333,,,,
 pglib_case5_pjm,8.0,0.0,132.0,,3.0,,False,,,,,
 ,,,,,,,,,pglib_case5_pjm_adapted,48.0,2.363636363636364,51231.20386472099
-,,,,,,,,,qci_small_synthetic,48.0,2.363636363636364,181879.05579574566
-,,,,,,,,,synthetic_smoke,16.0,2.363636363636364,35892.17252478781

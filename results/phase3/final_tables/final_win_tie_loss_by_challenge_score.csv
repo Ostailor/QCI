@@ -1,0 +1,23 @@
+score_mode,method_name,wins,ties,losses,datasets_evaluated
+lexicographic,CMPO + QCi Dirac-3,0,0,3,3
+lexicographic,CMPO-V2 + QCi Dirac-3,0,0,3,3
+lexicographic,CMPO-local polynomial search,0,0,3,3
+lexicographic,DifferentialEvolutionOptimizer,0,0,3,3
+lexicographic,GPU-parallel random restart baseline,0,0,3,3
+lexicographic,GreedyCriticalLoadFirst,1,0,2,3
+lexicographic,IPOPT/Pyomo nonlinear baseline,0,0,3,3
+lexicographic,Piecewise-linear MILP baseline,2,0,1,3
+lexicographic,QUBO/quadratized local search baseline,0,0,3,3
+lexicographic,SLSQPDispatchOptimizer,0,0,3,3
+lexicographic,Stress-only reserve heuristic baseline,0,0,3,3
+weighted,CMPO + QCi Dirac-3,0,0,3,3
+weighted,CMPO-V2 + QCi Dirac-3,0,0,3,3
+weighted,CMPO-local polynomial search,0,0,3,3
+weighted,DifferentialEvolutionOptimizer,0,0,3,3
+weighted,GPU-parallel random restart baseline,0,0,3,3
+weighted,GreedyCriticalLoadFirst,0,0,3,3
+weighted,IPOPT/Pyomo nonlinear baseline,0,0,3,3
+weighted,Piecewise-linear MILP baseline,3,0,0,3
+weighted,QUBO/quadratized local search baseline,0,0,3,3
+weighted,SLSQPDispatchOptimizer,0,0,3,3
+weighted,Stress-only reserve heuristic baseline,0,0,3,3

@@ -1,0 +1,7 @@
+name,avg_base_load_kw,critical_fraction,pv_peak_kw,generator_p_max_kw,generator_cost_c,battery_capacity_kwh,pcc_import_limit_kw
+BUS1_MG,8.076,0.38,1.37,340.0,0.07921,60.0,210.0
+BUS2_MG,21.266,0.415,4.226,59.0,0.23269,60.0,327.6
+BUS3_MG,92.316,0.45,21.03,0.0,0.45,60.0,106.75
+BUS4_MG,46.844,0.485,7.947,25.0,0.45,60.0,411.6
+BUS9_MG,28.91,0.52,4.904,25.0,0.45,60.0,260.4
+BUS14_MG,14.602,0.555,2.477,25.0,0.45,60.0,80.0
