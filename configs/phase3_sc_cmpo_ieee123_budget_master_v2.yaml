@@ -1,0 +1,42 @@
+formulation: sc_cmpo_global_budget_master_v2
+benchmark: ieee123_opendss
+source_payload_dir: results/phase3/sc_cmpo/ieee123/qci_payloads
+source_budget_frontier: results/phase3/sc_cmpo/budget_frontier
+source_qci_metrics: results/phase3/sc_cmpo/final_public_experiment/system_level/qci_system_metrics.csv
+source_baseline_metrics: results/phase3/sc_cmpo/final_public_experiment/system_level/baseline_system_metrics.csv
+output_dir: results/phase3/sc_cmpo/budget_master_v2
+model:
+  maximum_variables: 132
+  maximum_degree: 3
+  asset_state_variables_per_physical_asset: 2
+  coverage_slack_variables_per_anchor: 2
+  policy_variable_count: 14
+  cost_unit_candidates_dollars: [0.01, 0.1, 1.0, 10.0, 100.0, 1000.0]
+  minimum_normalized_violation_resolution: 1.0e-14
+  budget_penalty_safety_multiplier: 2.0
+  physical_asset_deduplication: benchmark_anchor_technology_charge_once
+  upgrade_choice_semantics: independent two-state selected/not-selected one-hot per physical asset
+recourse:
+  patch_count: 12
+  training_scenario_count: 8
+  heldout_n_1_count: 10
+  top_unique_portfolios_per_budget: 10
+  consensus_algorithm: overlap_consensus_admm
+  projection: full_public_system_active_power
+  ac_validation: pinned_ieee123_opendss_replay_reported_separately
+  gpu_parallel_dimensions: [portfolio, patch, scenario, heldout_contingency]
+classical_master_methods:
+  - exact MILP or CP-SAT upgrade master
+  - SLSQP/IPOPT relaxation
+  - classical Benders master
+  - greedy cost-benefit portfolio selection
+  - GPU random portfolio search
+  - QUBO/quadratized upgrade master
+qci:
+  device_type: dirac-3
+  relaxation_schedule: 2
+  samples_per_payload: 30
+  samples_per_job: 30
+  max_inflight_jobs: 1
+  submission_performed_during_build: false
+  raw_output_dir: results/phase3/sc_cmpo/budget_master_v2/actual_qci

@@ -1,0 +1,7 @@
+budget_id,coefficient_scaling_factor,continuous_variable_count,degree,integer_variable_count,max_abs_coefficient,raw_max_abs_nonconstant_coefficient,term_count,variable_count
+minimum_feasible_islanding,9.755352902828802e-18,0,3,123,1.0,1.025078241618533e+17,2021,123
+low_cost_catalog_step,6.9024783953267735e-18,0,3,124,1.0,1.4487549873057712e+17,2076,124
+pv_catalog_midpoint,3.5883530226475825e-18,0,3,124,1.0,2.7867938123383782e+17,2076,124
+slsqp_selected_cost,1.5095512678165945e-18,0,3,125,1.0,6.624485178608036e+17,2132,125
+post_slsqp_catalog_step,1.2046212282351157e-18,0,3,125,1.0,8.301364582999212e+17,2132,125
+qci_selected_cost,1.0490250864335225e-18,0,3,125,0.9999999999999999,9.53266049527759e+17,2132,125

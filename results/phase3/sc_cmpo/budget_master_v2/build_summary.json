@@ -1,0 +1,12 @@
+{
+  "schema": "cmpo.budget_master.v2.build",
+  "strict_stop_v1_audit_required": true,
+  "master_payload_count": 6,
+  "public_asset_count": 33,
+  "physical_anchor_count": 11,
+  "selected_currency_unit": 1.0,
+  "maximum_cost_rounding_conservatism": 7.687502627974027,
+  "qci_submission_performed": false,
+  "qci_upload_performed": false,
+  "output_dir": "/Users/omtailor/QCI/results/phase3/sc_cmpo/budget_master_v2"
+}

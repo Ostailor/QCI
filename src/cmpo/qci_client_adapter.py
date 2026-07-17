@@ -9,6 +9,8 @@ import time
 from pathlib import Path
 from typing import Any
 
+from cmpo.budget_encoding import validate_budget_payload
+
 
 def _parse_env_value(value: str) -> str:
     value = value.strip()
@@ -311,12 +313,19 @@ def run_payload_repeats(
 ) -> list[dict[str, Any]]:
     """Run one CMPO payload on QCi Dirac-3 for ``repeats`` attempts."""
 
-    validate_qci_environment()
-    client = _client_from_environment()
     out_dir = Path(output_dir)
-    out_dir.mkdir(parents=True, exist_ok=True)
     payload_file = Path(payload_path)
     payload = load_cmpo_payload(payload_file)
+    if payload.get("budget_constraint") or payload.get("budget_encoding"):
+        budget_validation = validate_budget_payload(payload)
+        if not budget_validation.passed:
+            raise ValueError(
+                "budget constraint is metadata only; QCi submission refused before environment, upload, or client setup: "
+                f"{budget_validation.failure_reason}"
+            )
+    validate_qci_environment()
+    client = _client_from_environment()
+    out_dir.mkdir(parents=True, exist_ok=True)
     qci_file = convert_cmpo_payload_to_qci_file(payload)
     overwrite = bool(config.get("overwrite", False))
     job_params = _job_params_from_config(config)

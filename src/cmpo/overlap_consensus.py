@@ -504,19 +504,21 @@ def _repair_patch_semantics(
         _repair_one_hot(values, tuple(f"{group}[{scenario}]" for group in _MODE_GROUPS))
         _repair_one_hot(values, tuple(f"{group}[{scenario}]" for group in _BATTERY_GROUPS))
 
-    bess_fraction = min(
-        float(values["bess_energy_fraction"]),
-        float(values["bess_power_fraction"]),
-    )
-    values["bess_energy_fraction"] = bess_fraction
-    values["bess_power_fraction"] = bess_fraction
     links = (
         ("pv_capacity_fraction", "upgrade_select_pv"),
         ("bess_energy_fraction", "upgrade_select_bess"),
         ("dispatchable_capacity_fraction", "upgrade_select_dispatchable"),
     )
-    for fraction_name, selection_name in links:
-        values[selection_name] = int(float(values[fraction_name]) > _SELECTION_EPSILON)
+    upgrade_names = {"bess_power_fraction", *(name for pair in links for name in pair)}
+    if upgrade_names.issubset(values):
+        bess_fraction = min(
+            float(values["bess_energy_fraction"]),
+            float(values["bess_power_fraction"]),
+        )
+        values["bess_energy_fraction"] = bess_fraction
+        values["bess_power_fraction"] = bess_fraction
+        for fraction_name, selection_name in links:
+            values[selection_name] = int(float(values[fraction_name]) > _SELECTION_EPSILON)
 
     for variable_name, spec in _variable_specs(payload).items():
         if str(spec.get("encoding_type", "")) != "integer":

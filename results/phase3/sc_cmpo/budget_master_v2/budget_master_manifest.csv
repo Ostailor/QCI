@@ -1,0 +1,7 @@
+actual_budget,budget_id,hard_budget_polynomial_term_count,local_validation_pass,maximum_degree,payload_path,penalty_certificate_pass,qci_submission_performed,variable_count
+2032032.0,minimum_feasible_islanding,1485,True,3,/Users/omtailor/QCI/results/phase3/sc_cmpo/budget_master_v2/qci_master_payloads/minimum_feasible_islanding.json,True,False,123
+2114027.8922130284,low_cost_catalog_step,1540,True,3,/Users/omtailor/QCI/results/phase3/sc_cmpo/budget_master_v2/qci_master_payloads/low_cost_catalog_step.json,True,False,124
+3097978.598769372,pv_catalog_midpoint,1540,True,3,/Users/omtailor/QCI/results/phase3/sc_cmpo/budget_master_v2/qci_master_payloads/pv_catalog_midpoint.json,True,False,124
+4532906.712497371,slsqp_selected_cost,1596,True,3,/Users/omtailor/QCI/results/phase3/sc_cmpo/budget_master_v2/qci_master_payloads/slsqp_selected_cost.json,True,False,125
+5149457.112497372,post_slsqp_catalog_step,1596,True,3,/Users/omtailor/QCI/results/phase3/sc_cmpo/budget_master_v2/qci_master_payloads/post_slsqp_catalog_step.json,True,False,125
+5602175.318543635,qci_selected_cost,1596,True,3,/Users/omtailor/QCI/results/phase3/sc_cmpo/budget_master_v2/qci_master_payloads/qci_selected_cost.json,True,False,125
