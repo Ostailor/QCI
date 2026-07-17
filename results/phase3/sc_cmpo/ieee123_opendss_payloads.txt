@@ -1,0 +1,12 @@
+results/phase3/sc_cmpo/qci_payloads/ieee123_opendss__ieee123_opendss__patch_01__76-77-86.json
+results/phase3/sc_cmpo/qci_payloads/ieee123_opendss__ieee123_opendss__patch_02__47-48-49.json
+results/phase3/sc_cmpo/qci_payloads/ieee123_opendss__ieee123_opendss__patch_03__64-65-66.json
+results/phase3/sc_cmpo/qci_payloads/ieee123_opendss__ieee123_opendss__patch_04__100-98-99.json
+results/phase3/sc_cmpo/qci_payloads/ieee123_opendss__ieee123_opendss__patch_05__73-74-75.json
+results/phase3/sc_cmpo/qci_payloads/ieee123_opendss__ieee123_opendss__patch_06__3-5-6.json
+results/phase3/sc_cmpo/qci_payloads/ieee123_opendss__ieee123_opendss__patch_07__63-64-65.json
+results/phase3/sc_cmpo/qci_payloads/ieee123_opendss__ieee123_opendss__patch_08__69-70-71.json
+results/phase3/sc_cmpo/qci_payloads/ieee123_opendss__ieee123_opendss__patch_09__112-113-114.json
+results/phase3/sc_cmpo/qci_payloads/ieee123_opendss__ieee123_opendss__patch_10__28-29-30.json
+results/phase3/sc_cmpo/qci_payloads/ieee123_opendss__ieee123_opendss__patch_11__15-16-34.json
+results/phase3/sc_cmpo/qci_payloads/ieee123_opendss__ieee123_opendss__patch_12__86-87-88.json

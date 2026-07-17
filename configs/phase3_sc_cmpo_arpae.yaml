@@ -1,0 +1,39 @@
+formulation: sc_cmpo
+benchmark:
+  id: arpae_go_network_01o_020
+  family: arpae_go_challenge1
+  adapter: arpae_go_psse
+source:
+  local_path: data/public_benchmarks/arpae_go/extracted/Challenge_1_Original_Dataset_2_Scenarios/Original_Dataset_Offline_Edition_2/Network_01O-020/scenario_1/case.raw
+  contingency_path: data/public_benchmarks/arpae_go/extracted/Challenge_1_Original_Dataset_2_Scenarios/Original_Dataset_Offline_Edition_2/Network_01O-020/scenario_1/case.con
+  cost_path: data/public_benchmarks/arpae_go/extracted/Challenge_1_Original_Dataset_2_Scenarios/Original_Dataset_Offline_Edition_2/Network_01O-020/case.rop
+  inl_path: data/public_benchmarks/arpae_go/extracted/Challenge_1_Original_Dataset_2_Scenarios/Original_Dataset_Offline_Edition_2/Network_01O-020/case.inl
+  url: https://data.openei.org/files/6153/Challenge_1_Original_Dataset_2_Scenarios.zip
+  version: ARPA-E GO Challenge 1 Original Dataset 2 Offline Edition 2 Network_01O-020 scenario_1 (2019-03-25 public snapshot)
+  license: Creative Commons Attribution 4.0 via OEDI unless otherwise noted
+  sha256: e25cda2e8a51cc1b5ce0edde5d5230fb6298f3aa017daee9cc6082a24f41bc23
+  transformation: Parse PSS/E RAW buses, active loads, generator bounds, branches, and two-winding transformers; map ROP generator dispatch records through active-power dispatch tables to published piecewise-linear cost tables; parse published CON outages and record INL response-limit provenance. Convert only active MW load/generation values to kW, retain MVA ratings without assuming a power factor, and record Challenge 1 as one steady-state period with no invented duration. Select connected load-deficit islands and treat all selected-island active load as critical rather than inventing a critical-load fraction. No synthetic grid values are added.
+  archive_manifest_path: data/public_benchmarks/arpae_go/download_manifest.csv
+  contingency_sha256: 2025cb345d9ef97ffb0bd8669c7816336439efa682599577324bff528eb3ebc4
+  cost_sha256: 0a86542962356c785764a7e7bc93830ca2dce835de6e45278c32d418d2e1caf9
+  inl_sha256: cd9877b01313ba37319e84a2e79267a3beb5e0d6b99e628540ad80577f6858bf
+cost_catalog:
+  local_path: data/upstream/nrel-atb/ATBe_2024_v3_selected_costs.csv
+  manifest_path: data/upstream/nrel-atb/manifest.json
+model:
+  deterministic_seed: 1020
+  patch_count: 8
+  patch_size: 2
+  horizon: 1
+  scenarios: [normal, renewable_shortfall, demand_surge, pcc_loss, local_generator_loss, forced_islanding, restoration, combined_high_stress]
+  challenge_stages: [upgrade_planning, pre_event_preparedness, emergency_response, restoration]
+  weights: {simplex: 30, adequacy: 90, critical_service: 120, mode: 35, activation: 25, preparedness: 18, cost: 8, coupling: 12}
+qci:
+  max_variables: 132
+  max_degree: 3
+  device_type: dirac-3
+  relaxation_schedule: 2
+  sum_constraint: null
+  samples_per_job: 10
+  max_inflight_jobs: 1
+  job_tags: [cmpo, phase3, sc_cmpo, arpae_go, dirac3]

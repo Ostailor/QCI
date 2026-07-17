@@ -13,3 +13,8 @@ build/
 .python-version
 .omx/
 .codex/
+
+# Full local SC-CMPO consensus exports exceed GitHub's per-file limit.
+# Checksum-verified gzip copies are committed beside these files.
+results/phase3/sc_cmpo/final_public_experiment/system_level/consensus_manifest.json
+results/phase3/sc_cmpo/final_public_experiment/system_level/consensus_values.csv

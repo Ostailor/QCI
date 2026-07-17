@@ -1,0 +1,13 @@
+benchmark,coefficient_scaling_factor,continuous_variable_count,degree,integer_variable_count,max_abs_coefficient,payload_name,post_normalization_max_abs_coefficient,pre_normalization_max_abs_coefficient,recourse_variable_count,scenario_count,shared_first_stage_variable_count,term_count,variable_count
+ieee123_opendss,1.0,48,3,55,1.0,ieee123_opendss__ieee123_opendss__patch_01__76-77-86.json,1.0,810.0,88,8,15,637,103
+ieee123_opendss,1.0,48,3,55,1.0,ieee123_opendss__ieee123_opendss__patch_02__47-48-49.json,1.0,810.0,88,8,15,637,103
+ieee123_opendss,1.0,48,3,55,1.0,ieee123_opendss__ieee123_opendss__patch_03__64-65-66.json,1.0,810.0,88,8,15,637,103
+ieee123_opendss,1.0,48,3,55,1.0,ieee123_opendss__ieee123_opendss__patch_04__100-98-99.json,1.0,810.0,88,8,15,637,103
+ieee123_opendss,1.0,48,3,55,1.0,ieee123_opendss__ieee123_opendss__patch_05__73-74-75.json,1.0,810.0,88,8,15,637,103
+ieee123_opendss,1.0,48,3,55,1.0,ieee123_opendss__ieee123_opendss__patch_06__3-5-6.json,1.0,810.0,88,8,15,637,103
+ieee123_opendss,1.0,48,3,55,1.0,ieee123_opendss__ieee123_opendss__patch_07__63-64-65.json,1.0,810.0,88,8,15,637,103
+ieee123_opendss,1.0,48,3,55,1.0,ieee123_opendss__ieee123_opendss__patch_08__69-70-71.json,1.0,810.0,88,8,15,637,103
+ieee123_opendss,1.0,48,3,55,1.0,ieee123_opendss__ieee123_opendss__patch_09__112-113-114.json,1.0,810.0,88,8,15,637,103
+ieee123_opendss,1.0,48,3,55,1.0,ieee123_opendss__ieee123_opendss__patch_10__28-29-30.json,1.0,810.0,88,8,15,637,103
+ieee123_opendss,1.0,48,3,55,1.0,ieee123_opendss__ieee123_opendss__patch_11__15-16-34.json,1.0,810.0,88,8,15,637,103
+ieee123_opendss,1.0,48,3,55,1.0,ieee123_opendss__ieee123_opendss__patch_12__86-87-88.json,1.0,810.0,88,8,15,637,103

@@ -7,8 +7,8 @@ This repository is Team Restorers' Phase 3 benchmark-first submission for the QC
 ## What This Repo Demonstrates
 
 - Public-benchmark-derived microgrid resilience adapters for PGLib-OPF case5-PJM, case14 IEEE, case30 IEEE, and case57 IEEE.
-- ARPA-E Grid Optimization public dataset download/check/provenance path.
-- IEEE distribution feeder bridge/status path with an explicit benchmark_missing report when feeder files are not present.
+- ARPA-E Grid Optimization Challenge 1 RAW/ROP/INL/CON adapter with deterministic contingency-driven SC-CMPO patches.
+- IEEE 123-bus OpenDSS adapter with a required pre-optimization unbalanced power-flow validation gate.
 - Synthetic CMPO cases retained only for smoke tests, debugging, controlled ablations, and sanity checks.
 - A simple microgrid design stage that selects overlapping islandable patches and records upgrade feasibility/cost evidence.
 - Scenario-level dispatch experiments across normal and stressed grid conditions.
@@ -261,7 +261,69 @@ ARPA-E GO data is fetched and checked with:
 python scripts/phase3_check_arpae_go.py
 ```
 
-The IEEE distribution path writes a PowerModelsDistribution bridge script and an explicit `benchmark_missing` report if IEEE feeder files are not present locally.
+The public contingency and distribution SC-CMPO paths are built with:
+
+```bash
+python scripts/phase3_build_arpae_sc_cmpo.py --dry-run
+python scripts/phase3_build_arpae_sc_cmpo.py --overwrite
+
+python scripts/phase3_validate_distribution_powerflow.py --dry-run
+python scripts/phase3_validate_distribution_powerflow.py
+python scripts/phase3_build_ieee123_sc_cmpo.py --overwrite
+```
+
+The ARPA-E adapter parses the pinned Challenge 1 RAW/ROP/INL/CON files for Network 01O-020, including published generator cost curves and contingencies. The IEEE adapter parses the pinned IEEE 123-bus OpenDSS feeder with phase connections, line-code impedances, loads, transformers, regulators, capacitors, and switches. `phase3_build_ieee123_sc_cmpo.py` refuses to create optimization payloads unless OpenDSSDirect compiles, solves, and passes the parser/engine parity checks recorded in `results/phase3/sc_cmpo/distribution_validation.md`. Published IEEE123 line codes do not contain ampacity values, so the adapter records line ratings as unavailable rather than substituting solver defaults. Both builders use only the pinned NREL ATB catalog for PV/BESS/dispatchable upgrade costs, write consolidated checksums to `results/phase3/sc_cmpo/public_benchmark_provenance.csv`, and never submit QCi jobs.
+
+### Final SC-CMPO system experiment
+
+The nonlinear reference requires a real IPOPT executable. On macOS install it with `brew install ipopt`; Pyomo, HiGHS, and `qci-client` are installed from `requirements.txt`. Put `QCI_API_URL` and `QCI_TOKEN` in `.env`, then run:
+
+```bash
+python scripts/phase3_build_sc_cmpo_payloads.py --overwrite
+python scripts/phase3_validate_distribution_powerflow.py --output results/phase3/sc_cmpo/distribution_validation.md
+python scripts/phase3_validate_sc_cmpo.py --result-dir results/phase3/sc_cmpo
+
+QCI_SAMPLES_PER_JOB=30 QCI_PAYLOAD_WORKERS=4 QCI_MAX_INFLIGHT_JOBS=1 \
+python scripts/phase3_run_qci.py \
+  --payload-dir results/phase3/sc_cmpo/qci_payloads \
+  --output-dir results/phase3/sc_cmpo/final_public_experiment/qci \
+  --repeats 30
+
+python scripts/phase3_decode_qci.py \
+  --input-dir results/phase3/sc_cmpo/final_public_experiment/qci \
+  --output-dir results/phase3/sc_cmpo/final_public_experiment/decoded
+
+python scripts/phase3_select_qci_samples.py \
+  --repeat-metrics results/phase3/sc_cmpo/final_public_experiment/decoded/qci_repeat_metrics.csv \
+  --output-dir results/phase3/sc_cmpo/final_public_experiment/qci_selection
+
+python scripts/phase3_run_matched_baselines.py \
+  --payload-dir results/phase3/sc_cmpo/qci_payloads \
+  --output-dir results/phase3/sc_cmpo/final_public_experiment/system_level \
+  --methods "CMPO-local polynomial search" "IPOPT/Pyomo nonlinear" SLSQP \
+    "piecewise-linear MILP" "differential evolution" "QUBO/quadratized search" \
+    "greedy resilience heuristic" \
+  --repeats 50 --wall-clock-budget-seconds 30 --workers 8
+
+python scripts/phase3_run_overlap_consensus.py \
+  --payload-dir results/phase3/sc_cmpo/qci_payloads \
+  --baseline-patch-solutions results/phase3/sc_cmpo/final_public_experiment/system_level/baseline_patch_solutions.csv \
+  --qci-decoded results/phase3/sc_cmpo/final_public_experiment/decoded/qci_repeat_metrics.csv \
+  --output-dir results/phase3/sc_cmpo/final_public_experiment/system_level
+
+python scripts/phase3_compare_system_level.py \
+  --payload-dir results/phase3/sc_cmpo/qci_payloads \
+  --consensus-manifest results/phase3/sc_cmpo/final_public_experiment/system_level/consensus_manifest.json \
+  --output-dir results/phase3/sc_cmpo/final_public_experiment/system_level \
+  --heldout-limit 10
+
+python scripts/phase3_finalize_sc_cmpo.py \
+  --system-level-dir results/phase3/sc_cmpo/final_public_experiment/system_level \
+  --payload-dir results/phase3/sc_cmpo/qci_payloads \
+  --output-dir results/phase3/sc_cmpo/final_public_experiment/final_artifacts
+```
+
+Stochastic classical methods receive 50 independent deterministic seeds. Deterministic solvers run once. All methods use the same 43 public payloads, eight scenarios, overlap consensus, complete-system active-power projection, and held-out public N-1 set; upgrade assets are deduplicated and charged once per reconstructed system.
 
 ## Phase 3 Evidence Status
 

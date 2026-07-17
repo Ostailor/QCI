@@ -1,0 +1,5 @@
+bus,name,nominal_kv,phase_count,reactive_power_kvar,source_record
+"{""bus_id"": ""83"", ""phases"": [""1"", ""2"", ""3""], ""raw_bus"": ""83""}",C83,4.16,3,600.0,IEEE123Master.dss line=199: capacitor.C83
+"{""bus_id"": ""88"", ""phases"": [""1""], ""raw_bus"": ""88.1""}",C88a,2.402,1,50.0,IEEE123Master.dss line=200: capacitor.C88a
+"{""bus_id"": ""90"", ""phases"": [""2""], ""raw_bus"": ""90.2""}",C90b,2.402,1,50.0,IEEE123Master.dss line=201: capacitor.C90b
+"{""bus_id"": ""92"", ""phases"": [""3""], ""raw_bus"": ""92.3""}",C92c,2.402,1,50.0,IEEE123Master.dss line=202: capacitor.C92c

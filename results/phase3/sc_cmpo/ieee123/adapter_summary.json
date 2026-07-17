@@ -1,0 +1,38 @@
+{
+  "output_dir": "results/phase3/sc_cmpo/ieee123",
+  "payload_count": 12,
+  "payload_count_by_benchmark": {
+    "ieee123_opendss": 12
+  },
+  "scenarios_per_payload": [
+    8
+  ],
+  "max_variables": 103,
+  "max_degree": 3,
+  "shared_first_stage_variable_count": [
+    15
+  ],
+  "recourse_variable_count": [
+    88
+  ],
+  "minimum_upgrade_cost": 66624.0,
+  "maximum_upgrade_cost": 2003691.7826154667,
+  "all_challenge_stages_represented": true,
+  "qci_was_run": false,
+  "qci_run_commands": [
+    "python scripts/phase3_run_qci.py --config configs/phase3_sc_cmpo_ieee123.yaml --payload-list results/phase3/sc_cmpo/ieee123/ieee123_opendss_payloads.txt --output-dir results/phase3/sc_cmpo/ieee123/qci/ieee123_opendss --repeats 30"
+  ],
+  "benchmark": "ieee123_opendss",
+  "distribution_validation_passed": true,
+  "distribution_validation_path": "results/phase3/sc_cmpo/distribution_validation.md",
+  "source_counts": {
+    "buses": 132,
+    "loads": 91,
+    "lines": 126,
+    "line_codes": 29,
+    "transformers": 8,
+    "regulators": 7,
+    "capacitors": 4
+  },
+  "microgrid_candidate_rule": "deterministic connected public-topology load-deficit partitions"
+}

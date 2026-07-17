@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 from pathlib import Path
 from typing import Iterable
 
@@ -9,6 +10,7 @@ import numpy as np
 import pandas as pd
 
 from cmpo.challenge_score import add_lexicographic_scores, add_weighted_scores
+from cmpo.system_level_projection import project_sc_cmpo_payload
 
 
 SELECTION_REASONS = (
@@ -77,8 +79,70 @@ def load_qci_repeat_metrics(paths: Iterable[Path | str]) -> pd.DataFrame:
             frame["dataset"] = benchmark
         if "payload_name" not in frame.columns:
             frame["payload_name"] = frame.get("payload", "unknown_payload").astype(str).map(lambda value: Path(value).name)
+        frame = _project_sc_cmpo_rows(frame)
         frames.append(frame)
     return pd.concat(frames, ignore_index=True, sort=False) if frames else pd.DataFrame()
+
+
+def _project_sc_cmpo_rows(frame: pd.DataFrame) -> pd.DataFrame:
+    """Add challenge metrics to decoded SC-CMPO vectors before selection."""
+
+    if "payload_schema" not in frame.columns or "decoded_variables" not in frame.columns:
+        return frame
+    result = frame.copy()
+    payload_cache: dict[str, dict] = {}
+    for index, row in result.iterrows():
+        if not str(row.get("payload_schema", "")).startswith("cmpo.sc_cmpo"):
+            continue
+        payload_path = Path(str(row.get("payload", "")))
+        if not payload_path.exists():
+            continue
+        try:
+            payload = payload_cache.setdefault(
+                str(payload_path), json.loads(payload_path.read_text(encoding="utf-8"))
+            )
+            decoded = json.loads(str(row["decoded_variables"]))
+            if not isinstance(decoded, dict):
+                continue
+            projection = project_sc_cmpo_payload(payload, decoded)
+        except (json.JSONDecodeError, KeyError, TypeError, ValueError):
+            continue
+        repaired = dict(projection["repaired_first_stage"])
+        for scenario in projection["scenario_results"]:
+            repaired.update(scenario["projected_recourse"])
+        upgrade_cost = float(projection["upgrade_cost"])
+        critical_ens = float(projection["critical_energy_not_served_kwh"])
+        runtime = pd.to_numeric(pd.Series([row.get("runtime_seconds", row.get("runtime"))]), errors="coerce").iloc[0]
+        feasible = bool(projection["feasibility_after_projection"])
+        updates = {
+            "critical_energy_not_served_kwh": critical_ens,
+            "energy_not_served_kwh": critical_ens,
+            "total_energy_not_served": critical_ens,
+            "max_fraction_customers_unserved_per_hour": float(
+                projection["max_fraction_customers_unserved_per_hour"]
+            ),
+            "total_hours_critical_infrastructure_unserved": float(
+                projection["total_hours_critical_infrastructure_unserved"]
+            ),
+            "total_critical_infrastructure_unserved_hours_proxy": float(
+                projection["total_hours_critical_infrastructure_unserved"]
+            ),
+            "critical_load_served_fraction": float(
+                projection["critical_load_served_fraction"]
+            ),
+            "feasibility_after_repair": float(feasible),
+            "risk_adjusted_cost": upgrade_cost,
+            "expected_operating_cost": np.nan,
+            "time_to_good_solution": float(runtime) if feasible and pd.notna(runtime) else -1.0,
+            "pre_repair_violation": float(projection["pre_repair_violation"]),
+            "post_repair_violation": float(projection["post_repair_violation"]),
+            "repaired_solution": json.dumps(repaired, sort_keys=True, separators=(",", ":")),
+            "selection_projection_scope": "SC-CMPO patch projection before overlap consensus",
+            "risk_adjusted_cost_is_upgrade_only_proxy": True,
+        }
+        for column, value in updates.items():
+            result.at[index, column] = value
+    return result
 
 
 def score_qci_samples(frame: pd.DataFrame) -> pd.DataFrame:

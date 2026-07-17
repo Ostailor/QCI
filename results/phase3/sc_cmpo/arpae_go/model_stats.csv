@@ -1,0 +1,9 @@
+benchmark,coefficient_scaling_factor,continuous_variable_count,degree,integer_variable_count,max_abs_coefficient,payload_name,post_normalization_max_abs_coefficient,pre_normalization_max_abs_coefficient,recourse_variable_count,scenario_count,shared_first_stage_variable_count,term_count,variable_count
+arpae_go_network_01o_020,1.0,48,3,55,1.0,arpae_go_network_01o_020__arpae_go_network_01o_020__patch_01__320-321.json,1.0,810.0,88,8,15,637,103
+arpae_go_network_01o_020,1.0,48,3,55,1.0,arpae_go_network_01o_020__arpae_go_network_01o_020__patch_02__21-22.json,1.0,810.0,88,8,15,637,103
+arpae_go_network_01o_020,1.0,48,3,55,1.0,arpae_go_network_01o_020__arpae_go_network_01o_020__patch_03__3-4.json,1.0,810.0,88,8,15,637,103
+arpae_go_network_01o_020,1.0,48,3,55,1.0,arpae_go_network_01o_020__arpae_go_network_01o_020__patch_04__228-474.json,1.0,810.0,88,8,15,637,103
+arpae_go_network_01o_020,1.0,48,3,55,1.0,arpae_go_network_01o_020__arpae_go_network_01o_020__patch_05__485-499.json,1.0,810.0,88,8,15,637,103
+arpae_go_network_01o_020,1.0,48,3,55,1.0,arpae_go_network_01o_020__arpae_go_network_01o_020__patch_06__326-327.json,1.0,810.0,88,8,15,637,103
+arpae_go_network_01o_020,1.0,48,3,55,1.0,arpae_go_network_01o_020__arpae_go_network_01o_020__patch_07__263-491.json,1.0,810.0,88,8,15,637,103
+arpae_go_network_01o_020,1.0,48,3,55,1.0,arpae_go_network_01o_020__arpae_go_network_01o_020__patch_08__141-142.json,1.0,810.0,88,8,15,637,103

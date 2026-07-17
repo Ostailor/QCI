@@ -1,0 +1,31 @@
+{
+  "output_dir": "results/phase3/sc_cmpo",
+  "payload_count": 43,
+  "payload_count_by_benchmark": {
+    "arpae_go_network_01o_020": 8,
+    "ieee123_opendss": 12,
+    "pglib_case14_ieee": 9,
+    "pglib_case30_ieee": 14
+  },
+  "scenarios_per_payload": [
+    8
+  ],
+  "max_variables": 103,
+  "max_degree": 3,
+  "shared_first_stage_variable_count": [
+    15
+  ],
+  "recourse_variable_count": [
+    88
+  ],
+  "minimum_upgrade_cost": 66624.0,
+  "maximum_upgrade_cost": 625327984.9041677,
+  "all_challenge_stages_represented": true,
+  "qci_was_run": false,
+  "qci_run_commands": [
+    "python scripts/phase3_run_qci.py --config configs/phase3_sc_cmpo_arpae.yaml --payload-list results/phase3/sc_cmpo/arpae_go_network_01o_020_payloads.txt --output-dir results/phase3/sc_cmpo/qci/arpae_go_network_01o_020 --repeats 30",
+    "python scripts/phase3_run_qci.py --config configs/phase3_sc_cmpo_ieee123.yaml --payload-list results/phase3/sc_cmpo/ieee123_opendss_payloads.txt --output-dir results/phase3/sc_cmpo/qci/ieee123_opendss --repeats 30",
+    "python scripts/phase3_run_qci.py --config configs/phase3_sc_cmpo_case14.yaml --payload-list results/phase3/sc_cmpo/pglib_case14_ieee_payloads.txt --output-dir results/phase3/sc_cmpo/qci/pglib_case14_ieee --repeats 30",
+    "python scripts/phase3_run_qci.py --config configs/phase3_sc_cmpo_case30.yaml --payload-list results/phase3/sc_cmpo/pglib_case30_ieee_payloads.txt --output-dir results/phase3/sc_cmpo/qci/pglib_case30_ieee --repeats 30"
+  ]
+}

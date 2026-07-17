@@ -1,0 +1,5 @@
+benchmark,consensus_replicate,converged,convergence_tolerance,dual_residual,final_status,iteration,iteration_count,maximum_iterations,method,primal_residual,raw_conflict_count,rho,unresolved_conflict_count
+arpae_go_network_01o_020,deterministic,True,1e-06,0.0,completed,1,1,200,greedy resilience heuristic,0.0,0,1.0,0
+ieee123_opendss,deterministic,True,1e-06,0.0,completed,1,1,200,greedy resilience heuristic,0.0,0,1.0,0
+pglib_case14_ieee,deterministic,True,1e-06,0.0,completed,1,1,200,greedy resilience heuristic,0.0,0,1.0,0
+pglib_case30_ieee,deterministic,True,1e-06,0.0,completed,1,1,200,greedy resilience heuristic,0.0,0,1.0,0

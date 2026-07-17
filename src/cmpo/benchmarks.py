@@ -164,6 +164,7 @@ def parse_pglib_matpower_case(path: Path | str) -> dict[str, list[dict[str, Any]
             "target": int(row[1]),
             "rate": float(row[5]) if len(row) > 5 and float(row[5]) > 0.0 else 0.0,
             "x": float(row[3]) if len(row) > 3 else 0.0,
+            "status": int(row[10]) if len(row) > 10 else 1,
         }
         for row in branch_rows
     ]

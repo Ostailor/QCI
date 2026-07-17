@@ -1,0 +1,133 @@
+generation_kw,load_kw,node_id,source_record
+0.0,40.0,1,IEEE123Master.dss line=50: line.L115 | IEEE123Master.dss line=52: line.L1 | IEEE123Master.dss line=53: line.L2 | IEEE123Master.dss line=54: line.L3 | IEEE123Loads.DSS line=10: load.S1a
+0.0,20.0,2,IEEE123Master.dss line=52: line.L1 | IEEE123Loads.DSS line=11: load.S2b
+0.0,0.0,3,IEEE123Master.dss line=53: line.L2 | IEEE123Master.dss line=55: line.L4 | IEEE123Master.dss line=56: line.L5
+0.0,40.0,4,IEEE123Master.dss line=55: line.L4 | IEEE123Loads.DSS line=12: load.S4c
+0.0,20.0,5,IEEE123Master.dss line=56: line.L5 | IEEE123Master.dss line=57: line.L6 | IEEE123Loads.DSS line=13: load.S5c
+0.0,40.0,6,IEEE123Master.dss line=57: line.L6 | IEEE123Loads.DSS line=14: load.S6c
+0.0,20.0,7,IEEE123Master.dss line=54: line.L3 | IEEE123Master.dss line=58: line.L7 | IEEE123Loads.DSS line=15: load.S7a
+0.0,0.0,8,IEEE123Master.dss line=58: line.L7 | IEEE123Master.dss line=59: line.L8 | IEEE123Master.dss line=60: line.L9 | IEEE123Master.dss line=61: line.L10
+0.0,40.0,9,IEEE123Master.dss line=60: line.L9 | IEEE123Regulators.DSS line=3: transformer.reg2a | IEEE123Loads.DSS line=16: load.S9a
+0.0,20.0,10,IEEE123Master.dss line=66: line.L15 | IEEE123Loads.DSS line=17: load.S10a
+0.0,40.0,11,IEEE123Master.dss line=65: line.L14 | IEEE123Loads.DSS line=18: load.S11a
+0.0,20.0,12,IEEE123Master.dss line=59: line.L8 | IEEE123Loads.DSS line=19: load.S12b
+0.0,0.0,13,IEEE123Master.dss line=61: line.L10 | IEEE123Master.dss line=63: line.L12 | IEEE123Master.dss line=64: line.L13 | IEEE123Master.dss line=175: line.Sw2
+0.0,0.0,14,IEEE123Master.dss line=62: line.L11 | IEEE123Master.dss line=65: line.L14 | IEEE123Master.dss line=66: line.L15
+0.0,0.0,15,IEEE123Master.dss line=67: line.L16 | IEEE123Master.dss line=68: line.L17 | IEEE123Master.dss line=85: line.L34
+0.0,40.0,16,IEEE123Master.dss line=67: line.L16 | IEEE123Loads.DSS line=20: load.S16c
+0.0,20.0,17,IEEE123Master.dss line=68: line.L17 | IEEE123Loads.DSS line=21: load.S17c
+0.0,0.0,18,IEEE123Master.dss line=64: line.L13 | IEEE123Master.dss line=69: line.L18 | IEEE123Master.dss line=70: line.L19 | IEEE123Master.dss line=176: line.Sw3
+0.0,40.0,19,IEEE123Master.dss line=69: line.L18 | IEEE123Master.dss line=71: line.L20 | IEEE123Loads.DSS line=22: load.S19a
+0.0,40.0,20,IEEE123Master.dss line=71: line.L20 | IEEE123Loads.DSS line=23: load.S20a
+0.0,0.0,21,IEEE123Master.dss line=70: line.L19 | IEEE123Master.dss line=72: line.L21 | IEEE123Master.dss line=73: line.L22
+0.0,40.0,22,IEEE123Master.dss line=72: line.L21 | IEEE123Loads.DSS line=24: load.S22b
+0.0,0.0,23,IEEE123Master.dss line=73: line.L22 | IEEE123Master.dss line=74: line.L23 | IEEE123Master.dss line=75: line.L24
+0.0,40.0,24,IEEE123Master.dss line=74: line.L23 | IEEE123Loads.DSS line=25: load.S24c
+0.0,0.0,25,IEEE123Master.dss line=75: line.L24 | IEEE123Master.dss line=77: line.L26 | IEEE123Regulators.DSS line=4: transformer.reg3a | IEEE123Regulators.DSS line=6: transformer.reg3c
+0.0,0.0,26,IEEE123Master.dss line=76: line.L25 | IEEE123Master.dss line=78: line.L27 | IEEE123Master.dss line=79: line.L28
+0.0,0.0,27,IEEE123Master.dss line=78: line.L27 | IEEE123Master.dss line=80: line.L29
+0.0,40.0,28,IEEE123Master.dss line=77: line.L26 | IEEE123Master.dss line=81: line.L30 | IEEE123Loads.DSS line=26: load.S28a
+0.0,40.0,29,IEEE123Master.dss line=81: line.L30 | IEEE123Master.dss line=82: line.L31 | IEEE123Loads.DSS line=27: load.S29a
+0.0,40.0,30,IEEE123Master.dss line=82: line.L31 | IEEE123Master.dss line=83: line.L32 | IEEE123Loads.DSS line=28: load.S30c
+0.0,20.0,31,IEEE123Master.dss line=79: line.L28 | IEEE123Master.dss line=84: line.L33 | IEEE123Loads.DSS line=29: load.S31c
+0.0,20.0,32,IEEE123Master.dss line=84: line.L33 | IEEE123Loads.DSS line=30: load.S32c
+0.0,40.0,33,IEEE123Master.dss line=80: line.L29 | IEEE123Loads.DSS line=31: load.S33a
+0.0,40.0,34,IEEE123Master.dss line=63: line.L12 | IEEE123Master.dss line=85: line.L34 | IEEE123Loads.DSS line=32: load.S34c
+0.0,40.0,35,IEEE123Master.dss line=86: line.L35 | IEEE123Master.dss line=87: line.L36 | IEEE123Master.dss line=166: line.L114 | IEEE123Loads.DSS line=33: load.S35a
+0.0,0.0,36,IEEE123Master.dss line=86: line.L35 | IEEE123Master.dss line=88: line.L37 | IEEE123Master.dss line=89: line.L38
+0.0,40.0,37,IEEE123Master.dss line=88: line.L37 | IEEE123Loads.DSS line=34: load.S37a
+0.0,20.0,38,IEEE123Master.dss line=89: line.L38 | IEEE123Master.dss line=90: line.L39 | IEEE123Loads.DSS line=35: load.S38b
+0.0,20.0,39,IEEE123Master.dss line=90: line.L39 | IEEE123Loads.DSS line=36: load.S39b
+0.0,0.0,40,IEEE123Master.dss line=87: line.L36 | IEEE123Master.dss line=91: line.L40 | IEEE123Master.dss line=92: line.L41
+0.0,20.0,41,IEEE123Master.dss line=91: line.L40 | IEEE123Loads.DSS line=37: load.S41c
+0.0,20.0,42,IEEE123Master.dss line=92: line.L41 | IEEE123Master.dss line=93: line.L42 | IEEE123Master.dss line=94: line.L43 | IEEE123Loads.DSS line=38: load.S42a
+0.0,40.0,43,IEEE123Master.dss line=93: line.L42 | IEEE123Loads.DSS line=39: load.S43b
+0.0,0.0,44,IEEE123Master.dss line=94: line.L43 | IEEE123Master.dss line=95: line.L44 | IEEE123Master.dss line=96: line.L45
+0.0,20.0,45,IEEE123Master.dss line=95: line.L44 | IEEE123Master.dss line=97: line.L46 | IEEE123Loads.DSS line=40: load.S45a
+0.0,20.0,46,IEEE123Master.dss line=97: line.L46 | IEEE123Loads.DSS line=41: load.S46a
+0.0,105.0,47,IEEE123Master.dss line=96: line.L45 | IEEE123Master.dss line=98: line.L47 | IEEE123Master.dss line=99: line.L48 | IEEE123Loads.DSS line=42: load.S47
+0.0,210.0,48,IEEE123Master.dss line=98: line.L47 | IEEE123Loads.DSS line=43: load.S48
+0.0,140.0,49,IEEE123Master.dss line=99: line.L48 | IEEE123Master.dss line=100: line.L49 | IEEE123Loads.DSS line=44: load.S49a | IEEE123Loads.DSS line=45: load.S49b | IEEE123Loads.DSS line=46: load.S49c
+0.0,40.0,50,IEEE123Master.dss line=100: line.L49 | IEEE123Master.dss line=101: line.L50 | IEEE123Loads.DSS line=47: load.S50c
+0.0,20.0,51,IEEE123Master.dss line=101: line.L50 | IEEE123Master.dss line=102: line.L51 | IEEE123Loads.DSS line=48: load.S51a
+0.0,40.0,52,IEEE123Master.dss line=103: line.L52 | IEEE123Master.dss line=167: line.L116 | IEEE123Loads.DSS line=49: load.S52a
+0.0,40.0,53,IEEE123Master.dss line=103: line.L52 | IEEE123Master.dss line=104: line.L53 | IEEE123Loads.DSS line=50: load.S53a
+0.0,0.0,54,IEEE123Master.dss line=104: line.L53 | IEEE123Master.dss line=105: line.L54 | IEEE123Master.dss line=106: line.L55 | IEEE123Master.dss line=185: line.Sw8
+0.0,20.0,55,IEEE123Master.dss line=105: line.L54 | IEEE123Master.dss line=107: line.L56 | IEEE123Loads.DSS line=51: load.S55a
+0.0,20.0,56,IEEE123Master.dss line=107: line.L56 | IEEE123Loads.DSS line=52: load.S56b
+0.0,0.0,57,IEEE123Master.dss line=106: line.L55 | IEEE123Master.dss line=108: line.L57 | IEEE123Master.dss line=109: line.L58
+0.0,20.0,58,IEEE123Master.dss line=108: line.L57 | IEEE123Master.dss line=110: line.L59 | IEEE123Loads.DSS line=53: load.S58b
+0.0,20.0,59,IEEE123Master.dss line=110: line.L59 | IEEE123Loads.DSS line=54: load.S59b
+0.0,20.0,60,IEEE123Master.dss line=109: line.L58 | IEEE123Master.dss line=111: line.L60 | IEEE123Master.dss line=112: line.L61 | IEEE123Master.dss line=177: line.Sw4 | IEEE123Loads.DSS line=55: load.S60a
+0.0,0.0,61,IEEE123Master.dss line=111: line.L60 | IEEE123Master.dss line=179: line.Sw6
+0.0,40.0,62,IEEE123Master.dss line=112: line.L61 | IEEE123Master.dss line=113: line.L62 | IEEE123Loads.DSS line=56: load.S62c
+0.0,40.0,63,IEEE123Master.dss line=113: line.L62 | IEEE123Master.dss line=114: line.L63 | IEEE123Loads.DSS line=57: load.S63a
+0.0,75.0,64,IEEE123Master.dss line=114: line.L63 | IEEE123Master.dss line=115: line.L64 | IEEE123Loads.DSS line=58: load.S64b
+0.0,140.0,65,IEEE123Master.dss line=115: line.L64 | IEEE123Master.dss line=116: line.L65 | IEEE123Loads.DSS line=59: load.S65a | IEEE123Loads.DSS line=60: load.S65b | IEEE123Loads.DSS line=61: load.S65c
+0.0,75.0,66,IEEE123Master.dss line=116: line.L65 | IEEE123Loads.DSS line=62: load.S66c
+0.0,0.0,67,IEEE123Master.dss line=117: line.L66 | IEEE123Master.dss line=118: line.L67 | IEEE123Master.dss line=119: line.L68 | IEEE123Master.dss line=168: line.L117
+0.0,20.0,68,IEEE123Master.dss line=117: line.L66 | IEEE123Master.dss line=120: line.L69 | IEEE123Loads.DSS line=63: load.S68a
+0.0,40.0,69,IEEE123Master.dss line=120: line.L69 | IEEE123Master.dss line=121: line.L70 | IEEE123Loads.DSS line=64: load.S69a
+0.0,20.0,70,IEEE123Master.dss line=121: line.L70 | IEEE123Master.dss line=122: line.L71 | IEEE123Loads.DSS line=65: load.S70a
+0.0,40.0,71,IEEE123Master.dss line=122: line.L71 | IEEE123Loads.DSS line=66: load.S71a
+0.0,0.0,72,IEEE123Master.dss line=118: line.L67 | IEEE123Master.dss line=123: line.L72 | IEEE123Master.dss line=124: line.L73
+0.0,40.0,73,IEEE123Master.dss line=123: line.L72 | IEEE123Master.dss line=125: line.L74 | IEEE123Loads.DSS line=67: load.S73c
+0.0,40.0,74,IEEE123Master.dss line=125: line.L74 | IEEE123Master.dss line=126: line.L75 | IEEE123Loads.DSS line=68: load.S74c
+0.0,40.0,75,IEEE123Master.dss line=126: line.L75 | IEEE123Loads.DSS line=69: load.S75c
+0.0,245.0,76,IEEE123Master.dss line=124: line.L73 | IEEE123Master.dss line=127: line.L76 | IEEE123Master.dss line=128: line.L77 | IEEE123Loads.DSS line=70: load.S76a | IEEE123Loads.DSS line=71: load.S76b | IEEE123Loads.DSS line=72: load.S76c
+0.0,40.0,77,IEEE123Master.dss line=127: line.L76 | IEEE123Master.dss line=129: line.L78 | IEEE123Loads.DSS line=73: load.S77b
+0.0,0.0,78,IEEE123Master.dss line=129: line.L78 | IEEE123Master.dss line=130: line.L79 | IEEE123Master.dss line=131: line.L80
+0.0,40.0,79,IEEE123Master.dss line=130: line.L79 | IEEE123Loads.DSS line=74: load.S79a
+0.0,40.0,80,IEEE123Master.dss line=131: line.L80 | IEEE123Master.dss line=132: line.L81 | IEEE123Loads.DSS line=75: load.S80b
+0.0,0.0,81,IEEE123Master.dss line=132: line.L81 | IEEE123Master.dss line=133: line.L82 | IEEE123Master.dss line=134: line.L83
+0.0,40.0,82,IEEE123Master.dss line=133: line.L82 | IEEE123Master.dss line=135: line.L84 | IEEE123Loads.DSS line=76: load.S82a
+0.0,20.0,83,IEEE123Master.dss line=135: line.L84 | IEEE123Master.dss line=199: capacitor.C83 | IEEE123Loads.DSS line=77: load.S83c
+0.0,20.0,84,IEEE123Master.dss line=134: line.L83 | IEEE123Master.dss line=136: line.L85 | IEEE123Loads.DSS line=78: load.S84c
+0.0,40.0,85,IEEE123Master.dss line=136: line.L85 | IEEE123Loads.DSS line=79: load.S85c
+0.0,20.0,86,IEEE123Master.dss line=128: line.L77 | IEEE123Master.dss line=137: line.L86 | IEEE123Loads.DSS line=80: load.S86b
+0.0,40.0,87,IEEE123Master.dss line=137: line.L86 | IEEE123Master.dss line=138: line.L87 | IEEE123Master.dss line=139: line.L88 | IEEE123Loads.DSS line=81: load.S87b
+0.0,40.0,88,IEEE123Master.dss line=138: line.L87 | IEEE123Master.dss line=200: capacitor.C88a | IEEE123Loads.DSS line=82: load.S88a
+0.0,0.0,89,IEEE123Master.dss line=139: line.L88 | IEEE123Master.dss line=140: line.L89 | IEEE123Master.dss line=141: line.L90
+0.0,40.0,90,IEEE123Master.dss line=140: line.L89 | IEEE123Master.dss line=201: capacitor.C90b | IEEE123Loads.DSS line=83: load.S90b
+0.0,0.0,91,IEEE123Master.dss line=141: line.L90 | IEEE123Master.dss line=142: line.L91 | IEEE123Master.dss line=143: line.L92
+0.0,40.0,92,IEEE123Master.dss line=142: line.L91 | IEEE123Master.dss line=202: capacitor.C92c | IEEE123Loads.DSS line=84: load.S92c
+0.0,0.0,93,IEEE123Master.dss line=143: line.L92 | IEEE123Master.dss line=144: line.L93 | IEEE123Master.dss line=145: line.L94
+0.0,40.0,94,IEEE123Master.dss line=144: line.L93 | IEEE123Loads.DSS line=85: load.S94a
+0.0,20.0,95,IEEE123Master.dss line=145: line.L94 | IEEE123Master.dss line=146: line.L95 | IEEE123Loads.DSS line=86: load.S95b
+0.0,20.0,96,IEEE123Master.dss line=146: line.L95 | IEEE123Loads.DSS line=87: load.S96b
+0.0,0.0,97,IEEE123Master.dss line=119: line.L68 | IEEE123Master.dss line=147: line.L96 | IEEE123Master.dss line=178: line.Sw5
+0.0,40.0,98,IEEE123Master.dss line=147: line.L96 | IEEE123Master.dss line=148: line.L97 | IEEE123Loads.DSS line=88: load.S98a
+0.0,40.0,99,IEEE123Master.dss line=148: line.L97 | IEEE123Master.dss line=149: line.L98 | IEEE123Loads.DSS line=89: load.S99b
+0.0,0.0,9r,IEEE123Master.dss line=62: line.L11 | IEEE123Regulators.DSS line=3: transformer.reg2a
+0.0,40.0,100,IEEE123Master.dss line=149: line.L98 | IEEE123Master.dss line=150: line.L99 | IEEE123Loads.DSS line=90: load.S100c
+0.0,0.0,101,IEEE123Master.dss line=151: line.L118 | IEEE123Master.dss line=152: line.L100 | IEEE123Master.dss line=153: line.L101
+0.0,20.0,102,IEEE123Master.dss line=152: line.L100 | IEEE123Master.dss line=154: line.L102 | IEEE123Loads.DSS line=91: load.S102c
+0.0,40.0,103,IEEE123Master.dss line=154: line.L102 | IEEE123Master.dss line=155: line.L103 | IEEE123Loads.DSS line=92: load.S103c
+0.0,40.0,104,IEEE123Master.dss line=155: line.L103 | IEEE123Loads.DSS line=93: load.S104c
+0.0,0.0,105,IEEE123Master.dss line=153: line.L101 | IEEE123Master.dss line=156: line.L104 | IEEE123Master.dss line=157: line.L105
+0.0,40.0,106,IEEE123Master.dss line=156: line.L104 | IEEE123Master.dss line=158: line.L106 | IEEE123Loads.DSS line=94: load.S106b
+0.0,40.0,107,IEEE123Master.dss line=158: line.L106 | IEEE123Loads.DSS line=95: load.S107b
+0.0,0.0,108,IEEE123Master.dss line=157: line.L105 | IEEE123Master.dss line=159: line.L107 | IEEE123Master.dss line=160: line.L108
+0.0,40.0,109,IEEE123Master.dss line=159: line.L107 | IEEE123Master.dss line=161: line.L109 | IEEE123Loads.DSS line=96: load.S109a
+0.0,0.0,110,IEEE123Master.dss line=161: line.L109 | IEEE123Master.dss line=162: line.L110 | IEEE123Master.dss line=163: line.L111
+0.0,20.0,111,IEEE123Master.dss line=162: line.L110 | IEEE123Loads.DSS line=97: load.S111a
+0.0,20.0,112,IEEE123Master.dss line=163: line.L111 | IEEE123Master.dss line=164: line.L112 | IEEE123Loads.DSS line=98: load.S112a
+0.0,40.0,113,IEEE123Master.dss line=164: line.L112 | IEEE123Master.dss line=165: line.L113 | IEEE123Loads.DSS line=99: load.S113a
+0.0,20.0,114,IEEE123Master.dss line=165: line.L113 | IEEE123Loads.DSS line=100: load.S114a
+0.0,0.0,135,IEEE123Master.dss line=166: line.L114 | IEEE123Master.dss line=176: line.Sw3
+0.0,0.0,149,IEEE123Master.dss line=50: line.L115 | IEEE123Master.dss line=174: line.Sw1
+0.0,0.0,150,IEEE123Master.dss line=19: circuit.ieee123 | IEEE123Master.dss line=26: transformer.reg1a | source circuit bus
+0.0,0.0,151,IEEE123Master.dss line=102: line.L51 | IEEE123Master.dss line=184: line.Sw7
+0.0,0.0,152,IEEE123Master.dss line=167: line.L116 | IEEE123Master.dss line=175: line.Sw2
+0.0,0.0,160,IEEE123Master.dss line=177: line.Sw4 | IEEE123Regulators.DSS line=5: transformer.reg4a | IEEE123Regulators.DSS line=7: transformer.reg4b | IEEE123Regulators.DSS line=8: transformer.reg4c
+0.0,0.0,197,IEEE123Master.dss line=151: line.L118 | IEEE123Master.dss line=178: line.Sw5
+0.0,0.0,250,IEEE123Master.dss line=83: line.L32
+0.0,0.0,25r,IEEE123Master.dss line=76: line.L25 | IEEE123Regulators.DSS line=4: transformer.reg3a | IEEE123Regulators.DSS line=6: transformer.reg3c
+0.0,0.0,300,IEEE123Master.dss line=160: line.L108
+0.0,0.0,450,IEEE123Master.dss line=150: line.L99
+0.0,0.0,610,IEEE123Master.dss line=190: transformer.XFM1
+0.0,0.0,61s,IEEE123Master.dss line=179: line.Sw6 | IEEE123Master.dss line=190: transformer.XFM1
+0.0,0.0,150r,IEEE123Master.dss line=26: transformer.reg1a | IEEE123Master.dss line=174: line.Sw1
+0.0,0.0,160r,IEEE123Master.dss line=168: line.L117 | IEEE123Regulators.DSS line=5: transformer.reg4a | IEEE123Regulators.DSS line=7: transformer.reg4b | IEEE123Regulators.DSS line=8: transformer.reg4c
+0.0,0.0,94_OPEN,IEEE123Master.dss line=185: line.Sw8
+0.0,0.0,300_OPEN,IEEE123Master.dss line=184: line.Sw7

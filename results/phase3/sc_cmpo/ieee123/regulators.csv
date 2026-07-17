@@ -1,0 +1,8 @@
+band,current_transformer_primary,like,name,potential_transformer_ratio,reactance_setting,resistance_setting,source_record,transformer_name,voltage_regulation,winding
+2.0,700.0,,creg1a,20.0,7.5,3.0,IEEE123Master.dss line=27: regcontrol.creg1a,reg1a,120.0,2
+2.0,50.0,,creg2a,20.0,0.4,0.4,IEEE123Regulators.DSS line=11: regcontrol.creg2a,reg2a,120.0,2
+1.0,50.0,,creg3a,20.0,0.4,0.4,IEEE123Regulators.DSS line=12: regcontrol.creg3a,reg3a,120.0,2
+1.0,50.0,creg3a,creg3c,20.0,0.4,0.4,IEEE123Regulators.DSS line=13: regcontrol.creg3c,reg3c,120.0,2
+2.0,300.0,,creg4a,20.0,1.3,0.6,IEEE123Regulators.DSS line=14: regcontrol.creg4a,reg4a,124.0,2
+2.0,300.0,creg4a,creg4b,20.0,2.6,1.4,IEEE123Regulators.DSS line=15: regcontrol.creg4b,reg4b,124.0,2
+2.0,300.0,creg4a,creg4c,20.0,1.4,0.2,IEEE123Regulators.DSS line=16: regcontrol.creg4c,reg4c,124.0,2

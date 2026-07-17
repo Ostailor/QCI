@@ -1,0 +1,33 @@
+formulation: sc_cmpo
+benchmark:
+  id: pglib_case14_ieee
+  family: pglib_case14_ieee
+  adapter: pglib_matpower
+source:
+  local_path: data/upstream/pglib-opf/v23.07/pglib_opf_case14_ieee.m
+  url: https://raw.githubusercontent.com/power-grid-lib/pglib-opf/v23.07/pglib_opf_case14_ieee.m
+  version: v23.07 commit dc6be4b2f85ca0e776952ec22cbd4c22396ea5a3
+  license: Creative Commons Attribution 4.0 International
+  sha256: bd5c568621de65e4b0922317010868bc7fa94173807faa10ea8fdbbe77c28106
+  transformation: Parse MATPOWER buses, active loads, generators, generator limits/cost rows, and branches; convert only active MW load/generation values to kW; retain MVA branch ratings as provenance rather than assuming a power factor; form connected load-deficit islands and deterministic N-1 outages. Treat all selected-island active load as critical instead of inventing a critical-load fraction. No Phase 2 DER overlay is reused.
+  manifest_path: manifests/upstream/pglib-opf-case14-ieee.json
+cost_catalog:
+  local_path: data/upstream/nrel-atb/ATBe_2024_v3_selected_costs.csv
+  manifest_path: data/upstream/nrel-atb/manifest.json
+model:
+  deterministic_seed: 14030
+  patch_count: 9
+  patch_size: 2
+  horizon: 1
+  scenarios: [normal, renewable_shortfall, demand_surge, pcc_loss, local_generator_loss, forced_islanding, restoration, combined_high_stress]
+  challenge_stages: [upgrade_planning, pre_event_preparedness, emergency_response, restoration]
+  weights: {simplex: 30, adequacy: 90, critical_service: 120, mode: 35, activation: 25, preparedness: 18, cost: 8, coupling: 12}
+qci:
+  max_variables: 132
+  max_degree: 3
+  device_type: dirac-3
+  relaxation_schedule: 2
+  sum_constraint: null
+  samples_per_job: 10
+  max_inflight_jobs: 1
+  job_tags: [cmpo, phase3, sc_cmpo, pglib_case14_ieee, dirac3]
