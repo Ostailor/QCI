@@ -1,0 +1,9 @@
+{
+  "config": "configs/phase3_sc_cmpo_ieee123_budget_sweep.yaml",
+  "output_dir": "/Users/omtailor/QCI/results/phase3/sc_cmpo/budget_frontier",
+  "budget_count": 6,
+  "source_payload_count": 12,
+  "budgeted_payload_count": 72,
+  "qci_jobs_completed": 12,
+  "qci_jobs_failed": 0
+}

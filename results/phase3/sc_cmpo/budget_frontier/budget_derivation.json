@@ -1,0 +1,83 @@
+{
+  "schema": "cmpo.ieee123_budget_sweep.v1",
+  "catalog_asset_count": 33,
+  "physical_anchor_count": 11,
+  "budgets": [
+    {
+      "budget_id": "minimum_feasible_islanding",
+      "amount": 2032032.0,
+      "discrete_portfolio_cost": 2032032.0,
+      "derivation": "Sum of one full ATB dispatchable-generation option at every deduplicated physical anchor; dispatchable generation is the least-cost option available in PV-shortfall islanding scenarios.",
+      "source_refs": [
+        "/Users/omtailor/QCI/results/phase3/sc_cmpo/final_public_experiment/system_level/qci_system_metrics.csv",
+        "/Users/omtailor/QCI/results/phase3/sc_cmpo/final_public_experiment/system_level/baseline_system_metrics.csv",
+        "embedded upgrade_options in the 12 IEEE123 SC-CMPO payloads"
+      ]
+    },
+    {
+      "budget_id": "low_cost_catalog_step",
+      "amount": 2114027.8922130284,
+      "discrete_portfolio_cost": 2114027.8922130284,
+      "derivation": "Minimum feasible islanding portfolio plus the least-cost full PV option in the discrete catalog.",
+      "source_refs": [
+        "/Users/omtailor/QCI/results/phase3/sc_cmpo/final_public_experiment/system_level/qci_system_metrics.csv",
+        "/Users/omtailor/QCI/results/phase3/sc_cmpo/final_public_experiment/system_level/baseline_system_metrics.csv",
+        "embedded upgrade_options in the 12 IEEE123 SC-CMPO payloads"
+      ]
+    },
+    {
+      "budget_id": "pv_catalog_midpoint",
+      "amount": 3097978.598769372,
+      "discrete_portfolio_cost": 3097978.598769372,
+      "derivation": "Minimum feasible islanding portfolio plus the cumulative cheapest PV options nearest one-half of the catalog-wide PV add-on cost.",
+      "source_refs": [
+        "/Users/omtailor/QCI/results/phase3/sc_cmpo/final_public_experiment/system_level/qci_system_metrics.csv",
+        "/Users/omtailor/QCI/results/phase3/sc_cmpo/final_public_experiment/system_level/baseline_system_metrics.csv",
+        "embedded upgrade_options in the 12 IEEE123 SC-CMPO payloads"
+      ]
+    },
+    {
+      "budget_id": "slsqp_selected_cost",
+      "amount": 4532906.712497371,
+      "discrete_portfolio_cost": 4532906.712497371,
+      "derivation": "Observed IEEE123 SLSQP selected cost; it equals the deduplicated full dispatchable+PV catalog portfolio.",
+      "source_refs": [
+        "/Users/omtailor/QCI/results/phase3/sc_cmpo/final_public_experiment/system_level/qci_system_metrics.csv",
+        "/Users/omtailor/QCI/results/phase3/sc_cmpo/final_public_experiment/system_level/baseline_system_metrics.csv",
+        "embedded upgrade_options in the 12 IEEE123 SC-CMPO payloads"
+      ]
+    },
+    {
+      "budget_id": "post_slsqp_catalog_step",
+      "amount": 5149457.112497372,
+      "discrete_portfolio_cost": 5149457.112497372,
+      "derivation": "SLSQP portfolio plus cumulative cheapest full BESS options nearest the midpoint between the observed SLSQP and QCi costs.",
+      "source_refs": [
+        "/Users/omtailor/QCI/results/phase3/sc_cmpo/final_public_experiment/system_level/qci_system_metrics.csv",
+        "/Users/omtailor/QCI/results/phase3/sc_cmpo/final_public_experiment/system_level/baseline_system_metrics.csv",
+        "embedded upgrade_options in the 12 IEEE123 SC-CMPO payloads"
+      ]
+    },
+    {
+      "budget_id": "qci_selected_cost",
+      "amount": 5602175.318543635,
+      "discrete_portfolio_cost": 5573335.512497371,
+      "derivation": "Observed challenge-selected IEEE123 QCi SC-CMPO portfolio cost; the discrete field records the largest derived catalog prefix used to audit feasibility beneath this cap.",
+      "source_refs": [
+        "/Users/omtailor/QCI/results/phase3/sc_cmpo/final_public_experiment/system_level/qci_system_metrics.csv",
+        "/Users/omtailor/QCI/results/phase3/sc_cmpo/final_public_experiment/system_level/baseline_system_metrics.csv",
+        "embedded upgrade_options in the 12 IEEE123 SC-CMPO payloads"
+      ]
+    }
+  ],
+  "construction_policy": {
+    "mode": "derive_from_public_catalog_and_observed_reference_portfolios",
+    "minimum": "one full dispatchable-generation option per deduplicated physical anchor",
+    "intermediate": "cumulative cheapest full ATB-backed options nearest catalog cost landmarks",
+    "required_reference_methods": [
+      "SLSQP",
+      "QCi SC-CMPO"
+    ],
+    "minimum_budget_count": 6
+  }
+}

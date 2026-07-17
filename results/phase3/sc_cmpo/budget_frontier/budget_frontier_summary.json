@@ -1,0 +1,56 @@
+{
+  "budget_count": 6,
+  "method_count": 8,
+  "comparison_point_count": 48,
+  "final_tables": [
+    "table_budget_matched_results.csv",
+    "table_heldout_budget_results.csv",
+    "table_budget_win_tie_loss.csv",
+    "pareto_frontier.csv"
+  ],
+  "figures": [
+    "upgrade_cost_vs_total_ens.png",
+    "upgrade_cost_vs_critical_ens.png",
+    "upgrade_cost_vs_max_unserved.png",
+    "heldout_upgrade_cost_vs_ens.png"
+  ],
+  "qci_jobs_completed": 12,
+  "qci_jobs_failed": 0,
+  "qci_lowest_total_ens_budgets": [],
+  "qci_lowest_critical_ens_budgets": [],
+  "qci_lowest_max_unserved_budgets": [],
+  "qci_best_heldout_pareto_hypervolume": false,
+  "hypervolumes": {
+    "in_sample_total_ens": {
+      "CMPO-local polynomial search": 5558284054.934,
+      "IPOPT/Pyomo nonlinear": 6483354045.105861,
+      "QCi SC-CMPO": 1301621214.3623364,
+      "QUBO/quadratized search": 5332800957.018524,
+      "SLSQP": 6459587197.441586,
+      "differential evolution": 5332800957.018524,
+      "greedy resilience heuristic": 5332800957.018524,
+      "piecewise-linear MILP": 5332800957.018524
+    },
+    "in_sample_critical_ens": {
+      "CMPO-local polynomial search": 5594136410.826463,
+      "IPOPT/Pyomo nonlinear": 5894403242.1311035,
+      "QCi SC-CMPO": 1127790803.8527038,
+      "QUBO/quadratized search": 5588445594.575423,
+      "SLSQP": 5887484869.098414,
+      "differential evolution": 5588445594.575423,
+      "greedy resilience heuristic": 5588445594.575423,
+      "piecewise-linear MILP": 5588445594.575423
+    },
+    "heldout_total_ens": {
+      "CMPO-local polynomial search": 6509184965.469805,
+      "IPOPT/Pyomo nonlinear": 7682610135.155918,
+      "QCi SC-CMPO": 1624575497.6772223,
+      "QUBO/quadratized search": 5982299663.982628,
+      "SLSQP": 7647729863.915561,
+      "differential evolution": 5982299663.982628,
+      "greedy resilience heuristic": 5982299663.982628,
+      "piecewise-linear MILP": 5982299663.982628
+    }
+  },
+  "strongest_supported_claim": "At identical hard upgrade budgets, the IEEE123 sweep does not support a claim that QCi SC-CMPO reduces total ENS versus every classical method."
+}

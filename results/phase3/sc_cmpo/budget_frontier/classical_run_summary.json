@@ -1,0 +1,20 @@
+{
+  "budget_count": 6,
+  "method_count": 7,
+  "comparison_point_count": 42,
+  "methods": [
+    "SLSQP",
+    "IPOPT/Pyomo nonlinear",
+    "piecewise-linear MILP",
+    "CMPO-local polynomial search",
+    "differential evolution",
+    "QUBO/quadratized search",
+    "greedy resilience heuristic"
+  ],
+  "patch_count": 12,
+  "training_scenario_count": 8,
+  "heldout_contingency_count": 10,
+  "completed": 42,
+  "failed": 0,
+  "results_csv": "/Users/omtailor/QCI/results/phase3/sc_cmpo/budget_frontier/classical_budgeted_results.csv"
+}

@@ -1,0 +1,24 @@
+{
+  "output_dir": "/Users/omtailor/QCI/results/phase3/sc_cmpo/budget_frontier",
+  "acceptance_gates": [
+    "equal_budget_method_coverage",
+    "no_over_budget_rows",
+    "identical_patch_scenario_consensus_projection_heldout",
+    "csv_and_system_trace_for_every_point",
+    "matched_cost_claim_reported",
+    "existing_sc_cmpo_artifacts_untouched"
+  ],
+  "valid": true,
+  "budget_count": 6,
+  "method_count": 8,
+  "checks": {
+    "equal_budget_method_coverage": true,
+    "no_over_budget_rows": true,
+    "identical_patch_scenario_consensus_projection_heldout": true,
+    "csv_and_system_trace_for_every_point": true,
+    "matched_cost_claim_reported": true,
+    "existing_sc_cmpo_artifacts_untouched": true,
+    "qci_raw_requests_responses_and_30_samples": true,
+    "all_required_figures_nonempty": true
+  }
+}

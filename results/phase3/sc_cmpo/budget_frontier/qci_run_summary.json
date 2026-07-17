@@ -1,0 +1,14 @@
+{
+  "budget_count": 6,
+  "method_count": 1,
+  "comparison_point_count": 6,
+  "methods": [
+    "QCi SC-CMPO"
+  ],
+  "patch_count": 12,
+  "training_scenario_count": 8,
+  "heldout_contingency_count": 10,
+  "completed": 6,
+  "failed": 0,
+  "results_csv": "/Users/omtailor/QCI/results/phase3/sc_cmpo/budget_frontier/qci_budgeted_results.csv"
+}

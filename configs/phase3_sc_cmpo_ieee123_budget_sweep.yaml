@@ -1,0 +1,49 @@
+formulation: sc_cmpo_budget_sweep
+benchmark: ieee123_opendss
+base_config: configs/phase3_sc_cmpo_ieee123.yaml
+source_payload_dir: results/phase3/sc_cmpo/ieee123/qci_payloads
+source_qci_dir: results/phase3/sc_cmpo/final_public_experiment/qci
+source_qci_status: results/phase3/sc_cmpo/final_public_experiment/qci/job_status.csv
+source_system_dir: results/phase3/sc_cmpo/final_public_experiment/system_level
+output_dir: results/phase3/sc_cmpo/budget_frontier
+budget_construction:
+  mode: derive_from_public_catalog_and_observed_reference_portfolios
+  minimum: one full dispatchable-generation option per deduplicated physical anchor
+  intermediate: cumulative cheapest full ATB-backed options nearest catalog cost landmarks
+  required_reference_methods: [SLSQP, QCi SC-CMPO]
+  minimum_budget_count: 6
+experiment:
+  patch_count: 12
+  training_scenarios: 8
+  heldout_contingencies: 10
+  consensus_algorithm: overlap_consensus_admm
+  projection: full_public_system_active_power
+  physical_asset_deduplication: benchmark_anchor_technology_max_capacity_charge_once
+  reject_over_budget_reconstruction: true
+qci:
+  samples_per_payload: 30
+  sample_selection: challenge_aligned
+  preserve_raw_requests: true
+  preserve_raw_responses: true
+  record_completed_and_failed_jobs: true
+methods:
+  - QCi SC-CMPO
+  - SLSQP
+  - IPOPT/Pyomo nonlinear
+  - piecewise-linear MILP
+  - CMPO-local polynomial search
+  - differential evolution
+  - QUBO/quadratized search
+  - greedy resilience heuristic
+metrics:
+  - total_upgrade_cost
+  - budget_utilization
+  - critical_ens
+  - total_ens
+  - critical_load_served_fraction
+  - maximum_customers_unserved_per_hour
+  - critical_infrastructure_outage_hours
+  - heldout_critical_ens
+  - heldout_total_ens
+  - feasibility
+  - runtime

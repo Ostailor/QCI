@@ -1,0 +1,5982 @@
+{
+  "budget_constraint": {
+    "amount": 3097978.598769372,
+    "budget_id": "pv_catalog_midpoint",
+    "common_across_all_methods": true,
+    "derivation": "Minimum feasible islanding portfolio plus the cumulative cheapest PV options nearest one-half of the catalog-wide PV add-on cost.",
+    "discrete_portfolio_cost": 3097978.598769372,
+    "enforcement": "reconstruct the complete 12-patch overlap consensus, deduplicate physical assets by benchmark/anchor/technology, and reject cost above amount before projection or reporting",
+    "hard_constraint": true,
+    "physical_asset_deduplication": "benchmark_anchor_technology_max_capacity_charge_once",
+    "reject_over_budget_reconstruction": true,
+    "sample_selection": "challenge_aligned",
+    "samples_per_payload": 30,
+    "source_refs": [
+      "/Users/omtailor/QCI/results/phase3/sc_cmpo/final_public_experiment/system_level/qci_system_metrics.csv",
+      "/Users/omtailor/QCI/results/phase3/sc_cmpo/final_public_experiment/system_level/baseline_system_metrics.csv",
+      "embedded upgrade_options in the 12 IEEE123 SC-CMPO payloads"
+    ]
+  },
+  "max_degree": 3,
+  "model_statistics": {
+    "coefficient_scaling_factor": 1.0,
+    "continuous_variable_count": 48,
+    "degree": 3,
+    "integer_variable_count": 55,
+    "max_abs_coefficient": 1.0,
+    "term_count": 637,
+    "variable_count": 103
+  },
+  "objective_sense": "minimize",
+  "patch_metadata": {
+    "patch": "ieee123_opendss__patch_08__69-70-71",
+    "patch_ids": [
+      "69",
+      "70",
+      "71"
+    ]
+  },
+  "phase2_notice": "SC-CMPO build-only public-data artifact; not submitted to QCi.",
+  "polynomial_terms": [
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "base_mode_connected": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "base_mode_connected": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "base_mode_islanded": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "base_mode_islanded": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "base_mode_restoration": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "base_mode_restoration": 2
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "base_mode_connected": 1,
+        "base_mode_islanded": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "base_mode_connected": 1,
+        "base_mode_restoration": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "base_mode_islanded": 1,
+        "base_mode_restoration": 1
+      }
+    },
+    {
+      "coefficient": 0.0030649704599680864,
+      "degree": 1,
+      "powers": {
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.004321196873585377,
+      "degree": 1,
+      "powers": {
+        "bess_energy_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.0024903758763230796,
+      "degree": 1,
+      "powers": {
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.030864197530864196,
+      "degree": 2,
+      "powers": {
+        "pv_capacity_fraction": 2
+      }
+    },
+    {
+      "coefficient": -0.030864197530864196,
+      "degree": 3,
+      "powers": {
+        "pv_capacity_fraction": 2,
+        "upgrade_select_pv": 1
+      }
+    },
+    {
+      "coefficient": 0.030864197530864196,
+      "degree": 2,
+      "powers": {
+        "bess_energy_fraction": 2
+      }
+    },
+    {
+      "coefficient": -0.030864197530864196,
+      "degree": 3,
+      "powers": {
+        "bess_energy_fraction": 2,
+        "upgrade_select_bess": 1
+      }
+    },
+    {
+      "coefficient": 0.030864197530864196,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 2
+      }
+    },
+    {
+      "coefficient": -0.030864197530864196,
+      "degree": 3,
+      "powers": {
+        "bess_power_fraction": 2,
+        "upgrade_select_bess": 1
+      }
+    },
+    {
+      "coefficient": 0.030864197530864196,
+      "degree": 2,
+      "powers": {
+        "dispatchable_capacity_fraction": 2
+      }
+    },
+    {
+      "coefficient": -0.030864197530864196,
+      "degree": 3,
+      "powers": {
+        "dispatchable_capacity_fraction": 2,
+        "upgrade_select_dispatchable": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "bess_energy_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.030864197530864196,
+      "degree": 2,
+      "powers": {
+        "bess_energy_fraction": 2
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "bess_power_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.030864197530864196,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 2
+      }
+    },
+    {
+      "coefficient": -0.06172839506172839,
+      "degree": 2,
+      "powers": {
+        "bess_energy_fraction": 1,
+        "bess_power_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.022222222222222223,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.044444444444444446,
+      "degree": 1,
+      "powers": {
+        "islanding_eligibility": 1
+      }
+    },
+    {
+      "coefficient": 0.022222222222222223,
+      "degree": 2,
+      "powers": {
+        "islanding_eligibility": 2
+      }
+    },
+    {
+      "coefficient": 0.022222222222222223,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.044444444444444446,
+      "degree": 1,
+      "powers": {
+        "bess_reserve_target": 1
+      }
+    },
+    {
+      "coefficient": 0.022222222222222223,
+      "degree": 2,
+      "powers": {
+        "bess_reserve_target": 2
+      }
+    },
+    {
+      "coefficient": 0.022222222222222223,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.044444444444444446,
+      "degree": 1,
+      "powers": {
+        "bess_soc_target": 1
+      }
+    },
+    {
+      "coefficient": 0.022222222222222223,
+      "degree": 2,
+      "powers": {
+        "bess_soc_target": 2
+      }
+    },
+    {
+      "coefficient": 0.022222222222222223,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.044444444444444446,
+      "degree": 1,
+      "powers": {
+        "critical_load_priority": 1
+      }
+    },
+    {
+      "coefficient": 0.022222222222222223,
+      "degree": 2,
+      "powers": {
+        "critical_load_priority": 2
+      }
+    },
+    {
+      "coefficient": 0.022222222222222223,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.044444444444444446,
+      "degree": 1,
+      "powers": {
+        "tie_pcc_reserve_target": 1
+      }
+    },
+    {
+      "coefficient": 0.022222222222222223,
+      "degree": 2,
+      "powers": {
+        "tie_pcc_reserve_target": 2
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "mode_connected[normal]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "mode_connected[normal]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "mode_islanded[normal]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "mode_islanded[normal]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "mode_restoration[normal]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "mode_restoration[normal]": 2
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "mode_connected[normal]": 1,
+        "mode_islanded[normal]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "mode_connected[normal]": 1,
+        "mode_restoration[normal]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "mode_islanded[normal]": 1,
+        "mode_restoration[normal]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "battery_action_charge[normal]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "battery_action_charge[normal]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "battery_action_hold[normal]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "battery_action_hold[normal]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "battery_action_discharge[normal]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "battery_action_discharge[normal]": 2
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "battery_action_charge[normal]": 1,
+        "battery_action_hold[normal]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "battery_action_charge[normal]": 1,
+        "battery_action_discharge[normal]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "battery_action_discharge[normal]": 1,
+        "battery_action_hold[normal]": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "base_mode_connected": 1
+      }
+    },
+    {
+      "coefficient": 0.014814814814814815,
+      "degree": 2,
+      "powers": {
+        "base_mode_connected": 2
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "mode_connected[normal]": 1
+      }
+    },
+    {
+      "coefficient": 0.014814814814814815,
+      "degree": 2,
+      "powers": {
+        "mode_connected[normal]": 2
+      }
+    },
+    {
+      "coefficient": -0.02962962962962963,
+      "degree": 2,
+      "powers": {
+        "base_mode_connected": 1,
+        "mode_connected[normal]": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "base_mode_islanded": 1
+      }
+    },
+    {
+      "coefficient": 0.014814814814814815,
+      "degree": 2,
+      "powers": {
+        "base_mode_islanded": 2
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "mode_islanded[normal]": 1
+      }
+    },
+    {
+      "coefficient": 0.014814814814814815,
+      "degree": 2,
+      "powers": {
+        "mode_islanded[normal]": 2
+      }
+    },
+    {
+      "coefficient": -0.02962962962962963,
+      "degree": 2,
+      "powers": {
+        "base_mode_islanded": 1,
+        "mode_islanded[normal]": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "base_mode_restoration": 1
+      }
+    },
+    {
+      "coefficient": 0.014814814814814815,
+      "degree": 2,
+      "powers": {
+        "base_mode_restoration": 2
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "mode_restoration[normal]": 1
+      }
+    },
+    {
+      "coefficient": 0.014814814814814815,
+      "degree": 2,
+      "powers": {
+        "mode_restoration[normal]": 2
+      }
+    },
+    {
+      "coefficient": -0.02962962962962963,
+      "degree": 2,
+      "powers": {
+        "base_mode_restoration": 1,
+        "mode_restoration[normal]": 1
+      }
+    },
+    {
+      "coefficient": 0.043209876543209874,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.08641975308641975,
+      "degree": 1,
+      "powers": {
+        "mode_connected[normal]": 1
+      }
+    },
+    {
+      "coefficient": 0.043209876543209874,
+      "degree": 2,
+      "powers": {
+        "mode_connected[normal]": 2
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.2962962962962963,
+      "degree": 1,
+      "powers": {
+        "critical_load_service[normal]": 1
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[normal]": 2
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.2962962962962963,
+      "degree": 1,
+      "powers": {
+        "critical_load_service[normal]": 1
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[normal]": 2
+      }
+    },
+    {
+      "coefficient": -0.2962962962962963,
+      "degree": 1,
+      "powers": {
+        "load_shedding_allocation[normal]": 1
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 2,
+      "powers": {
+        "load_shedding_allocation[normal]": 2
+      }
+    },
+    {
+      "coefficient": 0.2962962962962963,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[normal]": 1,
+        "load_shedding_allocation[normal]": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "der_commitment[normal]": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "der_commitment[normal]": 2
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "der_capacity_slack[normal]": 1
+      }
+    },
+    {
+      "coefficient": 1.0,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[normal]": 2
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "pv_capacity_fraction": 2
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "bess_power_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 2
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "dispatchable_capacity_fraction": 2
+      }
+    },
+    {
+      "coefficient": 0.6666666666666666,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[normal]": 1,
+        "der_commitment[normal]": 1
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "der_commitment[normal]": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "der_commitment[normal]": 1
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "der_commitment[normal]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.6666666666666666,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[normal]": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.6666666666666666,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "der_capacity_slack[normal]": 1
+      }
+    },
+    {
+      "coefficient": -0.6666666666666666,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[normal]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "dispatchable_capacity_fraction": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "critical_load_service[normal]": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[normal]": 2
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "der_commitment[normal]": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "der_commitment[normal]": 2
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "tie_pcc_response[normal]": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "tie_pcc_response[normal]": 2
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[normal]": 1,
+        "der_commitment[normal]": 1
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[normal]": 1,
+        "tie_pcc_response[normal]": 1
+      }
+    },
+    {
+      "coefficient": 0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "der_commitment[normal]": 1,
+        "tie_pcc_response[normal]": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 2,
+      "powers": {
+        "critical_load_priority": 1,
+        "critical_load_service[normal]": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 2,
+      "powers": {
+        "tie_pcc_reserve_target": 1,
+        "tie_pcc_response[normal]": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 2,
+      "powers": {
+        "der_commitment[normal]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 3,
+      "powers": {
+        "critical_load_service[normal]": 1,
+        "der_commitment[normal]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 3,
+      "powers": {
+        "battery_action_discharge[normal]": 1,
+        "bess_power_fraction": 1,
+        "critical_load_service[normal]": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 3,
+      "powers": {
+        "critical_load_service[normal]": 1,
+        "der_commitment[normal]": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "mode_connected[renewable_shortfall]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "mode_connected[renewable_shortfall]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "mode_islanded[renewable_shortfall]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "mode_islanded[renewable_shortfall]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "mode_restoration[renewable_shortfall]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "mode_restoration[renewable_shortfall]": 2
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "mode_connected[renewable_shortfall]": 1,
+        "mode_islanded[renewable_shortfall]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "mode_connected[renewable_shortfall]": 1,
+        "mode_restoration[renewable_shortfall]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "mode_islanded[renewable_shortfall]": 1,
+        "mode_restoration[renewable_shortfall]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "battery_action_charge[renewable_shortfall]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "battery_action_charge[renewable_shortfall]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "battery_action_hold[renewable_shortfall]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "battery_action_hold[renewable_shortfall]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "battery_action_discharge[renewable_shortfall]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "battery_action_discharge[renewable_shortfall]": 2
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "battery_action_charge[renewable_shortfall]": 1,
+        "battery_action_hold[renewable_shortfall]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "battery_action_charge[renewable_shortfall]": 1,
+        "battery_action_discharge[renewable_shortfall]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "battery_action_discharge[renewable_shortfall]": 1,
+        "battery_action_hold[renewable_shortfall]": 1
+      }
+    },
+    {
+      "coefficient": 0.043209876543209874,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.08641975308641975,
+      "degree": 1,
+      "powers": {
+        "mode_connected[renewable_shortfall]": 1
+      }
+    },
+    {
+      "coefficient": 0.043209876543209874,
+      "degree": 2,
+      "powers": {
+        "mode_connected[renewable_shortfall]": 2
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.2962962962962963,
+      "degree": 1,
+      "powers": {
+        "critical_load_service[renewable_shortfall]": 1
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[renewable_shortfall]": 2
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.2962962962962963,
+      "degree": 1,
+      "powers": {
+        "critical_load_service[renewable_shortfall]": 1
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[renewable_shortfall]": 2
+      }
+    },
+    {
+      "coefficient": -0.2962962962962963,
+      "degree": 1,
+      "powers": {
+        "load_shedding_allocation[renewable_shortfall]": 1
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 2,
+      "powers": {
+        "load_shedding_allocation[renewable_shortfall]": 2
+      }
+    },
+    {
+      "coefficient": 0.2962962962962963,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[renewable_shortfall]": 1,
+        "load_shedding_allocation[renewable_shortfall]": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "der_commitment[renewable_shortfall]": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "der_commitment[renewable_shortfall]": 2
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "der_capacity_slack[renewable_shortfall]": 1
+      }
+    },
+    {
+      "coefficient": 1.0,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[renewable_shortfall]": 2
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 2,
+      "powers": {
+        "pv_capacity_fraction": 2
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "bess_power_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 2
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "dispatchable_capacity_fraction": 2
+      }
+    },
+    {
+      "coefficient": 0.6666666666666666,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[renewable_shortfall]": 1,
+        "der_commitment[renewable_shortfall]": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 2,
+      "powers": {
+        "der_commitment[renewable_shortfall]": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "der_commitment[renewable_shortfall]": 1
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "der_commitment[renewable_shortfall]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[renewable_shortfall]": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.6666666666666666,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "der_capacity_slack[renewable_shortfall]": 1
+      }
+    },
+    {
+      "coefficient": -0.6666666666666666,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[renewable_shortfall]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 2,
+      "powers": {
+        "dispatchable_capacity_fraction": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "critical_load_service[renewable_shortfall]": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[renewable_shortfall]": 2
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "der_commitment[renewable_shortfall]": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "der_commitment[renewable_shortfall]": 2
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "tie_pcc_response[renewable_shortfall]": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "tie_pcc_response[renewable_shortfall]": 2
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[renewable_shortfall]": 1,
+        "der_commitment[renewable_shortfall]": 1
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[renewable_shortfall]": 1,
+        "tie_pcc_response[renewable_shortfall]": 1
+      }
+    },
+    {
+      "coefficient": 0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "der_commitment[renewable_shortfall]": 1,
+        "tie_pcc_response[renewable_shortfall]": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 2,
+      "powers": {
+        "critical_load_priority": 1,
+        "critical_load_service[renewable_shortfall]": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 2,
+      "powers": {
+        "tie_pcc_reserve_target": 1,
+        "tie_pcc_response[renewable_shortfall]": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 2,
+      "powers": {
+        "der_commitment[renewable_shortfall]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 3,
+      "powers": {
+        "critical_load_service[renewable_shortfall]": 1,
+        "der_commitment[renewable_shortfall]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 3,
+      "powers": {
+        "battery_action_discharge[renewable_shortfall]": 1,
+        "bess_power_fraction": 1,
+        "critical_load_service[renewable_shortfall]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "mode_connected[demand_surge]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "mode_connected[demand_surge]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "mode_islanded[demand_surge]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "mode_islanded[demand_surge]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "mode_restoration[demand_surge]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "mode_restoration[demand_surge]": 2
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "mode_connected[demand_surge]": 1,
+        "mode_islanded[demand_surge]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "mode_connected[demand_surge]": 1,
+        "mode_restoration[demand_surge]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "mode_islanded[demand_surge]": 1,
+        "mode_restoration[demand_surge]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "battery_action_charge[demand_surge]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "battery_action_charge[demand_surge]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "battery_action_hold[demand_surge]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "battery_action_hold[demand_surge]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "battery_action_discharge[demand_surge]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "battery_action_discharge[demand_surge]": 2
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "battery_action_charge[demand_surge]": 1,
+        "battery_action_hold[demand_surge]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "battery_action_charge[demand_surge]": 1,
+        "battery_action_discharge[demand_surge]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "battery_action_discharge[demand_surge]": 1,
+        "battery_action_hold[demand_surge]": 1
+      }
+    },
+    {
+      "coefficient": 0.043209876543209874,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.08641975308641975,
+      "degree": 1,
+      "powers": {
+        "mode_connected[demand_surge]": 1
+      }
+    },
+    {
+      "coefficient": 0.043209876543209874,
+      "degree": 2,
+      "powers": {
+        "mode_connected[demand_surge]": 2
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.2962962962962963,
+      "degree": 1,
+      "powers": {
+        "critical_load_service[demand_surge]": 1
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[demand_surge]": 2
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.2962962962962963,
+      "degree": 1,
+      "powers": {
+        "critical_load_service[demand_surge]": 1
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[demand_surge]": 2
+      }
+    },
+    {
+      "coefficient": -0.2962962962962963,
+      "degree": 1,
+      "powers": {
+        "load_shedding_allocation[demand_surge]": 1
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 2,
+      "powers": {
+        "load_shedding_allocation[demand_surge]": 2
+      }
+    },
+    {
+      "coefficient": 0.2962962962962963,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[demand_surge]": 1,
+        "load_shedding_allocation[demand_surge]": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "der_commitment[demand_surge]": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "der_commitment[demand_surge]": 2
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "der_capacity_slack[demand_surge]": 1
+      }
+    },
+    {
+      "coefficient": 1.0,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[demand_surge]": 2
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "pv_capacity_fraction": 2
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "bess_power_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 2
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "dispatchable_capacity_fraction": 2
+      }
+    },
+    {
+      "coefficient": 0.6666666666666666,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[demand_surge]": 1,
+        "der_commitment[demand_surge]": 1
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "der_commitment[demand_surge]": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "der_commitment[demand_surge]": 1
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "der_commitment[demand_surge]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.6666666666666666,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[demand_surge]": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.6666666666666666,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "der_capacity_slack[demand_surge]": 1
+      }
+    },
+    {
+      "coefficient": -0.6666666666666666,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[demand_surge]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "dispatchable_capacity_fraction": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "critical_load_service[demand_surge]": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[demand_surge]": 2
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "der_commitment[demand_surge]": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "der_commitment[demand_surge]": 2
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "tie_pcc_response[demand_surge]": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "tie_pcc_response[demand_surge]": 2
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[demand_surge]": 1,
+        "der_commitment[demand_surge]": 1
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[demand_surge]": 1,
+        "tie_pcc_response[demand_surge]": 1
+      }
+    },
+    {
+      "coefficient": 0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "der_commitment[demand_surge]": 1,
+        "tie_pcc_response[demand_surge]": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 2,
+      "powers": {
+        "critical_load_priority": 1,
+        "critical_load_service[demand_surge]": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 2,
+      "powers": {
+        "tie_pcc_reserve_target": 1,
+        "tie_pcc_response[demand_surge]": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 2,
+      "powers": {
+        "der_commitment[demand_surge]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 3,
+      "powers": {
+        "critical_load_service[demand_surge]": 1,
+        "der_commitment[demand_surge]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 3,
+      "powers": {
+        "battery_action_discharge[demand_surge]": 1,
+        "bess_power_fraction": 1,
+        "critical_load_service[demand_surge]": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 3,
+      "powers": {
+        "critical_load_service[demand_surge]": 1,
+        "der_commitment[demand_surge]": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "mode_connected[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "mode_connected[pcc_loss]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "mode_islanded[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "mode_islanded[pcc_loss]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "mode_restoration[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "mode_restoration[pcc_loss]": 2
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "mode_connected[pcc_loss]": 1,
+        "mode_islanded[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "mode_connected[pcc_loss]": 1,
+        "mode_restoration[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "mode_islanded[pcc_loss]": 1,
+        "mode_restoration[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "battery_action_charge[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "battery_action_charge[pcc_loss]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "battery_action_hold[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "battery_action_hold[pcc_loss]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "battery_action_discharge[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "battery_action_discharge[pcc_loss]": 2
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "battery_action_charge[pcc_loss]": 1,
+        "battery_action_hold[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "battery_action_charge[pcc_loss]": 1,
+        "battery_action_discharge[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "battery_action_discharge[pcc_loss]": 1,
+        "battery_action_hold[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.043209876543209874,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.08641975308641975,
+      "degree": 1,
+      "powers": {
+        "mode_islanded[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.043209876543209874,
+      "degree": 2,
+      "powers": {
+        "mode_islanded[pcc_loss]": 2
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.2962962962962963,
+      "degree": 1,
+      "powers": {
+        "critical_load_service[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[pcc_loss]": 2
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.2962962962962963,
+      "degree": 1,
+      "powers": {
+        "critical_load_service[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[pcc_loss]": 2
+      }
+    },
+    {
+      "coefficient": -0.2962962962962963,
+      "degree": 1,
+      "powers": {
+        "load_shedding_allocation[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 2,
+      "powers": {
+        "load_shedding_allocation[pcc_loss]": 2
+      }
+    },
+    {
+      "coefficient": 0.2962962962962963,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[pcc_loss]": 1,
+        "load_shedding_allocation[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "tie_pcc_response[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.043209876543209874,
+      "degree": 2,
+      "powers": {
+        "tie_pcc_response[pcc_loss]": 2
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "mode_islanded[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.043209876543209874,
+      "degree": 2,
+      "powers": {
+        "mode_islanded[pcc_loss]": 2
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "islanding_eligibility": 1
+      }
+    },
+    {
+      "coefficient": 0.043209876543209874,
+      "degree": 2,
+      "powers": {
+        "islanding_eligibility": 2
+      }
+    },
+    {
+      "coefficient": -0.08641975308641975,
+      "degree": 2,
+      "powers": {
+        "islanding_eligibility": 1,
+        "mode_islanded[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "der_commitment[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "der_commitment[pcc_loss]": 2
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "der_capacity_slack[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": 1.0,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[pcc_loss]": 2
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "pv_capacity_fraction": 2
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "bess_power_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 2
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "dispatchable_capacity_fraction": 2
+      }
+    },
+    {
+      "coefficient": 0.6666666666666666,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[pcc_loss]": 1,
+        "der_commitment[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "der_commitment[pcc_loss]": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "der_commitment[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "der_commitment[pcc_loss]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.6666666666666666,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[pcc_loss]": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.6666666666666666,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "der_capacity_slack[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": -0.6666666666666666,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[pcc_loss]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "dispatchable_capacity_fraction": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "critical_load_service[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[pcc_loss]": 2
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "der_commitment[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "der_commitment[pcc_loss]": 2
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "tie_pcc_response[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 2,
+      "powers": {
+        "tie_pcc_response[pcc_loss]": 2
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[pcc_loss]": 1,
+        "der_commitment[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[pcc_loss]": 1,
+        "tie_pcc_response[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 2,
+      "powers": {
+        "der_commitment[pcc_loss]": 1,
+        "tie_pcc_response[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 2,
+      "powers": {
+        "critical_load_priority": 1,
+        "critical_load_service[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 2,
+      "powers": {
+        "tie_pcc_reserve_target": 1,
+        "tie_pcc_response[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 2,
+      "powers": {
+        "der_commitment[pcc_loss]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 3,
+      "powers": {
+        "critical_load_service[pcc_loss]": 1,
+        "der_commitment[pcc_loss]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 3,
+      "powers": {
+        "battery_action_discharge[pcc_loss]": 1,
+        "bess_power_fraction": 1,
+        "critical_load_service[pcc_loss]": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 3,
+      "powers": {
+        "critical_load_service[pcc_loss]": 1,
+        "der_commitment[pcc_loss]": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "mode_connected[local_generator_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "mode_connected[local_generator_loss]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "mode_islanded[local_generator_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "mode_islanded[local_generator_loss]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "mode_restoration[local_generator_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "mode_restoration[local_generator_loss]": 2
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "mode_connected[local_generator_loss]": 1,
+        "mode_islanded[local_generator_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "mode_connected[local_generator_loss]": 1,
+        "mode_restoration[local_generator_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "mode_islanded[local_generator_loss]": 1,
+        "mode_restoration[local_generator_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "battery_action_charge[local_generator_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "battery_action_charge[local_generator_loss]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "battery_action_hold[local_generator_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "battery_action_hold[local_generator_loss]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "battery_action_discharge[local_generator_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "battery_action_discharge[local_generator_loss]": 2
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "battery_action_charge[local_generator_loss]": 1,
+        "battery_action_hold[local_generator_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "battery_action_charge[local_generator_loss]": 1,
+        "battery_action_discharge[local_generator_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "battery_action_discharge[local_generator_loss]": 1,
+        "battery_action_hold[local_generator_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.043209876543209874,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.08641975308641975,
+      "degree": 1,
+      "powers": {
+        "mode_connected[local_generator_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.043209876543209874,
+      "degree": 2,
+      "powers": {
+        "mode_connected[local_generator_loss]": 2
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.2962962962962963,
+      "degree": 1,
+      "powers": {
+        "critical_load_service[local_generator_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[local_generator_loss]": 2
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.2962962962962963,
+      "degree": 1,
+      "powers": {
+        "critical_load_service[local_generator_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[local_generator_loss]": 2
+      }
+    },
+    {
+      "coefficient": -0.2962962962962963,
+      "degree": 1,
+      "powers": {
+        "load_shedding_allocation[local_generator_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 2,
+      "powers": {
+        "load_shedding_allocation[local_generator_loss]": 2
+      }
+    },
+    {
+      "coefficient": 0.2962962962962963,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[local_generator_loss]": 1,
+        "load_shedding_allocation[local_generator_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "der_commitment[local_generator_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "der_commitment[local_generator_loss]": 2
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "der_capacity_slack[local_generator_loss]": 1
+      }
+    },
+    {
+      "coefficient": 1.0,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[local_generator_loss]": 2
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "pv_capacity_fraction": 2
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "bess_power_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 2
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "dispatchable_capacity_fraction": 2
+      }
+    },
+    {
+      "coefficient": 0.6666666666666666,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[local_generator_loss]": 1,
+        "der_commitment[local_generator_loss]": 1
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "der_commitment[local_generator_loss]": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "der_commitment[local_generator_loss]": 1
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "der_commitment[local_generator_loss]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.6666666666666666,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[local_generator_loss]": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.6666666666666666,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "der_capacity_slack[local_generator_loss]": 1
+      }
+    },
+    {
+      "coefficient": -0.6666666666666666,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[local_generator_loss]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "dispatchable_capacity_fraction": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "critical_load_service[local_generator_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[local_generator_loss]": 2
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "der_commitment[local_generator_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "der_commitment[local_generator_loss]": 2
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "tie_pcc_response[local_generator_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "tie_pcc_response[local_generator_loss]": 2
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[local_generator_loss]": 1,
+        "der_commitment[local_generator_loss]": 1
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[local_generator_loss]": 1,
+        "tie_pcc_response[local_generator_loss]": 1
+      }
+    },
+    {
+      "coefficient": 0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "der_commitment[local_generator_loss]": 1,
+        "tie_pcc_response[local_generator_loss]": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 2,
+      "powers": {
+        "critical_load_priority": 1,
+        "critical_load_service[local_generator_loss]": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 2,
+      "powers": {
+        "tie_pcc_reserve_target": 1,
+        "tie_pcc_response[local_generator_loss]": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 2,
+      "powers": {
+        "der_commitment[local_generator_loss]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 3,
+      "powers": {
+        "critical_load_service[local_generator_loss]": 1,
+        "der_commitment[local_generator_loss]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 3,
+      "powers": {
+        "battery_action_discharge[local_generator_loss]": 1,
+        "bess_power_fraction": 1,
+        "critical_load_service[local_generator_loss]": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 3,
+      "powers": {
+        "critical_load_service[local_generator_loss]": 1,
+        "der_commitment[local_generator_loss]": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "mode_connected[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "mode_connected[forced_islanding]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "mode_islanded[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "mode_islanded[forced_islanding]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "mode_restoration[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "mode_restoration[forced_islanding]": 2
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "mode_connected[forced_islanding]": 1,
+        "mode_islanded[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "mode_connected[forced_islanding]": 1,
+        "mode_restoration[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "mode_islanded[forced_islanding]": 1,
+        "mode_restoration[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "battery_action_charge[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "battery_action_charge[forced_islanding]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "battery_action_hold[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "battery_action_hold[forced_islanding]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "battery_action_discharge[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "battery_action_discharge[forced_islanding]": 2
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "battery_action_charge[forced_islanding]": 1,
+        "battery_action_hold[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "battery_action_charge[forced_islanding]": 1,
+        "battery_action_discharge[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "battery_action_discharge[forced_islanding]": 1,
+        "battery_action_hold[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": 0.043209876543209874,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.08641975308641975,
+      "degree": 1,
+      "powers": {
+        "mode_islanded[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": 0.043209876543209874,
+      "degree": 2,
+      "powers": {
+        "mode_islanded[forced_islanding]": 2
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.2962962962962963,
+      "degree": 1,
+      "powers": {
+        "critical_load_service[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[forced_islanding]": 2
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.2962962962962963,
+      "degree": 1,
+      "powers": {
+        "critical_load_service[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[forced_islanding]": 2
+      }
+    },
+    {
+      "coefficient": -0.2962962962962963,
+      "degree": 1,
+      "powers": {
+        "load_shedding_allocation[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 2,
+      "powers": {
+        "load_shedding_allocation[forced_islanding]": 2
+      }
+    },
+    {
+      "coefficient": 0.2962962962962963,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[forced_islanding]": 1,
+        "load_shedding_allocation[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "tie_pcc_response[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": 0.043209876543209874,
+      "degree": 2,
+      "powers": {
+        "tie_pcc_response[forced_islanding]": 2
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "mode_islanded[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": 0.043209876543209874,
+      "degree": 2,
+      "powers": {
+        "mode_islanded[forced_islanding]": 2
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "islanding_eligibility": 1
+      }
+    },
+    {
+      "coefficient": 0.043209876543209874,
+      "degree": 2,
+      "powers": {
+        "islanding_eligibility": 2
+      }
+    },
+    {
+      "coefficient": -0.08641975308641975,
+      "degree": 2,
+      "powers": {
+        "islanding_eligibility": 1,
+        "mode_islanded[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "der_commitment[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "der_commitment[forced_islanding]": 2
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "der_capacity_slack[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": 1.0,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[forced_islanding]": 2
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "pv_capacity_fraction": 2
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "bess_power_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 2
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "dispatchable_capacity_fraction": 2
+      }
+    },
+    {
+      "coefficient": 0.6666666666666666,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[forced_islanding]": 1,
+        "der_commitment[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "der_commitment[forced_islanding]": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "der_commitment[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "der_commitment[forced_islanding]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.6666666666666666,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[forced_islanding]": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.6666666666666666,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "der_capacity_slack[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": -0.6666666666666666,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[forced_islanding]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "dispatchable_capacity_fraction": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "critical_load_service[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[forced_islanding]": 2
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "der_commitment[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "der_commitment[forced_islanding]": 2
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "tie_pcc_response[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 2,
+      "powers": {
+        "tie_pcc_response[forced_islanding]": 2
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[forced_islanding]": 1,
+        "der_commitment[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[forced_islanding]": 1,
+        "tie_pcc_response[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 2,
+      "powers": {
+        "der_commitment[forced_islanding]": 1,
+        "tie_pcc_response[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 2,
+      "powers": {
+        "critical_load_priority": 1,
+        "critical_load_service[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 2,
+      "powers": {
+        "tie_pcc_reserve_target": 1,
+        "tie_pcc_response[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 2,
+      "powers": {
+        "der_commitment[forced_islanding]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 3,
+      "powers": {
+        "critical_load_service[forced_islanding]": 1,
+        "der_commitment[forced_islanding]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 3,
+      "powers": {
+        "battery_action_discharge[forced_islanding]": 1,
+        "bess_power_fraction": 1,
+        "critical_load_service[forced_islanding]": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 3,
+      "powers": {
+        "critical_load_service[forced_islanding]": 1,
+        "der_commitment[forced_islanding]": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "mode_connected[restoration]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "mode_connected[restoration]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "mode_islanded[restoration]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "mode_islanded[restoration]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "mode_restoration[restoration]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "mode_restoration[restoration]": 2
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "mode_connected[restoration]": 1,
+        "mode_islanded[restoration]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "mode_connected[restoration]": 1,
+        "mode_restoration[restoration]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "mode_islanded[restoration]": 1,
+        "mode_restoration[restoration]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "battery_action_charge[restoration]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "battery_action_charge[restoration]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "battery_action_hold[restoration]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "battery_action_hold[restoration]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "battery_action_discharge[restoration]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "battery_action_discharge[restoration]": 2
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "battery_action_charge[restoration]": 1,
+        "battery_action_hold[restoration]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "battery_action_charge[restoration]": 1,
+        "battery_action_discharge[restoration]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "battery_action_discharge[restoration]": 1,
+        "battery_action_hold[restoration]": 1
+      }
+    },
+    {
+      "coefficient": 0.043209876543209874,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.08641975308641975,
+      "degree": 1,
+      "powers": {
+        "mode_restoration[restoration]": 1
+      }
+    },
+    {
+      "coefficient": 0.043209876543209874,
+      "degree": 2,
+      "powers": {
+        "mode_restoration[restoration]": 2
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.2962962962962963,
+      "degree": 1,
+      "powers": {
+        "critical_load_service[restoration]": 1
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[restoration]": 2
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.2962962962962963,
+      "degree": 1,
+      "powers": {
+        "critical_load_service[restoration]": 1
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[restoration]": 2
+      }
+    },
+    {
+      "coefficient": -0.2962962962962963,
+      "degree": 1,
+      "powers": {
+        "load_shedding_allocation[restoration]": 1
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 2,
+      "powers": {
+        "load_shedding_allocation[restoration]": 2
+      }
+    },
+    {
+      "coefficient": 0.2962962962962963,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[restoration]": 1,
+        "load_shedding_allocation[restoration]": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "der_commitment[restoration]": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "der_commitment[restoration]": 2
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "der_capacity_slack[restoration]": 1
+      }
+    },
+    {
+      "coefficient": 1.0,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[restoration]": 2
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "pv_capacity_fraction": 2
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "bess_power_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 2
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "dispatchable_capacity_fraction": 2
+      }
+    },
+    {
+      "coefficient": 0.6666666666666666,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[restoration]": 1,
+        "der_commitment[restoration]": 1
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "der_commitment[restoration]": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "der_commitment[restoration]": 1
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "der_commitment[restoration]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.6666666666666666,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[restoration]": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.6666666666666666,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "der_capacity_slack[restoration]": 1
+      }
+    },
+    {
+      "coefficient": -0.6666666666666666,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[restoration]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "dispatchable_capacity_fraction": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "critical_load_service[restoration]": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[restoration]": 2
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "der_commitment[restoration]": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "der_commitment[restoration]": 2
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "tie_pcc_response[restoration]": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "tie_pcc_response[restoration]": 2
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[restoration]": 1,
+        "der_commitment[restoration]": 1
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[restoration]": 1,
+        "tie_pcc_response[restoration]": 1
+      }
+    },
+    {
+      "coefficient": 0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "der_commitment[restoration]": 1,
+        "tie_pcc_response[restoration]": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 2,
+      "powers": {
+        "critical_load_priority": 1,
+        "critical_load_service[restoration]": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 2,
+      "powers": {
+        "tie_pcc_reserve_target": 1,
+        "tie_pcc_response[restoration]": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 2,
+      "powers": {
+        "der_commitment[restoration]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 3,
+      "powers": {
+        "critical_load_service[restoration]": 1,
+        "der_commitment[restoration]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 3,
+      "powers": {
+        "battery_action_discharge[restoration]": 1,
+        "bess_power_fraction": 1,
+        "critical_load_service[restoration]": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 3,
+      "powers": {
+        "critical_load_service[restoration]": 1,
+        "der_commitment[restoration]": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "mode_connected[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "mode_connected[combined_high_stress]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "mode_islanded[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "mode_islanded[combined_high_stress]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "mode_restoration[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "mode_restoration[combined_high_stress]": 2
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "mode_connected[combined_high_stress]": 1,
+        "mode_islanded[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "mode_connected[combined_high_stress]": 1,
+        "mode_restoration[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "mode_islanded[combined_high_stress]": 1,
+        "mode_restoration[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "battery_action_charge[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "battery_action_charge[combined_high_stress]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "battery_action_hold[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "battery_action_hold[combined_high_stress]": 2
+      }
+    },
+    {
+      "coefficient": -0.07407407407407407,
+      "degree": 1,
+      "powers": {
+        "battery_action_discharge[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": 0.037037037037037035,
+      "degree": 2,
+      "powers": {
+        "battery_action_discharge[combined_high_stress]": 2
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "battery_action_charge[combined_high_stress]": 1,
+        "battery_action_hold[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "battery_action_charge[combined_high_stress]": 1,
+        "battery_action_discharge[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": 0.07407407407407407,
+      "degree": 2,
+      "powers": {
+        "battery_action_discharge[combined_high_stress]": 1,
+        "battery_action_hold[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": 0.043209876543209874,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.08641975308641975,
+      "degree": 1,
+      "powers": {
+        "mode_islanded[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": 0.043209876543209874,
+      "degree": 2,
+      "powers": {
+        "mode_islanded[combined_high_stress]": 2
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.2962962962962963,
+      "degree": 1,
+      "powers": {
+        "critical_load_service[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[combined_high_stress]": 2
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.2962962962962963,
+      "degree": 1,
+      "powers": {
+        "critical_load_service[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[combined_high_stress]": 2
+      }
+    },
+    {
+      "coefficient": -0.2962962962962963,
+      "degree": 1,
+      "powers": {
+        "load_shedding_allocation[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": 0.14814814814814814,
+      "degree": 2,
+      "powers": {
+        "load_shedding_allocation[combined_high_stress]": 2
+      }
+    },
+    {
+      "coefficient": 0.2962962962962963,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[combined_high_stress]": 1,
+        "load_shedding_allocation[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "tie_pcc_response[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": 0.043209876543209874,
+      "degree": 2,
+      "powers": {
+        "tie_pcc_response[combined_high_stress]": 2
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "mode_islanded[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": 0.043209876543209874,
+      "degree": 2,
+      "powers": {
+        "mode_islanded[combined_high_stress]": 2
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "islanding_eligibility": 1
+      }
+    },
+    {
+      "coefficient": 0.043209876543209874,
+      "degree": 2,
+      "powers": {
+        "islanding_eligibility": 2
+      }
+    },
+    {
+      "coefficient": -0.08641975308641975,
+      "degree": 2,
+      "powers": {
+        "islanding_eligibility": 1,
+        "mode_islanded[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "der_commitment[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "der_commitment[combined_high_stress]": 2
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "der_capacity_slack[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": 1.0,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[combined_high_stress]": 2
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 2,
+      "powers": {
+        "pv_capacity_fraction": 2
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "bess_power_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 2
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "dispatchable_capacity_fraction": 2
+      }
+    },
+    {
+      "coefficient": 0.6666666666666666,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[combined_high_stress]": 1,
+        "der_commitment[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 2,
+      "powers": {
+        "der_commitment[combined_high_stress]": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "der_commitment[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "der_commitment[combined_high_stress]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[combined_high_stress]": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.6666666666666666,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "der_capacity_slack[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": -0.6666666666666666,
+      "degree": 2,
+      "powers": {
+        "der_capacity_slack[combined_high_stress]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 2,
+      "powers": {
+        "dispatchable_capacity_fraction": 1,
+        "pv_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "bess_power_fraction": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 0,
+      "powers": {}
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "critical_load_service[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[combined_high_stress]": 2
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 1,
+      "powers": {
+        "der_commitment[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": 0.1111111111111111,
+      "degree": 2,
+      "powers": {
+        "der_commitment[combined_high_stress]": 2
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 1,
+      "powers": {
+        "tie_pcc_response[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 2,
+      "powers": {
+        "tie_pcc_response[combined_high_stress]": 2
+      }
+    },
+    {
+      "coefficient": -0.2222222222222222,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[combined_high_stress]": 1,
+        "der_commitment[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": 0.0,
+      "degree": 2,
+      "powers": {
+        "critical_load_service[combined_high_stress]": 1,
+        "tie_pcc_response[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": -0.0,
+      "degree": 2,
+      "powers": {
+        "der_commitment[combined_high_stress]": 1,
+        "tie_pcc_response[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 2,
+      "powers": {
+        "critical_load_priority": 1,
+        "critical_load_service[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 2,
+      "powers": {
+        "tie_pcc_reserve_target": 1,
+        "tie_pcc_response[combined_high_stress]": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 2,
+      "powers": {
+        "der_commitment[combined_high_stress]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 3,
+      "powers": {
+        "critical_load_service[combined_high_stress]": 1,
+        "der_commitment[combined_high_stress]": 1,
+        "dispatchable_capacity_fraction": 1
+      }
+    },
+    {
+      "coefficient": -0.014814814814814815,
+      "degree": 3,
+      "powers": {
+        "battery_action_discharge[combined_high_stress]": 1,
+        "bess_power_fraction": 1,
+        "critical_load_service[combined_high_stress]": 1
+      }
+    }
+  ],
+  "sc_cmpo": {
+    "abbreviation": "SC-CMPO",
+    "challenge_stages": [
+      "upgrade_planning",
+      "pre_event_preparedness",
+      "emergency_response",
+      "restoration"
+    ],
+    "consensus_keys": {
+      "base_mode_connected": "ieee123_opendss::base_mode_connected",
+      "base_mode_islanded": "ieee123_opendss::base_mode_islanded",
+      "base_mode_restoration": "ieee123_opendss::base_mode_restoration",
+      "bess_energy_fraction": "ieee123_opendss::bess_energy_fraction",
+      "bess_power_fraction": "ieee123_opendss::bess_power_fraction",
+      "bess_reserve_target": "ieee123_opendss::bess_reserve_target",
+      "bess_soc_target": "ieee123_opendss::bess_soc_target",
+      "critical_load_priority": "ieee123_opendss::critical_load_priority",
+      "dispatchable_capacity_fraction": "ieee123_opendss::dispatchable_capacity_fraction",
+      "islanding_eligibility": "ieee123_opendss::islanding_eligibility",
+      "pv_capacity_fraction": "ieee123_opendss::pv_capacity_fraction",
+      "tie_pcc_reserve_target": "ieee123_opendss::tie_pcc_reserve_target",
+      "upgrade_select_bess": "ieee123_opendss::upgrade_select_bess",
+      "upgrade_select_dispatchable": "ieee123_opendss::upgrade_select_dispatchable",
+      "upgrade_select_pv": "ieee123_opendss::upgrade_select_pv"
+    },
+    "cost_catalog": {
+      "bess": {
+        "cost_per_kw": 1926.72,
+        "cost_per_kwh": 481.68,
+        "duration_hours": 4.0,
+        "source_row": "ATBe.csv row 78747: Utility-Scale Battery Storage; 4Hr Battery Storage; Moderate; OCC; 2022; value=1926.72",
+        "source_sha256": "beb07e64aa4d43a9388fc75d19912bc13e1a30e0effa8bd593c0a3e5bba59302",
+        "source_url": "https://oedi-data-lake.s3.amazonaws.com/ATB/electricity/csv/2024/v3.0.0/ATBe.csv",
+        "source_version": "2024 ATB v3.0.0, corrected 2025-04-02",
+        "technology": "bess",
+        "transformation": "Select the default four-hour utility BESS Moderate-scenario 2022 OCC; derive 481.68 USD/kWh exactly as 1926.72 USD/kW divided by the published four-hour duration."
+      },
+      "dispatchable_generation": {
+        "cost_per_kw": 1110.4,
+        "cost_per_kwh": null,
+        "duration_hours": null,
+        "source_row": "ATBe.csv row 60391: NaturalGas_FE; NG Combustion Turbine (F-Frame); Moderate; OCC; 2022; value=1110.4",
+        "source_sha256": "beb07e64aa4d43a9388fc75d19912bc13e1a30e0effa8bd593c0a3e5bba59302",
+        "source_url": "https://oedi-data-lake.s3.amazonaws.com/ATB/electricity/csv/2024/v3.0.0/ATBe.csv",
+        "source_version": "2024 ATB v3.0.0, corrected 2025-04-02",
+        "technology": "dispatchable_generation",
+        "transformation": "Select the Moderate-scenario 2022 overnight capital cost for the F-frame natural-gas combustion turbine as the dispatchable capacity proxy."
+      },
+      "pv": {
+        "cost_per_kw": 1366.5982035504765,
+        "cost_per_kwh": null,
+        "duration_hours": null,
+        "source_row": "ATBe.csv row 434241: UtilityPV; Class5; Moderate; OCC; 2022; value=1366.5982035504765",
+        "source_sha256": "beb07e64aa4d43a9388fc75d19912bc13e1a30e0effa8bd593c0a3e5bba59302",
+        "source_url": "https://oedi-data-lake.s3.amazonaws.com/ATB/electricity/csv/2024/v3.0.0/ATBe.csv",
+        "source_version": "2024 ATB v3.0.0, corrected 2025-04-02",
+        "technology": "pv",
+        "transformation": "Select the default Class 5 utility-PV Moderate-scenario 2022 overnight capital cost; ATB OCC is in 2022 USD/kW."
+      }
+    },
+    "critical_load_definition": "all active load in the selected public benchmark island",
+    "formulation": "Scenario-Coupled Consensus CMPO",
+    "input_policy": {
+      "deterministic_seed": 123,
+      "public_inputs_only": true,
+      "random_topology_or_asset_values": false,
+      "seed_use": "SHA-256 tie-breaking only; no random-number generator is invoked",
+      "undocumented_synthetic_values": []
+    },
+    "maximum_upgrade_cost": 440371.82035504765,
+    "minimum_resilient_upgrade_cost": 111040.00000000001,
+    "patch_public_nodes": [
+      {
+        "generation_kw": 0.0,
+        "load_kw": 40.0,
+        "node_id": "69",
+        "source_record": "IEEE123Master.dss line=120: line.L69 | IEEE123Master.dss line=121: line.L70 | IEEE123Loads.DSS line=64: load.S69a"
+      },
+      {
+        "generation_kw": 0.0,
+        "load_kw": 20.0,
+        "node_id": "70",
+        "source_record": "IEEE123Master.dss line=121: line.L70 | IEEE123Master.dss line=122: line.L71 | IEEE123Loads.DSS line=65: load.S70a"
+      },
+      {
+        "generation_kw": 0.0,
+        "load_kw": 40.0,
+        "node_id": "71",
+        "source_record": "IEEE123Master.dss line=122: line.L71 | IEEE123Loads.DSS line=66: load.S71a"
+      }
+    ],
+    "public_adapter_metadata": {
+      "auxiliary_source_sha256": {
+        "license_path": "f13543277f32a6437d4f583200858f0988d3acc9598a6a1a292d710009ec21ef",
+        "linecode_path": "71bc16ef9c6084b9e3bab74fbdf967080b79624683465e1483b787ff160f58b3",
+        "load_path": "fd28f52836205506a1980b52c5a7e12ca585aa626c52a6249502c1c3b2fc2255",
+        "regulator_path": "cd6ad77980dc018631ce39faab528afce40b0b9a50a6bc1c9ac8049ffb8207d7",
+        "switch_path": "ac54965aed134faba191bc24fbd4c0e6538a16d6154b49c5f7bb4886acaa20b9"
+      },
+      "open_switch_count": 2,
+      "parsed_files": [
+        "/Users/omtailor/QCI/data/upstream/ieee123/opendss/IEEE123Master.dss",
+        "/Users/omtailor/QCI/data/upstream/ieee123/opendss/IEEELineCodes.DSS",
+        "/Users/omtailor/QCI/data/upstream/ieee123/IEEELineCodes.DSS",
+        "/Users/omtailor/QCI/data/upstream/ieee123/opendss/IEEE123Regulators.DSS",
+        "/Users/omtailor/QCI/data/upstream/ieee123/opendss/IEEE123Loads.DSS"
+      ],
+      "phase_connections_preserved": true,
+      "published_line_rating_note": "The published IEEE 123-bus OpenDSS source lists no explicit NormalAmps/EmergAmps values; the adapter retains line normal_amps=None.",
+      "published_line_ratings_available": false,
+      "switch_count": 8
+    },
+    "public_benchmark": "ieee123_opendss",
+    "public_benchmark_family": "ieee123_distribution",
+    "public_system_summary": {
+      "contingency_count": 132,
+      "edge_count": 134,
+      "node_count": 132,
+      "selected_patch_load_fraction": 0.02865329512893983,
+      "total_active_load_kw": 3490.0,
+      "total_dispatchable_capacity_kw": 0.0
+    },
+    "qci_executable_reason": "bounded normalized variables=103 <= 132; degree=3 <= 3; scenarios=8",
+    "recourse_variable_count": 88,
+    "recourse_variable_groups": [
+      "mode_connected",
+      "mode_islanded",
+      "mode_restoration",
+      "der_commitment",
+      "der_capacity_slack",
+      "battery_action_charge",
+      "battery_action_hold",
+      "battery_action_discharge",
+      "critical_load_service",
+      "tie_pcc_response",
+      "load_shedding_allocation"
+    ],
+    "recourse_variable_semantics": {
+      "critical_load_service": "served fraction of the selected island's public active load",
+      "der_capacity_slack": "normalized unused available local capacity; coefficient three spans all candidate technologies",
+      "der_commitment": "normalized dispatched local active power, not installed capacity",
+      "load_shedding_allocation": "unserved fraction complementing critical-load service",
+      "tie_pcc_response": "normalized active-power supply from an available public-grid connection"
+    },
+    "scenario_count": 8,
+    "scenario_names": [
+      "normal",
+      "renewable_shortfall",
+      "demand_surge",
+      "pcc_loss",
+      "local_generator_loss",
+      "forced_islanding",
+      "restoration",
+      "combined_high_stress"
+    ],
+    "shared_first_stage_scope": "one benchmark-level technology/reserve policy shared by every scenario; independent patch estimates are reconciled before system projection",
+    "shared_first_stage_variable_count": 15,
+    "shared_first_stage_variables": [
+      "upgrade_select_pv",
+      "upgrade_select_bess",
+      "upgrade_select_dispatchable",
+      "pv_capacity_fraction",
+      "bess_energy_fraction",
+      "bess_power_fraction",
+      "dispatchable_capacity_fraction",
+      "islanding_eligibility",
+      "base_mode_connected",
+      "base_mode_islanded",
+      "base_mode_restoration",
+      "bess_reserve_target",
+      "bess_soc_target",
+      "critical_load_priority",
+      "tie_pcc_reserve_target"
+    ],
+    "source_license": "EPRI/DSS-Extensions 3-clause redistribution license",
+    "source_path": "data/upstream/ieee123/opendss/IEEE123Master.dss",
+    "source_sha256": "c92a69d9b218b1b2646ec7911783826229309038e72f16b848304c0457c0a54d",
+    "source_transformation": "Parse OpenDSS lines, line-code resistance/reactance matrices, phase connections, loads, transformers, regulator controls, capacitors, and switch state; aggregate only public load records by base bus while retaining each phase connection; and construct deterministic line/transformer N-1 contingencies. Published IEEE123 line codes do not specify ampacity, so line ratings remain explicitly unavailable rather than using OpenDSS engine defaults. Treat all selected-island active load as critical instead of inventing a critical-load fraction. PV/BESS options use only the pinned NREL ATB catalog. No topology, impedance, DER, line rating, or load value is invented.",
+    "source_url": "https://github.com/dss-extensions/electricdss-tst/tree/3b208397160213cae4a9e2d0a7d1aa3528ce26e1/Version8/Distrib/IEEETestCases/123Bus",
+    "source_version": "DSS-Extensions filtered OpenDSS archive commit 3b208397160213cae4a9e2d0a7d1aa3528ce26e1",
+    "upgrade_options": [
+      {
+        "capacity_kw": 100.0,
+        "energy_kwh": 0.0,
+        "power_kw": 100.0,
+        "sizing_rule": "PV nameplate upper bound equals the benchmark-derived islanded active-power deficit.",
+        "source_row": "ATBe.csv row 434241: UtilityPV; Class5; Moderate; OCC; 2022; value=1366.5982035504765",
+        "technology": "pv",
+        "total_cost": 136659.82035504765,
+        "unit_cost_per_kw": 1366.5982035504765,
+        "unit_cost_per_kwh": null
+      },
+      {
+        "capacity_kw": 100.0,
+        "energy_kwh": 400.0,
+        "power_kw": 100.0,
+        "sizing_rule": "BESS power equals the benchmark deficit and energy equals the published 4-hour duration.",
+        "source_row": "ATBe.csv row 78747: Utility-Scale Battery Storage; 4Hr Battery Storage; Moderate; OCC; 2022; value=1926.72",
+        "technology": "bess",
+        "total_cost": 192672.0,
+        "unit_cost_per_kw": 1926.72,
+        "unit_cost_per_kwh": 481.68
+      },
+      {
+        "capacity_kw": 100.0,
+        "energy_kwh": 0.0,
+        "power_kw": 100.0,
+        "sizing_rule": "Dispatchable nameplate upper bound equals the benchmark-derived islanded active-power deficit.",
+        "source_row": "ATBe.csv row 60391: NaturalGas_FE; NG Combustion Turbine (F-Frame); Moderate; OCC; 2022; value=1110.4",
+        "technology": "dispatchable_generation",
+        "total_cost": 111040.00000000001,
+        "unit_cost_per_kw": 1110.4,
+        "unit_cost_per_kwh": null
+      }
+    ],
+    "upgrade_patch": {
+      "boundary_edge_ids": [
+        "line_L69"
+      ],
+      "existing_generation_kw": 0.0,
+      "islanded_deficit_kw": 100.0,
+      "load_kw": 100.0,
+      "node_ids": [
+        "69",
+        "70",
+        "71"
+      ],
+      "patch_id": "ieee123_opendss__patch_08__69-70-71",
+      "selection_rule": "highest public nominal active-load deficit anchor; expand through in-service public topology; SHA-256 seed=123 used only for deterministic tie-breaking"
+    }
+  },
+  "scaling_information": {
+    "coefficient_scaling_factor": 0.0012345679012345679,
+    "normalization_applied": true,
+    "post_normalization_max_abs_coefficient": 1.0,
+    "pre_normalization_max_abs_coefficient": 810.0,
+    "variable_bounds": [
+      0.0,
+      1.0
+    ]
+  },
+  "scenario_metadata": {
+    "horizon": 1,
+    "penalty_weights": {
+      "activation": 25.0,
+      "adequacy": 90.0,
+      "cost": 8.0,
+      "coupling": 12.0,
+      "critical_service": 120.0,
+      "mode": 35.0,
+      "preparedness": 18.0,
+      "simplex": 30.0
+    },
+    "scenario": "scenario_coupled_8",
+    "scenario_count": 8,
+    "scenarios": [
+      {
+        "construction_rule": "Published nominal active load and all listed components in service.",
+        "existing_generation_available": true,
+        "forced_islanding": false,
+        "load_requirement_kw": 100.0,
+        "name": "normal",
+        "pcc_available": true,
+        "pv_available": true,
+        "restoration_mode": false,
+        "source_contingency": "none"
+      },
+      {
+        "construction_rule": "Candidate PV availability is set to its exact lower bound zero; no weather multiplier is invented.",
+        "existing_generation_available": true,
+        "forced_islanding": false,
+        "load_requirement_kw": 100.0,
+        "name": "renewable_shortfall",
+        "pcc_available": true,
+        "pv_available": false,
+        "restoration_mode": false,
+        "source_contingency": "candidate_pv_binary_availability_lower_bound"
+      },
+      {
+        "construction_rule": "The full published nominal patch load is treated as simultaneously non-sheddable; no load multiplier or synthetic profile is added.",
+        "existing_generation_available": true,
+        "forced_islanding": false,
+        "load_requirement_kw": 100.0,
+        "name": "demand_surge",
+        "pcc_available": true,
+        "pv_available": true,
+        "restoration_mode": false,
+        "source_contingency": "published_peak_patch_load=100_kw"
+      },
+      {
+        "construction_rule": "Deterministic loss of the lexicographically first public patch-boundary/PCC supply indicator.",
+        "existing_generation_available": true,
+        "forced_islanding": true,
+        "load_requirement_kw": 100.0,
+        "name": "pcc_loss",
+        "pcc_available": false,
+        "pv_available": true,
+        "restoration_mode": false,
+        "source_contingency": "line_L69"
+      },
+      {
+        "construction_rule": "Published generator contingency when available; otherwise the patch's zero native generation is retained.",
+        "existing_generation_available": false,
+        "forced_islanding": false,
+        "load_requirement_kw": 100.0,
+        "name": "local_generator_loss",
+        "pcc_available": true,
+        "pv_available": true,
+        "restoration_mode": false,
+        "source_contingency": "no_local_public_generator"
+      },
+      {
+        "construction_rule": "All public boundary branches are unavailable, yielding a deterministic island.",
+        "existing_generation_available": true,
+        "forced_islanding": true,
+        "load_requirement_kw": 100.0,
+        "name": "forced_islanding",
+        "pcc_available": false,
+        "pv_available": true,
+        "restoration_mode": false,
+        "source_contingency": "line_L69"
+      },
+      {
+        "construction_rule": "The lexicographically first public N-1 boundary outage is returned to service in restoration mode.",
+        "existing_generation_available": true,
+        "forced_islanding": false,
+        "load_requirement_kw": 100.0,
+        "name": "restoration",
+        "pcc_available": true,
+        "pv_available": true,
+        "restoration_mode": true,
+        "source_contingency": "deterministic_n_1_line_L115"
+      },
+      {
+        "construction_rule": "PCC loss, candidate-PV lower-bound availability, and published generator N-1 are combined.",
+        "existing_generation_available": false,
+        "forced_islanding": true,
+        "load_requirement_kw": 100.0,
+        "name": "combined_high_stress",
+        "pcc_available": false,
+        "pv_available": false,
+        "restoration_mode": false,
+        "source_contingency": "line_L69"
+      }
+    ],
+    "weighting": "equal robust recourse blocks; not empirical probabilities"
+  },
+  "schema": "cmpo.sc_cmpo.v1",
+  "source_payload": "/Users/omtailor/QCI/results/phase3/sc_cmpo/ieee123/qci_payloads/ieee123_opendss__ieee123_opendss__patch_08__69-70-71.json",
+  "source_payload_sha256": "fccb94c15e0707728626cf7e97c6b759c32f54d1a740c67db8e2a98d064f6674",
+  "target": "qci_dirac_3",
+  "variables": [
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "upgrade_select_pv",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "upgrade_select_bess",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "upgrade_select_dispatchable",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "pv_capacity_fraction",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "bess_energy_fraction",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "bess_power_fraction",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "dispatchable_capacity_fraction",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "islanding_eligibility",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "base_mode_connected",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "base_mode_islanded",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "base_mode_restoration",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "bess_reserve_target",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "bess_soc_target",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "critical_load_priority",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "tie_pcc_reserve_target",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "mode_connected[normal]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "mode_islanded[normal]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "mode_restoration[normal]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "der_commitment[normal]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "der_capacity_slack[normal]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "battery_action_charge[normal]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "battery_action_hold[normal]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "battery_action_discharge[normal]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "critical_load_service[normal]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "tie_pcc_response[normal]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "load_shedding_allocation[normal]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "mode_connected[renewable_shortfall]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "mode_islanded[renewable_shortfall]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "mode_restoration[renewable_shortfall]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "der_commitment[renewable_shortfall]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "der_capacity_slack[renewable_shortfall]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "battery_action_charge[renewable_shortfall]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "battery_action_hold[renewable_shortfall]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "battery_action_discharge[renewable_shortfall]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "critical_load_service[renewable_shortfall]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "tie_pcc_response[renewable_shortfall]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "load_shedding_allocation[renewable_shortfall]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "mode_connected[demand_surge]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "mode_islanded[demand_surge]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "mode_restoration[demand_surge]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "der_commitment[demand_surge]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "der_capacity_slack[demand_surge]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "battery_action_charge[demand_surge]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "battery_action_hold[demand_surge]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "battery_action_discharge[demand_surge]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "critical_load_service[demand_surge]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "tie_pcc_response[demand_surge]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "load_shedding_allocation[demand_surge]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "mode_connected[pcc_loss]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "mode_islanded[pcc_loss]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "mode_restoration[pcc_loss]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "der_commitment[pcc_loss]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "der_capacity_slack[pcc_loss]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "battery_action_charge[pcc_loss]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "battery_action_hold[pcc_loss]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "battery_action_discharge[pcc_loss]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "critical_load_service[pcc_loss]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "tie_pcc_response[pcc_loss]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "load_shedding_allocation[pcc_loss]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "mode_connected[local_generator_loss]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "mode_islanded[local_generator_loss]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "mode_restoration[local_generator_loss]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "der_commitment[local_generator_loss]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "der_capacity_slack[local_generator_loss]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "battery_action_charge[local_generator_loss]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "battery_action_hold[local_generator_loss]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "battery_action_discharge[local_generator_loss]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "critical_load_service[local_generator_loss]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "tie_pcc_response[local_generator_loss]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "load_shedding_allocation[local_generator_loss]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "mode_connected[forced_islanding]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "mode_islanded[forced_islanding]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "mode_restoration[forced_islanding]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "der_commitment[forced_islanding]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "der_capacity_slack[forced_islanding]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "battery_action_charge[forced_islanding]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "battery_action_hold[forced_islanding]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "battery_action_discharge[forced_islanding]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "critical_load_service[forced_islanding]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "tie_pcc_response[forced_islanding]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "load_shedding_allocation[forced_islanding]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "mode_connected[restoration]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "mode_islanded[restoration]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "mode_restoration[restoration]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "der_commitment[restoration]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "der_capacity_slack[restoration]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "battery_action_charge[restoration]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "battery_action_hold[restoration]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "battery_action_discharge[restoration]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "critical_load_service[restoration]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "tie_pcc_response[restoration]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "load_shedding_allocation[restoration]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "mode_connected[combined_high_stress]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "mode_islanded[combined_high_stress]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "mode_restoration[combined_high_stress]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "der_commitment[combined_high_stress]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "der_capacity_slack[combined_high_stress]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "battery_action_charge[combined_high_stress]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "battery_action_hold[combined_high_stress]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "integer",
+      "lower_bound": 0.0,
+      "name": "battery_action_discharge[combined_high_stress]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "critical_load_service[combined_high_stress]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "tie_pcc_response[combined_high_stress]",
+      "upper_bound": 1.0
+    },
+    {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "encoding_type": "quasi_continuous",
+      "lower_bound": 0.0,
+      "name": "load_shedding_allocation[combined_high_stress]",
+      "upper_bound": 1.0
+    }
+  ]
+}
