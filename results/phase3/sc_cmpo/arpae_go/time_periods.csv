@@ -1,0 +1,2 @@
+duration_hours,period_id,source_record,temporal_profile_available
+,single_steady_state,Configured SC-CMPO horizon=1 from phase3_sc_cmpo_arpae.yaml; RAW/ROP/CON inputs provide a single steady-state operating point.,False

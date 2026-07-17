@@ -1,0 +1,43 @@
+formulation: sc_cmpo
+benchmark:
+  id: ieee123_opendss
+  family: ieee123_distribution
+  adapter: ieee123_opendss
+source:
+  local_path: data/upstream/ieee123/opendss/IEEE123Master.dss
+  load_path: data/upstream/ieee123/opendss/IEEE123Loads.DSS
+  regulator_path: data/upstream/ieee123/opendss/IEEE123Regulators.DSS
+  switch_path: data/upstream/ieee123/opendss/IEEE123Switches.dss
+  linecode_path: data/upstream/ieee123/IEEELineCodes.DSS
+  license_path: data/upstream/ieee123/opendss/License.txt
+  url: https://github.com/dss-extensions/electricdss-tst/tree/3b208397160213cae4a9e2d0a7d1aa3528ce26e1/Version8/Distrib/IEEETestCases/123Bus
+  version: DSS-Extensions filtered OpenDSS archive commit 3b208397160213cae4a9e2d0a7d1aa3528ce26e1
+  license: EPRI/DSS-Extensions 3-clause redistribution license
+  sha256: c92a69d9b218b1b2646ec7911783826229309038e72f16b848304c0457c0a54d
+  transformation: Parse OpenDSS lines, line-code resistance/reactance matrices, phase connections, loads, transformers, regulator controls, capacitors, and switch state; aggregate only public load records by base bus while retaining each phase connection; and construct deterministic line/transformer N-1 contingencies. Published IEEE123 line codes do not specify ampacity, so line ratings remain explicitly unavailable rather than using OpenDSS engine defaults. Treat all selected-island active load as critical instead of inventing a critical-load fraction. PV/BESS options use only the pinned NREL ATB catalog. No topology, impedance, DER, line rating, or load value is invented.
+  manifest_path: data/upstream/ieee123/manifest.json
+  load_sha256: fd28f52836205506a1980b52c5a7e12ca585aa626c52a6249502c1c3b2fc2255
+  regulator_sha256: cd6ad77980dc018631ce39faab528afce40b0b9a50a6bc1c9ac8049ffb8207d7
+  switch_sha256: ac54965aed134faba191bc24fbd4c0e6538a16d6154b49c5f7bb4886acaa20b9
+  linecode_sha256: 71bc16ef9c6084b9e3bab74fbdf967080b79624683465e1483b787ff160f58b3
+  license_sha256: f13543277f32a6437d4f583200858f0988d3acc9598a6a1a292d710009ec21ef
+cost_catalog:
+  local_path: data/upstream/nrel-atb/ATBe_2024_v3_selected_costs.csv
+  manifest_path: data/upstream/nrel-atb/manifest.json
+model:
+  deterministic_seed: 123
+  patch_count: 12
+  patch_size: 3
+  horizon: 1
+  scenarios: [normal, renewable_shortfall, demand_surge, pcc_loss, local_generator_loss, forced_islanding, restoration, combined_high_stress]
+  challenge_stages: [upgrade_planning, pre_event_preparedness, emergency_response, restoration]
+  weights: {simplex: 30, adequacy: 90, critical_service: 120, mode: 35, activation: 25, preparedness: 18, cost: 8, coupling: 12}
+qci:
+  max_variables: 132
+  max_degree: 3
+  device_type: dirac-3
+  relaxation_schedule: 2
+  sum_constraint: null
+  samples_per_job: 10
+  max_inflight_jobs: 1
+  job_tags: [cmpo, phase3, sc_cmpo, ieee123, dirac3]

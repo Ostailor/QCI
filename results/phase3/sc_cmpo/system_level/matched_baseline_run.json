@@ -1,0 +1,27 @@
+{
+  "payload_count": 43,
+  "method_count": 8,
+  "solver_call_count": 266,
+  "solution_row_count": 344,
+  "methods": [
+    "CMPO-local polynomial search",
+    "QUBO/quadratized search",
+    "SLSQP/IPOPT",
+    "coordinated first-stage MILP + full-system projection reference",
+    "coordinated first-stage NLP + full-system projection reference",
+    "differential evolution",
+    "greedy resilience heuristic",
+    "piecewise-linear MILP"
+  ],
+  "benchmarks": [
+    "arpae_go_network_01o_020",
+    "ieee123_opendss",
+    "pglib_case14_ieee",
+    "pglib_case30_ieee"
+  ],
+  "output": "results/phase3/sc_cmpo/system_level/baseline_patch_solutions.csv",
+  "workers": 1,
+  "completed": 344,
+  "failed": 0,
+  "wall_clock_seconds": 7.65207100007683
+}

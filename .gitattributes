@@ -1,0 +1,2 @@
+# Preserve checksum-pinned IEEE 123 upstream bytes exactly as downloaded.
+data/upstream/ieee123/** -text -diff

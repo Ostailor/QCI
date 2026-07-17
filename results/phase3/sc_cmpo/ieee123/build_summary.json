@@ -1,0 +1,25 @@
+{
+  "output_dir": "results/phase3/sc_cmpo/ieee123",
+  "payload_count": 12,
+  "payload_count_by_benchmark": {
+    "ieee123_opendss": 12
+  },
+  "scenarios_per_payload": [
+    8
+  ],
+  "max_variables": 103,
+  "max_degree": 3,
+  "shared_first_stage_variable_count": [
+    15
+  ],
+  "recourse_variable_count": [
+    88
+  ],
+  "minimum_upgrade_cost": 66624.0,
+  "maximum_upgrade_cost": 2003691.7826154667,
+  "all_challenge_stages_represented": true,
+  "qci_was_run": false,
+  "qci_run_commands": [
+    "python scripts/phase3_run_qci.py --config configs/phase3_sc_cmpo_ieee123.yaml --payload-list results/phase3/sc_cmpo/ieee123/ieee123_opendss_payloads.txt --output-dir results/phase3/sc_cmpo/ieee123/qci/ieee123_opendss --repeats 30"
+  ]
+}

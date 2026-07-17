@@ -1,0 +1,23 @@
+{
+  "payload_count": 43,
+  "method_count": 1,
+  "solver_call_count": 43,
+  "solution_row_count": 43,
+  "methods": [
+    "greedy resilience heuristic"
+  ],
+  "benchmarks": [
+    "arpae_go_network_01o_020",
+    "ieee123_opendss",
+    "pglib_case14_ieee",
+    "pglib_case30_ieee"
+  ],
+  "output": "results/phase3/sc_cmpo/final_public_experiment/preflight_consensus/baseline_patch_solutions.csv",
+  "workers": 4,
+  "stochastic_repeats": 1,
+  "stochastic_methods": [],
+  "wall_clock_budget_seconds_per_payload": 30.0,
+  "completed": 43,
+  "failed": 0,
+  "wall_clock_seconds": 0.06850787485018373
+}

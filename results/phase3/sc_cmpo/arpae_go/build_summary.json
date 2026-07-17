@@ -1,0 +1,25 @@
+{
+  "output_dir": "results/phase3/sc_cmpo/arpae_go",
+  "payload_count": 8,
+  "payload_count_by_benchmark": {
+    "arpae_go_network_01o_020": 8
+  },
+  "scenarios_per_payload": [
+    8
+  ],
+  "max_variables": 103,
+  "max_degree": 3,
+  "shared_first_stage_variable_count": [
+    15
+  ],
+  "recourse_variable_count": [
+    88
+  ],
+  "minimum_upgrade_cost": 97536425.60000001,
+  "maximum_upgrade_cost": 529119953.3112004,
+  "all_challenge_stages_represented": true,
+  "qci_was_run": false,
+  "qci_run_commands": [
+    "python scripts/phase3_run_qci.py --config configs/phase3_sc_cmpo_arpae.yaml --payload-list results/phase3/sc_cmpo/arpae_go/arpae_go_network_01o_020_payloads.txt --output-dir results/phase3/sc_cmpo/arpae_go/qci/arpae_go_network_01o_020 --repeats 30"
+  ]
+}

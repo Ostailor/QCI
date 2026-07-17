@@ -1,0 +1,5 @@
+benchmark,failure_reason,method
+arpae_go_network_01o_020,no decoded SC-CMPO QCi patch solutions; system result intentionally suppressed,QCi SC-CMPO
+ieee123_opendss,no decoded SC-CMPO QCi patch solutions; system result intentionally suppressed,QCi SC-CMPO
+pglib_case14_ieee,no decoded SC-CMPO QCi patch solutions; system result intentionally suppressed,QCi SC-CMPO
+pglib_case30_ieee,no decoded SC-CMPO QCi patch solutions; system result intentionally suppressed,QCi SC-CMPO

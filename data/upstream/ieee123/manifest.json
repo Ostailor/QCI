@@ -1,0 +1,19 @@
+{
+  "name": "IEEE 123-node OpenDSS feeder",
+  "source_url": "https://github.com/dss-extensions/electricdss-tst/tree/3b208397160213cae4a9e2d0a7d1aa3528ce26e1/Version8/Distrib/IEEETestCases/123Bus",
+  "upstream_commit": "3b208397160213cae4a9e2d0a7d1aa3528ce26e1",
+  "version": "DSS-Extensions filtered OpenDSS test archive, commit 3b208397160213cae4a9e2d0a7d1aa3528ce26e1",
+  "license": "EPRI/DSS-Extensions 3-clause redistribution license (see opendss/License.txt)",
+  "official_ieee_archive_url": "https://cmte.ieee.org/pes-testfeeders/wp-content/uploads/sites/167/2017/08/feeder123.zip",
+  "official_ieee_archive_sha256": "7aaddc0ccf3f282a340fdcbc3638a50f9654aab52b3dac026079b1da5b452d9b",
+  "files": [
+    {"local_path": "data/upstream/ieee123/opendss/IEEE123Master.dss", "sha256": "c92a69d9b218b1b2646ec7911783826229309038e72f16b848304c0457c0a54d"},
+    {"local_path": "data/upstream/ieee123/opendss/IEEE123Loads.DSS", "sha256": "fd28f52836205506a1980b52c5a7e12ca585aa626c52a6249502c1c3b2fc2255"},
+    {"local_path": "data/upstream/ieee123/opendss/IEEE123Regulators.DSS", "sha256": "cd6ad77980dc018631ce39faab528afce40b0b9a50a6bc1c9ac8049ffb8207d7"},
+    {"local_path": "data/upstream/ieee123/opendss/IEEE123Switches.dss", "sha256": "ac54965aed134faba191bc24fbd4c0e6538a16d6154b49c5f7bb4886acaa20b9"},
+    {"local_path": "data/upstream/ieee123/opendss/IEEELineCodes.DSS", "sha256": "40ef533dfcb22738edb1125b1e15e4a1a5d41b2cca4a2f969f5d955c9784daeb", "role": "relative redirect to the pinned shared line-code file"},
+    {"local_path": "data/upstream/ieee123/IEEELineCodes.DSS", "sha256": "71bc16ef9c6084b9e3bab74fbdf967080b79624683465e1483b787ff160f58b3", "source_url": "https://raw.githubusercontent.com/dss-extensions/electricdss-tst/3b208397160213cae4a9e2d0a7d1aa3528ce26e1/Version8/Distrib/IEEETestCases/IEEELineCodes.DSS", "role": "published IEEE test-feeder line-code impedance matrices"},
+    {"local_path": "data/upstream/ieee123/opendss/License.txt", "sha256": "f13543277f32a6437d4f583200858f0988d3acc9598a6a1a292d710009ec21ef", "role": "upstream redistribution license"}
+  ],
+  "transformation": "Parse OpenDSS lines, the pinned shared line-code impedance matrices, phase connections, loads, transformers, regulator controls, capacitors, and switch states. Aggregate public load records by base bus while preserving record-level phase connections. Form contingencies only by deterministic N-1 opening of listed in-service lines and transformers. Published line codes have no ampacity field, so no line rating is inferred."
+}

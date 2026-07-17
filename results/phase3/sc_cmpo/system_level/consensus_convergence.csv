@@ -1,0 +1,57 @@
+benchmark,converged,convergence_tolerance,dual_residual,final_status,iteration,iteration_count,maximum_iterations,method,primal_residual,raw_conflict_count,rho,unresolved_conflict_count
+arpae_go_network_01o_020,True,1e-06,0.0,completed,1,1,200,CMPO-local polynomial search,0.0,0,1.0,0
+ieee123_opendss,True,1e-06,0.0,completed,1,1,200,CMPO-local polynomial search,0.0,0,1.0,0
+pglib_case14_ieee,True,1e-06,0.0,completed,1,1,200,CMPO-local polynomial search,0.0,0,1.0,0
+pglib_case30_ieee,True,1e-06,0.0,completed,1,1,200,CMPO-local polynomial search,0.0,0,1.0,0
+arpae_go_network_01o_020,True,1e-06,0.0,completed,1,1,200,QUBO/quadratized search,0.0,0,1.0,0
+ieee123_opendss,True,1e-06,0.0,completed,1,1,200,QUBO/quadratized search,0.0,0,1.0,0
+pglib_case14_ieee,True,1e-06,0.0,completed,1,1,200,QUBO/quadratized search,0.0,0,1.0,0
+pglib_case30_ieee,True,1e-06,0.0,completed,1,1,200,QUBO/quadratized search,0.0,0,1.0,0
+arpae_go_network_01o_020,False,1e-06,0.0,completed,1,5,200,SLSQP/IPOPT,9.1815532772293e-06,10,1.0,0
+arpae_go_network_01o_020,False,1e-06,0.0,completed,2,5,200,SLSQP/IPOPT,4.590776638621008e-06,10,1.0,0
+arpae_go_network_01o_020,False,1e-06,0.0,completed,3,5,200,SLSQP/IPOPT,2.295388319312074e-06,10,1.0,0
+arpae_go_network_01o_020,False,1e-06,0.0,completed,4,5,200,SLSQP/IPOPT,1.147694159652338e-06,10,1.0,0
+arpae_go_network_01o_020,True,1e-06,0.0,completed,5,5,200,SLSQP/IPOPT,5.73847079820875e-07,10,1.0,0
+ieee123_opendss,True,1e-06,0.0,completed,1,1,200,SLSQP/IPOPT,7.364386412590295e-16,0,1.0,0
+pglib_case14_ieee,True,1e-06,0.0,completed,1,1,200,SLSQP/IPOPT,2.884444029575346e-16,0,1.0,0
+pglib_case30_ieee,False,1e-06,1.2098374922832816e-16,completed,1,21,200,SLSQP/IPOPT,0.9354143470817096,92,1.0,0
+pglib_case30_ieee,False,1e-06,1.442222014787673e-16,completed,2,21,200,SLSQP/IPOPT,0.4677071735408548,92,1.0,0
+pglib_case30_ieee,False,1e-06,1.1359458890021344e-16,completed,3,21,200,SLSQP/IPOPT,0.2338535867704274,92,1.0,0
+pglib_case30_ieee,False,1e-06,1.6653345369378189e-16,completed,4,21,200,SLSQP/IPOPT,0.1169267933852137,92,1.0,0
+pglib_case30_ieee,False,1e-06,7.850462293418876e-17,completed,5,21,200,SLSQP/IPOPT,0.05846339669260685,92,1.0,0
+pglib_case30_ieee,False,1e-06,1.2098374922838607e-16,completed,6,21,200,SLSQP/IPOPT,0.029231698346303424,92,1.0,0
+pglib_case30_ieee,False,1e-06,1.3526394372371654e-16,completed,7,21,200,SLSQP/IPOPT,0.014615849173151712,92,1.0,0
+pglib_case30_ieee,False,1e-06,1.766354016019247e-16,completed,8,21,200,SLSQP/IPOPT,0.007307924586575856,92,1.0,0
+pglib_case30_ieee,False,1e-06,1.1102230246252828e-16,completed,9,21,200,SLSQP/IPOPT,0.003653962293287928,92,1.0,0
+pglib_case30_ieee,False,1e-06,1.6939998869943826e-16,completed,10,21,200,SLSQP/IPOPT,0.001826981146643964,92,1.0,0
+pglib_case30_ieee,False,1e-06,1.2719202621587734e-16,completed,11,21,200,SLSQP/IPOPT,0.000913490573321982,92,1.0,0
+pglib_case30_ieee,False,1e-06,1.6420419976805997e-16,completed,12,21,200,SLSQP/IPOPT,0.000456745286660991,92,1.0,0
+pglib_case30_ieee,False,1e-06,1.2412670766255557e-16,completed,13,21,200,SLSQP/IPOPT,0.0002283726433304955,92,1.0,0
+pglib_case30_ieee,False,1e-06,2.0014830212433605e-16,completed,14,21,200,SLSQP/IPOPT,0.00011418632166524775,92,1.0,0
+pglib_case30_ieee,False,1e-06,2.3592239273294674e-16,completed,15,21,200,SLSQP/IPOPT,5.7093160832623875e-05,92,1.0,0
+pglib_case30_ieee,False,1e-06,1.2098374922852506e-16,completed,16,21,200,SLSQP/IPOPT,2.854658041631194e-05,92,1.0,0
+pglib_case30_ieee,False,1e-06,1.2098374922852506e-16,completed,17,21,200,SLSQP/IPOPT,1.4273290208155969e-05,92,1.0,0
+pglib_case30_ieee,False,1e-06,1.4288057044452316e-16,completed,18,21,200,SLSQP/IPOPT,7.136645104077985e-06,92,1.0,0
+pglib_case30_ieee,False,1e-06,1.7717973386806852e-16,completed,19,21,200,SLSQP/IPOPT,3.568322552038992e-06,92,1.0,0
+pglib_case30_ieee,False,1e-06,1.7554167342884302e-16,completed,20,21,200,SLSQP/IPOPT,1.7841612760194952e-06,92,1.0,0
+pglib_case30_ieee,True,1e-06,0.0,completed,21,21,200,SLSQP/IPOPT,8.920806380097484e-07,92,1.0,0
+arpae_go_network_01o_020,True,1e-06,0.0,completed,1,1,200,coordinated first-stage MILP + full-system projection reference,0.0,0,1.0,0
+ieee123_opendss,True,1e-06,0.0,completed,1,1,200,coordinated first-stage MILP + full-system projection reference,0.0,0,1.0,0
+pglib_case14_ieee,True,1e-06,0.0,completed,1,1,200,coordinated first-stage MILP + full-system projection reference,0.0,0,1.0,0
+pglib_case30_ieee,True,1e-06,0.0,completed,1,1,200,coordinated first-stage MILP + full-system projection reference,0.0,0,1.0,0
+arpae_go_network_01o_020,True,1e-06,0.0,completed,1,1,200,coordinated first-stage NLP + full-system projection reference,0.0,0,1.0,0
+ieee123_opendss,True,1e-06,0.0,completed,1,1,200,coordinated first-stage NLP + full-system projection reference,0.0,0,1.0,0
+pglib_case14_ieee,True,1e-06,0.0,completed,1,1,200,coordinated first-stage NLP + full-system projection reference,0.0,0,1.0,0
+pglib_case30_ieee,True,1e-06,0.0,completed,1,1,200,coordinated first-stage NLP + full-system projection reference,0.0,0,1.0,0
+arpae_go_network_01o_020,True,1e-06,0.0,completed,1,1,200,differential evolution,0.0,0,1.0,0
+ieee123_opendss,True,1e-06,0.0,completed,1,1,200,differential evolution,0.0,0,1.0,0
+pglib_case14_ieee,True,1e-06,0.0,completed,1,1,200,differential evolution,0.0,0,1.0,0
+pglib_case30_ieee,True,1e-06,0.0,completed,1,1,200,differential evolution,0.0,0,1.0,0
+arpae_go_network_01o_020,True,1e-06,0.0,completed,1,1,200,greedy resilience heuristic,0.0,0,1.0,0
+ieee123_opendss,True,1e-06,0.0,completed,1,1,200,greedy resilience heuristic,0.0,0,1.0,0
+pglib_case14_ieee,True,1e-06,0.0,completed,1,1,200,greedy resilience heuristic,0.0,0,1.0,0
+pglib_case30_ieee,True,1e-06,0.0,completed,1,1,200,greedy resilience heuristic,0.0,0,1.0,0
+arpae_go_network_01o_020,True,1e-06,0.0,completed,1,1,200,piecewise-linear MILP,0.0,0,1.0,0
+ieee123_opendss,True,1e-06,0.0,completed,1,1,200,piecewise-linear MILP,0.0,0,1.0,0
+pglib_case14_ieee,True,1e-06,0.0,completed,1,1,200,piecewise-linear MILP,0.0,0,1.0,0
+pglib_case30_ieee,True,1e-06,0.0,completed,1,1,200,piecewise-linear MILP,0.0,0,1.0,0

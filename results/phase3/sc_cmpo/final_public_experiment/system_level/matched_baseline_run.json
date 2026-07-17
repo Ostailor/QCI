@@ -1,0 +1,33 @@
+{
+  "payload_count": 43,
+  "method_count": 7,
+  "solver_call_count": 6622,
+  "solution_row_count": 6622,
+  "methods": [
+    "CMPO-local polynomial search",
+    "IPOPT/Pyomo nonlinear",
+    "SLSQP",
+    "piecewise-linear MILP",
+    "differential evolution",
+    "QUBO/quadratized search",
+    "greedy resilience heuristic"
+  ],
+  "benchmarks": [
+    "arpae_go_network_01o_020",
+    "ieee123_opendss",
+    "pglib_case14_ieee",
+    "pglib_case30_ieee"
+  ],
+  "output": "results/phase3/sc_cmpo/final_public_experiment/system_level/baseline_patch_solutions.csv",
+  "workers": 8,
+  "stochastic_repeats": 50,
+  "stochastic_methods": [
+    "CMPO-local polynomial search",
+    "QUBO/quadratized search",
+    "differential evolution"
+  ],
+  "wall_clock_budget_seconds_per_payload": 30.0,
+  "completed": 6622,
+  "failed": 0,
+  "wall_clock_seconds": 42.79986258293502
+}

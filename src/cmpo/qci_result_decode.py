@@ -562,7 +562,7 @@ def _decode_hybrid_rows(
     payload: dict[str, Any],
     dataset: str,
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
-    """Preserve completed hybrid QCi mode vectors for classical projection."""
+    """Preserve completed hybrid or SC-CMPO vectors for classical projection."""
 
     order = _variable_order(request, payload)
     if not order:
@@ -583,14 +583,18 @@ def _decode_hybrid_rows(
         ]
     scenario, _patch_ids, patch_label = _scenario_patch_from_payload(payload, request)
     runtime = _runtime_from_response(response)
+    schema = str(payload.get("schema", ""))
+    is_sc_cmpo = schema.startswith("cmpo.sc_cmpo")
+    method_name = "Scenario-Coupled Consensus CMPO (QCi)" if is_sc_cmpo else "CMPO Hybrid QCi Mode Selection"
+    backend = "qci_dirac3_sc_cmpo" if is_sc_cmpo else "qci_dirac3_hybrid_mode_selection"
     rows: list[dict[str, Any]] = []
     for sample_index, vector in enumerate(solutions):
         raw_solution = _solution_dict(order, vector)
         rows.append(
             {
-                "method_name": "CMPO Hybrid QCi Mode Selection",
+                "method_name": method_name,
                 "dataset": dataset,
-                "backend": "qci_dirac3_hybrid_mode_selection",
+                "backend": backend,
                 "scenario": scenario,
                 "patch": patch_label,
                 "job_id": _job_id(response),
@@ -758,13 +762,11 @@ def decode_qci_experiment(
             failure_rows.append(_failure_row(response_path, request_path, response | {"failure_reason": "payload JSON not found"}, payload_path))
             continue
         try:
-            _grid_case, dataset, total_upgrade_cost = _payload_grid_context(
-                payload,
-                config,
-                grid_cache,
-                decoded_dir / "data",
-            )
-            if str(payload.get("schema", "")).startswith("cmpo.hybrid_qci_mode_payload"):
+            schema = str(payload.get("schema", ""))
+            is_sc_cmpo = schema.startswith("cmpo.sc_cmpo")
+            is_hybrid = schema.startswith("cmpo.hybrid_qci_mode_payload")
+            if is_sc_cmpo:
+                dataset = str(payload["sc_cmpo"]["public_benchmark"])
                 rows, failures = _decode_hybrid_rows(
                     response_path=response_path,
                     request_path=request_path,
@@ -775,17 +777,34 @@ def decode_qci_experiment(
                     dataset=dataset,
                 )
             else:
-                rows, failures = _decode_success_rows(
-                    response_path=response_path,
-                    request_path=request_path,
-                    response=response,
-                    request=request,
-                    payload_path=payload_path,
-                    payload=payload,
-                    grid_case=_grid_case,
-                    dataset=dataset,
-                    total_upgrade_cost=total_upgrade_cost,
+                _grid_case, dataset, total_upgrade_cost = _payload_grid_context(
+                    payload,
+                    config,
+                    grid_cache,
+                    decoded_dir / "data",
                 )
+                if is_hybrid:
+                    rows, failures = _decode_hybrid_rows(
+                        response_path=response_path,
+                        request_path=request_path,
+                        response=response,
+                        request=request,
+                        payload_path=payload_path,
+                        payload=payload,
+                        dataset=dataset,
+                    )
+                else:
+                    rows, failures = _decode_success_rows(
+                        response_path=response_path,
+                        request_path=request_path,
+                        response=response,
+                        request=request,
+                        payload_path=payload_path,
+                        payload=payload,
+                        grid_case=_grid_case,
+                        dataset=dataset,
+                        total_upgrade_cost=total_upgrade_cost,
+                    )
             decoded_rows.extend(rows)
             failure_rows.extend(failures)
         except Exception as exc:  # noqa: BLE001 - keep failed decodes in the report.
