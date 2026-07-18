@@ -1,0 +1,273 @@
+{
+  "IRC_CMPO_READY_FOR_QCI": "NO",
+  "coefficient_audit": [],
+  "dataset": {
+    "failures": 0,
+    "successful_labels": 3000,
+    "unique_signatures": 3000
+  },
+  "dynamic_range_valid": false,
+  "exact_hamiltonian_valid": false,
+  "historical_counts": {
+    "integer_qudit": 0,
+    "normalized_continuous_qudit": 1007,
+    "unknown": 8
+  },
+  "historical_mode_audit": true,
+  "integer_adapter_dry_run": true,
+  "irc_cmpo_ready_for_qci": false,
+  "local_stochastic_valid": false,
+  "offline_validation": {},
+  "projection_used_for_integer_samples": false,
+  "qci_jobs_submitted_during_final_prequeue_audit": 0,
+  "surrogate_metrics": {
+    "critical_ens": {
+      "all_coefficients_finite": true,
+      "calibration_by_upgrade_cost_band": [
+        {
+          "count": 150,
+          "mae": 11.661275298582904,
+          "mean_actual": 81.02777777777777,
+          "mean_bias": -1.8673763112243675,
+          "mean_predicted": 79.16040146655341,
+          "upgrade_cost_band": 0
+        },
+        {
+          "count": 150,
+          "mae": 8.706067250074708,
+          "mean_actual": 69.23333333333333,
+          "mean_bias": -0.0007541222398802461,
+          "mean_predicted": 69.23257921109345,
+          "upgrade_cost_band": 1
+        },
+        {
+          "count": 150,
+          "mae": 5.163854516985972,
+          "mean_actual": 52.65,
+          "mean_bias": -1.391636826239917,
+          "mean_predicted": 51.25836317376008,
+          "upgrade_cost_band": 2
+        },
+        {
+          "count": 150,
+          "mae": 3.0884371743330856,
+          "mean_actual": 50.75833333333333,
+          "mean_bias": -1.8882534113602492,
+          "mean_predicted": 48.87007992197309,
+          "upgrade_cost_band": 3
+        }
+      ],
+      "degree": 3,
+      "gate_passed": false,
+      "mae": 7.154908559994167,
+      "nearly_constant": false,
+      "normalized_rmse": 0.0989024595656845,
+      "pareto_front_recall": 1.0,
+      "r2": 0.8797716335900038,
+      "rmse": 10.570200366082531,
+      "spearman_rank_correlation": 0.7338203586930439,
+      "test_range": 106.875,
+      "test_standard_deviation": 30.48454706029681,
+      "top_decile_recall": 0.9848156182212582
+    },
+    "critical_infrastructure_outage_hours": {
+      "all_coefficients_finite": true,
+      "calibration_by_upgrade_cost_band": [
+        {
+          "count": 150,
+          "mae": 0.12409168594398551,
+          "mean_actual": 1.4325,
+          "mean_bias": -0.00047139259701968564,
+          "mean_predicted": 1.4320286074029804,
+          "upgrade_cost_band": 0
+        },
+        {
+          "count": 150,
+          "mae": 0.08769483938406268,
+          "mean_actual": 1.3083333333333333,
+          "mean_bias": 0.00658141077681626,
+          "mean_predicted": 1.3149147441101499,
+          "upgrade_cost_band": 1
+        },
+        {
+          "count": 150,
+          "mae": 0.05537985792199751,
+          "mean_actual": 1.15,
+          "mean_bias": -0.015395024503903783,
+          "mean_predicted": 1.134604975496096,
+          "upgrade_cost_band": 2
+        },
+        {
+          "count": 150,
+          "mae": 0.036760545650798074,
+          "mean_actual": 1.1283333333333334,
+          "mean_bias": -0.019163394367059463,
+          "mean_predicted": 1.1091699389662741,
+          "upgrade_cost_band": 3
+        }
+      ],
+      "degree": 3,
+      "gate_passed": false,
+      "mae": 0.07598173222521094,
+      "nearly_constant": false,
+      "normalized_rmse": 0.13554144935770526,
+      "pareto_front_recall": 1.0,
+      "r2": 0.8513833412863248,
+      "rmse": 0.10165608701827895,
+      "spearman_rank_correlation": 0.7345640097278865,
+      "test_range": 0.75,
+      "test_standard_deviation": 0.26369363207560065,
+      "top_decile_recall": 0.9956616052060737
+    },
+    "heldout_total_ens": {
+      "all_coefficients_finite": true,
+      "calibration_by_upgrade_cost_band": [
+        {
+          "count": 150,
+          "mae": 0.378328003004486,
+          "mean_actual": 326.4874999845361,
+          "mean_bias": 0.0220874016024095,
+          "mean_predicted": 326.50958738613855,
+          "upgrade_cost_band": 0
+        },
+        {
+          "count": 150,
+          "mae": 0.33033347148711567,
+          "mean_actual": 323.22250008558945,
+          "mean_bias": 0.03715885388780748,
+          "mean_predicted": 323.25965893947733,
+          "upgrade_cost_band": 1
+        },
+        {
+          "count": 150,
+          "mae": 0.2171609999001593,
+          "mean_actual": 316.28000018981913,
+          "mean_bias": 0.016111532164887876,
+          "mean_predicted": 316.296111721984,
+          "upgrade_cost_band": 2
+        },
+        {
+          "count": 150,
+          "mae": 0.16846307953276096,
+          "mean_actual": 310.72833354722763,
+          "mean_bias": 0.07252752478325761,
+          "mean_predicted": 310.8008610720109,
+          "upgrade_cost_band": 3
+        }
+      ],
+      "degree": 3,
+      "gate_passed": false,
+      "mae": 0.2735713884811305,
+      "nearly_constant": false,
+      "normalized_rmse": 0.005360475017589203,
+      "pareto_front_recall": 0.3333333333333333,
+      "r2": 0.9993568314307404,
+      "rmse": 0.3799236672000503,
+      "spearman_rank_correlation": 0.98975936305977,
+      "test_range": 70.87500006126612,
+      "test_standard_deviation": 14.980763301809935,
+      "top_decile_recall": 0.8852459016393442
+    },
+    "maximum_customers_unserved": {
+      "all_coefficients_finite": true,
+      "calibration_by_upgrade_cost_band": [
+        {
+          "count": 150,
+          "mae": 0.001269542023566929,
+          "mean_actual": 0.203406558420885,
+          "mean_bias": 0.0008374870153148914,
+          "mean_predicted": 0.2042440454361999,
+          "upgrade_cost_band": 0
+        },
+        {
+          "count": 150,
+          "mae": 0.0006817629962155067,
+          "mean_actual": 0.19560649474689584,
+          "mean_bias": 0.00043512592774371824,
+          "mean_predicted": 0.19604162067463957,
+          "upgrade_cost_band": 1
+        },
+        {
+          "count": 150,
+          "mae": 0.0005467390799245876,
+          "mean_actual": 0.17946513849092638,
+          "mean_bias": -0.00034127037641230466,
+          "mean_predicted": 0.1791238681145141,
+          "upgrade_cost_band": 2
+        },
+        {
+          "count": 150,
+          "mae": 0.0006594502752325028,
+          "mean_actual": 0.17652340019102192,
+          "mean_bias": -0.0006197613787752441,
+          "mean_predicted": 0.17590363881224666,
+          "upgrade_cost_band": 3
+        }
+      ],
+      "degree": 3,
+      "gate_passed": false,
+      "mae": 0.0007893735937348816,
+      "nearly_constant": false,
+      "normalized_rmse": 0.015817784832539757,
+      "pareto_front_recall": 1.0,
+      "r2": 0.9976875268131419,
+      "rmse": 0.0012917102227145644,
+      "spearman_rank_correlation": 0.7366460494216607,
+      "test_range": 0.08166189111747849,
+      "test_standard_deviation": 0.026861282462480967,
+      "top_decile_recall": 0.9956616052060737
+    },
+    "total_ens": {
+      "all_coefficients_finite": true,
+      "calibration_by_upgrade_cost_band": [
+        {
+          "count": 150,
+          "mae": 11.661275298582929,
+          "mean_actual": 261.0277777777778,
+          "mean_bias": -1.867376311224427,
+          "mean_predicted": 259.1604014665533,
+          "upgrade_cost_band": 0
+        },
+        {
+          "count": 150,
+          "mae": 8.706067250074703,
+          "mean_actual": 249.23333333333332,
+          "mean_bias": -0.0007541222399722377,
+          "mean_predicted": 249.23257921109334,
+          "upgrade_cost_band": 1
+        },
+        {
+          "count": 150,
+          "mae": 5.163854516985995,
+          "mean_actual": 232.65,
+          "mean_bias": -1.391636826240015,
+          "mean_predicted": 231.25836317376002,
+          "upgrade_cost_band": 2
+        },
+        {
+          "count": 150,
+          "mae": 3.0884371743331176,
+          "mean_actual": 230.75833333333333,
+          "mean_bias": -1.8882534113603144,
+          "mean_predicted": 228.87007992197303,
+          "upgrade_cost_band": 3
+        }
+      ],
+      "degree": 3,
+      "gate_passed": false,
+      "mae": 7.154908559994186,
+      "nearly_constant": false,
+      "normalized_rmse": 0.09890245956568475,
+      "pareto_front_recall": 1.0,
+      "r2": 0.8797716335900032,
+      "rmse": 10.570200366082558,
+      "spearman_rank_correlation": 0.7338203586930439,
+      "test_range": 106.875,
+      "test_standard_deviation": 30.48454706029681,
+      "top_decile_recall": 0.9848156182212582
+    }
+  },
+  "strict_stop_reason": "surrogate_test_gates_failed; payload construction, coefficient quantization, exact Hamiltonian solving, and stochastic proxy were not run",
+  "surrogate_valid": false,
+  "true_recourse_valid": true
+}

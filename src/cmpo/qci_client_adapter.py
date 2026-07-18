@@ -68,6 +68,14 @@ def load_cmpo_payload(path: Path | str) -> dict[str, Any]:
     return payload
 
 
+def _declares_integer_domain(payload: dict[str, Any]) -> bool:
+    integer_encodings = {"binary", "integer", "int", "qudit"}
+    return any(
+        str(variable.get("encoding_type", "")).lower() in integer_encodings or "num_levels" in variable
+        for variable in payload.get("variables", [])
+    )
+
+
 def _term_to_qci_idx(term: dict[str, Any], variable_index: dict[str, int]) -> list[int]:
     idx: list[int] = []
     for name, exponent in term.get("powers", {}).items():
@@ -323,6 +331,11 @@ def run_payload_repeats(
                 "budget constraint is metadata only; QCi submission refused before environment, upload, or client setup: "
                 f"{budget_validation.failure_reason}"
             )
+    if _declares_integer_domain(payload):
+        raise ValueError(
+            "integer payload refused by the legacy continuous adapter; use the "
+            "sample-hamiltonian-integer path in cmpo.qci_integer_adapter"
+        )
     validate_qci_environment()
     client = _client_from_environment()
     out_dir.mkdir(parents=True, exist_ok=True)

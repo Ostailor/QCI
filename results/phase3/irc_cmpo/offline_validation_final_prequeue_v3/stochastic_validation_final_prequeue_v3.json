@@ -1,0 +1,288 @@
+{
+  "projection_used": false,
+  "qci_jobs_submitted": 0,
+  "reports": [
+    {
+      "best_energy": -1.3450000000000002,
+      "by_method": {
+        "integer_simulated_annealing": {
+          "best_energy": -1.3450000000000002,
+          "exact_optimum_hit_rate": 1.0,
+          "median_energy": -1.3450000000000002,
+          "native_feasibility_rate": 1.0,
+          "portfolio_diversity": 30,
+          "time_to_good_solution_seconds": 0.39008245803415775,
+          "true_recourse_regret": 0.0,
+          "within_two_percent_optimum_count": 30
+        },
+        "local_coordinate_search": {
+          "best_energy": -1.3450000000000002,
+          "exact_optimum_hit_rate": 1.0,
+          "median_energy": -1.3450000000000002,
+          "native_feasibility_rate": 1.0,
+          "portfolio_diversity": 30,
+          "time_to_good_solution_seconds": 22.53926158300601,
+          "true_recourse_regret": 0.0,
+          "within_two_percent_optimum_count": 30
+        },
+        "random_restart": {
+          "best_energy": -1.3450000000000002,
+          "exact_optimum_hit_rate": 1.0,
+          "median_energy": -1.3450000000000002,
+          "native_feasibility_rate": 1.0,
+          "portfolio_diversity": 30,
+          "time_to_good_solution_seconds": 11.556818624958396,
+          "true_recourse_regret": 0.0,
+          "within_two_percent_optimum_count": 30
+        }
+      },
+      "cost_weight": 0.0,
+      "exact_optimum_hit_rate": 1.0,
+      "gates_passed": true,
+      "lambda_index": 0,
+      "median_energy": -1.3450000000000002,
+      "median_true_recourse_regret": 0.0,
+      "native_feasibility_rate": 1.0,
+      "projection_used": false,
+      "time_to_good_solution_seconds": 0.39008245803415775,
+      "unique_feasible_portfolios": 90,
+      "within_two_percent_optimum_count": 90
+    },
+    {
+      "best_energy": -1.325,
+      "by_method": {
+        "integer_simulated_annealing": {
+          "best_energy": -1.325,
+          "exact_optimum_hit_rate": 0.7,
+          "median_energy": -1.325,
+          "native_feasibility_rate": 1.0,
+          "portfolio_diversity": 21,
+          "time_to_good_solution_seconds": 0.3608221251051873,
+          "true_recourse_regret": 0.0889457042824661,
+          "within_two_percent_optimum_count": 30
+        },
+        "local_coordinate_search": {
+          "best_energy": -1.325,
+          "exact_optimum_hit_rate": 0.3333333333333333,
+          "median_energy": -1.32,
+          "native_feasibility_rate": 1.0,
+          "portfolio_diversity": 16,
+          "time_to_good_solution_seconds": 8.418056667083874,
+          "true_recourse_regret": 0.10450594656701565,
+          "within_two_percent_optimum_count": 30
+        },
+        "random_restart": {
+          "best_energy": -1.325,
+          "exact_optimum_hit_rate": 0.6666666666666666,
+          "median_energy": -1.325,
+          "native_feasibility_rate": 0.8666666666666667,
+          "portfolio_diversity": 17,
+          "time_to_good_solution_seconds": 5.656220959033817,
+          "true_recourse_regret": 0.4291103341235567,
+          "within_two_percent_optimum_count": 30
+        }
+      },
+      "cost_weight": 0.6047973937693153,
+      "exact_optimum_hit_rate": 0.5666666666666667,
+      "gates_passed": false,
+      "lambda_index": 1,
+      "median_energy": -1.325,
+      "median_true_recourse_regret": 0.11091310515477136,
+      "native_feasibility_rate": 0.9555555555555556,
+      "projection_used": false,
+      "time_to_good_solution_seconds": 0.3608221251051873,
+      "unique_feasible_portfolios": 28,
+      "within_two_percent_optimum_count": 90
+    },
+    {
+      "best_energy": -1.3199999999999998,
+      "by_method": {
+        "integer_simulated_annealing": {
+          "best_energy": -1.3199999999999998,
+          "exact_optimum_hit_rate": 0.6,
+          "median_energy": -1.3199999999999998,
+          "native_feasibility_rate": 1.0,
+          "portfolio_diversity": 2,
+          "time_to_good_solution_seconds": 0.01043575000949204,
+          "true_recourse_regret": 0.0,
+          "within_two_percent_optimum_count": 30
+        },
+        "local_coordinate_search": {
+          "best_energy": -1.3199999999999998,
+          "exact_optimum_hit_rate": 0.5,
+          "median_energy": -1.31,
+          "native_feasibility_rate": 1.0,
+          "portfolio_diversity": 2,
+          "time_to_good_solution_seconds": 1.2842353340238333,
+          "true_recourse_regret": 0.4977474389630385,
+          "within_two_percent_optimum_count": 30
+        },
+        "random_restart": {
+          "best_energy": -1.3199999999999998,
+          "exact_optimum_hit_rate": 0.8,
+          "median_energy": -1.3199999999999998,
+          "native_feasibility_rate": 0.8333333333333334,
+          "portfolio_diversity": 2,
+          "time_to_good_solution_seconds": 0.3163641670253128,
+          "true_recourse_regret": 0.0,
+          "within_two_percent_optimum_count": 30
+        }
+      },
+      "cost_weight": 1.2095947875386306,
+      "exact_optimum_hit_rate": 0.6333333333333333,
+      "gates_passed": false,
+      "lambda_index": 2,
+      "median_energy": -1.3199999999999998,
+      "median_true_recourse_regret": 0.0,
+      "native_feasibility_rate": 0.9444444444444444,
+      "projection_used": false,
+      "time_to_good_solution_seconds": 0.01043575000949204,
+      "unique_feasible_portfolios": 2,
+      "within_two_percent_optimum_count": 90
+    },
+    {
+      "best_energy": -1.315,
+      "by_method": {
+        "integer_simulated_annealing": {
+          "best_energy": -1.315,
+          "exact_optimum_hit_rate": 0.7,
+          "median_energy": -1.315,
+          "native_feasibility_rate": 1.0,
+          "portfolio_diversity": 2,
+          "time_to_good_solution_seconds": 0.020807916065678,
+          "true_recourse_regret": 0.0,
+          "within_two_percent_optimum_count": 21
+        },
+        "local_coordinate_search": {
+          "best_energy": -1.315,
+          "exact_optimum_hit_rate": 0.5666666666666667,
+          "median_energy": -1.315,
+          "native_feasibility_rate": 1.0,
+          "portfolio_diversity": 2,
+          "time_to_good_solution_seconds": 0.6096448749303818,
+          "true_recourse_regret": 0.0,
+          "within_two_percent_optimum_count": 17
+        },
+        "random_restart": {
+          "best_energy": -1.315,
+          "exact_optimum_hit_rate": 0.8333333333333334,
+          "median_energy": -1.315,
+          "native_feasibility_rate": 0.8333333333333334,
+          "portfolio_diversity": 1,
+          "time_to_good_solution_seconds": 0.32213679095730186,
+          "true_recourse_regret": 0.0,
+          "within_two_percent_optimum_count": 30
+        }
+      },
+      "cost_weight": 2.419189575077261,
+      "exact_optimum_hit_rate": 0.7,
+      "gates_passed": false,
+      "lambda_index": 3,
+      "median_energy": -1.315,
+      "median_true_recourse_regret": 0.0,
+      "native_feasibility_rate": 0.9444444444444444,
+      "projection_used": false,
+      "time_to_good_solution_seconds": 0.020807916065678,
+      "unique_feasible_portfolios": 2,
+      "within_two_percent_optimum_count": 68
+    },
+    {
+      "best_energy": -1.3050000000000002,
+      "by_method": {
+        "integer_simulated_annealing": {
+          "best_energy": -1.3050000000000002,
+          "exact_optimum_hit_rate": 0.6333333333333333,
+          "median_energy": -1.3050000000000002,
+          "native_feasibility_rate": 1.0,
+          "portfolio_diversity": 2,
+          "time_to_good_solution_seconds": 0.010541875148192048,
+          "true_recourse_regret": 0.0,
+          "within_two_percent_optimum_count": 19
+        },
+        "local_coordinate_search": {
+          "best_energy": -1.3050000000000002,
+          "exact_optimum_hit_rate": 0.8,
+          "median_energy": -1.3050000000000002,
+          "native_feasibility_rate": 1.0,
+          "portfolio_diversity": 2,
+          "time_to_good_solution_seconds": 0.9713984581176192,
+          "true_recourse_regret": 0.0,
+          "within_two_percent_optimum_count": 24
+        },
+        "random_restart": {
+          "best_energy": -1.3050000000000002,
+          "exact_optimum_hit_rate": 0.8333333333333334,
+          "median_energy": -1.3050000000000002,
+          "native_feasibility_rate": 0.8333333333333334,
+          "portfolio_diversity": 1,
+          "time_to_good_solution_seconds": 0.32250058301724494,
+          "true_recourse_regret": 0.0,
+          "within_two_percent_optimum_count": 29
+        }
+      },
+      "cost_weight": 4.838379150154522,
+      "exact_optimum_hit_rate": 0.7555555555555555,
+      "gates_passed": false,
+      "lambda_index": 4,
+      "median_energy": -1.3050000000000002,
+      "median_true_recourse_regret": 0.0,
+      "native_feasibility_rate": 0.9444444444444444,
+      "projection_used": false,
+      "time_to_good_solution_seconds": 0.010541875148192048,
+      "unique_feasible_portfolios": 2,
+      "within_two_percent_optimum_count": 72
+    },
+    {
+      "best_energy": -1.295,
+      "by_method": {
+        "integer_simulated_annealing": {
+          "best_energy": -1.295,
+          "exact_optimum_hit_rate": 0.5666666666666667,
+          "median_energy": -1.295,
+          "native_feasibility_rate": 1.0,
+          "portfolio_diversity": 2,
+          "time_to_good_solution_seconds": 0.010393375065177679,
+          "true_recourse_regret": 0.0,
+          "within_two_percent_optimum_count": 17
+        },
+        "local_coordinate_search": {
+          "best_energy": -1.295,
+          "exact_optimum_hit_rate": 0.6666666666666666,
+          "median_energy": -1.295,
+          "native_feasibility_rate": 1.0,
+          "portfolio_diversity": 2,
+          "time_to_good_solution_seconds": 0.6076043751090765,
+          "true_recourse_regret": 0.0,
+          "within_two_percent_optimum_count": 20
+        },
+        "random_restart": {
+          "best_energy": -1.295,
+          "exact_optimum_hit_rate": 0.7666666666666667,
+          "median_energy": -1.295,
+          "native_feasibility_rate": 0.8333333333333334,
+          "portfolio_diversity": 2,
+          "time_to_good_solution_seconds": 0.31848645908758044,
+          "true_recourse_regret": 0.0,
+          "within_two_percent_optimum_count": 28
+        }
+      },
+      "cost_weight": 9.676758300309045,
+      "exact_optimum_hit_rate": 0.6666666666666666,
+      "gates_passed": false,
+      "lambda_index": 5,
+      "median_energy": -1.295,
+      "median_true_recourse_regret": 0.0,
+      "native_feasibility_rate": 0.9444444444444444,
+      "projection_used": false,
+      "time_to_good_solution_seconds": 0.010393375065177679,
+      "unique_feasible_portfolios": 2,
+      "within_two_percent_optimum_count": 65
+    }
+  ],
+  "schema": "cmpo.irc_cmpo.stochastic_offline.final_prequeue.v3",
+  "suite": {
+    "gates_passed": false,
+    "lambda_count": 6,
+    "passed_lambda_count": 1
+  }
+}

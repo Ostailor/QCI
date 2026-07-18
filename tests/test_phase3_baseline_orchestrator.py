@@ -67,7 +67,6 @@ def test_phase3_baseline_sweep_writes_qci_shaped_outputs(tmp_path: Path, monkeyp
         assert column in payload_summary.columns
     assert "QUBO/quadratized local search baseline" in set(repeat_metrics["method_name"])
     methods = set(repeat_metrics["method_name"])
-    skipped_methods = set(skip_report["method_name"]) if not skip_report.empty else set()
     assert "GPU-parallel random restart baseline" in methods
     assert "IPOPT/Pyomo nonlinear baseline" in set(repeat_metrics["method_name"])
     assert "Stress-only reserve heuristic baseline" in set(repeat_metrics["method_name"])

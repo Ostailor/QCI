@@ -166,3 +166,21 @@ def test_load_cmpo_payload_rejects_missing_keys(tmp_path: Path) -> None:
 
     with pytest.raises(ValueError, match="missing required keys"):
         load_cmpo_payload(path)
+
+
+def test_continuous_adapter_refuses_integer_payload_before_client_setup(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    payload = _payload()
+    for variable in payload["variables"]:
+        variable["encoding_type"] = "binary"
+        variable["upper_bound"] = 1
+        variable["num_levels"] = 2
+    payload_path = tmp_path / "integer_payload.json"
+    payload_path.write_text(json.dumps(payload), encoding="utf-8")
+    monkeypatch.delenv("QCI_API_URL", raising=False)
+    monkeypatch.delenv("QCI_TOKEN", raising=False)
+    monkeypatch.setenv("QCI_ENV_FILE", str(tmp_path / "missing.env"))
+
+    with pytest.raises(ValueError, match="sample-hamiltonian-integer"):
+        run_payload_repeats(payload_path, 1, tmp_path / "qci", {"qci": {}})

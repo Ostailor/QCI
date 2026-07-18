@@ -1,0 +1,480 @@
+{
+  "known_exact_optimum": {
+    "coordinates": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "energy": -3.9000000000000004,
+    "selected_asset_keys": [
+      "toy::north::dispatchable_generation",
+      "toy::south::dispatchable_generation"
+    ]
+  },
+  "name": "toy",
+  "num_samples": 30,
+  "payload": {
+    "abbreviation": "IRC-CMPO",
+    "anchor_coverage_constraints": [
+      {
+        "anchor_node": "north",
+        "native_cubic_penalty": true,
+        "semantics": "at_least_one",
+        "variables": [
+          "y::toy::north::bess",
+          "y::toy::north::dispatchable_generation",
+          "y::toy::north::pv"
+        ]
+      },
+      {
+        "anchor_node": "south",
+        "native_cubic_penalty": true,
+        "semantics": "at_least_one",
+        "variables": [
+          "y::toy::south::bess",
+          "y::toy::south::dispatchable_generation",
+          "y::toy::south::pv"
+        ]
+      }
+    ],
+    "catalog_assets": [
+      {
+        "anchor_node": "north",
+        "asset_key": "toy::north::bess",
+        "capacity_kw": 0.0,
+        "energy_kwh": 0.0,
+        "power_kw": 0.0,
+        "source_row": "",
+        "technology": "bess",
+        "total_cost": 5.0
+      },
+      {
+        "anchor_node": "north",
+        "asset_key": "toy::north::dispatchable_generation",
+        "capacity_kw": 0.0,
+        "energy_kwh": 0.0,
+        "power_kw": 0.0,
+        "source_row": "",
+        "technology": "dispatchable_generation",
+        "total_cost": 3.0
+      },
+      {
+        "anchor_node": "north",
+        "asset_key": "toy::north::pv",
+        "capacity_kw": 0.0,
+        "energy_kwh": 0.0,
+        "power_kw": 0.0,
+        "source_row": "",
+        "technology": "pv",
+        "total_cost": 4.0
+      },
+      {
+        "anchor_node": "south",
+        "asset_key": "toy::south::bess",
+        "capacity_kw": 0.0,
+        "energy_kwh": 0.0,
+        "power_kw": 0.0,
+        "source_row": "",
+        "technology": "bess",
+        "total_cost": 5.0
+      },
+      {
+        "anchor_node": "south",
+        "asset_key": "toy::south::dispatchable_generation",
+        "capacity_kw": 0.0,
+        "energy_kwh": 0.0,
+        "power_kw": 0.0,
+        "source_row": "",
+        "technology": "dispatchable_generation",
+        "total_cost": 3.0
+      },
+      {
+        "anchor_node": "south",
+        "asset_key": "toy::south::pv",
+        "capacity_kw": 0.0,
+        "energy_kwh": 0.0,
+        "power_kw": 0.0,
+        "source_row": "",
+        "technology": "pv",
+        "total_cost": 4.0
+      }
+    ],
+    "coefficient_audit": {
+      "degree_distribution": {
+        "0": 2,
+        "1": 18,
+        "2": 6,
+        "3": 2
+      },
+      "dynamic_range": 39.99999999999999,
+      "effective_dynamic_range": 2.0,
+      "effective_maximum_nonzero": 4.0,
+      "effective_minimum_nonzero": 2.0,
+      "family_statistics": {
+        "coverage": {
+          "count": 16,
+          "maximum_nonzero": 2.0,
+          "median_nonzero": 2.0,
+          "minimum_nonzero": 2.0
+        },
+        "normalized_cost": {
+          "count": 6,
+          "maximum_nonzero": 0.08333333333333333,
+          "median_nonzero": 0.06666666666666667,
+          "minimum_nonzero": 0.05000000000000001
+        },
+        "surrogate": {
+          "count": 6,
+          "maximum_nonzero": 2.0,
+          "median_nonzero": 1.0,
+          "minimum_nonzero": 0.5
+        }
+      },
+      "maximum_nonzero": 2.0,
+      "minimum_nonzero": 0.05000000000000001,
+      "passed": true,
+      "reasons": []
+    },
+    "exact_budget_constraint": {
+      "amount_dollars": 6.0,
+      "enforcement": "native-sample exact filter; never projection"
+    },
+    "formulation": "Integer Recourse-Calibrated CMPO",
+    "irc_cmpo": {
+      "budget_slack_variables": 0,
+      "continuous_policy_variables": 0,
+      "coverage_rho": 2.0,
+      "lagrange_lambda": 0.1,
+      "normalized_cost_denominator_dollars": 6.0,
+      "projection_permitted": false,
+      "selected_not_selected_pairs": false
+    },
+    "max_degree": 3,
+    "min_degree": 0,
+    "num_levels": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "num_variables": 6,
+    "objective_sense": "minimize",
+    "polynomial_terms": [
+      {
+        "coefficient": -1.0,
+        "component": "surrogate",
+        "degree": 1,
+        "powers": {
+          "y::toy::north::pv": 1
+        },
+        "surrogate_feature": "toy::north::pv"
+      },
+      {
+        "coefficient": -0.5,
+        "component": "surrogate",
+        "degree": 1,
+        "powers": {
+          "y::toy::north::bess": 1
+        },
+        "surrogate_feature": "toy::north::bess"
+      },
+      {
+        "coefficient": -2.0,
+        "component": "surrogate",
+        "degree": 1,
+        "powers": {
+          "y::toy::north::dispatchable_generation": 1
+        },
+        "surrogate_feature": "toy::north::dispatchable_generation"
+      },
+      {
+        "coefficient": -1.0,
+        "component": "surrogate",
+        "degree": 1,
+        "powers": {
+          "y::toy::south::pv": 1
+        },
+        "surrogate_feature": "toy::south::pv"
+      },
+      {
+        "coefficient": -0.5,
+        "component": "surrogate",
+        "degree": 1,
+        "powers": {
+          "y::toy::south::bess": 1
+        },
+        "surrogate_feature": "toy::south::bess"
+      },
+      {
+        "coefficient": -2.0,
+        "component": "surrogate",
+        "degree": 1,
+        "powers": {
+          "y::toy::south::dispatchable_generation": 1
+        },
+        "surrogate_feature": "toy::south::dispatchable_generation"
+      },
+      {
+        "coefficient": 0.08333333333333333,
+        "component": "normalized_cost",
+        "degree": 1,
+        "physical_asset_key": "toy::north::bess",
+        "powers": {
+          "y::toy::north::bess": 1
+        }
+      },
+      {
+        "coefficient": 0.05000000000000001,
+        "component": "normalized_cost",
+        "degree": 1,
+        "physical_asset_key": "toy::north::dispatchable_generation",
+        "powers": {
+          "y::toy::north::dispatchable_generation": 1
+        }
+      },
+      {
+        "coefficient": 0.06666666666666667,
+        "component": "normalized_cost",
+        "degree": 1,
+        "physical_asset_key": "toy::north::pv",
+        "powers": {
+          "y::toy::north::pv": 1
+        }
+      },
+      {
+        "coefficient": 0.08333333333333333,
+        "component": "normalized_cost",
+        "degree": 1,
+        "physical_asset_key": "toy::south::bess",
+        "powers": {
+          "y::toy::south::bess": 1
+        }
+      },
+      {
+        "coefficient": 0.05000000000000001,
+        "component": "normalized_cost",
+        "degree": 1,
+        "physical_asset_key": "toy::south::dispatchable_generation",
+        "powers": {
+          "y::toy::south::dispatchable_generation": 1
+        }
+      },
+      {
+        "coefficient": 0.06666666666666667,
+        "component": "normalized_cost",
+        "degree": 1,
+        "physical_asset_key": "toy::south::pv",
+        "powers": {
+          "y::toy::south::pv": 1
+        }
+      },
+      {
+        "anchor_node": "north",
+        "coefficient": 2.0,
+        "component": "coverage",
+        "degree": 0,
+        "powers": {}
+      },
+      {
+        "anchor_node": "north",
+        "coefficient": -2.0,
+        "component": "coverage",
+        "degree": 1,
+        "powers": {
+          "y::toy::north::pv": 1
+        }
+      },
+      {
+        "anchor_node": "north",
+        "coefficient": -2.0,
+        "component": "coverage",
+        "degree": 1,
+        "powers": {
+          "y::toy::north::bess": 1
+        }
+      },
+      {
+        "anchor_node": "north",
+        "coefficient": -2.0,
+        "component": "coverage",
+        "degree": 1,
+        "powers": {
+          "y::toy::north::dispatchable_generation": 1
+        }
+      },
+      {
+        "anchor_node": "north",
+        "coefficient": 2.0,
+        "component": "coverage",
+        "degree": 2,
+        "powers": {
+          "y::toy::north::bess": 1,
+          "y::toy::north::pv": 1
+        }
+      },
+      {
+        "anchor_node": "north",
+        "coefficient": 2.0,
+        "component": "coverage",
+        "degree": 2,
+        "powers": {
+          "y::toy::north::dispatchable_generation": 1,
+          "y::toy::north::pv": 1
+        }
+      },
+      {
+        "anchor_node": "north",
+        "coefficient": 2.0,
+        "component": "coverage",
+        "degree": 2,
+        "powers": {
+          "y::toy::north::bess": 1,
+          "y::toy::north::dispatchable_generation": 1
+        }
+      },
+      {
+        "anchor_node": "north",
+        "coefficient": -2.0,
+        "component": "coverage",
+        "degree": 3,
+        "powers": {
+          "y::toy::north::bess": 1,
+          "y::toy::north::dispatchable_generation": 1,
+          "y::toy::north::pv": 1
+        }
+      },
+      {
+        "anchor_node": "south",
+        "coefficient": 2.0,
+        "component": "coverage",
+        "degree": 0,
+        "powers": {}
+      },
+      {
+        "anchor_node": "south",
+        "coefficient": -2.0,
+        "component": "coverage",
+        "degree": 1,
+        "powers": {
+          "y::toy::south::pv": 1
+        }
+      },
+      {
+        "anchor_node": "south",
+        "coefficient": -2.0,
+        "component": "coverage",
+        "degree": 1,
+        "powers": {
+          "y::toy::south::bess": 1
+        }
+      },
+      {
+        "anchor_node": "south",
+        "coefficient": -2.0,
+        "component": "coverage",
+        "degree": 1,
+        "powers": {
+          "y::toy::south::dispatchable_generation": 1
+        }
+      },
+      {
+        "anchor_node": "south",
+        "coefficient": 2.0,
+        "component": "coverage",
+        "degree": 2,
+        "powers": {
+          "y::toy::south::bess": 1,
+          "y::toy::south::pv": 1
+        }
+      },
+      {
+        "anchor_node": "south",
+        "coefficient": 2.0,
+        "component": "coverage",
+        "degree": 2,
+        "powers": {
+          "y::toy::south::dispatchable_generation": 1,
+          "y::toy::south::pv": 1
+        }
+      },
+      {
+        "anchor_node": "south",
+        "coefficient": 2.0,
+        "component": "coverage",
+        "degree": 2,
+        "powers": {
+          "y::toy::south::bess": 1,
+          "y::toy::south::dispatchable_generation": 1
+        }
+      },
+      {
+        "anchor_node": "south",
+        "coefficient": -2.0,
+        "component": "coverage",
+        "degree": 3,
+        "powers": {
+          "y::toy::south::bess": 1,
+          "y::toy::south::dispatchable_generation": 1,
+          "y::toy::south::pv": 1
+        }
+      }
+    ],
+    "schema": "cmpo.irc_cmpo.integer_master.v1",
+    "variables": [
+      {
+        "encoding_type": "binary",
+        "lower_bound": 0,
+        "name": "y::toy::north::bess",
+        "num_levels": 2,
+        "physical_asset_key": "toy::north::bess",
+        "upper_bound": 1
+      },
+      {
+        "encoding_type": "binary",
+        "lower_bound": 0,
+        "name": "y::toy::north::dispatchable_generation",
+        "num_levels": 2,
+        "physical_asset_key": "toy::north::dispatchable_generation",
+        "upper_bound": 1
+      },
+      {
+        "encoding_type": "binary",
+        "lower_bound": 0,
+        "name": "y::toy::north::pv",
+        "num_levels": 2,
+        "physical_asset_key": "toy::north::pv",
+        "upper_bound": 1
+      },
+      {
+        "encoding_type": "binary",
+        "lower_bound": 0,
+        "name": "y::toy::south::bess",
+        "num_levels": 2,
+        "physical_asset_key": "toy::south::bess",
+        "upper_bound": 1
+      },
+      {
+        "encoding_type": "binary",
+        "lower_bound": 0,
+        "name": "y::toy::south::dispatchable_generation",
+        "num_levels": 2,
+        "physical_asset_key": "toy::south::dispatchable_generation",
+        "upper_bound": 1
+      },
+      {
+        "encoding_type": "binary",
+        "lower_bound": 0,
+        "name": "y::toy::south::pv",
+        "num_levels": 2,
+        "physical_asset_key": "toy::south::pv",
+        "upper_bound": 1
+      }
+    ]
+  },
+  "test": "A"
+}

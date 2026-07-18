@@ -1,0 +1,12 @@
+{
+  "exact_hamiltonian_valid": false,
+  "fixed_recourse_cache_hits": 8216,
+  "fixed_recourse_cache_misses": 184,
+  "lambda_count": 6,
+  "local_stochastic_valid": false,
+  "projection_used": false,
+  "qci_jobs_submitted": 0,
+  "readiness_decision_deferred_to_final_audit": true,
+  "schema": "cmpo.irc_cmpo.offline_validation_manifest.final_prequeue.v2",
+  "unique_portfolios_recourse_evaluated": 350
+}

@@ -9,7 +9,6 @@ import json
 import os
 import shutil
 import ssl
-import subprocess
 import sys
 import tarfile
 import tempfile
@@ -208,7 +207,6 @@ def _make_workspace_archive() -> Path:
 
 
 def _remote_script(role: str, config: str, repeats: int, gpu_restarts: int) -> str:
-    include_gpu = role == "gpu"
     disabled = [
         "include_greedy",
         "include_slsqp",

@@ -1,0 +1,9 @@
+{
+  "job_id": "6a5ba9ef08442f441bbb20c2",
+  "status": "QUEUED",
+  "submitted_at": "2026-07-18T16:29:35.868Z",
+  "checked_at": "2026-07-18T17:01:02Z",
+  "downstream_jobs_submitted": 0,
+  "projection_used": false,
+  "note": "Create-only checkpoint while the original qci-client process continues polling; this is not a failure or a resubmission."
+}

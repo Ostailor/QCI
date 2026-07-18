@@ -1,0 +1,1926 @@
+{
+  "abbreviation": "IRC-CMPO",
+  "catalog_assets": [
+    {
+      "anchor_node": "100",
+      "asset_key": "ieee123_opendss::100::bess",
+      "capacity_kw": 120.0,
+      "energy_kwh": 480.0,
+      "power_kw": 120.0,
+      "source_row": "ATBe.csv row 78747: Utility-Scale Battery Storage; 4Hr Battery Storage; Moderate; OCC; 2022; value=1926.72",
+      "technology": "bess",
+      "total_cost": 231206.4
+    },
+    {
+      "anchor_node": "100",
+      "asset_key": "ieee123_opendss::100::dispatchable_generation",
+      "capacity_kw": 120.0,
+      "energy_kwh": 0.0,
+      "power_kw": 120.0,
+      "source_row": "ATBe.csv row 60391: NaturalGas_FE; NG Combustion Turbine (F-Frame); Moderate; OCC; 2022; value=1110.4",
+      "technology": "dispatchable_generation",
+      "total_cost": 133248.0
+    },
+    {
+      "anchor_node": "100",
+      "asset_key": "ieee123_opendss::100::pv",
+      "capacity_kw": 120.0,
+      "energy_kwh": 0.0,
+      "power_kw": 120.0,
+      "source_row": "ATBe.csv row 434241: UtilityPV; Class5; Moderate; OCC; 2022; value=1366.5982035504765",
+      "technology": "pv",
+      "total_cost": 163991.7844260572
+    },
+    {
+      "anchor_node": "113",
+      "asset_key": "ieee123_opendss::113::bess",
+      "capacity_kw": 80.0,
+      "energy_kwh": 320.0,
+      "power_kw": 80.0,
+      "source_row": "ATBe.csv row 78747: Utility-Scale Battery Storage; 4Hr Battery Storage; Moderate; OCC; 2022; value=1926.72",
+      "technology": "bess",
+      "total_cost": 154137.6
+    },
+    {
+      "anchor_node": "113",
+      "asset_key": "ieee123_opendss::113::dispatchable_generation",
+      "capacity_kw": 80.0,
+      "energy_kwh": 0.0,
+      "power_kw": 80.0,
+      "source_row": "ATBe.csv row 60391: NaturalGas_FE; NG Combustion Turbine (F-Frame); Moderate; OCC; 2022; value=1110.4",
+      "technology": "dispatchable_generation",
+      "total_cost": 88832.0
+    },
+    {
+      "anchor_node": "113",
+      "asset_key": "ieee123_opendss::113::pv",
+      "capacity_kw": 80.0,
+      "energy_kwh": 0.0,
+      "power_kw": 80.0,
+      "source_row": "ATBe.csv row 434241: UtilityPV; Class5; Moderate; OCC; 2022; value=1366.5982035504765",
+      "technology": "pv",
+      "total_cost": 109327.85628403812
+    },
+    {
+      "anchor_node": "16",
+      "asset_key": "ieee123_opendss::16::bess",
+      "capacity_kw": 80.0,
+      "energy_kwh": 320.0,
+      "power_kw": 80.0,
+      "source_row": "ATBe.csv row 78747: Utility-Scale Battery Storage; 4Hr Battery Storage; Moderate; OCC; 2022; value=1926.72",
+      "technology": "bess",
+      "total_cost": 154137.6
+    },
+    {
+      "anchor_node": "16",
+      "asset_key": "ieee123_opendss::16::dispatchable_generation",
+      "capacity_kw": 80.0,
+      "energy_kwh": 0.0,
+      "power_kw": 80.0,
+      "source_row": "ATBe.csv row 60391: NaturalGas_FE; NG Combustion Turbine (F-Frame); Moderate; OCC; 2022; value=1110.4",
+      "technology": "dispatchable_generation",
+      "total_cost": 88832.0
+    },
+    {
+      "anchor_node": "16",
+      "asset_key": "ieee123_opendss::16::pv",
+      "capacity_kw": 80.0,
+      "energy_kwh": 0.0,
+      "power_kw": 80.0,
+      "source_row": "ATBe.csv row 434241: UtilityPV; Class5; Moderate; OCC; 2022; value=1366.5982035504765",
+      "technology": "pv",
+      "total_cost": 109327.85628403812
+    },
+    {
+      "anchor_node": "28",
+      "asset_key": "ieee123_opendss::28::bess",
+      "capacity_kw": 120.0,
+      "energy_kwh": 480.0,
+      "power_kw": 120.0,
+      "source_row": "ATBe.csv row 78747: Utility-Scale Battery Storage; 4Hr Battery Storage; Moderate; OCC; 2022; value=1926.72",
+      "technology": "bess",
+      "total_cost": 231206.4
+    },
+    {
+      "anchor_node": "28",
+      "asset_key": "ieee123_opendss::28::dispatchable_generation",
+      "capacity_kw": 120.0,
+      "energy_kwh": 0.0,
+      "power_kw": 120.0,
+      "source_row": "ATBe.csv row 60391: NaturalGas_FE; NG Combustion Turbine (F-Frame); Moderate; OCC; 2022; value=1110.4",
+      "technology": "dispatchable_generation",
+      "total_cost": 133248.0
+    },
+    {
+      "anchor_node": "28",
+      "asset_key": "ieee123_opendss::28::pv",
+      "capacity_kw": 120.0,
+      "energy_kwh": 0.0,
+      "power_kw": 120.0,
+      "source_row": "ATBe.csv row 434241: UtilityPV; Class5; Moderate; OCC; 2022; value=1366.5982035504765",
+      "technology": "pv",
+      "total_cost": 163991.7844260572
+    },
+    {
+      "anchor_node": "48",
+      "asset_key": "ieee123_opendss::48::bess",
+      "capacity_kw": 455.0,
+      "energy_kwh": 1820.0,
+      "power_kw": 455.0,
+      "source_row": "ATBe.csv row 78747: Utility-Scale Battery Storage; 4Hr Battery Storage; Moderate; OCC; 2022; value=1926.72",
+      "technology": "bess",
+      "total_cost": 876657.6
+    },
+    {
+      "anchor_node": "48",
+      "asset_key": "ieee123_opendss::48::dispatchable_generation",
+      "capacity_kw": 455.0,
+      "energy_kwh": 0.0,
+      "power_kw": 455.0,
+      "source_row": "ATBe.csv row 60391: NaturalGas_FE; NG Combustion Turbine (F-Frame); Moderate; OCC; 2022; value=1110.4",
+      "technology": "dispatchable_generation",
+      "total_cost": 505232.00000000006
+    },
+    {
+      "anchor_node": "48",
+      "asset_key": "ieee123_opendss::48::pv",
+      "capacity_kw": 455.0,
+      "energy_kwh": 0.0,
+      "power_kw": 455.0,
+      "source_row": "ATBe.csv row 434241: UtilityPV; Class5; Moderate; OCC; 2022; value=1366.5982035504765",
+      "technology": "pv",
+      "total_cost": 621802.1826154668
+    },
+    {
+      "anchor_node": "65",
+      "asset_key": "ieee123_opendss::65::bess",
+      "capacity_kw": 290.0,
+      "energy_kwh": 1160.0,
+      "power_kw": 290.0,
+      "source_row": "ATBe.csv row 78747: Utility-Scale Battery Storage; 4Hr Battery Storage; Moderate; OCC; 2022; value=1926.72",
+      "technology": "bess",
+      "total_cost": 558748.8
+    },
+    {
+      "anchor_node": "65",
+      "asset_key": "ieee123_opendss::65::dispatchable_generation",
+      "capacity_kw": 290.0,
+      "energy_kwh": 0.0,
+      "power_kw": 290.0,
+      "source_row": "ATBe.csv row 60391: NaturalGas_FE; NG Combustion Turbine (F-Frame); Moderate; OCC; 2022; value=1110.4",
+      "technology": "dispatchable_generation",
+      "total_cost": 322016.0
+    },
+    {
+      "anchor_node": "65",
+      "asset_key": "ieee123_opendss::65::pv",
+      "capacity_kw": 290.0,
+      "energy_kwh": 0.0,
+      "power_kw": 290.0,
+      "source_row": "ATBe.csv row 434241: UtilityPV; Class5; Moderate; OCC; 2022; value=1366.5982035504765",
+      "technology": "pv",
+      "total_cost": 396313.47902963817
+    },
+    {
+      "anchor_node": "69",
+      "asset_key": "ieee123_opendss::69::bess",
+      "capacity_kw": 100.0,
+      "energy_kwh": 400.0,
+      "power_kw": 100.0,
+      "source_row": "ATBe.csv row 78747: Utility-Scale Battery Storage; 4Hr Battery Storage; Moderate; OCC; 2022; value=1926.72",
+      "technology": "bess",
+      "total_cost": 192672.0
+    },
+    {
+      "anchor_node": "69",
+      "asset_key": "ieee123_opendss::69::dispatchable_generation",
+      "capacity_kw": 100.0,
+      "energy_kwh": 0.0,
+      "power_kw": 100.0,
+      "source_row": "ATBe.csv row 60391: NaturalGas_FE; NG Combustion Turbine (F-Frame); Moderate; OCC; 2022; value=1110.4",
+      "technology": "dispatchable_generation",
+      "total_cost": 111040.0
+    },
+    {
+      "anchor_node": "69",
+      "asset_key": "ieee123_opendss::69::pv",
+      "capacity_kw": 100.0,
+      "energy_kwh": 0.0,
+      "power_kw": 100.0,
+      "source_row": "ATBe.csv row 434241: UtilityPV; Class5; Moderate; OCC; 2022; value=1366.5982035504765",
+      "technology": "pv",
+      "total_cost": 136659.82035504765
+    },
+    {
+      "anchor_node": "6",
+      "asset_key": "ieee123_opendss::6::bess",
+      "capacity_kw": 60.0,
+      "energy_kwh": 240.0,
+      "power_kw": 60.0,
+      "source_row": "ATBe.csv row 78747: Utility-Scale Battery Storage; 4Hr Battery Storage; Moderate; OCC; 2022; value=1926.72",
+      "technology": "bess",
+      "total_cost": 115603.2
+    },
+    {
+      "anchor_node": "6",
+      "asset_key": "ieee123_opendss::6::dispatchable_generation",
+      "capacity_kw": 60.0,
+      "energy_kwh": 0.0,
+      "power_kw": 60.0,
+      "source_row": "ATBe.csv row 60391: NaturalGas_FE; NG Combustion Turbine (F-Frame); Moderate; OCC; 2022; value=1110.4",
+      "technology": "dispatchable_generation",
+      "total_cost": 66624.0
+    },
+    {
+      "anchor_node": "6",
+      "asset_key": "ieee123_opendss::6::pv",
+      "capacity_kw": 60.0,
+      "energy_kwh": 0.0,
+      "power_kw": 60.0,
+      "source_row": "ATBe.csv row 434241: UtilityPV; Class5; Moderate; OCC; 2022; value=1366.5982035504765",
+      "technology": "pv",
+      "total_cost": 81995.8922130286
+    },
+    {
+      "anchor_node": "73",
+      "asset_key": "ieee123_opendss::73::bess",
+      "capacity_kw": 120.0,
+      "energy_kwh": 480.0,
+      "power_kw": 120.0,
+      "source_row": "ATBe.csv row 78747: Utility-Scale Battery Storage; 4Hr Battery Storage; Moderate; OCC; 2022; value=1926.72",
+      "technology": "bess",
+      "total_cost": 231206.4
+    },
+    {
+      "anchor_node": "73",
+      "asset_key": "ieee123_opendss::73::dispatchable_generation",
+      "capacity_kw": 120.0,
+      "energy_kwh": 0.0,
+      "power_kw": 120.0,
+      "source_row": "ATBe.csv row 60391: NaturalGas_FE; NG Combustion Turbine (F-Frame); Moderate; OCC; 2022; value=1110.4",
+      "technology": "dispatchable_generation",
+      "total_cost": 133248.0
+    },
+    {
+      "anchor_node": "73",
+      "asset_key": "ieee123_opendss::73::pv",
+      "capacity_kw": 120.0,
+      "energy_kwh": 0.0,
+      "power_kw": 120.0,
+      "source_row": "ATBe.csv row 434241: UtilityPV; Class5; Moderate; OCC; 2022; value=1366.5982035504765",
+      "technology": "pv",
+      "total_cost": 163991.7844260572
+    },
+    {
+      "anchor_node": "76",
+      "asset_key": "ieee123_opendss::76::bess",
+      "capacity_kw": 305.0,
+      "energy_kwh": 1220.0,
+      "power_kw": 305.0,
+      "source_row": "ATBe.csv row 78747: Utility-Scale Battery Storage; 4Hr Battery Storage; Moderate; OCC; 2022; value=1926.72",
+      "technology": "bess",
+      "total_cost": 587649.6
+    },
+    {
+      "anchor_node": "76",
+      "asset_key": "ieee123_opendss::76::dispatchable_generation",
+      "capacity_kw": 305.0,
+      "energy_kwh": 0.0,
+      "power_kw": 305.0,
+      "source_row": "ATBe.csv row 60391: NaturalGas_FE; NG Combustion Turbine (F-Frame); Moderate; OCC; 2022; value=1110.4",
+      "technology": "dispatchable_generation",
+      "total_cost": 338672.0
+    },
+    {
+      "anchor_node": "76",
+      "asset_key": "ieee123_opendss::76::pv",
+      "capacity_kw": 305.0,
+      "energy_kwh": 0.0,
+      "power_kw": 305.0,
+      "source_row": "ATBe.csv row 434241: UtilityPV; Class5; Moderate; OCC; 2022; value=1366.5982035504765",
+      "technology": "pv",
+      "total_cost": 416812.4520828953
+    },
+    {
+      "anchor_node": "87",
+      "asset_key": "ieee123_opendss::87::bess",
+      "capacity_kw": 100.0,
+      "energy_kwh": 400.0,
+      "power_kw": 100.0,
+      "source_row": "ATBe.csv row 78747: Utility-Scale Battery Storage; 4Hr Battery Storage; Moderate; OCC; 2022; value=1926.72",
+      "technology": "bess",
+      "total_cost": 192672.0
+    },
+    {
+      "anchor_node": "87",
+      "asset_key": "ieee123_opendss::87::dispatchable_generation",
+      "capacity_kw": 100.0,
+      "energy_kwh": 0.0,
+      "power_kw": 100.0,
+      "source_row": "ATBe.csv row 60391: NaturalGas_FE; NG Combustion Turbine (F-Frame); Moderate; OCC; 2022; value=1110.4",
+      "technology": "dispatchable_generation",
+      "total_cost": 111040.0
+    },
+    {
+      "anchor_node": "87",
+      "asset_key": "ieee123_opendss::87::pv",
+      "capacity_kw": 100.0,
+      "energy_kwh": 0.0,
+      "power_kw": 100.0,
+      "source_row": "ATBe.csv row 434241: UtilityPV; Class5; Moderate; OCC; 2022; value=1366.5982035504765",
+      "technology": "pv",
+      "total_cost": 136659.82035504765
+    }
+  ],
+  "coefficient_audit": {
+    "degree_distribution": {
+      "0": 12,
+      "1": 80,
+      "2": 61,
+      "3": 25
+    },
+    "dynamic_range": 49.04787841103177,
+    "effective_dynamic_range": 482.1922001846829,
+    "effective_maximum_nonzero": 2.4109610009234133,
+    "effective_minimum_nonzero": 0.0049999999999999975,
+    "family_statistics": {
+      "interaction": {
+        "count": 9,
+        "maximum_nonzero": 0.9201437660084272,
+        "median_nonzero": 0.17347358523829104,
+        "minimum_nonzero": 0.0191559853351193
+      },
+      "local_feasibility": {
+        "count": 132,
+        "maximum_nonzero": 0.5495226990292296,
+        "median_nonzero": 0.045000000000000005,
+        "minimum_nonzero": 0.025000000000000005
+      },
+      "normalized_cost": {
+        "count": 33,
+        "maximum_nonzero": 0.2631657060518732,
+        "median_nonzero": 0.04922904191464253,
+        "minimum_nonzero": 0.020000000000000004
+      },
+      "surrogate": {
+        "count": 4,
+        "maximum_nonzero": 0.9395604395604391,
+        "median_nonzero": 0.9201437660084272,
+        "minimum_nonzero": 0.626373626373626
+      }
+    },
+    "maximum_nonzero": 0.9395604395604391,
+    "minimum_nonzero": 0.0191559853351193,
+    "passed": false,
+    "reasons": [
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::100::bess': 1, 'y::ieee123_opendss::100::pv': 1} collapses through cancellation",
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::100::dispatchable_generation': 1, 'y::ieee123_opendss::100::pv': 1} collapses through cancellation",
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::100::bess': 1, 'y::ieee123_opendss::100::dispatchable_generation': 1, 'y::ieee123_opendss::100::pv': 1} collapses through cancellation",
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::113::bess': 1, 'y::ieee123_opendss::113::pv': 1} collapses through cancellation",
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::113::dispatchable_generation': 1, 'y::ieee123_opendss::113::pv': 1} collapses through cancellation",
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::113::bess': 1, 'y::ieee123_opendss::113::dispatchable_generation': 1, 'y::ieee123_opendss::113::pv': 1} collapses through cancellation",
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::16::bess': 1, 'y::ieee123_opendss::16::pv': 1} collapses through cancellation",
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::16::dispatchable_generation': 1, 'y::ieee123_opendss::16::pv': 1} collapses through cancellation",
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::16::bess': 1, 'y::ieee123_opendss::16::dispatchable_generation': 1, 'y::ieee123_opendss::16::pv': 1} collapses through cancellation",
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::28::bess': 1, 'y::ieee123_opendss::28::pv': 1} collapses through cancellation",
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::28::dispatchable_generation': 1, 'y::ieee123_opendss::28::pv': 1} collapses through cancellation",
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::28::bess': 1, 'y::ieee123_opendss::28::dispatchable_generation': 1, 'y::ieee123_opendss::28::pv': 1} collapses through cancellation",
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::48::bess': 1, 'y::ieee123_opendss::48::pv': 1} collapses through cancellation",
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::48::dispatchable_generation': 1, 'y::ieee123_opendss::48::pv': 1} collapses through cancellation",
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::48::bess': 1, 'y::ieee123_opendss::48::dispatchable_generation': 1, 'y::ieee123_opendss::48::pv': 1} collapses through cancellation",
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::6::bess': 1, 'y::ieee123_opendss::6::pv': 1} collapses through cancellation",
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::6::dispatchable_generation': 1, 'y::ieee123_opendss::6::pv': 1} collapses through cancellation",
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::6::bess': 1, 'y::ieee123_opendss::6::dispatchable_generation': 1, 'y::ieee123_opendss::6::pv': 1} collapses through cancellation",
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::65::bess': 1, 'y::ieee123_opendss::65::pv': 1} collapses through cancellation",
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::65::dispatchable_generation': 1, 'y::ieee123_opendss::65::pv': 1} collapses through cancellation",
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::65::bess': 1, 'y::ieee123_opendss::65::dispatchable_generation': 1, 'y::ieee123_opendss::65::pv': 1} collapses through cancellation",
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::69::bess': 1, 'y::ieee123_opendss::69::pv': 1} collapses through cancellation",
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::69::dispatchable_generation': 1, 'y::ieee123_opendss::69::pv': 1} collapses through cancellation",
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::69::bess': 1, 'y::ieee123_opendss::69::dispatchable_generation': 1, 'y::ieee123_opendss::69::pv': 1} collapses through cancellation",
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::73::bess': 1, 'y::ieee123_opendss::73::pv': 1} collapses through cancellation",
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::73::dispatchable_generation': 1, 'y::ieee123_opendss::73::pv': 1} collapses through cancellation",
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::73::bess': 1, 'y::ieee123_opendss::73::dispatchable_generation': 1, 'y::ieee123_opendss::73::pv': 1} collapses through cancellation",
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::76::bess': 1, 'y::ieee123_opendss::76::pv': 1} collapses through cancellation",
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::76::bess': 1, 'y::ieee123_opendss::76::dispatchable_generation': 1, 'y::ieee123_opendss::76::pv': 1} collapses through cancellation",
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::87::bess': 1, 'y::ieee123_opendss::87::pv': 1} collapses through cancellation",
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::87::dispatchable_generation': 1, 'y::ieee123_opendss::87::pv': 1} collapses through cancellation",
+      "effective submitted coefficient for monomial {'y::ieee123_opendss::87::bess': 1, 'y::ieee123_opendss::87::dispatchable_generation': 1, 'y::ieee123_opendss::87::pv': 1} collapses through cancellation"
+    ]
+  },
+  "cost_scalarization": {
+    "denominator": "maximum_catalog_portfolio_cost",
+    "hard_budget": false,
+    "lambda": 2.419189575077261,
+    "maximum_catalog_portfolio_cost": 8058804.312497372,
+    "projection_permitted": false
+  },
+  "cost_weight_derivation": {
+    "derivation": "lambda_min = catalog_sum / (dynamic_range * minimum_asset_cost)",
+    "effective_dynamic_range": 200,
+    "maximum_catalog_cost": 8058804.312497372,
+    "minimum_asset_cost": 66624.0,
+    "minimum_resolvable_lambda": 0.6047973937693153,
+    "multipliers": [
+      0,
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "weights": [
+      0.0,
+      0.6047973937693153,
+      1.2095947875386306,
+      2.419189575077261,
+      4.838379150154522,
+      9.676758300309045
+    ]
+  },
+  "dirac3_scaling": {
+    "audit": {
+      "component_statistics": {
+        "interaction": {
+          "material_monomial_count": 9,
+          "maximum_abs_coefficient": 0.675,
+          "minimum_abs_coefficient": 0.015
+        },
+        "local_feasibility": {
+          "material_monomial_count": 45,
+          "maximum_abs_coefficient": 1.0,
+          "minimum_abs_coefficient": 0.005
+        },
+        "normalized_cost": {
+          "material_monomial_count": 33,
+          "maximum_abs_coefficient": 1.0,
+          "minimum_abs_coefficient": 0.005
+        },
+        "surrogate": {
+          "material_monomial_count": 3,
+          "maximum_abs_coefficient": 1.0,
+          "minimum_abs_coefficient": 0.365
+        }
+      },
+      "constant_term_count": 12,
+      "degree_distribution": {
+        "1": 33,
+        "2": 16,
+        "3": 3
+      },
+      "distinct_coefficient_level_count": 26,
+      "dynamic_range": 200.0,
+      "input_term_count": 178,
+      "material_term_count": 52,
+      "maximum_material_coefficient": 1.0,
+      "minimum_distinct_level_separation": 0.0049999999999999975,
+      "minimum_material_coefficient": 0.005,
+      "normalization_scale": 1.36799979837099,
+      "passed": true,
+      "quantization_grid": 0.005,
+      "reasons": [],
+      "removed_zero_monomial_count": 32
+    },
+    "constants_submitted": false,
+    "material_terms_combined_before_scaling": true,
+    "post_quantization_validation": {
+      "gates_passed": true,
+      "quantized": {
+        "mae": 0.015114537637430241,
+        "normalized_rmse": 0.015292318643270754,
+        "pareto_front_recall": 1.0,
+        "r2": 0.9933108529058886,
+        "rmse": 0.030184187264217947,
+        "spearman_rank_correlation": 0.9968399635696173,
+        "top_decile_count": 60,
+        "top_decile_recall": 0.9666666666666667
+      },
+      "thresholds": {
+        "maximum_normalized_rmse": 0.2,
+        "minimum_pareto_recall": 0.7,
+        "minimum_spearman": 0.8,
+        "minimum_top_decile_recall": 0.7
+      },
+      "unquantized": {
+        "mae": 0.010679541475411593,
+        "normalized_rmse": 0.014985907809141271,
+        "pareto_front_recall": 1.0,
+        "r2": 0.9935762270573589,
+        "rmse": 0.029579389377586193,
+        "spearman_rank_correlation": 0.9970130328302221,
+        "top_decile_count": 60,
+        "top_decile_recall": 0.95
+      }
+    },
+    "projection_used": false
+  },
+  "feasibility_penalty_derivation": {
+    "by_anchor": {
+      "100": {
+        "invalid_pattern_count": 2,
+        "rho_feasibility": 0.045000000000000005,
+        "strict_margin": 0.005,
+        "worst_minimum_repair_bound": 0.04000000000000001
+      },
+      "113": {
+        "invalid_pattern_count": 2,
+        "rho_feasibility": 0.03166666666666667,
+        "strict_margin": 0.005,
+        "worst_minimum_repair_bound": 0.02666666666666667
+      },
+      "16": {
+        "invalid_pattern_count": 2,
+        "rho_feasibility": 0.03166666666666667,
+        "strict_margin": 0.005,
+        "worst_minimum_repair_bound": 0.02666666666666667
+      },
+      "28": {
+        "invalid_pattern_count": 2,
+        "rho_feasibility": 0.045000000000000005,
+        "strict_margin": 0.005,
+        "worst_minimum_repair_bound": 0.04000000000000001
+      },
+      "48": {
+        "invalid_pattern_count": 2,
+        "rho_feasibility": 0.15925,
+        "strict_margin": 0.007583333333333334,
+        "worst_minimum_repair_bound": 0.15166666666666667
+      },
+      "6": {
+        "invalid_pattern_count": 2,
+        "rho_feasibility": 0.025000000000000005,
+        "strict_margin": 0.005,
+        "worst_minimum_repair_bound": 0.020000000000000004
+      },
+      "65": {
+        "invalid_pattern_count": 2,
+        "rho_feasibility": 0.10166666666666668,
+        "strict_margin": 0.005,
+        "worst_minimum_repair_bound": 0.09666666666666668
+      },
+      "69": {
+        "invalid_pattern_count": 2,
+        "rho_feasibility": 0.03833333333333333,
+        "strict_margin": 0.005,
+        "worst_minimum_repair_bound": 0.03333333333333333
+      },
+      "73": {
+        "invalid_pattern_count": 2,
+        "rho_feasibility": 0.045000000000000005,
+        "strict_margin": 0.005,
+        "worst_minimum_repair_bound": 0.04000000000000001
+      },
+      "76": {
+        "invalid_pattern_count": 2,
+        "rho_feasibility": 0.5495226990292296,
+        "strict_margin": 0.026167747572820456,
+        "worst_minimum_repair_bound": 0.5233549514564091
+      },
+      "87": {
+        "invalid_pattern_count": 2,
+        "rho_feasibility": 0.39929452900041107,
+        "strict_margin": 0.019014025190495765,
+        "worst_minimum_repair_bound": 0.3802805038099153
+      }
+    },
+    "cost_weight": 2.419189575077261,
+    "derivation": "max_invalid_pattern(min_adequate_repair(sum_abs_touched_surrogate_terms + lambda*changed_catalog_cost/catalog_sum)) + strict_grid_margin",
+    "maximum_rho_feasibility": 0.5495226990292296
+  },
+  "formulation": "Integer, Recourse-Calibrated Cubic Microgrid Patch Optimizer",
+  "irc_cmpo": {
+    "budget_slack_variables": 0,
+    "continuous_policy_variables": 0,
+    "projection_permitted": false,
+    "selected_not_selected_pairs": false
+  },
+  "local_feasibility_constraints": [
+    {
+      "anchor_node": "100",
+      "asset_keys": [
+        "ieee123_opendss::100::pv",
+        "ieee123_opendss::100::bess",
+        "ieee123_opendss::100::dispatchable_generation"
+      ],
+      "coefficient": 0.045000000000000005,
+      "pattern": [
+        0,
+        0,
+        0
+      ],
+      "source_patch_ids": [
+        "ieee123_opendss__patch_04__100-98-99"
+      ]
+    },
+    {
+      "anchor_node": "100",
+      "asset_keys": [
+        "ieee123_opendss::100::pv",
+        "ieee123_opendss::100::bess",
+        "ieee123_opendss::100::dispatchable_generation"
+      ],
+      "coefficient": 0.045000000000000005,
+      "pattern": [
+        1,
+        0,
+        0
+      ],
+      "source_patch_ids": [
+        "ieee123_opendss__patch_04__100-98-99"
+      ]
+    },
+    {
+      "anchor_node": "113",
+      "asset_keys": [
+        "ieee123_opendss::113::pv",
+        "ieee123_opendss::113::bess",
+        "ieee123_opendss::113::dispatchable_generation"
+      ],
+      "coefficient": 0.03166666666666667,
+      "pattern": [
+        0,
+        0,
+        0
+      ],
+      "source_patch_ids": [
+        "ieee123_opendss__patch_09__112-113-114"
+      ]
+    },
+    {
+      "anchor_node": "113",
+      "asset_keys": [
+        "ieee123_opendss::113::pv",
+        "ieee123_opendss::113::bess",
+        "ieee123_opendss::113::dispatchable_generation"
+      ],
+      "coefficient": 0.03166666666666667,
+      "pattern": [
+        1,
+        0,
+        0
+      ],
+      "source_patch_ids": [
+        "ieee123_opendss__patch_09__112-113-114"
+      ]
+    },
+    {
+      "anchor_node": "16",
+      "asset_keys": [
+        "ieee123_opendss::16::pv",
+        "ieee123_opendss::16::bess",
+        "ieee123_opendss::16::dispatchable_generation"
+      ],
+      "coefficient": 0.03166666666666667,
+      "pattern": [
+        0,
+        0,
+        0
+      ],
+      "source_patch_ids": [
+        "ieee123_opendss__patch_11__15-16-34"
+      ]
+    },
+    {
+      "anchor_node": "16",
+      "asset_keys": [
+        "ieee123_opendss::16::pv",
+        "ieee123_opendss::16::bess",
+        "ieee123_opendss::16::dispatchable_generation"
+      ],
+      "coefficient": 0.03166666666666667,
+      "pattern": [
+        1,
+        0,
+        0
+      ],
+      "source_patch_ids": [
+        "ieee123_opendss__patch_11__15-16-34"
+      ]
+    },
+    {
+      "anchor_node": "28",
+      "asset_keys": [
+        "ieee123_opendss::28::pv",
+        "ieee123_opendss::28::bess",
+        "ieee123_opendss::28::dispatchable_generation"
+      ],
+      "coefficient": 0.045000000000000005,
+      "pattern": [
+        0,
+        0,
+        0
+      ],
+      "source_patch_ids": [
+        "ieee123_opendss__patch_10__28-29-30"
+      ]
+    },
+    {
+      "anchor_node": "28",
+      "asset_keys": [
+        "ieee123_opendss::28::pv",
+        "ieee123_opendss::28::bess",
+        "ieee123_opendss::28::dispatchable_generation"
+      ],
+      "coefficient": 0.045000000000000005,
+      "pattern": [
+        1,
+        0,
+        0
+      ],
+      "source_patch_ids": [
+        "ieee123_opendss__patch_10__28-29-30"
+      ]
+    },
+    {
+      "anchor_node": "48",
+      "asset_keys": [
+        "ieee123_opendss::48::pv",
+        "ieee123_opendss::48::bess",
+        "ieee123_opendss::48::dispatchable_generation"
+      ],
+      "coefficient": 0.15925,
+      "pattern": [
+        0,
+        0,
+        0
+      ],
+      "source_patch_ids": [
+        "ieee123_opendss__patch_02__47-48-49"
+      ]
+    },
+    {
+      "anchor_node": "48",
+      "asset_keys": [
+        "ieee123_opendss::48::pv",
+        "ieee123_opendss::48::bess",
+        "ieee123_opendss::48::dispatchable_generation"
+      ],
+      "coefficient": 0.15925,
+      "pattern": [
+        1,
+        0,
+        0
+      ],
+      "source_patch_ids": [
+        "ieee123_opendss__patch_02__47-48-49"
+      ]
+    },
+    {
+      "anchor_node": "6",
+      "asset_keys": [
+        "ieee123_opendss::6::pv",
+        "ieee123_opendss::6::bess",
+        "ieee123_opendss::6::dispatchable_generation"
+      ],
+      "coefficient": 0.025000000000000005,
+      "pattern": [
+        0,
+        0,
+        0
+      ],
+      "source_patch_ids": [
+        "ieee123_opendss__patch_06__3-5-6"
+      ]
+    },
+    {
+      "anchor_node": "6",
+      "asset_keys": [
+        "ieee123_opendss::6::pv",
+        "ieee123_opendss::6::bess",
+        "ieee123_opendss::6::dispatchable_generation"
+      ],
+      "coefficient": 0.025000000000000005,
+      "pattern": [
+        1,
+        0,
+        0
+      ],
+      "source_patch_ids": [
+        "ieee123_opendss__patch_06__3-5-6"
+      ]
+    },
+    {
+      "anchor_node": "65",
+      "asset_keys": [
+        "ieee123_opendss::65::pv",
+        "ieee123_opendss::65::bess",
+        "ieee123_opendss::65::dispatchable_generation"
+      ],
+      "coefficient": 0.10166666666666668,
+      "pattern": [
+        0,
+        0,
+        0
+      ],
+      "source_patch_ids": [
+        "ieee123_opendss__patch_03__64-65-66",
+        "ieee123_opendss__patch_07__63-64-65"
+      ]
+    },
+    {
+      "anchor_node": "65",
+      "asset_keys": [
+        "ieee123_opendss::65::pv",
+        "ieee123_opendss::65::bess",
+        "ieee123_opendss::65::dispatchable_generation"
+      ],
+      "coefficient": 0.10166666666666668,
+      "pattern": [
+        1,
+        0,
+        0
+      ],
+      "source_patch_ids": [
+        "ieee123_opendss__patch_03__64-65-66",
+        "ieee123_opendss__patch_07__63-64-65"
+      ]
+    },
+    {
+      "anchor_node": "69",
+      "asset_keys": [
+        "ieee123_opendss::69::pv",
+        "ieee123_opendss::69::bess",
+        "ieee123_opendss::69::dispatchable_generation"
+      ],
+      "coefficient": 0.03833333333333333,
+      "pattern": [
+        0,
+        0,
+        0
+      ],
+      "source_patch_ids": [
+        "ieee123_opendss__patch_08__69-70-71"
+      ]
+    },
+    {
+      "anchor_node": "69",
+      "asset_keys": [
+        "ieee123_opendss::69::pv",
+        "ieee123_opendss::69::bess",
+        "ieee123_opendss::69::dispatchable_generation"
+      ],
+      "coefficient": 0.03833333333333333,
+      "pattern": [
+        1,
+        0,
+        0
+      ],
+      "source_patch_ids": [
+        "ieee123_opendss__patch_08__69-70-71"
+      ]
+    },
+    {
+      "anchor_node": "73",
+      "asset_keys": [
+        "ieee123_opendss::73::pv",
+        "ieee123_opendss::73::bess",
+        "ieee123_opendss::73::dispatchable_generation"
+      ],
+      "coefficient": 0.045000000000000005,
+      "pattern": [
+        0,
+        0,
+        0
+      ],
+      "source_patch_ids": [
+        "ieee123_opendss__patch_05__73-74-75"
+      ]
+    },
+    {
+      "anchor_node": "73",
+      "asset_keys": [
+        "ieee123_opendss::73::pv",
+        "ieee123_opendss::73::bess",
+        "ieee123_opendss::73::dispatchable_generation"
+      ],
+      "coefficient": 0.045000000000000005,
+      "pattern": [
+        1,
+        0,
+        0
+      ],
+      "source_patch_ids": [
+        "ieee123_opendss__patch_05__73-74-75"
+      ]
+    },
+    {
+      "anchor_node": "76",
+      "asset_keys": [
+        "ieee123_opendss::76::pv",
+        "ieee123_opendss::76::bess",
+        "ieee123_opendss::76::dispatchable_generation"
+      ],
+      "coefficient": 0.5495226990292296,
+      "pattern": [
+        0,
+        0,
+        0
+      ],
+      "source_patch_ids": [
+        "ieee123_opendss__patch_01__76-77-86"
+      ]
+    },
+    {
+      "anchor_node": "76",
+      "asset_keys": [
+        "ieee123_opendss::76::pv",
+        "ieee123_opendss::76::bess",
+        "ieee123_opendss::76::dispatchable_generation"
+      ],
+      "coefficient": 0.5495226990292296,
+      "pattern": [
+        1,
+        0,
+        0
+      ],
+      "source_patch_ids": [
+        "ieee123_opendss__patch_01__76-77-86"
+      ]
+    },
+    {
+      "anchor_node": "87",
+      "asset_keys": [
+        "ieee123_opendss::87::pv",
+        "ieee123_opendss::87::bess",
+        "ieee123_opendss::87::dispatchable_generation"
+      ],
+      "coefficient": 0.39929452900041107,
+      "pattern": [
+        0,
+        0,
+        0
+      ],
+      "source_patch_ids": [
+        "ieee123_opendss__patch_12__86-87-88"
+      ]
+    },
+    {
+      "anchor_node": "87",
+      "asset_keys": [
+        "ieee123_opendss::87::pv",
+        "ieee123_opendss::87::bess",
+        "ieee123_opendss::87::dispatchable_generation"
+      ],
+      "coefficient": 0.39929452900041107,
+      "pattern": [
+        1,
+        0,
+        0
+      ],
+      "source_patch_ids": [
+        "ieee123_opendss__patch_12__86-87-88"
+      ]
+    }
+  ],
+  "max_degree": 3,
+  "min_degree": 1,
+  "num_levels": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "num_variables": 33,
+  "objective_constant_offset_original_units": 2.4109610009234133,
+  "objective_sense": "minimize",
+  "polynomial_terms": [
+    {
+      "coefficient": 0.02,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::100::bess": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost"
+      ]
+    },
+    {
+      "coefficient": 0.035,
+      "component": "quantized_combined",
+      "degree": 2,
+      "powers": {
+        "y::ieee123_opendss::100::bess": 1,
+        "y::ieee123_opendss::100::dispatchable_generation": 1
+      },
+      "source_components": [
+        "local_feasibility"
+      ]
+    },
+    {
+      "coefficient": -0.005,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::100::dispatchable_generation": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost"
+      ]
+    },
+    {
+      "coefficient": 0.035,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::100::pv": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost"
+      ]
+    },
+    {
+      "coefficient": 0.01,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::113::bess": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost"
+      ]
+    },
+    {
+      "coefficient": 0.025,
+      "component": "quantized_combined",
+      "degree": 2,
+      "powers": {
+        "y::ieee123_opendss::113::bess": 1,
+        "y::ieee123_opendss::113::dispatchable_generation": 1
+      },
+      "source_components": [
+        "local_feasibility"
+      ]
+    },
+    {
+      "coefficient": -0.005,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::113::dispatchable_generation": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost"
+      ]
+    },
+    {
+      "coefficient": 0.025,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::113::pv": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost"
+      ]
+    },
+    {
+      "coefficient": 0.01,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::16::bess": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost"
+      ]
+    },
+    {
+      "coefficient": 0.025,
+      "component": "quantized_combined",
+      "degree": 2,
+      "powers": {
+        "y::ieee123_opendss::16::bess": 1,
+        "y::ieee123_opendss::16::dispatchable_generation": 1
+      },
+      "source_components": [
+        "local_feasibility"
+      ]
+    },
+    {
+      "coefficient": -0.005,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::16::dispatchable_generation": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost"
+      ]
+    },
+    {
+      "coefficient": 0.025,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::16::pv": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost"
+      ]
+    },
+    {
+      "coefficient": 0.02,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::28::bess": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost"
+      ]
+    },
+    {
+      "coefficient": 0.035,
+      "component": "quantized_combined",
+      "degree": 2,
+      "powers": {
+        "y::ieee123_opendss::28::bess": 1,
+        "y::ieee123_opendss::28::dispatchable_generation": 1
+      },
+      "source_components": [
+        "local_feasibility"
+      ]
+    },
+    {
+      "coefficient": -0.005,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::28::dispatchable_generation": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost"
+      ]
+    },
+    {
+      "coefficient": 0.035,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::28::pv": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost"
+      ]
+    },
+    {
+      "coefficient": 0.075,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::48::bess": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost"
+      ]
+    },
+    {
+      "coefficient": 0.115,
+      "component": "quantized_combined",
+      "degree": 2,
+      "powers": {
+        "y::ieee123_opendss::48::bess": 1,
+        "y::ieee123_opendss::48::dispatchable_generation": 1
+      },
+      "source_components": [
+        "local_feasibility"
+      ]
+    },
+    {
+      "coefficient": -0.005,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::48::dispatchable_generation": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost"
+      ]
+    },
+    {
+      "coefficient": 0.135,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::48::pv": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost"
+      ]
+    },
+    {
+      "coefficient": 0.05,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::65::bess": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost"
+      ]
+    },
+    {
+      "coefficient": 0.075,
+      "component": "quantized_combined",
+      "degree": 2,
+      "powers": {
+        "y::ieee123_opendss::65::bess": 1,
+        "y::ieee123_opendss::65::dispatchable_generation": 1
+      },
+      "source_components": [
+        "local_feasibility"
+      ]
+    },
+    {
+      "coefficient": -0.015,
+      "component": "quantized_combined",
+      "degree": 2,
+      "powers": {
+        "y::ieee123_opendss::65::bess": 1,
+        "y::ieee123_opendss::76::dispatchable_generation": 1
+      },
+      "source_components": [
+        "interaction"
+      ]
+    },
+    {
+      "coefficient": 0.015,
+      "component": "quantized_combined",
+      "degree": 3,
+      "powers": {
+        "y::ieee123_opendss::65::bess": 1,
+        "y::ieee123_opendss::76::dispatchable_generation": 1,
+        "y::ieee123_opendss::87::bess": 1
+      },
+      "source_components": [
+        "interaction"
+      ]
+    },
+    {
+      "coefficient": -0.005,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::65::dispatchable_generation": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost"
+      ]
+    },
+    {
+      "coefficient": 0.085,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::65::pv": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost"
+      ]
+    },
+    {
+      "coefficient": 0.015,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::69::bess": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost"
+      ]
+    },
+    {
+      "coefficient": 0.03,
+      "component": "quantized_combined",
+      "degree": 2,
+      "powers": {
+        "y::ieee123_opendss::69::bess": 1,
+        "y::ieee123_opendss::69::dispatchable_generation": 1
+      },
+      "source_components": [
+        "local_feasibility"
+      ]
+    },
+    {
+      "coefficient": -0.005,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::69::dispatchable_generation": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost"
+      ]
+    },
+    {
+      "coefficient": 0.03,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::69::pv": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost"
+      ]
+    },
+    {
+      "coefficient": 0.005,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::6::bess": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost"
+      ]
+    },
+    {
+      "coefficient": 0.02,
+      "component": "quantized_combined",
+      "degree": 2,
+      "powers": {
+        "y::ieee123_opendss::6::bess": 1,
+        "y::ieee123_opendss::6::dispatchable_generation": 1
+      },
+      "source_components": [
+        "local_feasibility"
+      ]
+    },
+    {
+      "coefficient": -0.005,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::6::dispatchable_generation": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost"
+      ]
+    },
+    {
+      "coefficient": 0.02,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::6::pv": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost"
+      ]
+    },
+    {
+      "coefficient": 0.02,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::73::bess": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost"
+      ]
+    },
+    {
+      "coefficient": 0.035,
+      "component": "quantized_combined",
+      "degree": 2,
+      "powers": {
+        "y::ieee123_opendss::73::bess": 1,
+        "y::ieee123_opendss::73::dispatchable_generation": 1
+      },
+      "source_components": [
+        "local_feasibility"
+      ]
+    },
+    {
+      "coefficient": -0.005,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::73::dispatchable_generation": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost"
+      ]
+    },
+    {
+      "coefficient": 0.035,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::73::pv": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost"
+      ]
+    },
+    {
+      "coefficient": -0.275,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::76::bess": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost"
+      ]
+    },
+    {
+      "coefficient": 0.4,
+      "component": "quantized_combined",
+      "degree": 2,
+      "powers": {
+        "y::ieee123_opendss::76::bess": 1,
+        "y::ieee123_opendss::76::dispatchable_generation": 1
+      },
+      "source_components": [
+        "local_feasibility"
+      ]
+    },
+    {
+      "coefficient": -0.125,
+      "component": "quantized_combined",
+      "degree": 2,
+      "powers": {
+        "y::ieee123_opendss::76::bess": 1,
+        "y::ieee123_opendss::87::bess": 1
+      },
+      "source_components": [
+        "interaction"
+      ]
+    },
+    {
+      "coefficient": 0.125,
+      "component": "quantized_combined",
+      "degree": 3,
+      "powers": {
+        "y::ieee123_opendss::76::bess": 1,
+        "y::ieee123_opendss::87::bess": 1,
+        "y::ieee123_opendss::87::dispatchable_generation": 1
+      },
+      "source_components": [
+        "interaction"
+      ]
+    },
+    {
+      "coefficient": -1.0,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::76::dispatchable_generation": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost",
+        "surrogate"
+      ]
+    },
+    {
+      "coefficient": 0.46,
+      "component": "quantized_combined",
+      "degree": 2,
+      "powers": {
+        "y::ieee123_opendss::76::dispatchable_generation": 1,
+        "y::ieee123_opendss::76::pv": 1
+      },
+      "source_components": [
+        "interaction",
+        "local_feasibility"
+      ]
+    },
+    {
+      "coefficient": -0.46,
+      "component": "quantized_combined",
+      "degree": 3,
+      "powers": {
+        "y::ieee123_opendss::76::dispatchable_generation": 1,
+        "y::ieee123_opendss::76::pv": 1,
+        "y::ieee123_opendss::87::bess": 1
+      },
+      "source_components": [
+        "interaction"
+      ]
+    },
+    {
+      "coefficient": 0.675,
+      "component": "quantized_combined",
+      "degree": 2,
+      "powers": {
+        "y::ieee123_opendss::76::dispatchable_generation": 1,
+        "y::ieee123_opendss::87::bess": 1
+      },
+      "source_components": [
+        "interaction"
+      ]
+    },
+    {
+      "coefficient": -0.365,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::76::pv": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost",
+        "surrogate"
+      ]
+    },
+    {
+      "coefficient": 0.46,
+      "component": "quantized_combined",
+      "degree": 2,
+      "powers": {
+        "y::ieee123_opendss::76::pv": 1,
+        "y::ieee123_opendss::87::bess": 1
+      },
+      "source_components": [
+        "interaction"
+      ]
+    },
+    {
+      "coefficient": -0.81,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::87::bess": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost",
+        "surrogate"
+      ]
+    },
+    {
+      "coefficient": 0.165,
+      "component": "quantized_combined",
+      "degree": 2,
+      "powers": {
+        "y::ieee123_opendss::87::bess": 1,
+        "y::ieee123_opendss::87::dispatchable_generation": 1
+      },
+      "source_components": [
+        "interaction",
+        "local_feasibility"
+      ]
+    },
+    {
+      "coefficient": -0.27,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::87::dispatchable_generation": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost"
+      ]
+    },
+    {
+      "coefficient": 0.03,
+      "component": "quantized_combined",
+      "degree": 1,
+      "powers": {
+        "y::ieee123_opendss::87::pv": 1
+      },
+      "source_components": [
+        "local_feasibility",
+        "normalized_cost"
+      ]
+    }
+  ],
+  "qci_submission": {
+    "jobs_submitted": 0,
+    "permitted": false
+  },
+  "resilience_normalization": {
+    "derivation": "training_min_and_range_only",
+    "offset": 230.625,
+    "scale": 113.75000000000006,
+    "target": "total_ens",
+    "training_count": 1800
+  },
+  "schema": "cmpo.irc_cmpo.scalarized_integer_master.v1",
+  "variables": [
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::100::bess",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::100::bess",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::100::dispatchable_generation",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::100::dispatchable_generation",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::100::pv",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::100::pv",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::113::bess",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::113::bess",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::113::dispatchable_generation",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::113::dispatchable_generation",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::113::pv",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::113::pv",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::16::bess",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::16::bess",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::16::dispatchable_generation",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::16::dispatchable_generation",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::16::pv",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::16::pv",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::28::bess",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::28::bess",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::28::dispatchable_generation",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::28::dispatchable_generation",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::28::pv",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::28::pv",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::48::bess",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::48::bess",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::48::dispatchable_generation",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::48::dispatchable_generation",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::48::pv",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::48::pv",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::65::bess",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::65::bess",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::65::dispatchable_generation",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::65::dispatchable_generation",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::65::pv",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::65::pv",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::69::bess",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::69::bess",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::69::dispatchable_generation",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::69::dispatchable_generation",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::69::pv",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::69::pv",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::6::bess",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::6::bess",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::6::dispatchable_generation",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::6::dispatchable_generation",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::6::pv",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::6::pv",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::73::bess",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::73::bess",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::73::dispatchable_generation",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::73::dispatchable_generation",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::73::pv",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::73::pv",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::76::bess",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::76::bess",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::76::dispatchable_generation",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::76::dispatchable_generation",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::76::pv",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::76::pv",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::87::bess",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::87::bess",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::87::dispatchable_generation",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::87::dispatchable_generation",
+      "upper_bound": 1
+    },
+    {
+      "encoding_type": "binary",
+      "lower_bound": 0,
+      "name": "y::ieee123_opendss::87::pv",
+      "num_levels": 2,
+      "physical_asset_key": "ieee123_opendss::87::pv",
+      "upper_bound": 1
+    }
+  ]
+}

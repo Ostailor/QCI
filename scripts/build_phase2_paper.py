@@ -571,7 +571,7 @@ def _write_submission_package(
             f"`{small_cost['method_name']}` and its best critical-load method is `{small_critical['method_name']}`."
         )
 
-    methods = f"""# Phase 2 Methods
+    methods = """# Phase 2 Methods
 
 CMPO is a pre-QCi local prototype for resilient microgrid cost optimization. It generates deterministic synthetic microgrid cases, selects overlapping islandable patches, builds per-scenario degree-3 polynomial Hamiltonians, repairs decoded dispatches, and aggregates cost/resilience metrics.
 

@@ -1,0 +1,14 @@
+{
+  "budget_slack_variables": 0,
+  "candidate_label_requirement": "evaluate every candidate with the common IEEE123 recourse oracle before fitting",
+  "candidate_labels_present": false,
+  "candidate_portfolios": 3000,
+  "continuous_policy_variables": 0,
+  "core_binary_variables": 33,
+  "formulation": "Integer Recourse-Calibrated CMPO",
+  "full_experiment_run": false,
+  "physical_anchors": 11,
+  "qci_jobs_submitted": 0,
+  "schema": "cmpo.irc_cmpo.build.v1",
+  "selected_not_selected_pairs": 0
+}

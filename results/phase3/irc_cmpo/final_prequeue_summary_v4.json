@@ -1,0 +1,697 @@
+{
+  "IRC_CMPO_READY_FOR_QCI": "YES",
+  "coefficient_audit": [
+    {
+      "cost_weight": 0.0,
+      "cost_weight_derivation": "lambda_min = catalog_sum / (dynamic_range * minimum_asset_cost)",
+      "dynamic_range": 200.0,
+      "lambda_index": 0,
+      "local_invalid_pattern_count": 22,
+      "maximum_degree": 3,
+      "maximum_rho_feasibility": 0.3642945290004111,
+      "minimum_level_separation": 0.0099999999999999,
+      "num_variables": 33,
+      "post_quantization_gates_passed": true,
+      "projection_used": false,
+      "qci_jobs_submitted": 0,
+      "resilience_offset": 230.625,
+      "resilience_scale": 113.75000000000006,
+      "rho_feasibility_by_anchor": "{\"100\": 0.005, \"113\": 0.005, \"16\": 0.005, \"28\": 0.005, \"48\": 0.005, \"6\": 0.005, \"65\": 0.005, \"69\": 0.005, \"73\": 0.005, \"76\": 0.36429452900041115, \"87\": 0.36429452900041104}",
+      "scaled_payload_path": "/Users/omtailor/QCI/results/phase3/irc_cmpo/payloads_final_prequeue_v3/lambda_00.json",
+      "total_num_levels": 66,
+      "unquantized_payload_path": "/Users/omtailor/QCI/results/phase3/irc_cmpo/unquantized_payloads_final_prequeue_v3/lambda_00.json"
+    },
+    {
+      "cost_weight": 1.2095947875386306,
+      "cost_weight_derivation": "lambda_min = catalog_sum / (dynamic_range * minimum_asset_cost)",
+      "dynamic_range": 200.0,
+      "lambda_index": 1,
+      "local_invalid_pattern_count": 22,
+      "maximum_degree": 3,
+      "maximum_rho_feasibility": 0.4569086140148203,
+      "minimum_level_separation": 0.0049999999999999,
+      "num_variables": 33,
+      "post_quantization_gates_passed": true,
+      "projection_used": false,
+      "qci_jobs_submitted": 0,
+      "resilience_offset": 230.625,
+      "resilience_scale": 113.75000000000006,
+      "rho_feasibility_by_anchor": "{\"100\": 0.025000000000000005, \"113\": 0.018333333333333333, \"16\": 0.018333333333333333, \"28\": 0.025000000000000005, \"48\": 0.08083333333333334, \"6\": 0.015000000000000003, \"65\": 0.05333333333333334, \"69\": 0.021666666666666667, \"73\": 0.025000000000000005, \"76\": 0.45690861401482036, \"87\": 0.38179452900041105}",
+      "scaled_payload_path": "/Users/omtailor/QCI/results/phase3/irc_cmpo/payloads_final_prequeue_v3/lambda_01.json",
+      "total_num_levels": 66,
+      "unquantized_payload_path": "/Users/omtailor/QCI/results/phase3/irc_cmpo/unquantized_payloads_final_prequeue_v3/lambda_01.json"
+    },
+    {
+      "cost_weight": 2.419189575077261,
+      "cost_weight_derivation": "lambda_min = catalog_sum / (dynamic_range * minimum_asset_cost)",
+      "dynamic_range": 200.0,
+      "lambda_index": 2,
+      "local_invalid_pattern_count": 22,
+      "maximum_degree": 3,
+      "maximum_rho_feasibility": 0.5495226990292296,
+      "minimum_level_separation": 0.0049999999999999,
+      "num_variables": 33,
+      "post_quantization_gates_passed": true,
+      "projection_used": false,
+      "qci_jobs_submitted": 0,
+      "resilience_offset": 230.625,
+      "resilience_scale": 113.75000000000006,
+      "rho_feasibility_by_anchor": "{\"100\": 0.045000000000000005, \"113\": 0.03166666666666667, \"16\": 0.03166666666666667, \"28\": 0.045000000000000005, \"48\": 0.15925, \"6\": 0.025000000000000005, \"65\": 0.10166666666666668, \"69\": 0.03833333333333333, \"73\": 0.045000000000000005, \"76\": 0.5495226990292296, \"87\": 0.39929452900041107}",
+      "scaled_payload_path": "/Users/omtailor/QCI/results/phase3/irc_cmpo/payloads_final_prequeue_v3/lambda_02.json",
+      "total_num_levels": 66,
+      "unquantized_payload_path": "/Users/omtailor/QCI/results/phase3/irc_cmpo/unquantized_payloads_final_prequeue_v3/lambda_02.json"
+    },
+    {
+      "cost_weight": 4.838379150154522,
+      "cost_weight_derivation": "lambda_min = catalog_sum / (dynamic_range * minimum_asset_cost)",
+      "dynamic_range": 200.0,
+      "lambda_index": 3,
+      "local_invalid_pattern_count": 22,
+      "maximum_degree": 3,
+      "maximum_rho_feasibility": 0.734750869058048,
+      "minimum_level_separation": 0.0049999999999999,
+      "num_variables": 33,
+      "post_quantization_gates_passed": true,
+      "projection_used": false,
+      "qci_jobs_submitted": 0,
+      "resilience_offset": 230.625,
+      "resilience_scale": 113.75000000000006,
+      "rho_feasibility_by_anchor": "{\"100\": 0.08500000000000002, \"113\": 0.058333333333333334, \"16\": 0.058333333333333334, \"28\": 0.08500000000000002, \"48\": 0.3185, \"6\": 0.045000000000000005, \"65\": 0.203, \"69\": 0.07166666666666667, \"73\": 0.08500000000000002, \"76\": 0.734750869058048, \"87\": 0.43429452900041104}",
+      "scaled_payload_path": "/Users/omtailor/QCI/results/phase3/irc_cmpo/payloads_final_prequeue_v3/lambda_03.json",
+      "total_num_levels": 66,
+      "unquantized_payload_path": "/Users/omtailor/QCI/results/phase3/irc_cmpo/unquantized_payloads_final_prequeue_v3/lambda_03.json"
+    },
+    {
+      "cost_weight": 9.676758300309045,
+      "cost_weight_derivation": "lambda_min = catalog_sum / (dynamic_range * minimum_asset_cost)",
+      "dynamic_range": 200.0,
+      "lambda_index": 4,
+      "local_invalid_pattern_count": 22,
+      "maximum_degree": 3,
+      "maximum_rho_feasibility": 1.1052072091156848,
+      "minimum_level_separation": 0.0049999999999999,
+      "num_variables": 33,
+      "post_quantization_gates_passed": true,
+      "projection_used": false,
+      "qci_jobs_submitted": 0,
+      "resilience_offset": 230.625,
+      "resilience_scale": 113.75000000000006,
+      "rho_feasibility_by_anchor": "{\"100\": 0.16800000000000004, \"113\": 0.112, \"16\": 0.112, \"28\": 0.16800000000000004, \"48\": 0.637, \"6\": 0.08500000000000002, \"65\": 0.406, \"69\": 0.13999999999999999, \"73\": 0.16800000000000004, \"76\": 1.1052072091156848, \"87\": 0.504294529000411}",
+      "scaled_payload_path": "/Users/omtailor/QCI/results/phase3/irc_cmpo/payloads_final_prequeue_v3/lambda_04.json",
+      "total_num_levels": 66,
+      "unquantized_payload_path": "/Users/omtailor/QCI/results/phase3/irc_cmpo/unquantized_payloads_final_prequeue_v3/lambda_04.json"
+    },
+    {
+      "cost_weight": 19.35351660061809,
+      "cost_weight_derivation": "lambda_min = catalog_sum / (dynamic_range * minimum_asset_cost)",
+      "dynamic_range": 200.0,
+      "lambda_index": 5,
+      "local_invalid_pattern_count": 22,
+      "maximum_degree": 3,
+      "maximum_rho_feasibility": 1.8461198892309587,
+      "minimum_level_separation": 0.0049999999999999,
+      "num_variables": 33,
+      "post_quantization_gates_passed": true,
+      "projection_used": false,
+      "qci_jobs_submitted": 0,
+      "resilience_offset": 230.625,
+      "resilience_scale": 113.75000000000006,
+      "rho_feasibility_by_anchor": "{\"100\": 0.3360000000000001, \"113\": 0.224, \"16\": 0.224, \"28\": 0.3360000000000001, \"48\": 1.274, \"6\": 0.16800000000000004, \"65\": 0.812, \"69\": 0.27999999999999997, \"73\": 0.3360000000000001, \"76\": 1.8461198892309587, \"87\": 0.6442945290004112}",
+      "scaled_payload_path": "/Users/omtailor/QCI/results/phase3/irc_cmpo/payloads_final_prequeue_v3/lambda_05.json",
+      "total_num_levels": 66,
+      "unquantized_payload_path": "/Users/omtailor/QCI/results/phase3/irc_cmpo/unquantized_payloads_final_prequeue_v3/lambda_05.json"
+    }
+  ],
+  "dataset": {
+    "failures": 0,
+    "successful_labels": 3000,
+    "unique_signatures": 3000
+  },
+  "dynamic_range_valid": true,
+  "evidence_sources": {
+    "offline_validation": "/Users/omtailor/QCI/results/phase3/irc_cmpo/offline_validation_final_prequeue_v4/offline_validation_manifest_final_prequeue_v4.json",
+    "payload_manifest": "/Users/omtailor/QCI/results/phase3/irc_cmpo/payload_manifest_final_prequeue_v3.csv",
+    "surrogate": "/Users/omtailor/QCI/results/phase3/irc_cmpo/surrogate/surrogate_model_final_prequeue_v2.json"
+  },
+  "exact_hamiltonian_valid": true,
+  "gate_status": {
+    "dynamic_range_valid": "PASS",
+    "exact_hamiltonian_valid": "PASS",
+    "historical_mode_audit": "PASS",
+    "integer_adapter_dry_run": "PASS",
+    "local_stochastic_valid": "PASS",
+    "surrogate_valid": "PASS",
+    "true_recourse_valid": "PASS"
+  },
+  "historical_counts": {
+    "integer_qudit": 0,
+    "normalized_continuous_qudit": 1007,
+    "unknown": 8
+  },
+  "historical_mode_audit": true,
+  "integer_adapter_dry_run": true,
+  "irc_cmpo_ready_for_qci": true,
+  "local_stochastic_valid": true,
+  "offline_validation": {
+    "exact_hamiltonian_valid": true,
+    "fixed_recourse_cache_hits": 3050,
+    "fixed_recourse_cache_misses": 166,
+    "lambda_count": 6,
+    "local_stochastic_valid": true,
+    "projection_used": false,
+    "qci_jobs_submitted": 0,
+    "readiness_decision_deferred_to_final_audit": true,
+    "schema": "cmpo.irc_cmpo.offline_validation_manifest.final_prequeue.v4",
+    "unique_portfolios_recourse_evaluated": 134
+  },
+  "prior_v1_evidence": {
+    "final_report_path": "/Users/omtailor/QCI/results/phase3/irc_cmpo/final_prequeue_report.md",
+    "final_report_present": true,
+    "final_summary_path": "/Users/omtailor/QCI/results/phase3/irc_cmpo/final_prequeue_summary.json",
+    "final_summary_present": true,
+    "offline_manifest_path": "/Users/omtailor/QCI/results/phase3/irc_cmpo/offline_validation_final_prequeue_v1/offline_validation_manifest_final_prequeue_v1.json",
+    "offline_manifest_present": false,
+    "payload_manifest_path": "/Users/omtailor/QCI/results/phase3/irc_cmpo/payload_manifest_final_prequeue_v1.csv",
+    "payload_manifest_present": false,
+    "surrogate_gates_passed": false,
+    "surrogate_path": "/Users/omtailor/QCI/results/phase3/irc_cmpo/surrogate/surrogate_model_final_prequeue_v1.json",
+    "surrogate_present": true
+  },
+  "projection_used_for_integer_samples": false,
+  "qci_jobs_submitted_during_final_prequeue_audit": 0,
+  "strict_stop_reason": "none",
+  "surrogate_metrics": {
+    "critical_ens": {
+      "all_coefficients_finite": true,
+      "calibration_by_upgrade_cost_band": [
+        {
+          "count": 150,
+          "mae": 2.6499575752896303,
+          "mean_actual": 81.02777777777777,
+          "mean_bias": -0.48823371398525484,
+          "mean_predicted": 80.53954406379253,
+          "upgrade_cost_band": 0
+        },
+        {
+          "count": 150,
+          "mae": 1.4932418456852925,
+          "mean_actual": 69.23333333333333,
+          "mean_bias": -0.1495389029778165,
+          "mean_predicted": 69.08379443035552,
+          "upgrade_cost_band": 1
+        },
+        {
+          "count": 150,
+          "mae": 0.5367131558207788,
+          "mean_actual": 52.65,
+          "mean_bias": 0.399814760098838,
+          "mean_predicted": 53.04981476009884,
+          "upgrade_cost_band": 2
+        },
+        {
+          "count": 150,
+          "mae": 0.17927879451645112,
+          "mean_actual": 50.75833333333333,
+          "mean_bias": 0.17927879451643008,
+          "mean_predicted": 50.93761212784977,
+          "upgrade_cost_band": 3
+        }
+      ],
+      "candidate_count": 84,
+      "degree": 3,
+      "gate_passed": true,
+      "learning_rate": 1.0,
+      "mae": 1.2147978428280382,
+      "nearly_constant": false,
+      "normalized_rmse": 0.03148215711532562,
+      "pareto_front_recall": 1.0,
+      "r2": 0.9878179121757819,
+      "rmse": 3.364655541700426,
+      "selected_model_type": "regression_tree",
+      "solver_noise_tolerance": 1e-06,
+      "spearman_rank_correlation": 0.8140945642191901,
+      "test_range": 106.875,
+      "test_standard_deviation": 30.48454706029681,
+      "top_decile_recall": 1.0,
+      "tree_count": 1,
+      "tree_depth": 3,
+      "validation_metrics": {
+        "calibration_by_upgrade_cost_band": [
+          {
+            "count": 150,
+            "mae": 1.71833998774308,
+            "mean_actual": 68.25416666666666,
+            "mean_bias": 0.3493560305238288,
+            "mean_predicted": 68.6035226971905,
+            "upgrade_cost_band": 0
+          },
+          {
+            "count": 150,
+            "mae": 1.773051314613087,
+            "mean_actual": 61.454166666666666,
+            "mean_bias": -0.14352622549386462,
+            "mean_predicted": 61.3106404411728,
+            "upgrade_cost_band": 1
+          },
+          {
+            "count": 150,
+            "mae": 0.9164231149275269,
+            "mean_actual": 57.8,
+            "mean_bias": 0.6426263234836769,
+            "mean_predicted": 58.44262632348369,
+            "upgrade_cost_band": 2
+          },
+          {
+            "count": 150,
+            "mae": 0.5134062162216891,
+            "mean_actual": 55.766666666666666,
+            "mean_bias": 0.10271102905591387,
+            "mean_predicted": 55.86937769572258,
+            "upgrade_cost_band": 3
+          }
+        ],
+        "mae": 1.2303051583763458,
+        "nearly_constant": false,
+        "normalized_rmse": 0.030658205183116995,
+        "pareto_front_recall": 1.0,
+        "r2": 0.983939988763978,
+        "rmse": 3.276595678945629,
+        "solver_noise_tolerance": 1e-06,
+        "spearman_rank_correlation": 0.802468454627547,
+        "test_range": 106.875,
+        "test_standard_deviation": 25.8553208680051,
+        "top_decile_recall": 1.0
+      }
+    },
+    "critical_infrastructure_outage_hours": {
+      "all_coefficients_finite": true,
+      "calibration_by_upgrade_cost_band": [
+        {
+          "count": 150,
+          "mae": 0.06604438502673804,
+          "mean_actual": 1.4325,
+          "mean_bias": -0.013460606060606096,
+          "mean_predicted": 1.419039393939394,
+          "upgrade_cost_band": 0
+        },
+        {
+          "count": 150,
+          "mae": 0.03949795008912664,
+          "mean_actual": 1.3083333333333333,
+          "mean_bias": -0.0015715686274509618,
+          "mean_predicted": 1.3067617647058822,
+          "upgrade_cost_band": 1
+        },
+        {
+          "count": 150,
+          "mae": 0.014721122994652482,
+          "mean_actual": 1.15,
+          "mean_bias": 0.011298663101604354,
+          "mean_predicted": 1.1612986631016042,
+          "upgrade_cost_band": 2
+        },
+        {
+          "count": 150,
+          "mae": 0.00716693404634596,
+          "mean_actual": 1.1283333333333334,
+          "mean_bias": 0.00716693404634596,
+          "mean_predicted": 1.135500267379679,
+          "upgrade_cost_band": 3
+        }
+      ],
+      "candidate_count": 84,
+      "degree": 3,
+      "gate_passed": true,
+      "learning_rate": 1.0,
+      "mae": 0.03185759803921578,
+      "nearly_constant": false,
+      "normalized_rmse": 0.11300478811435767,
+      "pareto_front_recall": 1.0,
+      "r2": 0.8966960487440628,
+      "rmse": 0.08475359108576826,
+      "selected_model_type": "regression_tree",
+      "solver_noise_tolerance": 1e-06,
+      "spearman_rank_correlation": 0.8083944094507041,
+      "test_range": 0.75,
+      "test_standard_deviation": 0.26369363207560065,
+      "top_decile_recall": 1.0,
+      "tree_count": 1,
+      "tree_depth": 3,
+      "validation_metrics": {
+        "calibration_by_upgrade_cost_band": [
+          {
+            "count": 150,
+            "mae": 0.03798333333333337,
+            "mean_actual": 1.2966666666666666,
+            "mean_bias": 0.0037587344028520093,
+            "mean_predicted": 1.3004254010695186,
+            "upgrade_cost_band": 0
+          },
+          {
+            "count": 150,
+            "mae": 0.044110071301247784,
+            "mean_actual": 1.2633333333333334,
+            "mean_bias": -0.0038043672014260524,
+            "mean_predicted": 1.2595289661319073,
+            "upgrade_cost_band": 1
+          },
+          {
+            "count": 150,
+            "mae": 0.020985026737967923,
+            "mean_actual": 1.1933333333333334,
+            "mean_bias": 0.014140106951871652,
+            "mean_predicted": 1.207473440285205,
+            "upgrade_cost_band": 2
+          },
+          {
+            "count": 150,
+            "mae": 0.016163012477718362,
+            "mean_actual": 1.1766666666666667,
+            "mean_bias": 0.005895632798573963,
+            "mean_predicted": 1.1825622994652405,
+            "upgrade_cost_band": 3
+          }
+        ],
+        "mae": 0.029810360962566864,
+        "nearly_constant": false,
+        "normalized_rmse": 0.10862406188789668,
+        "pareto_front_recall": 1.0,
+        "r2": 0.8786508040347041,
+        "rmse": 0.08146804641592251,
+        "solver_noise_tolerance": 1e-06,
+        "spearman_rank_correlation": 0.7997057483928228,
+        "test_range": 0.75,
+        "test_standard_deviation": 0.233866949353687,
+        "top_decile_recall": 1.0
+      }
+    },
+    "heldout_total_ens": {
+      "all_coefficients_finite": true,
+      "calibration_by_upgrade_cost_band": [
+        {
+          "count": 150,
+          "mae": 0.378328003004486,
+          "mean_actual": 326.4874999845361,
+          "mean_bias": 0.0220874016024095,
+          "mean_predicted": 326.50958738613855,
+          "upgrade_cost_band": 0
+        },
+        {
+          "count": 150,
+          "mae": 0.33033347148711567,
+          "mean_actual": 323.22250008558945,
+          "mean_bias": 0.03715885388780748,
+          "mean_predicted": 323.25965893947733,
+          "upgrade_cost_band": 1
+        },
+        {
+          "count": 150,
+          "mae": 0.2171609999001593,
+          "mean_actual": 316.28000018981913,
+          "mean_bias": 0.016111532164887876,
+          "mean_predicted": 316.296111721984,
+          "upgrade_cost_band": 2
+        },
+        {
+          "count": 150,
+          "mae": 0.16846307953276096,
+          "mean_actual": 310.72833354722763,
+          "mean_bias": 0.07252752478325761,
+          "mean_predicted": 310.8008610720109,
+          "upgrade_cost_band": 3
+        }
+      ],
+      "candidate_count": 84,
+      "degree": 3,
+      "gate_passed": true,
+      "learning_rate": 0.0,
+      "mae": 0.2735713884811305,
+      "nearly_constant": false,
+      "normalized_rmse": 0.005360475017589203,
+      "pareto_front_recall": 1.0,
+      "r2": 0.9993568314307404,
+      "rmse": 0.3799236672000503,
+      "selected_model_type": "hierarchical_ridge",
+      "solver_noise_tolerance": 1e-06,
+      "spearman_rank_correlation": 0.994713483858839,
+      "test_range": 70.87500006126612,
+      "test_standard_deviation": 14.980763301809935,
+      "top_decile_recall": 0.9942857142857143,
+      "tree_count": 0,
+      "tree_depth": 0,
+      "validation_metrics": {
+        "calibration_by_upgrade_cost_band": [
+          {
+            "count": 150,
+            "mae": 0.32822511245285646,
+            "mean_actual": 324.3783333663132,
+            "mean_bias": 0.011115274225675572,
+            "mean_predicted": 324.3894486405389,
+            "upgrade_cost_band": 0
+          },
+          {
+            "count": 150,
+            "mae": 0.35134258972211,
+            "mean_actual": 326.0458334605846,
+            "mean_bias": -0.01257347460384608,
+            "mean_predicted": 326.0332599859808,
+            "upgrade_cost_band": 1
+          },
+          {
+            "count": 150,
+            "mae": 0.27157865304357187,
+            "mean_actual": 319.0666668366795,
+            "mean_bias": 0.03931951482597735,
+            "mean_predicted": 319.10598635150535,
+            "upgrade_cost_band": 2
+          },
+          {
+            "count": 150,
+            "mae": 0.2289508000084993,
+            "mean_actual": 314.56166685970436,
+            "mean_bias": 0.007028894779106547,
+            "mean_predicted": 314.56869575448354,
+            "upgrade_cost_band": 3
+          }
+        ],
+        "mae": 0.2950242888067594,
+        "nearly_constant": false,
+        "normalized_rmse": 0.005520564711774728,
+        "pareto_front_recall": 1.0,
+        "r2": 0.9992139274733649,
+        "rmse": 0.39541044842014555,
+        "solver_noise_tolerance": 1e-06,
+        "spearman_rank_correlation": 0.9975283198962078,
+        "test_range": 71.62500017014213,
+        "test_standard_deviation": 14.103172960138664,
+        "top_decile_recall": 1.0
+      }
+    },
+    "maximum_customers_unserved": {
+      "all_coefficients_finite": true,
+      "calibration_by_upgrade_cost_band": [
+        {
+          "count": 150,
+          "mae": 0.0003753603677484953,
+          "mean_actual": 0.203406558420885,
+          "mean_bias": -1.2620089603097573e-05,
+          "mean_predicted": 0.20339393833128194,
+          "upgrade_cost_band": 0
+        },
+        {
+          "count": 150,
+          "mae": 0.00011673611276011556,
+          "mean_actual": 0.19560649474689584,
+          "mean_bias": 0.00011673611276011556,
+          "mean_predicted": 0.19572323085965596,
+          "upgrade_cost_band": 1
+        },
+        {
+          "count": 150,
+          "mae": 6.033172502435069e-05,
+          "mean_actual": 0.17946513849092638,
+          "mean_bias": 6.033172502435069e-05,
+          "mean_predicted": 0.17952547021595075,
+          "upgrade_cost_band": 2
+        },
+        {
+          "count": 150,
+          "mae": 3.7830390503713616e-05,
+          "mean_actual": 0.17652340019102192,
+          "mean_bias": 3.7830390503713616e-05,
+          "mean_predicted": 0.17656123058152562,
+          "upgrade_cost_band": 3
+        }
+      ],
+      "candidate_count": 84,
+      "degree": 3,
+      "gate_passed": true,
+      "learning_rate": 1.0,
+      "mae": 0.0001475646490091688,
+      "nearly_constant": false,
+      "normalized_rmse": 0.01189204657005113,
+      "pareto_front_recall": 1.0,
+      "r2": 0.9986929307995387,
+      "rmse": 0.0009711270121674988,
+      "selected_model_type": "regression_tree",
+      "solver_noise_tolerance": 1e-06,
+      "spearman_rank_correlation": 0.8145620847749091,
+      "test_range": 0.08166189111747849,
+      "test_standard_deviation": 0.026861282462480967,
+      "top_decile_recall": 1.0,
+      "tree_count": 1,
+      "tree_depth": 3,
+      "validation_metrics": {
+        "calibration_by_upgrade_cost_band": [
+          {
+            "count": 150,
+            "mae": 0.0002941789145442203,
+            "mean_actual": 0.19288443170964656,
+            "mean_bias": 0.0002941789145442203,
+            "mean_predicted": 0.19317861062419078,
+            "upgrade_cost_band": 0
+          },
+          {
+            "count": 150,
+            "mae": 0.00012677836854701474,
+            "mean_actual": 0.18914040114613176,
+            "mean_bias": 0.00012677836854701474,
+            "mean_predicted": 0.18926717951467878,
+            "upgrade_cost_band": 1
+          },
+          {
+            "count": 150,
+            "mae": 0.0001494307545018279,
+            "mean_actual": 0.18660936007640874,
+            "mean_bias": 0.0001494307545018279,
+            "mean_predicted": 0.18675879083091057,
+            "upgrade_cost_band": 2
+          },
+          {
+            "count": 150,
+            "mae": 3.707513333281416e-05,
+            "mean_actual": 0.18382043935052528,
+            "mean_bias": 3.707513333281416e-05,
+            "mean_predicted": 0.1838575144838581,
+            "upgrade_cost_band": 3
+          }
+        ],
+        "mae": 0.00015186579273146928,
+        "nearly_constant": false,
+        "normalized_rmse": 0.0061428096940300035,
+        "pareto_front_recall": 1.0,
+        "r2": 0.9996357295607831,
+        "rmse": 0.0005016334563892695,
+        "solver_noise_tolerance": 1e-06,
+        "spearman_rank_correlation": 0.8027749507392417,
+        "test_range": 0.08166189111747849,
+        "test_standard_deviation": 0.026282975445232833,
+        "top_decile_recall": 1.0
+      }
+    },
+    "total_ens": {
+      "all_coefficients_finite": true,
+      "calibration_by_upgrade_cost_band": [
+        {
+          "count": 150,
+          "mae": 2.6499575752896303,
+          "mean_actual": 261.0277777777778,
+          "mean_bias": -0.4882337139852524,
+          "mean_predicted": 260.5395440637925,
+          "upgrade_cost_band": 0
+        },
+        {
+          "count": 150,
+          "mae": 1.4932418456852943,
+          "mean_actual": 249.23333333333332,
+          "mean_bias": -0.14953890297781205,
+          "mean_predicted": 249.08379443035554,
+          "upgrade_cost_band": 1
+        },
+        {
+          "count": 150,
+          "mae": 0.5367131558207776,
+          "mean_actual": 232.65,
+          "mean_bias": 0.3998147600988447,
+          "mean_predicted": 233.04981476009883,
+          "upgrade_cost_band": 2
+        },
+        {
+          "count": 150,
+          "mae": 0.1792787945164457,
+          "mean_actual": 230.75833333333333,
+          "mean_bias": 0.17927879451644116,
+          "mean_predicted": 230.93761212784977,
+          "upgrade_cost_band": 3
+        }
+      ],
+      "candidate_count": 84,
+      "degree": 3,
+      "gate_passed": true,
+      "learning_rate": 1.0,
+      "mae": 1.214797842828037,
+      "nearly_constant": false,
+      "normalized_rmse": 0.03148215711532563,
+      "pareto_front_recall": 1.0,
+      "r2": 0.9878179121757819,
+      "rmse": 3.3646555417004262,
+      "selected_model_type": "regression_tree",
+      "solver_noise_tolerance": 1e-06,
+      "spearman_rank_correlation": 0.8140945642191901,
+      "test_range": 106.875,
+      "test_standard_deviation": 30.48454706029681,
+      "top_decile_recall": 1.0,
+      "tree_count": 1,
+      "tree_depth": 3,
+      "validation_metrics": {
+        "calibration_by_upgrade_cost_band": [
+          {
+            "count": 150,
+            "mae": 1.7183399877430807,
+            "mean_actual": 248.25416666666666,
+            "mean_bias": 0.3493560305238276,
+            "mean_predicted": 248.6035226971905,
+            "upgrade_cost_band": 0
+          },
+          {
+            "count": 150,
+            "mae": 1.7730513146130866,
+            "mean_actual": 241.45416666666668,
+            "mean_bias": -0.14352622549386732,
+            "mean_predicted": 241.31064044117284,
+            "upgrade_cost_band": 1
+          },
+          {
+            "count": 150,
+            "mae": 0.916423114927526,
+            "mean_actual": 237.8,
+            "mean_bias": 0.6426263234836754,
+            "mean_predicted": 238.44262632348372,
+            "upgrade_cost_band": 2
+          },
+          {
+            "count": 150,
+            "mae": 0.5134062162216882,
+            "mean_actual": 235.76666666666668,
+            "mean_bias": 0.1027110290559123,
+            "mean_predicted": 235.8693776957226,
+            "upgrade_cost_band": 3
+          }
+        ],
+        "mae": 1.2303051583763454,
+        "nearly_constant": false,
+        "normalized_rmse": 0.030658205183116995,
+        "pareto_front_recall": 1.0,
+        "r2": 0.983939988763978,
+        "rmse": 3.276595678945629,
+        "solver_noise_tolerance": 1e-06,
+        "spearman_rank_correlation": 0.802468454627547,
+        "test_range": 106.875,
+        "test_standard_deviation": 25.8553208680051,
+        "top_decile_recall": 1.0
+      }
+    }
+  },
+  "surrogate_valid": true,
+  "true_recourse_valid": true
+}

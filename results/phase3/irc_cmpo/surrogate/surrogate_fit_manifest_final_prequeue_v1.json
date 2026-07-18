@@ -1,0 +1,14 @@
+{
+  "payload_build_permitted": false,
+  "physically_interpretable_cubic_terms": 13,
+  "qci_jobs_submitted": 0,
+  "same_or_adjacent_physical_pair_terms": 38,
+  "schema": "cmpo.irc_cmpo.surrogate_fit_manifest.final_prequeue.v1",
+  "split_counts": {
+    "test": 600,
+    "train": 1800,
+    "validation": 600
+  },
+  "surrogate_valid": false,
+  "unique_portfolios": 3000
+}

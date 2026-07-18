@@ -1,0 +1,319 @@
+{
+  "allocation_before_submission": {
+    "metered": false,
+    "paid": true,
+    "seconds": 259200
+  },
+  "file_response": {
+    "file_id": "6a5ba9efff2f309fb9d05501"
+  },
+  "job_body": {
+    "job_submission": {
+      "device_config": {
+        "dirac-3_qudit": {
+          "num_levels": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "num_samples": 30,
+          "relaxation_schedule": 2
+        }
+      },
+      "job_name": "phase3-irc-cmpo-smoke-toy",
+      "job_tags": [
+        "phase3",
+        "irc-cmpo",
+        "smoke",
+        "toy"
+      ],
+      "problem_config": {
+        "qudit_hamiltonian_optimization": {
+          "polynomial_file_id": "6a5ba9efff2f309fb9d05501"
+        }
+      }
+    }
+  },
+  "num_levels_limit_source": "https://learn.quantumcomputinginc.com/learn/module/introduction-to-dirac-3/dirac-3-developer-beginner-guide",
+  "qci_file": {
+    "cmpo_metadata": {
+      "model_statistics": {},
+      "patch_metadata": {},
+      "scenario_metadata": {},
+      "schema": "cmpo.irc_cmpo.integer_master.v1",
+      "variable_bounds": {
+        "y::toy::north::bess": [
+          0,
+          1
+        ],
+        "y::toy::north::dispatchable_generation": [
+          0,
+          1
+        ],
+        "y::toy::north::pv": [
+          0,
+          1
+        ],
+        "y::toy::south::bess": [
+          0,
+          1
+        ],
+        "y::toy::south::dispatchable_generation": [
+          0,
+          1
+        ],
+        "y::toy::south::pv": [
+          0,
+          1
+        ]
+      },
+      "variable_order": [
+        "y::toy::north::bess",
+        "y::toy::north::dispatchable_generation",
+        "y::toy::north::pv",
+        "y::toy::south::bess",
+        "y::toy::south::dispatchable_generation",
+        "y::toy::south::pv"
+      ]
+    },
+    "file_config": {
+      "polynomial": {
+        "data": [
+          {
+            "idx": [
+              0,
+              0,
+              3
+            ],
+            "val": -1.0
+          },
+          {
+            "idx": [
+              0,
+              0,
+              1
+            ],
+            "val": -0.5
+          },
+          {
+            "idx": [
+              0,
+              0,
+              2
+            ],
+            "val": -2.0
+          },
+          {
+            "idx": [
+              0,
+              0,
+              6
+            ],
+            "val": -1.0
+          },
+          {
+            "idx": [
+              0,
+              0,
+              4
+            ],
+            "val": -0.5
+          },
+          {
+            "idx": [
+              0,
+              0,
+              5
+            ],
+            "val": -2.0
+          },
+          {
+            "idx": [
+              0,
+              0,
+              1
+            ],
+            "val": 0.08333333333333333
+          },
+          {
+            "idx": [
+              0,
+              0,
+              2
+            ],
+            "val": 0.05000000000000001
+          },
+          {
+            "idx": [
+              0,
+              0,
+              3
+            ],
+            "val": 0.06666666666666667
+          },
+          {
+            "idx": [
+              0,
+              0,
+              4
+            ],
+            "val": 0.08333333333333333
+          },
+          {
+            "idx": [
+              0,
+              0,
+              5
+            ],
+            "val": 0.05000000000000001
+          },
+          {
+            "idx": [
+              0,
+              0,
+              6
+            ],
+            "val": 0.06666666666666667
+          },
+          {
+            "idx": [
+              0,
+              0,
+              3
+            ],
+            "val": -2.0
+          },
+          {
+            "idx": [
+              0,
+              0,
+              1
+            ],
+            "val": -2.0
+          },
+          {
+            "idx": [
+              0,
+              0,
+              2
+            ],
+            "val": -2.0
+          },
+          {
+            "idx": [
+              0,
+              1,
+              3
+            ],
+            "val": 2.0
+          },
+          {
+            "idx": [
+              0,
+              2,
+              3
+            ],
+            "val": 2.0
+          },
+          {
+            "idx": [
+              0,
+              1,
+              2
+            ],
+            "val": 2.0
+          },
+          {
+            "idx": [
+              1,
+              2,
+              3
+            ],
+            "val": -2.0
+          },
+          {
+            "idx": [
+              0,
+              0,
+              6
+            ],
+            "val": -2.0
+          },
+          {
+            "idx": [
+              0,
+              0,
+              4
+            ],
+            "val": -2.0
+          },
+          {
+            "idx": [
+              0,
+              0,
+              5
+            ],
+            "val": -2.0
+          },
+          {
+            "idx": [
+              0,
+              4,
+              6
+            ],
+            "val": 2.0
+          },
+          {
+            "idx": [
+              0,
+              5,
+              6
+            ],
+            "val": 2.0
+          },
+          {
+            "idx": [
+              0,
+              4,
+              5
+            ],
+            "val": 2.0
+          },
+          {
+            "idx": [
+              4,
+              5,
+              6
+            ],
+            "val": -2.0
+          }
+        ],
+        "max_degree": 3,
+        "min_degree": 1,
+        "num_variables": 6
+      }
+    },
+    "file_name": "cmpo_scenario_patch"
+  },
+  "requested_job_params": {
+    "device_type": "dirac-3",
+    "num_levels": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "num_samples": 30,
+    "relaxation_schedule": 2
+  },
+  "requested_job_type": "sample-hamiltonian-integer",
+  "versions": {
+    "eqc-models": "0.20.2",
+    "qci-client": "5.0.0"
+  }
+}

@@ -1,0 +1,2 @@
+mae,rmse,normalized_rmse,spearman_rank_correlation,top_decile_recall,pareto_front_recall,heldout_rank_correlation,no_train_test_leakage,degree,all_coefficients_finite,unique_portfolios,train_portfolios,validation_portfolios,test_portfolios,gates_passed
+23.632983237062643,29.382759566201166,0.024065909667731335,0.9911692068385023,0.9555555555555556,1.0,0.9739870506913583,True,3,True,3000,2100,450,450,True

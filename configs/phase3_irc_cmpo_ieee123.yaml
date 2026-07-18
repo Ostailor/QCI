@@ -1,0 +1,106 @@
+formulation: Integer Recourse-Calibrated CMPO
+abbreviation: IRC-CMPO
+benchmark: ieee123_opendss
+source_payload_dir: results/phase3/sc_cmpo/ieee123/qci_payloads
+source_asset_catalog: results/phase3/sc_cmpo/budget_master_v2/public_asset_catalog.csv
+output_dir: results/phase3/irc_cmpo
+
+model:
+  core_binary_variables: 33
+  physical_anchors: 11
+  maximum_degree: 3
+  collapsed_coefficient_threshold: 1.0e-12
+  maximum_coefficient_dynamic_range: 200
+  selected_not_selected_pairs: false
+  budget_slack_variables: 0
+  continuous_policy_variables: 0
+
+scalarization:
+  # Values are regenerated from the public catalog by the payload builder.
+  # The checked-in numbers make the derivation auditable and reproducible.
+  cost_weights: [0.0, 1.2095947875386306, 2.419189575077261, 4.838379150154522, 9.676758300309045, 19.35351660061809]
+  cost_weight_multipliers: [0, 2, 4, 8, 16, 32]
+  cost_weight_derivation: catalog_minimum_cost_fraction_times_two_or_more_dirac3_200_level_grid_steps
+  resilience_normalization: training_total_ens_range
+  cost_denominator: maximum_catalog_portfolio_cost
+  hard_budget: false
+  portfolio_projection_permitted: false
+
+local_feasibility:
+  pattern_count_per_anchor: 8
+  firm_capacity_basis: pinned_public_ieee123_islanded_base_load
+  no_good_degree: 3
+  slack_variables: 0
+  rho_rule: 1.05_times_training_total_ens_range
+
+recourse:
+  patch_count: 12
+  training_scenarios: [normal, renewable_shortfall, demand_surge, pcc_loss, local_generator_loss, forced_islanding, restoration, combined_high_stress]
+  heldout_n_1_count: 10
+  consensus_algorithm: overlap_consensus_admm
+  projection: full_public_system_active_power
+  portfolio_projection_permitted: false
+  nonlinear_solver: scipy_slsqp
+  piecewise_linear_solver: scipy_highs_milp
+  metrics: [upgrade_cost, critical_ens, total_ens, maximum_customers_unserved, critical_infrastructure_outage_hours, critical_load_served, heldout_critical_ens, heldout_total_ens, feasibility]
+
+surrogate:
+  minimum_unique_portfolios: 3000
+  random_seed: 2026
+  master_objective_target: total_ens
+  group_column: portfolio_signature
+  maximum_degree: 3
+  interaction_prune_threshold: 1.0e-10
+  target_weights:
+    critical_ens: 1.0
+    total_ens: 0.25
+    maximum_customers_unserved: 0.10
+    critical_infrastructure_outage_hours: 0.10
+    critical_load_served: -0.10
+  split_fractions: {train: 0.6, validation: 0.2, test: 0.2}
+  targets: [critical_ens, total_ens, maximum_customers_unserved, critical_infrastructure_outage_hours, heldout_total_ens]
+  required_candidate_sources: [exact_milp_or_cp_sat, classical_benders, gpu_random_feasible, greedy_cost_resilience, qubo, technology_anchor_ablation, pareto_neighborhood_mutation]
+  gates:
+    total_ens_spearman_minimum: 0.80
+    critical_ens_spearman_minimum: 0.80
+    top_decile_recall_minimum: 0.70
+    pareto_front_recall_minimum: 0.70
+    normalized_rmse_maximum: 0.20
+    no_train_test_leakage: true
+    all_coefficients_finite: true
+
+scaling:
+  maximum_dynamic_range: 200
+  material_grid_divisor: 200
+  normalize_maximum_to: 1.0
+  reject_material_magnitude_range: [1.0e-16, 1.0e-13]
+  revalidate_after_quantization: true
+
+offline_validation:
+  exact_solver: exhaustive_anchor_pattern_enumeration
+  exact_top_k: 10
+  pareto_distance_maximum_fraction: 0.05
+  minimum_near_pareto_lambdas: 4
+  median_true_recourse_regret_maximum: 0.05
+  energy_recourse_spearman_minimum: 0.75
+  minimum_true_top_decile_in_top_ten: 5
+  stochastic:
+    methods: [integer_simulated_annealing, random_restart, local_coordinate_search]
+    native_feasibility_minimum: 0.80
+    hamiltonian_regret_maximum: 0.02
+    median_true_recourse_regret_maximum: 0.10
+    minimum_unique_feasible: 5
+
+qci:
+  job_type: sample-hamiltonian-integer
+  device_type: dirac-3
+  relaxation_schedule: 2
+  samples_per_job: 30
+  maximum_total_num_levels: 954
+  num_levels_limit_source: https://learn.quantumcomputinginc.com/learn/module/introduction-to-dirac-3/dirac-3-developer-beginner-guide
+  num_levels_limit_accessed: 2026-07-18
+  pinned_qci_client_version: 5.0.0
+  pinned_eqc_models_version: 0.20.2
+  full_experiment_permitted: false
+  submission_permitted: false
+  smoke_jobs: [toy, reduced_ieee123, full_ieee123]

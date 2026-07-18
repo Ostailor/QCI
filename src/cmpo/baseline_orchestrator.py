@@ -451,7 +451,6 @@ def run_classical_baseline_sweep(config: dict[str, Any], *, repeats: int, dry_ru
 
     manifest = load_phase3_manifest(config)
     grid_case = build_grid_case_from_config(config, out_dir / "data")
-    scenarios = {scenario.name: scenario for scenario in _selected_scenarios(grid_case, config)}
     payload_jobs = _payload_jobs_from_manifest(manifest)
     rows: list[dict[str, Any]] = []
     skip_rows: list[dict[str, Any]] = []

@@ -1,0 +1,6147 @@
+{
+  "gates_passed": false,
+  "label_contract": "true fixed-upgrade SLSQP/MILP recourse only",
+  "maximum_degree": 3,
+  "old_fraction_completion_used": false,
+  "old_log_capacity_benefit_used": false,
+  "qci_jobs_submitted": 0,
+  "schema": "cmpo.irc_cmpo.multi_target_surrogate.final_prequeue.v1",
+  "targets": {
+    "critical_ens": {
+      "metrics": {
+        "all_coefficients_finite": true,
+        "calibration_by_upgrade_cost_band": [
+          {
+            "count": 150,
+            "mae": 11.661275298582904,
+            "mean_actual": 81.02777777777777,
+            "mean_bias": -1.8673763112243675,
+            "mean_predicted": 79.16040146655341,
+            "upgrade_cost_band": 0
+          },
+          {
+            "count": 150,
+            "mae": 8.706067250074708,
+            "mean_actual": 69.23333333333333,
+            "mean_bias": -0.0007541222398802461,
+            "mean_predicted": 69.23257921109345,
+            "upgrade_cost_band": 1
+          },
+          {
+            "count": 150,
+            "mae": 5.163854516985972,
+            "mean_actual": 52.65,
+            "mean_bias": -1.391636826239917,
+            "mean_predicted": 51.25836317376008,
+            "upgrade_cost_band": 2
+          },
+          {
+            "count": 150,
+            "mae": 3.0884371743330856,
+            "mean_actual": 50.75833333333333,
+            "mean_bias": -1.8882534113602492,
+            "mean_predicted": 48.87007992197309,
+            "upgrade_cost_band": 3
+          }
+        ],
+        "degree": 3,
+        "gate_passed": false,
+        "mae": 7.154908559994167,
+        "nearly_constant": false,
+        "normalized_rmse": 0.0989024595656845,
+        "pareto_front_recall": 1.0,
+        "r2": 0.8797716335900038,
+        "rmse": 10.570200366082531,
+        "spearman_rank_correlation": 0.7338203586930439,
+        "test_range": 106.875,
+        "test_standard_deviation": 30.48454706029681,
+        "top_decile_recall": 0.9848156182212582
+      },
+      "ridge": 1.0,
+      "terms": [
+        {
+          "asset_keys": [],
+          "coefficient": 105.23783904155633,
+          "component": "surrogate",
+          "degree": 0
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::100::bess"
+          ],
+          "coefficient": -1.2425982924463659,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::100::dispatchable_generation"
+          ],
+          "coefficient": 0.5055438306889077,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::100::pv"
+          ],
+          "coefficient": -0.9767671952081031,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::113::bess"
+          ],
+          "coefficient": -0.48167330932335783,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::113::dispatchable_generation"
+          ],
+          "coefficient": 0.8940222675327947,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::113::pv"
+          ],
+          "coefficient": 0.152277138352497,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::16::bess"
+          ],
+          "coefficient": -0.9640879708804736,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::16::dispatchable_generation"
+          ],
+          "coefficient": -0.2858592626187927,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::16::pv"
+          ],
+          "coefficient": -1.52817479338708,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::28::bess"
+          ],
+          "coefficient": -0.7920908247127277,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::28::dispatchable_generation"
+          ],
+          "coefficient": -0.3825724254138964,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::28::pv"
+          ],
+          "coefficient": -2.3281634870852774,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::48::bess"
+          ],
+          "coefficient": -0.2167686006866964,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::48::dispatchable_generation"
+          ],
+          "coefficient": -0.31855111537433906,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::48::pv"
+          ],
+          "coefficient": -0.42179079215739157,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::65::bess"
+          ],
+          "coefficient": -0.04568096254288818,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::65::dispatchable_generation"
+          ],
+          "coefficient": 1.2633621588358586,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::65::pv"
+          ],
+          "coefficient": 0.5159794366754149,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::69::bess"
+          ],
+          "coefficient": -0.3536761676073546,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::69::dispatchable_generation"
+          ],
+          "coefficient": -0.4269602432709866,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::69::pv"
+          ],
+          "coefficient": -0.9737147585050917,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::6::bess"
+          ],
+          "coefficient": -0.48843927630125344,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::6::dispatchable_generation"
+          ],
+          "coefficient": 0.9545451981182175,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::6::pv"
+          ],
+          "coefficient": 0.06064159231166573,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::73::bess"
+          ],
+          "coefficient": -0.5617514172688535,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::73::dispatchable_generation"
+          ],
+          "coefficient": 0.726612551185543,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::73::pv"
+          ],
+          "coefficient": -0.3423486642383322,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::76::bess"
+          ],
+          "coefficient": 2.6839144374204595,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::76::dispatchable_generation"
+          ],
+          "coefficient": -25.832397031283637,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::76::pv"
+          ],
+          "coefficient": -10.72052245271236,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::87::bess"
+          ],
+          "coefficient": -37.9763972933697,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": 3.7205283922787067,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::87::pv"
+          ],
+          "coefficient": -2.7184735182573503,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "anchor_nodes": [
+            "100"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::100::bess",
+            "ieee123_opendss::100::dispatchable_generation"
+          ],
+          "coefficient": -0.7370544617575738,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "100"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::100::bess",
+            "ieee123_opendss::100::pv"
+          ],
+          "coefficient": 1.068517015468335,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "100"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::100::dispatchable_generation",
+            "ieee123_opendss::100::pv"
+          ],
+          "coefficient": -0.46877862000362847,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "113"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::113::bess",
+            "ieee123_opendss::113::dispatchable_generation"
+          ],
+          "coefficient": 0.4123489582076627,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "113"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::113::bess",
+            "ieee123_opendss::113::pv"
+          ],
+          "coefficient": 0.9026811544711347,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "113"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::113::dispatchable_generation",
+            "ieee123_opendss::113::pv"
+          ],
+          "coefficient": -1.6114684923862697,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "16"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::16::bess",
+            "ieee123_opendss::16::dispatchable_generation"
+          ],
+          "coefficient": -1.24994723351373,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "16"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::16::bess",
+            "ieee123_opendss::16::pv"
+          ],
+          "coefficient": 0.9836471332553653,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "16"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::16::dispatchable_generation",
+            "ieee123_opendss::16::pv"
+          ],
+          "coefficient": -0.3526552657056535,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "28"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::28::bess",
+            "ieee123_opendss::28::dispatchable_generation"
+          ],
+          "coefficient": -1.1746632501310663,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "28"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::28::bess",
+            "ieee123_opendss::28::pv"
+          ],
+          "coefficient": 0.20398694154863073,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "28"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::28::dispatchable_generation",
+            "ieee123_opendss::28::pv"
+          ],
+          "coefficient": 0.08256831916270277,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "48"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::48::bess",
+            "ieee123_opendss::48::dispatchable_generation"
+          ],
+          "coefficient": -0.5353197160507478,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "48"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::48::bess",
+            "ieee123_opendss::48::pv"
+          ],
+          "coefficient": -0.15417592335020902,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "48"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::48::dispatchable_generation",
+            "ieee123_opendss::48::pv"
+          ],
+          "coefficient": 0.25894064646505477,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "6"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::6::bess",
+            "ieee123_opendss::6::dispatchable_generation"
+          ],
+          "coefficient": 0.46610592184987215,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "6"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::6::bess",
+            "ieee123_opendss::6::pv"
+          ],
+          "coefficient": 0.7808185930530585,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "6"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::6::dispatchable_generation",
+            "ieee123_opendss::6::pv"
+          ],
+          "coefficient": -0.816947871394508,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "65"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::65::bess",
+            "ieee123_opendss::65::dispatchable_generation"
+          ],
+          "coefficient": 1.217681196306378,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "65"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::65::bess",
+            "ieee123_opendss::65::pv"
+          ],
+          "coefficient": -0.48890896360131497,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "65"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::65::dispatchable_generation",
+            "ieee123_opendss::65::pv"
+          ],
+          "coefficient": -0.5728804565916101,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "69"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::69::bess",
+            "ieee123_opendss::69::dispatchable_generation"
+          ],
+          "coefficient": -0.7806364108553281,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "69"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::69::bess",
+            "ieee123_opendss::69::pv"
+          ],
+          "coefficient": -0.3522356157321313,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "69"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::69::dispatchable_generation",
+            "ieee123_opendss::69::pv"
+          ],
+          "coefficient": 0.4258283844944105,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "73"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::73::bess",
+            "ieee123_opendss::73::dispatchable_generation"
+          ],
+          "coefficient": 0.16486113391425142,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "73"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::73::bess",
+            "ieee123_opendss::73::pv"
+          ],
+          "coefficient": 0.8389968650753583,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "73"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::73::dispatchable_generation",
+            "ieee123_opendss::73::pv"
+          ],
+          "coefficient": -0.8498161495575127,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::bess",
+            "ieee123_opendss::76::dispatchable_generation"
+          ],
+          "coefficient": -23.148482593861253,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::bess",
+            "ieee123_opendss::76::pv"
+          ],
+          "coefficient": -10.931476940189489,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::dispatchable_generation",
+            "ieee123_opendss::76::pv"
+          ],
+          "coefficient": 11.103444530447087,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::87::bess",
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": -34.25586890105971,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::87::bess",
+            "ieee123_opendss::87::pv"
+          ],
+          "coefficient": -1.968595598306446,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::87::dispatchable_generation",
+            "ieee123_opendss::87::pv"
+          ],
+          "coefficient": 2.3084359909335177,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::pv",
+            "ieee123_opendss::87::pv"
+          ],
+          "coefficient": -1.6984933214834923,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "adjacent_anchor",
+          "physical_rationale": "overlapping public feeder patches couple reserve and service decisions",
+          "technologies": [
+            "pv",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::bess",
+            "ieee123_opendss::87::bess"
+          ],
+          "coefficient": 0.34649979669034997,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "adjacent_anchor",
+          "physical_rationale": "overlapping public feeder patches couple reserve and service decisions",
+          "technologies": [
+            "bess",
+            "bess"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::dispatchable_generation",
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": -26.64007482919576,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "adjacent_anchor",
+          "physical_rationale": "overlapping public feeder patches couple reserve and service decisions",
+          "technologies": [
+            "dispatchable_generation",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::bess",
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": 25.029293094958128,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "adjacent_anchor",
+          "physical_rationale": "overlapping public feeder patches couple reserve and service decisions",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::dispatchable_generation",
+            "ieee123_opendss::87::bess"
+          ],
+          "coefficient": 35.629113518698254,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "adjacent_anchor",
+          "physical_rationale": "overlapping public feeder patches couple reserve and service decisions",
+          "technologies": [
+            "dispatchable_generation",
+            "bess"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "100"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::100::pv",
+            "ieee123_opendss::100::bess",
+            "ieee123_opendss::100::dispatchable_generation"
+          ],
+          "coefficient": 1.5765055906628616,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "113"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::113::pv",
+            "ieee123_opendss::113::bess",
+            "ieee123_opendss::113::dispatchable_generation"
+          ],
+          "coefficient": -0.8610644762800931,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "16"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::16::pv",
+            "ieee123_opendss::16::bess",
+            "ieee123_opendss::16::dispatchable_generation"
+          ],
+          "coefficient": 2.1591666609402536,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "28"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::28::pv",
+            "ieee123_opendss::28::bess",
+            "ieee123_opendss::28::dispatchable_generation"
+          ],
+          "coefficient": 2.614718747787873,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "48"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::48::pv",
+            "ieee123_opendss::48::bess",
+            "ieee123_opendss::48::dispatchable_generation"
+          ],
+          "coefficient": 0.5265555152721125,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "6"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::6::pv",
+            "ieee123_opendss::6::bess",
+            "ieee123_opendss::6::dispatchable_generation"
+          ],
+          "coefficient": -0.09677087067310991,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "65"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::65::pv",
+            "ieee123_opendss::65::bess",
+            "ieee123_opendss::65::dispatchable_generation"
+          ],
+          "coefficient": -1.5777688568658992,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "69"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::69::pv",
+            "ieee123_opendss::69::bess",
+            "ieee123_opendss::69::dispatchable_generation"
+          ],
+          "coefficient": 1.0473075272946686,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "73"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::73::pv",
+            "ieee123_opendss::73::bess",
+            "ieee123_opendss::73::dispatchable_generation"
+          ],
+          "coefficient": 0.3315293797296428,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::pv",
+            "ieee123_opendss::76::bess",
+            "ieee123_opendss::76::dispatchable_generation"
+          ],
+          "coefficient": 10.892490042971522,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::87::pv",
+            "ieee123_opendss::87::bess",
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": 3.0583139108790345,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::bess",
+            "ieee123_opendss::76::dispatchable_generation",
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": -5.331310126559608,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "adjacent_anchor_preparedness",
+          "physical_rationale": "storage and firm generation across overlapping islands affect stress preparedness",
+          "technologies": [
+            "bess",
+            "dispatchable_generation",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::dispatchable_generation",
+            "ieee123_opendss::87::bess",
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": 34.82143572075356,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "adjacent_anchor_preparedness",
+          "physical_rationale": "storage and firm generation across overlapping islands affect stress preparedness",
+          "technologies": [
+            "dispatchable_generation",
+            "bess",
+            "dispatchable_generation"
+          ]
+        }
+      ]
+    },
+    "critical_infrastructure_outage_hours": {
+      "metrics": {
+        "all_coefficients_finite": true,
+        "calibration_by_upgrade_cost_band": [
+          {
+            "count": 150,
+            "mae": 0.12409168594398551,
+            "mean_actual": 1.4325,
+            "mean_bias": -0.00047139259701968564,
+            "mean_predicted": 1.4320286074029804,
+            "upgrade_cost_band": 0
+          },
+          {
+            "count": 150,
+            "mae": 0.08769483938406268,
+            "mean_actual": 1.3083333333333333,
+            "mean_bias": 0.00658141077681626,
+            "mean_predicted": 1.3149147441101499,
+            "upgrade_cost_band": 1
+          },
+          {
+            "count": 150,
+            "mae": 0.05537985792199751,
+            "mean_actual": 1.15,
+            "mean_bias": -0.015395024503903783,
+            "mean_predicted": 1.134604975496096,
+            "upgrade_cost_band": 2
+          },
+          {
+            "count": 150,
+            "mae": 0.036760545650798074,
+            "mean_actual": 1.1283333333333334,
+            "mean_bias": -0.019163394367059463,
+            "mean_predicted": 1.1091699389662741,
+            "upgrade_cost_band": 3
+          }
+        ],
+        "degree": 3,
+        "gate_passed": false,
+        "mae": 0.07598173222521094,
+        "nearly_constant": false,
+        "normalized_rmse": 0.13554144935770526,
+        "pareto_front_recall": 1.0,
+        "r2": 0.8513833412863248,
+        "rmse": 0.10165608701827895,
+        "spearman_rank_correlation": 0.7345640097278865,
+        "test_range": 0.75,
+        "test_standard_deviation": 0.26369363207560065,
+        "top_decile_recall": 0.9956616052060737
+      },
+      "ridge": 1.0,
+      "terms": [
+        {
+          "asset_keys": [],
+          "coefficient": 1.763241707003397,
+          "component": "surrogate",
+          "degree": 0
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::100::bess"
+          ],
+          "coefficient": -0.011974597240300113,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::100::dispatchable_generation"
+          ],
+          "coefficient": 0.0032333322376509343,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::100::pv"
+          ],
+          "coefficient": -0.0196873351998408,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::113::bess"
+          ],
+          "coefficient": -0.010578015511771205,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::113::dispatchable_generation"
+          ],
+          "coefficient": 0.006967284555724201,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::113::pv"
+          ],
+          "coefficient": -0.005381298395340704,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::16::bess"
+          ],
+          "coefficient": -0.008193708460775929,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::16::dispatchable_generation"
+          ],
+          "coefficient": -0.0013246571645934182,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::16::pv"
+          ],
+          "coefficient": -0.015117442274944826,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::28::bess"
+          ],
+          "coefficient": -0.013551625612101553,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::28::dispatchable_generation"
+          ],
+          "coefficient": 0.002997111238127016,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::28::pv"
+          ],
+          "coefficient": -0.023377449235575505,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::48::bess"
+          ],
+          "coefficient": -0.013355537037660181,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::48::dispatchable_generation"
+          ],
+          "coefficient": 0.0026708479776583536,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::48::pv"
+          ],
+          "coefficient": -0.014173895608635051,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::65::bess"
+          ],
+          "coefficient": -0.0044809864401605054,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::65::dispatchable_generation"
+          ],
+          "coefficient": 0.013249132263649233,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::65::pv"
+          ],
+          "coefficient": 0.0010281586905644938,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::69::bess"
+          ],
+          "coefficient": -0.00646146837075695,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::69::dispatchable_generation"
+          ],
+          "coefficient": -0.0012322627481038935,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::69::pv"
+          ],
+          "coefficient": -0.014989472836817137,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::6::bess"
+          ],
+          "coefficient": -0.013298517629764485,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::6::dispatchable_generation"
+          ],
+          "coefficient": 0.01236843095738091,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::6::pv"
+          ],
+          "coefficient": -0.010770738228285623,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::73::bess"
+          ],
+          "coefficient": -0.008983099517495773,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::73::dispatchable_generation"
+          ],
+          "coefficient": 0.009124935615450509,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::73::pv"
+          ],
+          "coefficient": -0.005769211060901304,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::76::bess"
+          ],
+          "coefficient": -0.2021356169956852,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::76::dispatchable_generation"
+          ],
+          "coefficient": -0.11323898134474948,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::76::pv"
+          ],
+          "coefficient": -0.07770140251749988,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::87::bess"
+          ],
+          "coefficient": -0.21324812928630196,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": -0.10863169696063592,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::87::pv"
+          ],
+          "coefficient": -0.0851691671237662,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "anchor_nodes": [
+            "100"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::100::bess",
+            "ieee123_opendss::100::dispatchable_generation"
+          ],
+          "coefficient": -0.008741265002693527,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "100"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::100::bess",
+            "ieee123_opendss::100::pv"
+          ],
+          "coefficient": 0.0099888528974886,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "100"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::100::dispatchable_generation",
+            "ieee123_opendss::100::pv"
+          ],
+          "coefficient": -0.006222746823844473,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "113"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::113::bess",
+            "ieee123_opendss::113::dispatchable_generation"
+          ],
+          "coefficient": -0.0036107309560961132,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "113"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::113::bess",
+            "ieee123_opendss::113::pv"
+          ],
+          "coefficient": 0.008678626290732723,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "113"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::113::dispatchable_generation",
+            "ieee123_opendss::113::pv"
+          ],
+          "coefficient": -0.014769529276224411,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "16"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::16::bess",
+            "ieee123_opendss::16::dispatchable_generation"
+          ],
+          "coefficient": -0.009518365625581221,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "16"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::16::bess",
+            "ieee123_opendss::16::pv"
+          ],
+          "coefficient": 0.0028550137671650246,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "28"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::28::bess",
+            "ieee123_opendss::28::dispatchable_generation"
+          ],
+          "coefficient": -0.010554514373951837,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "28"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::28::bess",
+            "ieee123_opendss::28::pv"
+          ],
+          "coefficient": 0.004089027802547844,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "28"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::28::dispatchable_generation",
+            "ieee123_opendss::28::pv"
+          ],
+          "coefficient": -0.0024124459048589903,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "48"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::48::bess",
+            "ieee123_opendss::48::dispatchable_generation"
+          ],
+          "coefficient": -0.010684689059782882,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "48"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::48::bess",
+            "ieee123_opendss::48::pv"
+          ],
+          "coefficient": 0.010043965796530543,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "48"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::48::dispatchable_generation",
+            "ieee123_opendss::48::pv"
+          ],
+          "coefficient": -0.006424768830821593,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "6"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::6::bess",
+            "ieee123_opendss::6::pv"
+          ],
+          "coefficient": 0.01810258221834641,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "6"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::6::dispatchable_generation",
+            "ieee123_opendss::6::pv"
+          ],
+          "coefficient": -0.013917606369267917,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "65"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::65::bess",
+            "ieee123_opendss::65::dispatchable_generation"
+          ],
+          "coefficient": 0.008768145823389877,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "65"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::65::bess",
+            "ieee123_opendss::65::pv"
+          ],
+          "coefficient": -0.002495590958651922,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "65"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::65::dispatchable_generation",
+            "ieee123_opendss::65::pv"
+          ],
+          "coefficient": -0.0057468147870718255,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "69"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::69::bess",
+            "ieee123_opendss::69::dispatchable_generation"
+          ],
+          "coefficient": -0.007693731118571491,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "73"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::73::bess",
+            "ieee123_opendss::73::pv"
+          ],
+          "coefficient": 0.009246278505849621,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "73"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::73::dispatchable_generation",
+            "ieee123_opendss::73::pv"
+          ],
+          "coefficient": -0.010511883872483915,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::bess",
+            "ieee123_opendss::76::dispatchable_generation"
+          ],
+          "coefficient": -0.3153745983403725,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::bess",
+            "ieee123_opendss::76::pv"
+          ],
+          "coefficient": -0.0756071937241808,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::dispatchable_generation",
+            "ieee123_opendss::76::pv"
+          ],
+          "coefficient": 0.07228209801481458,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::87::bess",
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": -0.321879826246648,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::87::bess",
+            "ieee123_opendss::87::pv"
+          ],
+          "coefficient": -0.06389430604778094,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::87::dispatchable_generation",
+            "ieee123_opendss::87::pv"
+          ],
+          "coefficient": 0.0636098651481164,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::pv",
+            "ieee123_opendss::87::pv"
+          ],
+          "coefficient": -0.0036675176435986595,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "adjacent_anchor",
+          "physical_rationale": "overlapping public feeder patches couple reserve and service decisions",
+          "technologies": [
+            "pv",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::bess",
+            "ieee123_opendss::87::bess"
+          ],
+          "coefficient": 0.019920523673556505,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "adjacent_anchor",
+          "physical_rationale": "overlapping public feeder patches couple reserve and service decisions",
+          "technologies": [
+            "bess",
+            "bess"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::dispatchable_generation",
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": -0.2922002346580274,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "adjacent_anchor",
+          "physical_rationale": "overlapping public feeder patches couple reserve and service decisions",
+          "technologies": [
+            "dispatchable_generation",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::bess",
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": 0.3371381289324666,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "adjacent_anchor",
+          "physical_rationale": "overlapping public feeder patches couple reserve and service decisions",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::dispatchable_generation",
+            "ieee123_opendss::87::bess"
+          ],
+          "coefficient": 0.33753664068182615,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "adjacent_anchor",
+          "physical_rationale": "overlapping public feeder patches couple reserve and service decisions",
+          "technologies": [
+            "dispatchable_generation",
+            "bess"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "100"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::100::pv",
+            "ieee123_opendss::100::bess",
+            "ieee123_opendss::100::dispatchable_generation"
+          ],
+          "coefficient": 0.023453441273267667,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "16"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::16::pv",
+            "ieee123_opendss::16::bess",
+            "ieee123_opendss::16::dispatchable_generation"
+          ],
+          "coefficient": 0.01807896949480289,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "28"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::28::pv",
+            "ieee123_opendss::28::bess",
+            "ieee123_opendss::28::dispatchable_generation"
+          ],
+          "coefficient": 0.025054031133132443,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "48"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::48::pv",
+            "ieee123_opendss::48::bess",
+            "ieee123_opendss::48::dispatchable_generation"
+          ],
+          "coefficient": 0.017793092574402744,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "6"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::6::pv",
+            "ieee123_opendss::6::bess",
+            "ieee123_opendss::6::dispatchable_generation"
+          ],
+          "coefficient": 0.014955714077368471,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "65"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::65::pv",
+            "ieee123_opendss::65::bess",
+            "ieee123_opendss::65::dispatchable_generation"
+          ],
+          "coefficient": -0.009270564436363583,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "69"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::69::pv",
+            "ieee123_opendss::69::bess",
+            "ieee123_opendss::69::dispatchable_generation"
+          ],
+          "coefficient": 0.01285670140329129,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "73"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::73::pv",
+            "ieee123_opendss::73::bess",
+            "ieee123_opendss::73::dispatchable_generation"
+          ],
+          "coefficient": 0.004503605693995074,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::pv",
+            "ieee123_opendss::76::bess",
+            "ieee123_opendss::76::dispatchable_generation"
+          ],
+          "coefficient": 0.0743763068080325,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::87::pv",
+            "ieee123_opendss::87::bess",
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": 0.08488472622397357,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::bess",
+            "ieee123_opendss::76::dispatchable_generation",
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": 0.15356959123451502,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "adjacent_anchor_preparedness",
+          "physical_rationale": "storage and firm generation across overlapping islands affect stress preparedness",
+          "technologies": [
+            "bess",
+            "dispatchable_generation",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::dispatchable_generation",
+            "ieee123_opendss::87::bess",
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": 0.15857538736825447,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "adjacent_anchor_preparedness",
+          "physical_rationale": "storage and firm generation across overlapping islands affect stress preparedness",
+          "technologies": [
+            "dispatchable_generation",
+            "bess",
+            "dispatchable_generation"
+          ]
+        }
+      ]
+    },
+    "heldout_total_ens": {
+      "metrics": {
+        "all_coefficients_finite": true,
+        "calibration_by_upgrade_cost_band": [
+          {
+            "count": 150,
+            "mae": 0.378328003004486,
+            "mean_actual": 326.4874999845361,
+            "mean_bias": 0.0220874016024095,
+            "mean_predicted": 326.50958738613855,
+            "upgrade_cost_band": 0
+          },
+          {
+            "count": 150,
+            "mae": 0.33033347148711567,
+            "mean_actual": 323.22250008558945,
+            "mean_bias": 0.03715885388780748,
+            "mean_predicted": 323.25965893947733,
+            "upgrade_cost_band": 1
+          },
+          {
+            "count": 150,
+            "mae": 0.2171609999001593,
+            "mean_actual": 316.28000018981913,
+            "mean_bias": 0.016111532164887876,
+            "mean_predicted": 316.296111721984,
+            "upgrade_cost_band": 2
+          },
+          {
+            "count": 150,
+            "mae": 0.16846307953276096,
+            "mean_actual": 310.72833354722763,
+            "mean_bias": 0.07252752478325761,
+            "mean_predicted": 310.8008610720109,
+            "upgrade_cost_band": 3
+          }
+        ],
+        "degree": 3,
+        "gate_passed": false,
+        "mae": 0.2735713884811305,
+        "nearly_constant": false,
+        "normalized_rmse": 0.005360475017589203,
+        "pareto_front_recall": 0.3333333333333333,
+        "r2": 0.9993568314307404,
+        "rmse": 0.3799236672000503,
+        "spearman_rank_correlation": 0.98975936305977,
+        "test_range": 70.87500006126612,
+        "test_standard_deviation": 14.980763301809935,
+        "top_decile_recall": 0.8852459016393442
+      },
+      "ridge": 0.01,
+      "terms": [
+        {
+          "asset_keys": [],
+          "coefficient": 365.9524207448348,
+          "component": "surrogate",
+          "degree": 0
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::100::bess"
+          ],
+          "coefficient": 2.0299303076336184,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::100::dispatchable_generation"
+          ],
+          "coefficient": -4.0083777442045845,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::100::pv"
+          ],
+          "coefficient": -2.9649311580017286,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::113::bess"
+          ],
+          "coefficient": 5.335608409640272,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::113::dispatchable_generation"
+          ],
+          "coefficient": -10.666949591638849,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::113::pv"
+          ],
+          "coefficient": -8.016423027103288,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::16::bess"
+          ],
+          "coefficient": 1.355117307874156,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::16::dispatchable_generation"
+          ],
+          "coefficient": -2.6523642781333465,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::16::pv"
+          ],
+          "coefficient": -1.9745575109894995,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::28::bess"
+          ],
+          "coefficient": 2.011508407634023,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::28::dispatchable_generation"
+          ],
+          "coefficient": -3.99819146304319,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::28::pv"
+          ],
+          "coefficient": -2.987613512395112,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::48::bess"
+          ],
+          "coefficient": 7.556826807843629,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::48::dispatchable_generation"
+          ],
+          "coefficient": -15.156595097206125,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::48::pv"
+          ],
+          "coefficient": -11.38459046054001,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::65::bess"
+          ],
+          "coefficient": 4.271641527047397,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::65::dispatchable_generation"
+          ],
+          "coefficient": -8.497465431160212,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::65::pv"
+          ],
+          "coefficient": -6.361228835848758,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::69::bess"
+          ],
+          "coefficient": 1.676227151590285,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::69::dispatchable_generation"
+          ],
+          "coefficient": -3.3159077429506567,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::69::pv"
+          ],
+          "coefficient": -2.479891949188734,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::6::bess"
+          ],
+          "coefficient": 0.004073413043035879,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::6::dispatchable_generation"
+          ],
+          "coefficient": -0.023090471638280412,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::6::pv"
+          ],
+          "coefficient": -0.013388742177953262,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::73::bess"
+          ],
+          "coefficient": 2.020624536227207,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::73::dispatchable_generation"
+          ],
+          "coefficient": -4.00939884972289,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::73::pv"
+          ],
+          "coefficient": -3.01139359329582,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::76::bess"
+          ],
+          "coefficient": 9.698513502546133,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::76::dispatchable_generation"
+          ],
+          "coefficient": -9.987816372938724,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::76::pv"
+          ],
+          "coefficient": -1.9188728202452672,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::87::bess"
+          ],
+          "coefficient": 1.9761087290976405,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": -3.9753684872524944,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::87::pv"
+          ],
+          "coefficient": -3.0825706500190173,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "anchor_nodes": [
+            "100"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::100::bess",
+            "ieee123_opendss::100::dispatchable_generation"
+          ],
+          "coefficient": -1.9784475210563597,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "100"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::100::bess",
+            "ieee123_opendss::100::pv"
+          ],
+          "coefficient": -3.0147623088828457,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "100"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::100::dispatchable_generation",
+            "ieee123_opendss::100::pv"
+          ],
+          "coefficient": 2.992252879620809,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "113"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::113::bess",
+            "ieee123_opendss::113::dispatchable_generation"
+          ],
+          "coefficient": -5.331341272196885,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "113"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::113::bess",
+            "ieee123_opendss::113::pv"
+          ],
+          "coefficient": -8.028261926404783,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "113"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::113::dispatchable_generation",
+            "ieee123_opendss::113::pv"
+          ],
+          "coefficient": 8.03878825084433,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "16"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::16::bess",
+            "ieee123_opendss::16::dispatchable_generation"
+          ],
+          "coefficient": -1.2972471665003398,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "16"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::16::bess",
+            "ieee123_opendss::16::pv"
+          ],
+          "coefficient": -2.0432435904566817,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "16"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::16::dispatchable_generation",
+            "ieee123_opendss::16::pv"
+          ],
+          "coefficient": 2.009666687152218,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "28"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::28::bess",
+            "ieee123_opendss::28::dispatchable_generation"
+          ],
+          "coefficient": -1.9866831866003172,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "28"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::28::bess",
+            "ieee123_opendss::28::pv"
+          ],
+          "coefficient": -3.0256435456146327,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "28"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::28::dispatchable_generation",
+            "ieee123_opendss::28::pv"
+          ],
+          "coefficient": 3.018165097027014,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "48"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::48::bess",
+            "ieee123_opendss::48::dispatchable_generation"
+          ],
+          "coefficient": -7.599768431749489,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "48"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::48::bess",
+            "ieee123_opendss::48::pv"
+          ],
+          "coefficient": -11.35704530538174,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "48"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::48::dispatchable_generation",
+            "ieee123_opendss::48::pv"
+          ],
+          "coefficient": 11.35816745598389,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "65"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::65::bess",
+            "ieee123_opendss::65::dispatchable_generation"
+          ],
+          "coefficient": -4.225824068248228,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "65"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::65::bess",
+            "ieee123_opendss::65::pv"
+          ],
+          "coefficient": -6.396266716991543,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "65"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::65::dispatchable_generation",
+            "ieee123_opendss::65::pv"
+          ],
+          "coefficient": 6.395707367489133,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "69"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::69::bess",
+            "ieee123_opendss::69::dispatchable_generation"
+          ],
+          "coefficient": -1.639680750697017,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "69"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::69::bess",
+            "ieee123_opendss::69::pv"
+          ],
+          "coefficient": -2.4716535818402154,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "69"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::69::dispatchable_generation",
+            "ieee123_opendss::69::pv"
+          ],
+          "coefficient": 2.455466749032392,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "73"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::73::bess",
+            "ieee123_opendss::73::dispatchable_generation"
+          ],
+          "coefficient": -1.9887743667390447,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "73"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::73::bess",
+            "ieee123_opendss::73::pv"
+          ],
+          "coefficient": -3.0007146827547,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "73"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::73::dispatchable_generation",
+            "ieee123_opendss::73::pv"
+          ],
+          "coefficient": 2.9942428886660295,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::bess",
+            "ieee123_opendss::76::dispatchable_generation"
+          ],
+          "coefficient": -0.28930298131980964,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::bess",
+            "ieee123_opendss::76::pv"
+          ],
+          "coefficient": -11.568093874268502,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::dispatchable_generation",
+            "ieee123_opendss::76::pv"
+          ],
+          "coefficient": 11.430709000098284,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::87::bess",
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": -1.999259889565207,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::87::bess",
+            "ieee123_opendss::87::pv"
+          ],
+          "coefficient": -2.947138649235724,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::87::dispatchable_generation",
+            "ieee123_opendss::87::pv"
+          ],
+          "coefficient": 2.819444987384912,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::pv",
+            "ieee123_opendss::87::pv"
+          ],
+          "coefficient": 0.5262005750508953,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "adjacent_anchor",
+          "physical_rationale": "overlapping public feeder patches couple reserve and service decisions",
+          "technologies": [
+            "pv",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::dispatchable_generation",
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": -3.318625530297,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "adjacent_anchor",
+          "physical_rationale": "overlapping public feeder patches couple reserve and service decisions",
+          "technologies": [
+            "dispatchable_generation",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::bess",
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": -0.04489747238775193,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "adjacent_anchor",
+          "physical_rationale": "overlapping public feeder patches couple reserve and service decisions",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::dispatchable_generation",
+            "ieee123_opendss::87::bess"
+          ],
+          "coefficient": -3.3169427443623585,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "adjacent_anchor",
+          "physical_rationale": "overlapping public feeder patches couple reserve and service decisions",
+          "technologies": [
+            "dispatchable_generation",
+            "bess"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "100"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::100::pv",
+            "ieee123_opendss::100::bess",
+            "ieee123_opendss::100::dispatchable_generation"
+          ],
+          "coefficient": 2.942421726785378,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "113"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::113::pv",
+            "ieee123_opendss::113::bess",
+            "ieee123_opendss::113::dispatchable_generation"
+          ],
+          "coefficient": 8.026949321837503,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "16"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::16::pv",
+            "ieee123_opendss::16::bess",
+            "ieee123_opendss::16::dispatchable_generation"
+          ],
+          "coefficient": 1.9409806149210627,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "28"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::28::pv",
+            "ieee123_opendss::28::bess",
+            "ieee123_opendss::28::dispatchable_generation"
+          ],
+          "coefficient": 2.980135092514883,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "48"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::48::pv",
+            "ieee123_opendss::48::bess",
+            "ieee123_opendss::48::dispatchable_generation"
+          ],
+          "coefficient": 11.385712626042041,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "65"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::65::pv",
+            "ieee123_opendss::65::bess",
+            "ieee123_opendss::65::dispatchable_generation"
+          ],
+          "coefficient": 6.360669464654509,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "69"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::69::pv",
+            "ieee123_opendss::69::bess",
+            "ieee123_opendss::69::dispatchable_generation"
+          ],
+          "coefficient": 2.4637051103621714,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "73"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::73::pv",
+            "ieee123_opendss::73::bess",
+            "ieee123_opendss::73::dispatchable_generation"
+          ],
+          "coefficient": 3.004921805378286,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::pv",
+            "ieee123_opendss::76::bess",
+            "ieee123_opendss::76::dispatchable_generation"
+          ],
+          "coefficient": 1.781487975642223,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::87::pv",
+            "ieee123_opendss::87::bess",
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": 2.9548769655556697,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::bess",
+            "ieee123_opendss::76::dispatchable_generation",
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": 0.6118455411692579,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "adjacent_anchor_preparedness",
+          "physical_rationale": "storage and firm generation across overlapping islands affect stress preparedness",
+          "technologies": [
+            "bess",
+            "dispatchable_generation",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::dispatchable_generation",
+            "ieee123_opendss::87::bess",
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": 3.3522480890250836,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "adjacent_anchor_preparedness",
+          "physical_rationale": "storage and firm generation across overlapping islands affect stress preparedness",
+          "technologies": [
+            "dispatchable_generation",
+            "bess",
+            "dispatchable_generation"
+          ]
+        }
+      ]
+    },
+    "maximum_customers_unserved": {
+      "metrics": {
+        "all_coefficients_finite": true,
+        "calibration_by_upgrade_cost_band": [
+          {
+            "count": 150,
+            "mae": 0.001269542023566929,
+            "mean_actual": 0.203406558420885,
+            "mean_bias": 0.0008374870153148914,
+            "mean_predicted": 0.2042440454361999,
+            "upgrade_cost_band": 0
+          },
+          {
+            "count": 150,
+            "mae": 0.0006817629962155067,
+            "mean_actual": 0.19560649474689584,
+            "mean_bias": 0.00043512592774371824,
+            "mean_predicted": 0.19604162067463957,
+            "upgrade_cost_band": 1
+          },
+          {
+            "count": 150,
+            "mae": 0.0005467390799245876,
+            "mean_actual": 0.17946513849092638,
+            "mean_bias": -0.00034127037641230466,
+            "mean_predicted": 0.1791238681145141,
+            "upgrade_cost_band": 2
+          },
+          {
+            "count": 150,
+            "mae": 0.0006594502752325028,
+            "mean_actual": 0.17652340019102192,
+            "mean_bias": -0.0006197613787752441,
+            "mean_predicted": 0.17590363881224666,
+            "upgrade_cost_band": 3
+          }
+        ],
+        "degree": 3,
+        "gate_passed": false,
+        "mae": 0.0007893735937348816,
+        "nearly_constant": false,
+        "normalized_rmse": 0.015817784832539757,
+        "pareto_front_recall": 1.0,
+        "r2": 0.9976875268131419,
+        "rmse": 0.0012917102227145644,
+        "spearman_rank_correlation": 0.7366460494216607,
+        "test_range": 0.08166189111747849,
+        "test_standard_deviation": 0.026861282462480967,
+        "top_decile_recall": 0.9956616052060737
+      },
+      "ridge": 0.1,
+      "terms": [
+        {
+          "asset_keys": [],
+          "coefficient": 0.22491359538573316,
+          "component": "surrogate",
+          "degree": 0
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::100::bess"
+          ],
+          "coefficient": -0.00039252078868713696,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::100::dispatchable_generation"
+          ],
+          "coefficient": 0.00015282645494931837,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::100::pv"
+          ],
+          "coefficient": -0.0003814045304784353,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::113::bess"
+          ],
+          "coefficient": -0.0003778206124843577,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::113::dispatchable_generation"
+          ],
+          "coefficient": 0.000156482848045641,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::113::pv"
+          ],
+          "coefficient": -0.0002708225264326713,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::16::bess"
+          ],
+          "coefficient": -0.0003237630991010091,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::16::dispatchable_generation"
+          ],
+          "coefficient": 0.00011168005911237948,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::16::pv"
+          ],
+          "coefficient": -0.00028085590727726503,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::28::bess"
+          ],
+          "coefficient": -0.0003296079766941814,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::28::dispatchable_generation"
+          ],
+          "coefficient": 0.00014825899299153,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::28::pv"
+          ],
+          "coefficient": -0.00031172649947645934,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::48::bess"
+          ],
+          "coefficient": -8.260179207213849e-05,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::48::dispatchable_generation"
+          ],
+          "coefficient": -0.0001310692337387535,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::48::pv"
+          ],
+          "coefficient": -0.00030177595142800024,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::65::bess"
+          ],
+          "coefficient": -0.0004144700379608022,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::65::dispatchable_generation"
+          ],
+          "coefficient": 0.0001924330980434985,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::65::pv"
+          ],
+          "coefficient": -0.0003146172317252295,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::69::bess"
+          ],
+          "coefficient": -0.00038720240318638983,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::69::dispatchable_generation"
+          ],
+          "coefficient": 8.241893259889292e-05,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::69::pv"
+          ],
+          "coefficient": -0.0004153239096135048,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::6::bess"
+          ],
+          "coefficient": -0.000386473611926684,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::6::dispatchable_generation"
+          ],
+          "coefficient": 0.0001704332561897582,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::6::pv"
+          ],
+          "coefficient": -0.0004044218181072046,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::73::bess"
+          ],
+          "coefficient": -0.00034990869266969267,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::73::dispatchable_generation"
+          ],
+          "coefficient": 0.00017697025763670842,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::73::pv"
+          ],
+          "coefficient": -0.0003335962429031147,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::76::bess"
+          ],
+          "coefficient": -0.0012027025320411036,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::76::dispatchable_generation"
+          ],
+          "coefficient": -0.021864591767944076,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::76::pv"
+          ],
+          "coefficient": -0.0004552236425593606,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::87::bess"
+          ],
+          "coefficient": -0.045249528444562384,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": 0.007509059808885525,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::87::pv"
+          ],
+          "coefficient": -0.0004961625554369526,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "anchor_nodes": [
+            "100"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::100::bess",
+            "ieee123_opendss::100::dispatchable_generation"
+          ],
+          "coefficient": -0.00023969443357798413,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "100"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::100::bess",
+            "ieee123_opendss::100::pv"
+          ],
+          "coefficient": 0.00030168705671765577,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "100"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::100::dispatchable_generation",
+            "ieee123_opendss::100::pv"
+          ],
+          "coefficient": -0.0002604761653119433,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "113"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::113::bess",
+            "ieee123_opendss::113::dispatchable_generation"
+          ],
+          "coefficient": -0.0002213378629869131,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "113"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::113::bess",
+            "ieee123_opendss::113::pv"
+          ],
+          "coefficient": 0.0002982846830319645,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "113"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::113::dispatchable_generation",
+            "ieee123_opendss::113::pv"
+          ],
+          "coefficient": -0.00031485968025671165,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "16"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::16::bess",
+            "ieee123_opendss::16::dispatchable_generation"
+          ],
+          "coefficient": -0.00021208314031238943,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "16"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::16::bess",
+            "ieee123_opendss::16::pv"
+          ],
+          "coefficient": 0.00018467487375301974,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "16"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::16::dispatchable_generation",
+            "ieee123_opendss::16::pv"
+          ],
+          "coefficient": -0.0001613835676559246,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "28"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::28::bess",
+            "ieee123_opendss::28::dispatchable_generation"
+          ],
+          "coefficient": -0.0001813490866625744,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "28"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::28::bess",
+            "ieee123_opendss::28::pv"
+          ],
+          "coefficient": 0.00022595584034819168,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "28"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::28::dispatchable_generation",
+            "ieee123_opendss::28::pv"
+          ],
+          "coefficient": -0.00023388790180330277,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "48"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::48::bess",
+            "ieee123_opendss::48::dispatchable_generation"
+          ],
+          "coefficient": -0.0002136711222538775,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "6"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::6::bess",
+            "ieee123_opendss::6::dispatchable_generation"
+          ],
+          "coefficient": -0.00021604045661056386,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "6"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::6::bess",
+            "ieee123_opendss::6::pv"
+          ],
+          "coefficient": 0.00030182088418284717,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "6"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::6::dispatchable_generation",
+            "ieee123_opendss::6::pv"
+          ],
+          "coefficient": -0.00023291905283986266,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "65"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::65::bess",
+            "ieee123_opendss::65::dispatchable_generation"
+          ],
+          "coefficient": -0.00022203703979489377,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "65"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::65::bess",
+            "ieee123_opendss::65::pv"
+          ],
+          "coefficient": 0.00026658537239069137,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "65"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::65::dispatchable_generation",
+            "ieee123_opendss::65::pv"
+          ],
+          "coefficient": -0.00026087860243897607,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "69"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::69::bess",
+            "ieee123_opendss::69::dispatchable_generation"
+          ],
+          "coefficient": -0.00030478356712082636,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "69"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::69::bess",
+            "ieee123_opendss::69::pv"
+          ],
+          "coefficient": 0.00025653657903475696,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "69"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::69::dispatchable_generation",
+            "ieee123_opendss::69::pv"
+          ],
+          "coefficient": -0.0002224109752789141,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "73"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::73::bess",
+            "ieee123_opendss::73::dispatchable_generation"
+          ],
+          "coefficient": -0.00017293853752225138,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "73"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::73::bess",
+            "ieee123_opendss::73::pv"
+          ],
+          "coefficient": 0.0002300988624294525,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "73"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::73::dispatchable_generation",
+            "ieee123_opendss::73::pv"
+          ],
+          "coefficient": -0.00025489979975285845,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::bess",
+            "ieee123_opendss::76::dispatchable_generation"
+          ],
+          "coefficient": -0.023067294393844123,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::bess",
+            "ieee123_opendss::76::pv"
+          ],
+          "coefficient": 0.0001625722489713021,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::dispatchable_generation",
+            "ieee123_opendss::76::pv"
+          ],
+          "coefficient": -0.00031325584937231843,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::87::bess",
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": -0.03774046873181668,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::87::bess",
+            "ieee123_opendss::87::pv"
+          ],
+          "coefficient": 0.00022201077764824053,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::87::dispatchable_generation",
+            "ieee123_opendss::87::pv"
+          ],
+          "coefficient": -0.00032057538636747824,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::pv",
+            "ieee123_opendss::87::pv"
+          ],
+          "coefficient": 0.0004121615221295388,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "adjacent_anchor",
+          "physical_rationale": "overlapping public feeder patches couple reserve and service decisions",
+          "technologies": [
+            "pv",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::bess",
+            "ieee123_opendss::87::bess"
+          ],
+          "coefficient": 0.0009086828331514672,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "adjacent_anchor",
+          "physical_rationale": "overlapping public feeder patches couple reserve and service decisions",
+          "technologies": [
+            "bess",
+            "bess"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::dispatchable_generation",
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": -0.029711057058079745,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "adjacent_anchor",
+          "physical_rationale": "overlapping public feeder patches couple reserve and service decisions",
+          "technologies": [
+            "dispatchable_generation",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::bess",
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": 0.030139567895152642,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "adjacent_anchor",
+          "physical_rationale": "overlapping public feeder patches couple reserve and service decisions",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::dispatchable_generation",
+            "ieee123_opendss::87::bess"
+          ],
+          "coefficient": 0.044760660689459816,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "adjacent_anchor",
+          "physical_rationale": "overlapping public feeder patches couple reserve and service decisions",
+          "technologies": [
+            "dispatchable_generation",
+            "bess"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "100"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::100::pv",
+            "ieee123_opendss::100::bess",
+            "ieee123_opendss::100::dispatchable_generation"
+          ],
+          "coefficient": 0.0004226154521007966,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "113"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::113::pv",
+            "ieee123_opendss::113::bess",
+            "ieee123_opendss::113::dispatchable_generation"
+          ],
+          "coefficient": 0.0002542475473065799,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "16"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::16::pv",
+            "ieee123_opendss::16::bess",
+            "ieee123_opendss::16::dispatchable_generation"
+          ],
+          "coefficient": 0.00030414724034878775,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "28"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::28::pv",
+            "ieee123_opendss::28::bess",
+            "ieee123_opendss::28::dispatchable_generation"
+          ],
+          "coefficient": 0.0003037944695270752,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "48"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::48::pv",
+            "ieee123_opendss::48::bess",
+            "ieee123_opendss::48::dispatchable_generation"
+          ],
+          "coefficient": 0.0002894232744758689,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "6"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::6::pv",
+            "ieee123_opendss::6::bess",
+            "ieee123_opendss::6::dispatchable_generation"
+          ],
+          "coefficient": 0.0004733236762953669,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "65"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::65::pv",
+            "ieee123_opendss::65::bess",
+            "ieee123_opendss::65::dispatchable_generation"
+          ],
+          "coefficient": 0.0003203240334904635,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "69"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::69::pv",
+            "ieee123_opendss::69::bess",
+            "ieee123_opendss::69::dispatchable_generation"
+          ],
+          "coefficient": 0.0004494495441020118,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "73"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::73::pv",
+            "ieee123_opendss::73::bess",
+            "ieee123_opendss::73::dispatchable_generation"
+          ],
+          "coefficient": 0.00030879533764485245,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::pv",
+            "ieee123_opendss::76::bess",
+            "ieee123_opendss::76::dispatchable_generation"
+          ],
+          "coefficient": 0.00030454007439309954,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::87::pv",
+            "ieee123_opendss::87::bess",
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": 0.000397597975369698,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::bess",
+            "ieee123_opendss::76::dispatchable_generation",
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": -0.007080548926560058,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "adjacent_anchor_preparedness",
+          "physical_rationale": "storage and firm generation across overlapping islands affect stress preparedness",
+          "technologies": [
+            "bess",
+            "dispatchable_generation",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::dispatchable_generation",
+            "ieee123_opendss::87::bess",
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": 0.03691419543815656,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "adjacent_anchor_preparedness",
+          "physical_rationale": "storage and firm generation across overlapping islands affect stress preparedness",
+          "technologies": [
+            "dispatchable_generation",
+            "bess",
+            "dispatchable_generation"
+          ]
+        }
+      ]
+    },
+    "total_ens": {
+      "metrics": {
+        "all_coefficients_finite": true,
+        "calibration_by_upgrade_cost_band": [
+          {
+            "count": 150,
+            "mae": 11.661275298582929,
+            "mean_actual": 261.0277777777778,
+            "mean_bias": -1.867376311224427,
+            "mean_predicted": 259.1604014665533,
+            "upgrade_cost_band": 0
+          },
+          {
+            "count": 150,
+            "mae": 8.706067250074703,
+            "mean_actual": 249.23333333333332,
+            "mean_bias": -0.0007541222399722377,
+            "mean_predicted": 249.23257921109334,
+            "upgrade_cost_band": 1
+          },
+          {
+            "count": 150,
+            "mae": 5.163854516985995,
+            "mean_actual": 232.65,
+            "mean_bias": -1.391636826240015,
+            "mean_predicted": 231.25836317376002,
+            "upgrade_cost_band": 2
+          },
+          {
+            "count": 150,
+            "mae": 3.0884371743331176,
+            "mean_actual": 230.75833333333333,
+            "mean_bias": -1.8882534113603144,
+            "mean_predicted": 228.87007992197303,
+            "upgrade_cost_band": 3
+          }
+        ],
+        "degree": 3,
+        "gate_passed": false,
+        "mae": 7.154908559994186,
+        "nearly_constant": false,
+        "normalized_rmse": 0.09890245956568475,
+        "pareto_front_recall": 1.0,
+        "r2": 0.8797716335900032,
+        "rmse": 10.570200366082558,
+        "spearman_rank_correlation": 0.7338203586930439,
+        "test_range": 106.875,
+        "test_standard_deviation": 30.48454706029681,
+        "top_decile_recall": 0.9848156182212582
+      },
+      "ridge": 1.0,
+      "terms": [
+        {
+          "asset_keys": [],
+          "coefficient": 285.2378390415785,
+          "component": "surrogate",
+          "degree": 0
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::100::bess"
+          ],
+          "coefficient": -1.2425982924463819,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::100::dispatchable_generation"
+          ],
+          "coefficient": 0.5055438306888815,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::100::pv"
+          ],
+          "coefficient": -0.976767195212686,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::113::bess"
+          ],
+          "coefficient": -0.48167330932333846,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::113::dispatchable_generation"
+          ],
+          "coefficient": 0.8940222675328272,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::113::pv"
+          ],
+          "coefficient": 0.15227713835029516,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::16::bess"
+          ],
+          "coefficient": -0.9640879708745258,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::16::dispatchable_generation"
+          ],
+          "coefficient": -0.2858592626127691,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::16::pv"
+          ],
+          "coefficient": -1.5281747933871046,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::28::bess"
+          ],
+          "coefficient": -0.7920908247128906,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::28::dispatchable_generation"
+          ],
+          "coefficient": -0.3825724254139789,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::28::pv"
+          ],
+          "coefficient": -2.3281634870898418,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::48::bess"
+          ],
+          "coefficient": -0.2167686006926796,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::48::dispatchable_generation"
+          ],
+          "coefficient": -0.3185511153802926,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::48::pv"
+          ],
+          "coefficient": -0.4217907921574655,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::65::bess"
+          ],
+          "coefficient": -0.04568096253669372,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::65::dispatchable_generation"
+          ],
+          "coefficient": 1.2633621588420998,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::65::pv"
+          ],
+          "coefficient": 0.5159794366753285,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::69::bess"
+          ],
+          "coefficient": -0.3536761676132724,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::69::dispatchable_generation"
+          ],
+          "coefficient": -0.4269602432769404,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::69::pv"
+          ],
+          "coefficient": -0.9737147584983749,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::6::bess"
+          ],
+          "coefficient": -0.4884392763073038,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::6::dispatchable_generation"
+          ],
+          "coefficient": 0.9545451981121179,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::6::pv"
+          ],
+          "coefficient": 0.060641592311673154,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::73::bess"
+          ],
+          "coefficient": -0.5617514172749164,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::73::dispatchable_generation"
+          ],
+          "coefficient": 0.7266125511794805,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::73::pv"
+          ],
+          "coefficient": -0.34234866424279475,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::76::bess"
+          ],
+          "coefficient": 2.683914437408042,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::76::dispatchable_generation"
+          ],
+          "coefficient": -25.832397031295383,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::76::pv"
+          ],
+          "coefficient": -10.720522452712347,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::87::bess"
+          ],
+          "coefficient": -37.97639729336758,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": 3.7205283922761083,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "asset_keys": [
+            "ieee123_opendss::87::pv"
+          ],
+          "coefficient": -2.7184735182546254,
+          "component": "surrogate",
+          "degree": 1
+        },
+        {
+          "anchor_nodes": [
+            "100"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::100::bess",
+            "ieee123_opendss::100::dispatchable_generation"
+          ],
+          "coefficient": -0.7370544617576247,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "100"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::100::bess",
+            "ieee123_opendss::100::pv"
+          ],
+          "coefficient": 1.0685170154728398,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "100"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::100::dispatchable_generation",
+            "ieee123_opendss::100::pv"
+          ],
+          "coefficient": -0.4687786199990868,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "113"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::113::bess",
+            "ieee123_opendss::113::dispatchable_generation"
+          ],
+          "coefficient": 0.41234895820767226,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "113"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::113::bess",
+            "ieee123_opendss::113::pv"
+          ],
+          "coefficient": 0.9026811544733248,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "113"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::113::dispatchable_generation",
+            "ieee123_opendss::113::pv"
+          ],
+          "coefficient": -1.6114684923840503,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "16"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::16::bess",
+            "ieee123_opendss::16::dispatchable_generation"
+          ],
+          "coefficient": -1.2499472335197408,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "16"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::16::bess",
+            "ieee123_opendss::16::pv"
+          ],
+          "coefficient": 0.9836471332554338,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "16"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::16::dispatchable_generation",
+            "ieee123_opendss::16::pv"
+          ],
+          "coefficient": -0.35265526570572164,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "28"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::28::bess",
+            "ieee123_opendss::28::dispatchable_generation"
+          ],
+          "coefficient": -1.17466325013095,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "28"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::28::bess",
+            "ieee123_opendss::28::pv"
+          ],
+          "coefficient": 0.2039869415532131,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "28"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::28::dispatchable_generation",
+            "ieee123_opendss::28::pv"
+          ],
+          "coefficient": 0.08256831916717904,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "48"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::48::bess",
+            "ieee123_opendss::48::dispatchable_generation"
+          ],
+          "coefficient": -0.5353197160448422,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "48"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::48::bess",
+            "ieee123_opendss::48::pv"
+          ],
+          "coefficient": -0.15417592335012922,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "48"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::48::dispatchable_generation",
+            "ieee123_opendss::48::pv"
+          ],
+          "coefficient": 0.2589406464650594,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "6"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::6::bess",
+            "ieee123_opendss::6::dispatchable_generation"
+          ],
+          "coefficient": 0.46610592185592703,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "6"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::6::bess",
+            "ieee123_opendss::6::pv"
+          ],
+          "coefficient": 0.7808185930530044,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "6"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::6::dispatchable_generation",
+            "ieee123_opendss::6::pv"
+          ],
+          "coefficient": -0.8169478713944789,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "65"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::65::bess",
+            "ieee123_opendss::65::dispatchable_generation"
+          ],
+          "coefficient": 1.2176811963001684,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "65"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::65::bess",
+            "ieee123_opendss::65::pv"
+          ],
+          "coefficient": -0.488908963601209,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "65"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::65::dispatchable_generation",
+            "ieee123_opendss::65::pv"
+          ],
+          "coefficient": -0.572880456591548,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "69"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::69::bess",
+            "ieee123_opendss::69::dispatchable_generation"
+          ],
+          "coefficient": -0.7806364108493486,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "69"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::69::bess",
+            "ieee123_opendss::69::pv"
+          ],
+          "coefficient": -0.35223561573881357,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "69"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::69::dispatchable_generation",
+            "ieee123_opendss::69::pv"
+          ],
+          "coefficient": 0.42582838448776483,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "73"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::73::bess",
+            "ieee123_opendss::73::dispatchable_generation"
+          ],
+          "coefficient": 0.16486113392027035,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "73"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::73::bess",
+            "ieee123_opendss::73::pv"
+          ],
+          "coefficient": 0.8389968650797847,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "73"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::73::dispatchable_generation",
+            "ieee123_opendss::73::pv"
+          ],
+          "coefficient": -0.8498161495530946,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::bess",
+            "ieee123_opendss::76::dispatchable_generation"
+          ],
+          "coefficient": -23.14848259384904,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::bess",
+            "ieee123_opendss::76::pv"
+          ],
+          "coefficient": -10.931476940189462,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::dispatchable_generation",
+            "ieee123_opendss::76::pv"
+          ],
+          "coefficient": 11.10344453044703,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::87::bess",
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": -34.25586890106185,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::87::bess",
+            "ieee123_opendss::87::pv"
+          ],
+          "coefficient": -1.9685955983091135,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "bess",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::87::dispatchable_generation",
+            "ieee123_opendss::87::pv"
+          ],
+          "coefficient": 2.3084359909308025,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "same_anchor_technology",
+          "physical_rationale": "co-located DER technologies jointly alter island service and reserve recourse",
+          "technologies": [
+            "dispatchable_generation",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::pv",
+            "ieee123_opendss::87::pv"
+          ],
+          "coefficient": -1.6984933214835212,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "adjacent_anchor",
+          "physical_rationale": "overlapping public feeder patches couple reserve and service decisions",
+          "technologies": [
+            "pv",
+            "pv"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::bess",
+            "ieee123_opendss::87::bess"
+          ],
+          "coefficient": 0.34649979669041403,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "adjacent_anchor",
+          "physical_rationale": "overlapping public feeder patches couple reserve and service decisions",
+          "technologies": [
+            "bess",
+            "bess"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::dispatchable_generation",
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": -26.640074829191626,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "adjacent_anchor",
+          "physical_rationale": "overlapping public feeder patches couple reserve and service decisions",
+          "technologies": [
+            "dispatchable_generation",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::bess",
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": 25.02929309496285,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "adjacent_anchor",
+          "physical_rationale": "overlapping public feeder patches couple reserve and service decisions",
+          "technologies": [
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::dispatchable_generation",
+            "ieee123_opendss::87::bess"
+          ],
+          "coefficient": 35.62911351869769,
+          "component": "interaction",
+          "degree": 2,
+          "interaction_class": "adjacent_anchor",
+          "physical_rationale": "overlapping public feeder patches couple reserve and service decisions",
+          "technologies": [
+            "dispatchable_generation",
+            "bess"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "100"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::100::pv",
+            "ieee123_opendss::100::bess",
+            "ieee123_opendss::100::dispatchable_generation"
+          ],
+          "coefficient": 1.5765055906584335,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "113"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::113::pv",
+            "ieee123_opendss::113::bess",
+            "ieee123_opendss::113::dispatchable_generation"
+          ],
+          "coefficient": -0.8610644762823257,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "16"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::16::pv",
+            "ieee123_opendss::16::bess",
+            "ieee123_opendss::16::dispatchable_generation"
+          ],
+          "coefficient": 2.1591666609403055,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "28"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::28::pv",
+            "ieee123_opendss::28::bess",
+            "ieee123_opendss::28::dispatchable_generation"
+          ],
+          "coefficient": 2.614718747783383,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "48"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::48::pv",
+            "ieee123_opendss::48::bess",
+            "ieee123_opendss::48::dispatchable_generation"
+          ],
+          "coefficient": 0.5265555152721502,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "6"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::6::pv",
+            "ieee123_opendss::6::bess",
+            "ieee123_opendss::6::dispatchable_generation"
+          ],
+          "coefficient": -0.09677087067308522,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "65"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::65::pv",
+            "ieee123_opendss::65::bess",
+            "ieee123_opendss::65::dispatchable_generation"
+          ],
+          "coefficient": -1.5777688568659856,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "69"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::69::pv",
+            "ieee123_opendss::69::bess",
+            "ieee123_opendss::69::dispatchable_generation"
+          ],
+          "coefficient": 1.047307527301238,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "73"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::73::pv",
+            "ieee123_opendss::73::bess",
+            "ieee123_opendss::73::dispatchable_generation"
+          ],
+          "coefficient": 0.33152937972530694,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::pv",
+            "ieee123_opendss::76::bess",
+            "ieee123_opendss::76::dispatchable_generation"
+          ],
+          "coefficient": 10.892490042971593,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::87::pv",
+            "ieee123_opendss::87::bess",
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": 3.05831391088169,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "same_anchor_three_technology",
+          "physical_rationale": "the complete local DER mix couples renewable supply, storage reserve, and firm generation",
+          "technologies": [
+            "pv",
+            "bess",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::bess",
+            "ieee123_opendss::76::dispatchable_generation",
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": -5.331310126564171,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "adjacent_anchor_preparedness",
+          "physical_rationale": "storage and firm generation across overlapping islands affect stress preparedness",
+          "technologies": [
+            "bess",
+            "dispatchable_generation",
+            "dispatchable_generation"
+          ]
+        },
+        {
+          "anchor_nodes": [
+            "76",
+            "87"
+          ],
+          "asset_keys": [
+            "ieee123_opendss::76::dispatchable_generation",
+            "ieee123_opendss::87::bess",
+            "ieee123_opendss::87::dispatchable_generation"
+          ],
+          "coefficient": 34.82143572075414,
+          "component": "interaction",
+          "degree": 3,
+          "interaction_class": "adjacent_anchor_preparedness",
+          "physical_rationale": "storage and firm generation across overlapping islands affect stress preparedness",
+          "technologies": [
+            "dispatchable_generation",
+            "bess",
+            "dispatchable_generation"
+          ]
+        }
+      ]
+    }
+  }
+}
