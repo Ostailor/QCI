@@ -37,6 +37,6 @@ qci:
   relaxation_schedule: 2
   samples_per_payload: 30
   samples_per_job: 30
-  max_inflight_jobs: 1
+  max_inflight_jobs: 3
   submission_performed_during_build: false
   raw_output_dir: results/phase3/sc_cmpo/budget_master_v2/actual_qci

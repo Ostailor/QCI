@@ -1,0 +1,205 @@
+{
+  "qci_submission_performed": false,
+  "raw_dir": "/Users/omtailor/QCI/results/phase3/sc_cmpo/budget_master_v2/qci",
+  "output_dir": "/Users/omtailor/QCI/results/phase3/sc_cmpo/budget_master_v2",
+  "budget_count": 6,
+  "expected_qci_jobs": 18,
+  "samples_per_job": 30,
+  "retained_per_budget": 10,
+  "classical_methods": [
+    "exact MILP or CP-SAT upgrade master",
+    "SLSQP/IPOPT relaxation",
+    "classical Benders master",
+    "greedy cost-benefit portfolio selection",
+    "GPU random portfolio search",
+    "QUBO/quadratized upgrade master"
+  ],
+  "completed_qci_jobs": 18,
+  "failed_qci_jobs": 0,
+  "returned_samples": 540,
+  "raw_one_hot_valid_sample_count": 0,
+  "raw_coverage_valid_sample_count": 0,
+  "raw_pairwise_budget_valid_sample_count": 540,
+  "challenge_projection_repaired_sample_count": 540,
+  "unique_feasible_portfolios_per_budget": {
+    "low_cost_catalog_step": 56,
+    "minimum_feasible_islanding": 1,
+    "post_slsqp_catalog_step": 90,
+    "pv_catalog_midpoint": 90,
+    "qci_selected_cost": 90,
+    "slsqp_selected_cost": 90
+  },
+  "retained_portfolios_per_budget": {
+    "low_cost_catalog_step": 10,
+    "minimum_feasible_islanding": 1,
+    "post_slsqp_catalog_step": 10,
+    "pv_catalog_midpoint": 10,
+    "qci_selected_cost": 10,
+    "slsqp_selected_cost": 10
+  },
+  "qci_best_budget_levels_by_total_ens": [
+    "minimum_feasible_islanding"
+  ],
+  "qci_best_budget_levels_by_critical_ens": [
+    "minimum_feasible_islanding"
+  ],
+  "qci_best_heldout_budget_levels": [
+    "low_cost_catalog_step",
+    "minimum_feasible_islanding",
+    "qci_selected_cost",
+    "slsqp_selected_cost"
+  ],
+  "qci_vs_classical_master_total_ens_win_tie_loss": {
+    "win": 0,
+    "tie": 1,
+    "loss": 5
+  },
+  "qci_vs_classical_master_wins_ties_losses": {
+    "total_ens": {
+      "win": 0,
+      "tie": 1,
+      "loss": 5
+    },
+    "critical_ens": {
+      "win": 0,
+      "tie": 1,
+      "loss": 5
+    },
+    "heldout_total_ens": {
+      "win": 0,
+      "tie": 4,
+      "loss": 2
+    }
+  },
+  "native_feasible_qci_sample_count": 0,
+  "hypervolumes": {
+    "training_total_ens": {
+      "GPU random portfolio search": 949352679.3139952,
+      "QCi global budget master V2": 949352679.3139952,
+      "QUBO/quadratized upgrade master": 949352679.3139952,
+      "SLSQP/IPOPT relaxation": 949352679.3139952,
+      "classical Benders master": 949352679.3139952,
+      "exact MILP or CP-SAT upgrade master": 949352679.3139952,
+      "greedy cost-benefit portfolio selection": 949352679.3139952
+    },
+    "training_critical_ens": {
+      "GPU random portfolio search": 931947086.9696959,
+      "QCi global budget master V2": 931947086.9696959,
+      "QUBO/quadratized upgrade master": 931947086.9696959,
+      "SLSQP/IPOPT relaxation": 931947086.9696959,
+      "classical Benders master": 931947086.9696959,
+      "exact MILP or CP-SAT upgrade master": 931947086.9696959,
+      "greedy cost-benefit portfolio selection": 931947086.9696959
+    },
+    "heldout_total_ens": {
+      "GPU random portfolio search": 1511313078.5988684,
+      "QCi global budget master V2": 1511313078.5988684,
+      "QUBO/quadratized upgrade master": 1511313078.5988684,
+      "SLSQP/IPOPT relaxation": 1511313078.5988684,
+      "classical Benders master": 1511313078.5988684,
+      "exact MILP or CP-SAT upgrade master": 1511313078.5988684,
+      "greedy cost-benefit portfolio selection": 1511313078.5988684
+    }
+  },
+  "qci_pareto_hypervolume_versus_classical": {
+    "training_total_ens": {
+      "GPU random portfolio search": {
+        "qci": 949352679.3139952,
+        "classical": 949352679.3139952,
+        "difference": 0.0
+      },
+      "QUBO/quadratized upgrade master": {
+        "qci": 949352679.3139952,
+        "classical": 949352679.3139952,
+        "difference": 0.0
+      },
+      "SLSQP/IPOPT relaxation": {
+        "qci": 949352679.3139952,
+        "classical": 949352679.3139952,
+        "difference": 0.0
+      },
+      "classical Benders master": {
+        "qci": 949352679.3139952,
+        "classical": 949352679.3139952,
+        "difference": 0.0
+      },
+      "exact MILP or CP-SAT upgrade master": {
+        "qci": 949352679.3139952,
+        "classical": 949352679.3139952,
+        "difference": 0.0
+      },
+      "greedy cost-benefit portfolio selection": {
+        "qci": 949352679.3139952,
+        "classical": 949352679.3139952,
+        "difference": 0.0
+      }
+    },
+    "training_critical_ens": {
+      "GPU random portfolio search": {
+        "qci": 931947086.9696959,
+        "classical": 931947086.9696959,
+        "difference": 0.0
+      },
+      "QUBO/quadratized upgrade master": {
+        "qci": 931947086.9696959,
+        "classical": 931947086.9696959,
+        "difference": 0.0
+      },
+      "SLSQP/IPOPT relaxation": {
+        "qci": 931947086.9696959,
+        "classical": 931947086.9696959,
+        "difference": 0.0
+      },
+      "classical Benders master": {
+        "qci": 931947086.9696959,
+        "classical": 931947086.9696959,
+        "difference": 0.0
+      },
+      "exact MILP or CP-SAT upgrade master": {
+        "qci": 931947086.9696959,
+        "classical": 931947086.9696959,
+        "difference": 0.0
+      },
+      "greedy cost-benefit portfolio selection": {
+        "qci": 931947086.9696959,
+        "classical": 931947086.9696959,
+        "difference": 0.0
+      }
+    },
+    "heldout_total_ens": {
+      "GPU random portfolio search": {
+        "qci": 1511313078.5988684,
+        "classical": 1511313078.5988684,
+        "difference": 0.0
+      },
+      "QUBO/quadratized upgrade master": {
+        "qci": 1511313078.5988684,
+        "classical": 1511313078.5988684,
+        "difference": 0.0
+      },
+      "SLSQP/IPOPT relaxation": {
+        "qci": 1511313078.5988684,
+        "classical": 1511313078.5988684,
+        "difference": 0.0
+      },
+      "classical Benders master": {
+        "qci": 1511313078.5988684,
+        "classical": 1511313078.5988684,
+        "difference": 0.0
+      },
+      "exact MILP or CP-SAT upgrade master": {
+        "qci": 1511313078.5988684,
+        "classical": 1511313078.5988684,
+        "difference": 0.0
+      },
+      "greedy cost-benefit portfolio selection": {
+        "qci": 1511313078.5988684,
+        "classical": 1511313078.5988684,
+        "difference": 0.0
+      }
+    }
+  },
+  "strongest_supported_final_paper_claim": "None of the 540 native Dirac coordinate samples was directly binary and coverage-feasible; after challenge-aligned hard-feasible projection, QCi tied the best classical total ENS at 1 of six budgets and won at 0, so no matched-budget QCi ENS advantage is supported.",
+  "system_evaluation_count": 87,
+  "heldout_evaluation_count": 87
+}

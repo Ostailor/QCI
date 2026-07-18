@@ -1,0 +1,105 @@
+{
+  "schema": "cmpo.paper_artifact_manifest.v1",
+  "config_path": "configs/phase3_sc_cmpo_ieee123_budget_master_v2.yaml",
+  "validation_summary_path": "results/phase3/sc_cmpo/budget_master_v2/validation_summary.json",
+  "master_payload_paths": [
+    "results/phase3/sc_cmpo/budget_master_v2/qci_master_payloads/low_cost_catalog_step.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci_master_payloads/minimum_feasible_islanding.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci_master_payloads/post_slsqp_catalog_step.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci_master_payloads/pv_catalog_midpoint.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci_master_payloads/qci_selected_cost.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci_master_payloads/slsqp_selected_cost.json"
+  ],
+  "raw_request_paths": [
+    "results/phase3/sc_cmpo/budget_master_v2/qci/low_cost_catalog_step/repeat_000/request.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/low_cost_catalog_step/repeat_030/request.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/low_cost_catalog_step/repeat_060/request.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/minimum_feasible_islanding/repeat_000/request.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/minimum_feasible_islanding/repeat_030/request.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/minimum_feasible_islanding/repeat_060/request.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/post_slsqp_catalog_step/repeat_000/request.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/post_slsqp_catalog_step/repeat_030/request.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/post_slsqp_catalog_step/repeat_060/request.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/pv_catalog_midpoint/repeat_000/request.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/pv_catalog_midpoint/repeat_030/request.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/pv_catalog_midpoint/repeat_060/request.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/qci_selected_cost/repeat_000/request.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/qci_selected_cost/repeat_030/request.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/qci_selected_cost/repeat_060/request.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/slsqp_selected_cost/repeat_000/request.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/slsqp_selected_cost/repeat_030/request.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/slsqp_selected_cost/repeat_060/request.json"
+  ],
+  "raw_response_paths": [
+    "results/phase3/sc_cmpo/budget_master_v2/qci/low_cost_catalog_step/repeat_000/response.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/low_cost_catalog_step/repeat_030/response.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/low_cost_catalog_step/repeat_060/response.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/minimum_feasible_islanding/repeat_000/response.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/minimum_feasible_islanding/repeat_030/response.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/minimum_feasible_islanding/repeat_060/response.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/post_slsqp_catalog_step/repeat_000/response.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/post_slsqp_catalog_step/repeat_030/response.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/post_slsqp_catalog_step/repeat_060/response.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/pv_catalog_midpoint/repeat_000/response.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/pv_catalog_midpoint/repeat_030/response.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/pv_catalog_midpoint/repeat_060/response.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/qci_selected_cost/repeat_000/response.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/qci_selected_cost/repeat_030/response.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/qci_selected_cost/repeat_060/response.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/slsqp_selected_cost/repeat_000/response.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/slsqp_selected_cost/repeat_030/response.json",
+    "results/phase3/sc_cmpo/budget_master_v2/qci/slsqp_selected_cost/repeat_060/response.json"
+  ],
+  "artifacts": [
+    {
+      "path": "results/phase3/sc_cmpo/budget_master_v2/decoded_portfolios.csv",
+      "sha256": "d5df35f19875a31345cc9152e4b2904238795eab16ca66c16faa7431131ef8a6"
+    },
+    {
+      "path": "results/phase3/sc_cmpo/budget_master_v2/portfolio_recourse_metrics.csv",
+      "sha256": "aecfaa9818d89090d60247ae4d66faaad14167c2a956eb41b765c4da9a842eea"
+    },
+    {
+      "path": "results/phase3/sc_cmpo/budget_master_v2/heldout_metrics.csv",
+      "sha256": "17d3d508b49407159ce1309821bb9fb759556ae6295397ed1078e2b08f9e00fb"
+    },
+    {
+      "path": "results/phase3/sc_cmpo/budget_master_v2/master_comparison.csv",
+      "sha256": "fb4e8184aa65959c55d7e424d89eebdf97bd0ed8b7929fe7666dd13ce3787529"
+    },
+    {
+      "path": "results/phase3/sc_cmpo/budget_master_v2/pareto_frontier.csv",
+      "sha256": "311d27610d899e23933e3611459a344ac80c9c0911761018592c4033d689a314"
+    },
+    {
+      "path": "results/phase3/sc_cmpo/budget_master_v2/win_tie_loss.csv",
+      "sha256": "d26c21db049373c29ebe5e9de1c7a9094ba825dac6f6c75f184275e209b79a57"
+    },
+    {
+      "path": "results/phase3/sc_cmpo/budget_master_v2/upgrade_budget_vs_total_ens.png",
+      "sha256": "bcbff9f0011f5f7d048f47b0f1468ef20206fa1c949392bf20e6137e125aeb07"
+    },
+    {
+      "path": "results/phase3/sc_cmpo/budget_master_v2/upgrade_budget_vs_critical_ens.png",
+      "sha256": "d441735f0f040bc54762f4693c17274d5b82609df56979e78bb83b79c4b1cf31"
+    },
+    {
+      "path": "results/phase3/sc_cmpo/budget_master_v2/heldout_budget_vs_ens.png",
+      "sha256": "790167acaf748917bd952f32acce7e96031e72bc168fe2c00901901c91d9c06d"
+    },
+    {
+      "path": "results/phase3/sc_cmpo/budget_master_v2/portfolio_diversity.png",
+      "sha256": "c0f7871c5c78def7843aa45d26d3597862df0c8585ffa65d0c02402b4bea54e3"
+    },
+    {
+      "path": "results/phase3/sc_cmpo/budget_master_v2/native_master_vs_qubo_size.png",
+      "sha256": "3cce698597aa49955ae878486a303cfe5548239debd7a0764257646456cd6834"
+    },
+    {
+      "path": "results/phase3/sc_cmpo/budget_master_v2/experiment_summary.json",
+      "sha256": "26510cd9104cca18bfc17b246b066a0f40682c4949bfb523b474c0fdd14a660a"
+    }
+  ],
+  "regeneration_command": "python scripts/phase3_evaluate_budget_master_v2_experiment.py --config configs/phase3_sc_cmpo_ieee123_budget_master_v2.yaml --raw-dir results/phase3/sc_cmpo/budget_master_v2/qci",
+  "qci_submission_performed": false
+}

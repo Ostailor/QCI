@@ -1,0 +1,10 @@
+{
+  "config": "phase3_sc_cmpo_ieee123_budget_master_v2",
+  "payload_dir": "results/phase3/sc_cmpo/budget_master_v2/qci_master_payloads",
+  "payload_list": null,
+  "output_dir": "results/phase3/sc_cmpo/budget_master_v2/qci",
+  "repeats": 90,
+  "overwrite": false,
+  "payload_count": 6,
+  "status_csv": "results/phase3/sc_cmpo/budget_master_v2/qci/job_status.csv"
+}

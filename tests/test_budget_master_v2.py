@@ -183,6 +183,48 @@ def test_decode_rejects_overbudget_and_charges_duplicate_asset_once() -> None:
     assert decoded.charge_once_cost(duplicate) == pytest.approx(3.0)
 
 
+def test_challenge_aligned_decode_projects_pairs_and_repairs_missing_coverage() -> None:
+    from cmpo.global_upgrade_master import build_toy_master
+    from cmpo.portfolio_decode import decode_challenge_aligned_sample
+
+    payload = build_toy_master(
+        costs={"a": 2.0, "b": 3.0},
+        benefits={"a": 2.5, "b": 4.0},
+        budget=3.0,
+    )
+    for asset in payload["catalog_assets"]:
+        asset["anchor_node"] = "shared"
+    coverage = dict(payload["anchor_coverage_constraints"][0])
+    coverage["anchor_node"] = "shared"
+    coverage["upgrade_variables"] = [
+        "upgrade::a::selected",
+        "upgrade::b::selected",
+    ]
+    payload["anchor_coverage_constraints"] = [coverage]
+    variables = [variable["name"] for variable in payload["variables"]]
+    raw = {name: 0.0 for name in variables}
+    raw["upgrade::a::selected"] = 0.2
+    raw["upgrade::a::not_selected"] = 0.8
+    raw["upgrade::b::selected"] = 0.9
+    raw["upgrade::b::not_selected"] = 0.1
+    decoded, diagnostics = decode_challenge_aligned_sample(payload, raw, energy=-1.25)
+    assert decoded.selected_asset_keys == ("b",)
+    assert decoded.total_upgrade_cost == pytest.approx(3.0)
+    assert (
+        diagnostics["projection_rule"]
+        == "pairwise_preference_then_hard_feasible_binary_milp_projection"
+    )
+    assert diagnostics["one_hot_valid"] is True
+    assert diagnostics["coverage_valid"] is True
+
+    raw["upgrade::b::selected"] = 0.1
+    raw["upgrade::b::not_selected"] = 0.9
+    repaired, repaired_diagnostics = decode_challenge_aligned_sample(payload, raw)
+    assert repaired.selected_asset_keys == ("a",)
+    assert repaired_diagnostics["raw_coverage_valid"] is False
+    assert repaired_diagnostics["coverage_repair_count"] == 1
+
+
 def test_portfolio_diversity_returns_unique_signatures() -> None:
     from cmpo.portfolio_decode import DecodedPortfolio
     from cmpo.portfolio_diversity import select_unique_feasible_portfolios
@@ -193,6 +235,70 @@ def test_portfolio_diversity_returns_unique_signatures() -> None:
     selected = select_unique_feasible_portfolios([one, duplicate, two], limit=10)
     assert [item.selected_asset_keys for item in selected] == [("a",), ("b",)]
     assert selected[0].energy == pytest.approx(0.5)
+
+
+def test_scored_portfolio_selection_uses_challenge_priority_order() -> None:
+    from cmpo.portfolio_decode import DecodedPortfolio
+    from cmpo.portfolio_diversity import (
+        ScoredPortfolio,
+        select_scored_diverse_portfolios,
+    )
+
+    lower_energy = ScoredPortfolio(
+        DecodedPortfolio.testing(("a",), 2.0, energy=-100.0),
+        critical_service_proxy=0.5,
+        reserve_preparedness=1.0,
+        estimated_recourse_score=1.0,
+        upgrade_utilization=1.0,
+        provenance={"sample": 0},
+    )
+    stronger_service = ScoredPortfolio(
+        DecodedPortfolio.testing(("b",), 2.0, energy=10.0),
+        critical_service_proxy=1.0,
+        reserve_preparedness=0.0,
+        estimated_recourse_score=0.0,
+        upgrade_utilization=0.5,
+        provenance={"sample": 1},
+    )
+    selected = select_scored_diverse_portfolios(
+        [lower_energy, stronger_service], limit=1
+    )
+    assert selected[0].portfolio.selected_asset_keys == ("b",)
+
+
+@pytest.mark.parametrize(
+    "method",
+    [
+        "exact MILP or CP-SAT upgrade master",
+        "SLSQP/IPOPT relaxation",
+        "classical Benders master",
+        "greedy cost-benefit portfolio selection",
+        "GPU random portfolio search",
+        "QUBO/quadratized upgrade master",
+    ],
+)
+def test_classical_global_masters_return_hard_feasible_portfolios(method: str) -> None:
+    from cmpo.classical_budget_masters import solve_classical_master
+    from cmpo.global_upgrade_master import build_toy_master
+
+    payload = build_toy_master(
+        costs={"a": 2.0, "b": 3.0},
+        benefits={"a": 2.5, "b": 4.0},
+        budget=3.0,
+    )
+    for asset in payload["catalog_assets"]:
+        asset["anchor_node"] = "shared"
+    coverage = dict(payload["anchor_coverage_constraints"][0])
+    coverage["anchor_node"] = "shared"
+    coverage["upgrade_variables"] = [
+        "upgrade::a::selected",
+        "upgrade::b::selected",
+    ]
+    payload["anchor_coverage_constraints"] = [coverage]
+    result = solve_classical_master(payload, method, seed=7)
+    assert result.portfolio.total_upgrade_cost <= 3.0
+    assert result.portfolio.selected_asset_keys
+    assert result.runtime_seconds >= 0.0
 
 
 def test_master_portfolio_is_fixed_across_all_twelve_patches(tmp_path: Path) -> None:
@@ -220,3 +326,15 @@ def test_full_v2_validation_gates_pass(tmp_path: Path) -> None:
     assert len(result["checks"]) == 15
     assert all(result["checks"].values())
     assert result["qci_submission_performed"] is False
+
+
+def test_budget_master_experiment_artifact_runner_is_non_submitting() -> None:
+    evaluator = _load_script("phase3_evaluate_budget_master_v2_experiment")
+    result = evaluator.evaluate_experiment(
+        ROOT / "configs" / "phase3_sc_cmpo_ieee123_budget_master_v2.yaml",
+        dry_run=True,
+    )
+    assert result["qci_submission_performed"] is False
+    assert result["expected_qci_jobs"] == 18
+    assert result["budget_count"] == 6
+    assert result["retained_per_budget"] == 10
