@@ -1,0 +1,10 @@
+{
+  "config": "final_public_experiment",
+  "output_dir": "results/phase3/sc_cmpo/final_public_experiment/qci",
+  "overwrite": false,
+  "payload_count": 43,
+  "payload_dir": "results/phase3/sc_cmpo/final_public_experiment/payloads",
+  "payload_list": null,
+  "repeats": 30,
+  "status_csv": "results/phase3/sc_cmpo/qci/job_status.csv"
+}

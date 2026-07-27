@@ -1,0 +1,24 @@
+benchmark,method,total_upgrade_cost,expected_operating_cost,total_system_cost,critical_energy_not_served_kwh,pareto_frontier,trace_source
+arpae_go_network_01o_020,CMPO-local polynomial search,938271344.0,0.0,938271344.0,0.0,True,baseline_system_metrics.csv
+arpae_go_network_01o_020,QUBO/quadratized search,938271344.0,0.0,938271344.0,0.0,True,baseline_system_metrics.csv
+arpae_go_network_01o_020,differential evolution,938271344.0,0.0,938271344.0,0.0,True,baseline_system_metrics.csv
+arpae_go_network_01o_020,greedy resilience heuristic,938271344.0,0.0,938271344.0,0.0,True,baseline_system_metrics.csv
+arpae_go_network_01o_020,piecewise-linear MILP,938271344.0,0.0,938271344.0,0.0,True,baseline_system_metrics.csv
+ieee123_opendss,CMPO-local polynomial search,2032032.0,0.0,2032032.0,135.0,True,baseline_system_metrics.csv
+ieee123_opendss,QUBO/quadratized search,2032032.0,0.0,2032032.0,135.0,True,baseline_system_metrics.csv
+ieee123_opendss,SLSQP,4532906.712497371,0.0,4532906.712497371,50.625,True,baseline_system_metrics.csv
+ieee123_opendss,differential evolution,2032032.0,0.0,2032032.0,135.0,True,baseline_system_metrics.csv
+ieee123_opendss,greedy resilience heuristic,2032032.0,0.0,2032032.0,135.0,True,baseline_system_metrics.csv
+ieee123_opendss,piecewise-linear MILP,2032032.0,0.0,2032032.0,135.0,True,baseline_system_metrics.csv
+pglib_case14_ieee,CMPO-local polynomial search,368097600.0,255.150482475,368097855.1504825,26200.0,True,baseline_system_metrics.csv
+pglib_case14_ieee,QUBO/quadratized search,368097600.0,255.150482475,368097855.1504825,26200.0,True,baseline_system_metrics.csv
+pglib_case14_ieee,SLSQP,821124904.476983,435.122533425,821125339.5995164,9825.0,True,baseline_system_metrics.csv
+pglib_case14_ieee,differential evolution,368097600.0,255.150482475,368097855.1504825,26200.0,True,baseline_system_metrics.csv
+pglib_case14_ieee,greedy resilience heuristic,368097600.0,255.150482475,368097855.1504825,26200.0,True,baseline_system_metrics.csv
+pglib_case14_ieee,piecewise-linear MILP,368097600.0,255.150482475,368097855.1504825,26200.0,True,baseline_system_metrics.csv
+pglib_case30_ieee,CMPO-local polynomial search,283818240.00000006,582.89909615,283818822.8990962,31500.0,True,baseline_system_metrics.csv
+pglib_case30_ieee,QUBO/quadratized search,283818240.00000006,582.89909615,283818822.8990962,31500.0,True,baseline_system_metrics.csv
+pglib_case30_ieee,SLSQP,633120740.8275017,869.1604331714818,633121609.9879348,11812.5,True,baseline_system_metrics.csv
+pglib_case30_ieee,differential evolution,283818240.00000006,582.89909615,283818822.8990962,31500.0,True,baseline_system_metrics.csv
+pglib_case30_ieee,greedy resilience heuristic,283818240.00000006,582.89909615,283818822.8990962,31500.0,True,baseline_system_metrics.csv
+pglib_case30_ieee,piecewise-linear MILP,283818240.00000006,582.89909615,283818822.8990962,31500.0,True,baseline_system_metrics.csv

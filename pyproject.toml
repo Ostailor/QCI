@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cmpo-qci-phase3"
+version = "1.0.0"
+description = "Reproducible QCi Dirac-3 experiments for resilient microgrid planning"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "pandas",
+  "scipy",
+  "networkx",
+  "matplotlib",
+  "PyYAML",
+  "OpenDSSDirect.py==0.9.1",
+  "pyomo>=6.10,<7",
+  "highspy>=1.15,<2",
+  "qci-client==5.0.0",
+  "eqc-models==0.20.2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+qbraid = ["qbraid-core==0.3.4", "websocket-client==1.8.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]

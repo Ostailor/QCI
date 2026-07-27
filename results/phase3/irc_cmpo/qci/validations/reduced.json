@@ -1,0 +1,37 @@
+{
+  "best_hamiltonian_energy": -0.015,
+  "exact_optimum_energy": -0.015,
+  "exact_optimum_hits": 30,
+  "hamiltonian_regret": 0.0,
+  "name": "reduced",
+  "native_integer_rate": 1.0,
+  "native_local_feasibility_rate": 1.0,
+  "native_locally_feasible_count": 30,
+  "passed": true,
+  "projection_used": false,
+  "raw_sample_count": 30,
+  "raw_unique_row_count": 1,
+  "sample_count_gate": true,
+  "true_recourse_regret": 0.0,
+  "validation": {
+    "declared_num_levels": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "device_type": "dirac-3_qudit",
+    "errors": [],
+    "native_integer_in_domain_count": 1,
+    "native_sample_count": 1,
+    "problem_type": "qudit_hamiltonian_optimization",
+    "projected_sample_count": 0,
+    "projection_used": false,
+    "valid": true
+  }
+}

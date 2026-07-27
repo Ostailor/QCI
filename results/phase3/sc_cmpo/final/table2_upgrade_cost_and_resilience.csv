@@ -1,0 +1,33 @@
+benchmark,method,total_upgrade_cost,expected_operating_cost,total_system_cost,critical_energy_not_served_kwh,total_energy_not_served_kwh,critical_load_served_fraction,weighted_reference_baseline_method,weighted_reference_baseline_critical_ens_kwh,outage_reduction_vs_weighted_best_baseline_kwh,system_trace_id,trace_source
+arpae_go_network_01o_020,CMPO-local polynomial search,938271344.0,0.0,938271344.0,0.0,81072.0,1.0,SLSQP,0.0,0.0,system-f13f043e8730d0aaef64,baseline_system_metrics.csv
+arpae_go_network_01o_020,QUBO/quadratized search,938271344.0,0.0,938271344.0,0.0,81072.0,1.0,SLSQP,0.0,0.0,system-7ac0cc1a6b27dcd0c2a6,baseline_system_metrics.csv
+arpae_go_network_01o_020,differential evolution,938271344.0,0.0,938271344.0,0.0,81072.0,1.0,SLSQP,0.0,0.0,system-136c8c8dbbd87c8dc269,baseline_system_metrics.csv
+arpae_go_network_01o_020,greedy resilience heuristic,938271344.0,0.0,938271344.0,0.0,81072.0,1.0,SLSQP,0.0,0.0,system-44d574540be1d1b8c26f,baseline_system_metrics.csv
+arpae_go_network_01o_020,piecewise-linear MILP,938271344.0,0.0,938271344.0,0.0,81072.0,1.0,SLSQP,0.0,0.0,system-4b171e22e8c73fee1857,baseline_system_metrics.csv
+arpae_go_network_01o_020,SLSQP,2093026327.027099,0.0,2093026327.027099,0.0,30402.0,1.0,SLSQP,0.0,0.0,system-ca1d932a133e643aa7f7,baseline_system_metrics.csv
+arpae_go_network_01o_020,IPOPT/Pyomo nonlinear,3721075779.2050943,0.0,3721075779.2050943,0.0043929605162702,30402.004392960574,0.9999999948011378,SLSQP,0.0,-0.0043929605162702,system-a2a490221493cf75a7a4,baseline_system_metrics.csv
+arpae_go_network_01o_020,QCi SC-CMPO,3721075826.2270994,0.0,3721075826.2270994,0.0,30402.0,1.0,SLSQP,0.0,0.0,system-3d3d6578933f56b3ba49,qci_system_metrics.csv
+ieee123_opendss,CMPO-local polynomial search,2032032.0,0.0,2032032.0,135.0,615.0,0.927027027027027,SLSQP,50.625,-84.375,system-a254793fb4c2dced3238,baseline_system_metrics.csv
+ieee123_opendss,QUBO/quadratized search,2032032.0,0.0,2032032.0,135.0,615.0,0.927027027027027,SLSQP,50.625,-84.375,system-9e86fbf1cc3ea7c332fa,baseline_system_metrics.csv
+ieee123_opendss,differential evolution,2032032.0,0.0,2032032.0,135.0,615.0,0.927027027027027,SLSQP,50.625,-84.375,system-de3c72a87ec9fc244883,baseline_system_metrics.csv
+ieee123_opendss,greedy resilience heuristic,2032032.0,0.0,2032032.0,135.0,615.0,0.927027027027027,SLSQP,50.625,-84.375,system-fd3767be927ffdc2be6f,baseline_system_metrics.csv
+ieee123_opendss,piecewise-linear MILP,2032032.0,0.0,2032032.0,135.0,615.0,0.927027027027027,SLSQP,50.625,-84.375,system-b40bab47a78939c3af99,baseline_system_metrics.csv
+ieee123_opendss,SLSQP,4532906.712497371,0.0,4532906.712497371,50.625,297.7085751640875,0.9726351351351352,SLSQP,50.625,0.0,system-c6267e0c04ce73901318,baseline_system_metrics.csv
+ieee123_opendss,IPOPT/Pyomo nonlinear,8058804.210660926,0.0,8058804.210660926,50.62500590070851,297.70822295649185,0.9726351319455632,SLSQP,50.625,-5.900708508477237e-06,system-40eb3dd4d3d0b3b4c69e,baseline_system_metrics.csv
+ieee123_opendss,QCi SC-CMPO,8058804.312497372,0.0,8058804.312497372,50.625,230.625,0.9726351351351352,SLSQP,50.625,0.0,system-d170b9ede825fd09d7bb,qci_system_metrics.csv
+pglib_case14_ieee,CMPO-local polynomial search,368097600.0,255.150482475,368097855.1504825,26200.0,26200.0,0.889591234723978,SLSQP,9825.0,-16375.0,system-22301cc335fb70d418c1,baseline_system_metrics.csv
+pglib_case14_ieee,QUBO/quadratized search,368097600.0,255.150482475,368097855.1504825,26200.0,26200.0,0.889591234723978,SLSQP,9825.0,-16375.0,system-a6b6f7900548c719bdda,baseline_system_metrics.csv
+pglib_case14_ieee,differential evolution,368097600.0,255.150482475,368097855.1504825,26200.0,26200.0,0.889591234723978,SLSQP,9825.0,-16375.0,system-c812c9726e7b41578d5e,baseline_system_metrics.csv
+pglib_case14_ieee,greedy resilience heuristic,368097600.0,255.150482475,368097855.1504825,26200.0,26200.0,0.889591234723978,SLSQP,9825.0,-16375.0,system-86f684341f57a9bbec7d,baseline_system_metrics.csv
+pglib_case14_ieee,piecewise-linear MILP,368097600.0,255.150482475,368097855.1504825,26200.0,26200.0,0.889591234723978,SLSQP,9825.0,-16375.0,system-10ef6106454b4807c018,baseline_system_metrics.csv
+pglib_case14_ieee,SLSQP,821124904.476983,435.122533425,821125339.5995164,9825.0,9825.0,0.9585967130214916,SLSQP,9825.0,0.0,system-74ede3bc9d112dc921ae,baseline_system_metrics.csv
+pglib_case14_ieee,IPOPT/Pyomo nonlinear,1459832566.0295613,435.1225698281795,1459833001.152131,9825.001097479795,9825.001097479795,0.9585967083966296,SLSQP,9825.0,-0.0010974797951348592,system-a5decbeab59647183ebc,baseline_system_metrics.csv
+pglib_case14_ieee,QCi SC-CMPO,1459832584.476983,802.7201382750001,1459833387.1971214,9825.0,9825.0,0.9585967130214916,SLSQP,9825.0,0.0,system-6a0b139f5db07cc56fb2,qci_system_metrics.csv
+pglib_case30_ieee,CMPO-local polynomial search,283818240.00000006,582.89909615,283818822.8990962,31500.0,31500.0,0.8796331677493313,SLSQP,11812.5,-19687.5,system-c1eb936655d2de8cf857,baseline_system_metrics.csv
+pglib_case30_ieee,QUBO/quadratized search,283818240.00000006,582.89909615,283818822.8990962,31500.0,31500.0,0.8796331677493313,SLSQP,11812.5,-19687.5,system-c81af27651f533402556,baseline_system_metrics.csv
+pglib_case30_ieee,differential evolution,283818240.00000006,582.89909615,283818822.8990962,31500.0,31500.0,0.8796331677493313,SLSQP,11812.5,-19687.5,system-ee54b676c96943be55ec,baseline_system_metrics.csv
+pglib_case30_ieee,greedy resilience heuristic,283818240.00000006,582.89909615,283818822.8990962,31500.0,31500.0,0.8796331677493313,SLSQP,11812.5,-19687.5,system-33f3f8574dd566454324,baseline_system_metrics.csv
+pglib_case30_ieee,piecewise-linear MILP,283818240.00000006,582.89909615,283818822.8990962,31500.0,31500.0,0.8796331677493313,SLSQP,11812.5,-19687.5,system-87a9452e8c640e8ad1e3,baseline_system_metrics.csv
+pglib_case30_ieee,SLSQP,633120740.8275017,869.1604331714818,633121609.9879348,11812.5,11812.5,0.9548624379059992,SLSQP,11812.5,0.0,system-d95ac575e8a8a2b69ec8,baseline_system_metrics.csv
+pglib_case30_ieee,IPOPT/Pyomo nonlinear,1125590358.6037884,869.1668924812142,1125591227.770681,11812.501009619027,11812.501009619027,0.954862434048074,SLSQP,11812.5,-0.0010096190271724481,system-a4683aa48d659e1d80b5,baseline_system_metrics.csv
+pglib_case30_ieee,QCi SC-CMPO,1125590372.8275018,1346.18335705,1125591719.0108588,16059.726118269227,16059.726118269227,0.9386330679470032,SLSQP,11812.5,-4247.226118269227,system-f9e72129cc9146b616ad,qci_system_metrics.csv

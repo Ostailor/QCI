@@ -1,0 +1,156 @@
+{
+  "job_info": {
+    "job_id": "6a5c0d1808442f441bbb20c8",
+    "job_result": {
+      "device_usage_s": 92,
+      "file_id": "6a5dae86ff2f309fb9d05531"
+    },
+    "job_status": {
+      "completed_at_rfc3339nano": "2026-07-20T05:13:42.787Z",
+      "queued_at_rfc3339nano": "2026-07-18T23:32:40.415Z",
+      "running_at_rfc3339nano": "2026-07-20T05:11:36.591Z",
+      "submitted_at_rfc3339nano": "2026-07-18T23:32:40.415Z"
+    },
+    "job_submission": {
+      "device_config": {
+        "dirac-3_qudit": {
+          "num_levels": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "num_samples": 100,
+          "relaxation_schedule": 2
+        }
+      },
+      "job_name": "phase3-irc-cmpo-final-lambda_03",
+      "job_tags": [
+        "phase3",
+        "irc-cmpo",
+        "integer",
+        "final",
+        "commit-31e8c858",
+        "lambda_03",
+        "canary"
+      ],
+      "problem_config": {
+        "qudit_hamiltonian_optimization": {
+          "polynomial_file_id": "6a5c0d18ff2f309fb9d0550d"
+        }
+      }
+    }
+  },
+  "results": {
+    "counts": [
+      99,
+      1
+    ],
+    "energies": [
+      -1.305,
+      -1.1800001
+    ],
+    "solutions": [
+      [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    ]
+  },
+  "status": "COMPLETED"
+}

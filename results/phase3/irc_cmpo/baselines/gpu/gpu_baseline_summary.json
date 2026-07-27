@@ -1,0 +1,21 @@
+{
+  "candidate_count_per_lambda_method": 10000,
+  "cpu_fallback_used": false,
+  "cuda_runtime": "12.9",
+  "exact_backend": "scipy.optimize.milp (HiGHS exact linearization)",
+  "exact_references_path": "results/phase3/irc_cmpo/baselines/gpu/exact_milp_references.json",
+  "gpu_backend": "cupy_cuda",
+  "gpu_model": "NVIDIA L4",
+  "lambda_count": 6,
+  "manifest_path": "results/phase3/irc_cmpo/payload_manifest.csv",
+  "methods": [
+    "gpu_simulated_annealing",
+    "gpu_random_restart",
+    "gpu_parallel_local_search"
+  ],
+  "metrics_path": "results/phase3/irc_cmpo/baselines/gpu/gpu_baseline_metrics.csv",
+  "projection_used": false,
+  "qci_jobs_submitted": 0,
+  "recourse_interface": "cmpo.irc_cmpo_recourse.evaluate_fixed_upgrade_recourse",
+  "schema": "cmpo.irc_cmpo.final_gpu_baselines.v1"
+}

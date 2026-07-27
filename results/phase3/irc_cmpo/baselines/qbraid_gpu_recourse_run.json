@@ -1,0 +1,9 @@
+{
+  "cpu_fallback_used": false,
+  "enriched_metrics": "results/phase3/irc_cmpo/baselines/gpu/gpu_baseline_metrics_with_recourse_regret.csv",
+  "instance_id": "bma-pr-gpu-l4-5de35377",
+  "profile": "gpu-l4",
+  "runtime_seconds": 261.4750237464905,
+  "status": "completed",
+  "supplement_dir": "results/phase3/irc_cmpo/final_gpu_baselines_recourse_supplement"
+}

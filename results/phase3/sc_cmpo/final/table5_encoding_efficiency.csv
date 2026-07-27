@@ -1,0 +1,5 @@
+benchmark,native_payload_count,native_cubic_variable_count_median,native_cubic_term_count_median,native_cubic_degree_max,payload_manifest_count,qci_executable_payload_count,qubo_patch_solution_count,qubo_variable_count_median,qubo_auxiliary_variable_count_median,qubo_reported_blowup_median,qubo_approximation_error_median,qubo_encoding_status,qubo_variable_blowup_ratio,trace_source
+arpae_go_network_01o_020,8,103.0,637.0,3,8,8,400,177.0,26.0,1.7184466019417475,0.0,available,1.7184466019417475,model_stats.csv;payload_manifest.csv;baseline_patch_solutions.csv
+ieee123_opendss,12,103.0,637.0,3,12,12,600,177.0,26.0,1.7184466019417475,0.0,available,1.7184466019417475,model_stats.csv;payload_manifest.csv;baseline_patch_solutions.csv
+pglib_case14_ieee,9,103.0,637.0,3,9,9,450,177.0,26.0,1.7184466019417475,0.0,available,1.7184466019417475,model_stats.csv;payload_manifest.csv;baseline_patch_solutions.csv
+pglib_case30_ieee,14,103.0,637.0,3,14,14,700,177.0,26.0,1.7184466019417475,0.0,available,1.7184466019417475,model_stats.csv;payload_manifest.csv;baseline_patch_solutions.csv

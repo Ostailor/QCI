@@ -1,0 +1,13 @@
+lambda_index,encoding,logical_variables,auxiliary_variables,total_variables,maximum_degree
+0,native cubic integer,33,0,33,3
+0,MILP/QUBO quadratized comparison,33,19,52,2
+1,native cubic integer,33,0,33,3
+1,MILP/QUBO quadratized comparison,33,19,52,2
+2,native cubic integer,33,0,33,3
+2,MILP/QUBO quadratized comparison,33,19,52,2
+3,native cubic integer,33,0,33,3
+3,MILP/QUBO quadratized comparison,33,19,52,2
+4,native cubic integer,33,0,33,3
+4,MILP/QUBO quadratized comparison,33,19,52,2
+5,native cubic integer,33,0,33,3
+5,MILP/QUBO quadratized comparison,33,19,52,2

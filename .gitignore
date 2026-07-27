@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+dist/
+build/
+*.egg-info/
+.DS_Store
+tmp/
+.env
+.env.*
+.python-version
+.omx/
+.codex/
+
+# Publish only the compiled Phase 3 paper. Keep LaTeX sources and build
+# intermediates local.
+submission/*
+!submission/TheRestorers__Phase3_Version1.pdf
+!submission/TheRestorers_QCI_Phase3.zip
+
+# Reproduction commands never overwrite the checked-in evidence bundle.
+results/phase3/reproduced/

@@ -1,0 +1,674 @@
+{
+  "allocation_before_submission": {
+    "metered": false,
+    "paid": true,
+    "seconds": 259200
+  },
+  "job_body": {
+    "job_submission": {
+      "device_config": {
+        "dirac-3_qudit": {
+          "num_levels": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "num_samples": 100,
+          "relaxation_schedule": 2
+        }
+      },
+      "job_name": "phase3-irc-cmpo-final-lambda_05",
+      "job_tags": [
+        "phase3",
+        "irc-cmpo",
+        "integer",
+        "final",
+        "commit-31e8c858",
+        "lambda_05"
+      ],
+      "problem_config": {
+        "qudit_hamiltonian_optimization": {
+          "polynomial_file_id": "6a5c0d1bff2f309fb9d05517"
+        }
+      }
+    }
+  },
+  "payload_path": "/Users/omtailor/QCI/results/phase3/irc_cmpo/payloads_final_prequeue_v3/lambda_05.json",
+  "payload_sha256": "204d91a5ae9d486c3bd582a763dee71071e8eb369f5a1fa3bd47fceb284ad469",
+  "qci_file": {
+    "cmpo_metadata": {
+      "model_statistics": {},
+      "patch_metadata": {},
+      "scenario_metadata": {},
+      "schema": "cmpo.irc_cmpo.scalarized_integer_master.v1",
+      "variable_bounds": {
+        "y::ieee123_opendss::100::bess": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::100::dispatchable_generation": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::100::pv": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::113::bess": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::113::dispatchable_generation": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::113::pv": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::16::bess": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::16::dispatchable_generation": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::16::pv": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::28::bess": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::28::dispatchable_generation": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::28::pv": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::48::bess": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::48::dispatchable_generation": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::48::pv": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::65::bess": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::65::dispatchable_generation": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::65::pv": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::69::bess": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::69::dispatchable_generation": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::69::pv": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::6::bess": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::6::dispatchable_generation": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::6::pv": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::73::bess": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::73::dispatchable_generation": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::73::pv": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::76::bess": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::76::dispatchable_generation": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::76::pv": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::87::bess": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::87::dispatchable_generation": [
+          0,
+          1
+        ],
+        "y::ieee123_opendss::87::pv": [
+          0,
+          1
+        ]
+      },
+      "variable_order": [
+        "y::ieee123_opendss::100::bess",
+        "y::ieee123_opendss::100::dispatchable_generation",
+        "y::ieee123_opendss::100::pv",
+        "y::ieee123_opendss::113::bess",
+        "y::ieee123_opendss::113::dispatchable_generation",
+        "y::ieee123_opendss::113::pv",
+        "y::ieee123_opendss::16::bess",
+        "y::ieee123_opendss::16::dispatchable_generation",
+        "y::ieee123_opendss::16::pv",
+        "y::ieee123_opendss::28::bess",
+        "y::ieee123_opendss::28::dispatchable_generation",
+        "y::ieee123_opendss::28::pv",
+        "y::ieee123_opendss::48::bess",
+        "y::ieee123_opendss::48::dispatchable_generation",
+        "y::ieee123_opendss::48::pv",
+        "y::ieee123_opendss::65::bess",
+        "y::ieee123_opendss::65::dispatchable_generation",
+        "y::ieee123_opendss::65::pv",
+        "y::ieee123_opendss::69::bess",
+        "y::ieee123_opendss::69::dispatchable_generation",
+        "y::ieee123_opendss::69::pv",
+        "y::ieee123_opendss::6::bess",
+        "y::ieee123_opendss::6::dispatchable_generation",
+        "y::ieee123_opendss::6::pv",
+        "y::ieee123_opendss::73::bess",
+        "y::ieee123_opendss::73::dispatchable_generation",
+        "y::ieee123_opendss::73::pv",
+        "y::ieee123_opendss::76::bess",
+        "y::ieee123_opendss::76::dispatchable_generation",
+        "y::ieee123_opendss::76::pv",
+        "y::ieee123_opendss::87::bess",
+        "y::ieee123_opendss::87::dispatchable_generation",
+        "y::ieee123_opendss::87::pv"
+      ]
+    },
+    "file_config": {
+      "polynomial": {
+        "data": [
+          {
+            "idx": [
+              0,
+              0,
+              1
+            ],
+            "val": 0.11
+          },
+          {
+            "idx": [
+              0,
+              1,
+              2
+            ],
+            "val": 0.17
+          },
+          {
+            "idx": [
+              0,
+              0,
+              2
+            ],
+            "val": -0.01
+          },
+          {
+            "idx": [
+              0,
+              0,
+              3
+            ],
+            "val": 0.2
+          },
+          {
+            "idx": [
+              0,
+              0,
+              4
+            ],
+            "val": 0.075
+          },
+          {
+            "idx": [
+              0,
+              4,
+              5
+            ],
+            "val": 0.115
+          },
+          {
+            "idx": [
+              0,
+              0,
+              5
+            ],
+            "val": -0.005
+          },
+          {
+            "idx": [
+              0,
+              0,
+              6
+            ],
+            "val": 0.135
+          },
+          {
+            "idx": [
+              0,
+              0,
+              7
+            ],
+            "val": 0.075
+          },
+          {
+            "idx": [
+              0,
+              7,
+              8
+            ],
+            "val": 0.115
+          },
+          {
+            "idx": [
+              0,
+              0,
+              8
+            ],
+            "val": -0.005
+          },
+          {
+            "idx": [
+              0,
+              0,
+              9
+            ],
+            "val": 0.135
+          },
+          {
+            "idx": [
+              0,
+              0,
+              10
+            ],
+            "val": 0.11
+          },
+          {
+            "idx": [
+              0,
+              10,
+              11
+            ],
+            "val": 0.17
+          },
+          {
+            "idx": [
+              0,
+              0,
+              11
+            ],
+            "val": -0.01
+          },
+          {
+            "idx": [
+              0,
+              0,
+              12
+            ],
+            "val": 0.2
+          },
+          {
+            "idx": [
+              0,
+              0,
+              13
+            ],
+            "val": 0.425
+          },
+          {
+            "idx": [
+              0,
+              13,
+              14
+            ],
+            "val": 0.65
+          },
+          {
+            "idx": [
+              0,
+              0,
+              14
+            ],
+            "val": -0.03
+          },
+          {
+            "idx": [
+              0,
+              0,
+              15
+            ],
+            "val": 0.765
+          },
+          {
+            "idx": [
+              0,
+              0,
+              16
+            ],
+            "val": 0.27
+          },
+          {
+            "idx": [
+              0,
+              16,
+              17
+            ],
+            "val": 0.41500000000000004
+          },
+          {
+            "idx": [
+              0,
+              16,
+              29
+            ],
+            "val": -0.01
+          },
+          {
+            "idx": [
+              16,
+              29,
+              31
+            ],
+            "val": 0.01
+          },
+          {
+            "idx": [
+              0,
+              0,
+              17
+            ],
+            "val": -0.02
+          },
+          {
+            "idx": [
+              0,
+              0,
+              18
+            ],
+            "val": 0.485
+          },
+          {
+            "idx": [
+              0,
+              0,
+              19
+            ],
+            "val": 0.095
+          },
+          {
+            "idx": [
+              0,
+              19,
+              20
+            ],
+            "val": 0.145
+          },
+          {
+            "idx": [
+              0,
+              0,
+              20
+            ],
+            "val": -0.005
+          },
+          {
+            "idx": [
+              0,
+              0,
+              21
+            ],
+            "val": 0.17
+          },
+          {
+            "idx": [
+              0,
+              0,
+              22
+            ],
+            "val": 0.055
+          },
+          {
+            "idx": [
+              0,
+              22,
+              23
+            ],
+            "val": 0.085
+          },
+          {
+            "idx": [
+              0,
+              0,
+              23
+            ],
+            "val": -0.005
+          },
+          {
+            "idx": [
+              0,
+              0,
+              24
+            ],
+            "val": 0.1
+          },
+          {
+            "idx": [
+              0,
+              0,
+              25
+            ],
+            "val": 0.11
+          },
+          {
+            "idx": [
+              0,
+              25,
+              26
+            ],
+            "val": 0.17
+          },
+          {
+            "idx": [
+              0,
+              0,
+              26
+            ],
+            "val": -0.01
+          },
+          {
+            "idx": [
+              0,
+              0,
+              27
+            ],
+            "val": 0.2
+          },
+          {
+            "idx": [
+              0,
+              0,
+              28
+            ],
+            "val": -0.225
+          },
+          {
+            "idx": [
+              0,
+              28,
+              29
+            ],
+            "val": 0.9450000000000001
+          },
+          {
+            "idx": [
+              0,
+              28,
+              31
+            ],
+            "val": -0.09
+          },
+          {
+            "idx": [
+              28,
+              31,
+              32
+            ],
+            "val": 0.09
+          },
+          {
+            "idx": [
+              0,
+              0,
+              29
+            ],
+            "val": -1.0
+          },
+          {
+            "idx": [
+              0,
+              29,
+              30
+            ],
+            "val": 0.32
+          },
+          {
+            "idx": [
+              29,
+              30,
+              31
+            ],
+            "val": -0.32
+          },
+          {
+            "idx": [
+              0,
+              29,
+              31
+            ],
+            "val": 0.47000000000000003
+          },
+          {
+            "idx": [
+              0,
+              0,
+              30
+            ],
+            "val": 0.19
+          },
+          {
+            "idx": [
+              0,
+              30,
+              31
+            ],
+            "val": 0.32
+          },
+          {
+            "idx": [
+              0,
+              0,
+              31
+            ],
+            "val": -0.485
+          },
+          {
+            "idx": [
+              0,
+              31,
+              32
+            ],
+            "val": 0.24
+          },
+          {
+            "idx": [
+              0,
+              0,
+              32
+            ],
+            "val": -0.195
+          },
+          {
+            "idx": [
+              0,
+              0,
+              33
+            ],
+            "val": 0.17
+          }
+        ],
+        "max_degree": 3,
+        "min_degree": 1,
+        "num_variables": 33
+      }
+    },
+    "file_name": "cmpo_scenario_patch"
+  },
+  "uploaded_file_response": {
+    "file_id": "6a5c0d1bff2f309fb9d05517"
+  }
+}

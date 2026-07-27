@@ -1,0 +1,11 @@
+{
+  "name": "NREL 2024 Electricity ATB selected SC-CMPO upgrade costs",
+  "source_url": "https://data.openei.org/submissions/6006",
+  "data_url": "https://oedi-data-lake.s3.amazonaws.com/ATB/electricity/csv/2024/v3.0.0/ATBe.csv",
+  "doi": "10.25984/2377191",
+  "version": "2024 ATB v3.0.0, corrected 2025-04-02",
+  "license": "Creative Commons Attribution 4.0",
+  "full_source_sha256": "beb07e64aa4d43a9388fc75d19912bc13e1a30e0effa8bd593c0a3e5bba59302",
+  "local_path": "data/upstream/nrel-atb/ATBe_2024_v3_selected_costs.csv",
+  "transformation": "Keep only three explicitly identified OCC rows needed by SC-CMPO. The BESS energy cost is the exact four-hour OCC divided by four; no interpolation or sampled cost is used."
+}

@@ -1,0 +1,65 @@
+{
+  "job_info": {
+    "job_id": "6a5c0d1708442f441bbb20c6",
+    "job_result": {
+      "device_usage_s": 11,
+      "file_id": "6a5dadf1ff2f309fb9d0552d"
+    },
+    "job_status": {
+      "completed_at_rfc3339nano": "2026-07-20T05:11:13.712Z",
+      "queued_at_rfc3339nano": "2026-07-18T23:32:39.182Z",
+      "running_at_rfc3339nano": "2026-07-20T05:10:53.795Z",
+      "submitted_at_rfc3339nano": "2026-07-18T23:32:39.181Z"
+    },
+    "job_submission": {
+      "device_config": {
+        "dirac-3_qudit": {
+          "num_levels": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "num_samples": 30,
+          "relaxation_schedule": 2
+        }
+      },
+      "job_name": "phase3-irc-cmpo-final-toy",
+      "job_tags": [
+        "phase3",
+        "irc-cmpo",
+        "integer",
+        "final",
+        "commit-31e8c858",
+        "toy",
+        "canary"
+      ],
+      "problem_config": {
+        "qudit_hamiltonian_optimization": {
+          "polynomial_file_id": "6a5c0d16ff2f309fb9d05509"
+        }
+      }
+    }
+  },
+  "results": {
+    "counts": [
+      30
+    ],
+    "energies": [
+      -10.9
+    ],
+    "solutions": [
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ]
+  },
+  "status": "COMPLETED"
+}

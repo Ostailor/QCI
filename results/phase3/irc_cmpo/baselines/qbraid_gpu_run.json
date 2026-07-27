@@ -1,0 +1,9 @@
+{
+  "cpu_fallback_used": false,
+  "instance_id": "bma-pr-gpu-l4-5de35377",
+  "output_dir": "results/phase3/irc_cmpo/final_gpu_baselines",
+  "profile": "gpu-l4",
+  "retry_reason": "portable manifest plus ephemeral dependency environment repairs",
+  "runtime_seconds": 126.3080952167511,
+  "status": "completed"
+}

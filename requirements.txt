@@ -1,0 +1,12 @@
+numpy
+pandas
+scipy
+networkx
+matplotlib
+PyYAML
+OpenDSSDirect.py==0.9.1
+pyomo>=6.10,<7
+highspy>=1.15,<2
+qci-client==5.0.0
+eqc-models==0.20.2
+pytest

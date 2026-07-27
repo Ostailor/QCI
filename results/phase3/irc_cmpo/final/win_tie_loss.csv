@@ -1,0 +1,13 @@
+comparator,metric,qci_wins,ties,qci_losses
+QUBO/quadratized master,total_ens,6,0,0
+QUBO/quadratized master,critical_ens,6,0,0
+best true-recourse dataset portfolio,total_ens,2,4,0
+best true-recourse dataset portfolio,critical_ens,2,4,0
+exact MILP ground state,total_ens,0,6,0
+exact MILP ground state,critical_ens,0,6,0
+gpu_parallel_local_search,total_ens,0,6,0
+gpu_parallel_local_search,critical_ens,0,6,0
+gpu_random_restart,total_ens,0,6,0
+gpu_random_restart,critical_ens,0,6,0
+gpu_simulated_annealing,total_ens,1,5,0
+gpu_simulated_annealing,critical_ens,1,5,0

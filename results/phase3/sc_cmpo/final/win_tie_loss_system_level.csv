@@ -1,0 +1,17 @@
+score_mode,method,wins,ties,losses,benchmarks_evaluated,trace_source
+lexicographic,CMPO-local polynomial search,0,0,4,4,system_metrics
+lexicographic,IPOPT/Pyomo nonlinear,0,0,4,4,system_metrics
+lexicographic,QCi SC-CMPO,0,0,4,4,system_metrics
+lexicographic,QUBO/quadratized search,0,0,4,4,system_metrics
+lexicographic,SLSQP,3,0,1,4,system_metrics
+lexicographic,differential evolution,0,0,4,4,system_metrics
+lexicographic,greedy resilience heuristic,1,0,3,4,system_metrics
+lexicographic,piecewise-linear MILP,0,0,4,4,system_metrics
+weighted,CMPO-local polynomial search,0,0,4,4,system_metrics
+weighted,IPOPT/Pyomo nonlinear,0,0,4,4,system_metrics
+weighted,QCi SC-CMPO,1,0,3,4,system_metrics
+weighted,QUBO/quadratized search,0,0,4,4,system_metrics
+weighted,SLSQP,3,0,1,4,system_metrics
+weighted,differential evolution,0,0,4,4,system_metrics
+weighted,greedy resilience heuristic,0,0,4,4,system_metrics
+weighted,piecewise-linear MILP,0,0,4,4,system_metrics
